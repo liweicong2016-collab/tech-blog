@@ -85,8 +85,8 @@ Solar+PPA模式逐步成熟，泰国年均2,500小时日照为自有光伏提供
 
 泰国IDC市场体量尚小但增速领先，是东南亚最具潜力的数据中心新兴市场。对于寻求低成本布局东南亚的AI算力提供商和互联网企业，泰国值得重点关注。
 
-> 📌 如需完整的供应商分析和竞品基准数据，请联系华为ISP军团互联行业COE团队。
+> 📌 如需完整的供应商分析和竞品基准数据，欢迎通过博客评论区交流。
 
 ---
 
-*数据来源：Thailand BOI · Gartner Market Databook 2025 · Structure Research · Synergy Research Group · Uptime Institute · 华为ISP军团内部市场情报*
+*数据来源：Thailand BOI · Gartner Market Databook 2025 · Structure Research · Synergy Research Group · Uptime Institute*
