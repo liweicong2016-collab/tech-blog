@@ -1,0 +1,440 @@
+{{- define "main" -}}
+
+{{/* ===== HERO ===== */}}
+<section class="hero-section">
+  <div class="hero-bg-grid"></div>
+  <div class="container">
+    <div class="hero-content">
+      <div class="hero-badge">
+        <span class="badge-dot"></span>
+        ISP军团 · 互联行业COE · 技术观察
+      </div>
+      <h1 class="hero-title">
+        <span class="title-line">Levi's</span>
+        <span class="title-line accent">Tech Pulse</span>
+      </h1>
+      <p class="hero-subtitle">
+        聚焦 <span class="hl">AI算力</span> · <span class="hl">半导体</span> · <span class="hl">东南亚市场</span>
+        <br>记录有深度的技术分析与行业洞察
+      </p>
+      <div class="hero-tags">
+        <span class="tag-pill tag-ai">🤖 AI</span>
+        <span class="tag-pill tag-gpu">⚡ GPU/昇腾</span>
+        <span class="tag-pill tag-chip">💠 半导体</span>
+        <span class="tag-pill tag-sea">🌏 东南亚</span>
+        <span class="tag-pill tag-hw">🖥️ 硬件</span>
+      </div>
+      <div class="hero-cta">
+        <a href="/posts/" class="btn btn-primary">📖 浏览文章</a>
+        <a href="https://github.com/liweicong2016-collab" class="btn btn-ghost">⚡ GitHub</a>
+      </div>
+    </div>
+  </div>
+</section>
+
+{{/* ===== LATEST POSTS ===== */}}
+<section class="posts-section">
+  <div class="container">
+    <div class="section-header">
+      <div class="section-label">// 最新文章</div>
+      <h2 class="section-title">Recent Posts</h2>
+    </div>
+
+    <div class="posts-grid">
+      {{- $pages := .Site.RegularPages -}}
+      {{- $featured := slice -}}
+      {{- range first 6 $pages -}}
+      <article class="post-card">
+        <div class="post-card-inner">
+          <div class="post-top">
+            <div class="post-meta-top">
+              {{- with .Params.tags -}}
+                {{- range first 1 . -}}
+                  <span class="tag-pill {{ if eq . "AI" }}tag-ai{{ else if eq . "GPU" }}tag-gpu{{ else if eq . "半导体" }}tag-chip{{ else if eq . "东南亚" }}tag-sea{{ else if eq . "硬件" }}tag-hw{{ else }}tag-data{{ end }}">{{ . }}</span>
+                {{- end -}}
+              {{- end -}}
+              <span class="post-date">{{ .Date.Format "2006.01.02" }}</span>
+            </div>
+            <h2 class="post-title">
+              <a href="{{ .RelPermalink }}">{{ .Title }}</a>
+            </h2>
+            {{- with .Description -}}
+            <p class="excerpt">{{ . }}</p>
+            {{- end -}}
+          </div>
+          <div class="post-footer">
+            <span class="reading-time">
+              ⏱ {{ math.Round (div (countwords .Content) 400.0) }} 分钟阅读
+            </span>
+            <a href="{{ .RelPermalink }}" class="read-more">Read →</a>
+          </div>
+        </div>
+      </article>
+      {{- end -}}
+    </div>
+
+    {{- with .Site.RegularPages -}}
+    <div class="load-more">
+      <a href="/posts/" class="btn btn-outline">查看全部 {{ len . }} 篇文章 →</a>
+    </div>
+    {{- end -}}
+  </div>
+</section>
+
+{{/* ===== STATS ===== */}}
+<section class="stats-section">
+  <div class="container">
+    <div class="stats-grid">
+      <div class="stat-card">
+        <div class="stat-icon">📝</div>
+        <div class="stat-num">{{ len (where .Site.RegularPages "Section" "posts") }}</div>
+        <div class="stat-label">文章</div>
+      </div>
+      <div class="stat-card">
+        <div class="stat-icon">🏷️</div>
+        <div class="stat-num">{{ len .Site.Taxonomies.tags }}</div>
+        <div class="stat-label">标签</div>
+      </div>
+      <div class="stat-card">
+        <div class="stat-icon">🕐</div>
+        <div class="stat-num">Hugo</div>
+        <div class="stat-label">字数</div>
+      </div>
+      <div class="stat-card">
+        <div class="stat-icon">🚀</div>
+        <div class="stat-num">v1.0</div>
+        <div class="stat-label">站点版本</div>
+      </div>
+    </div>
+  </div>
+</section>
+
+{{/* ===== FOOTER ===== */}}
+{{- partial "footer.html" . -}}
+
+<style>
+/* Hero */
+.hero-section {
+  position: relative;
+  padding: 100px 0 60px;
+  overflow: hidden;
+}
+
+.hero-bg-grid {
+  position: absolute;
+  inset: 0;
+  background-image:
+    linear-gradient(rgba(59,130,246,0.04) 1px, transparent 1px),
+    linear-gradient(90deg, rgba(59,130,246,0.04) 1px, transparent 1px);
+  background-size: 40px 40px;
+  mask-image: radial-gradient(ellipse at center, black 30%, transparent 70%);
+}
+
+.hero-content {
+  text-align: center;
+  max-width: 720px;
+  margin: 0 auto;
+  position: relative;
+  z-index: 1;
+}
+
+.hero-badge {
+  display: inline-flex;
+  align-items: center;
+  gap: 8px;
+  background: rgba(59,130,246,0.08);
+  border: 1px solid rgba(59,130,246,0.2);
+  border-radius: 20px;
+  padding: 6px 16px;
+  font-size: 12px;
+  color: #64748b;
+  margin-bottom: 32px;
+  font-family: 'SF Mono', 'Fira Code', monospace;
+}
+
+.badge-dot {
+  width: 6px; height: 6px;
+  background: #10b981;
+  border-radius: 50%;
+  animation: pulse-green 2s infinite;
+}
+
+@keyframes pulse-green {
+  0%, 100% { box-shadow: 0 0 0 0 rgba(16,185,129,0.4); }
+  50% { box-shadow: 0 0 0 6px rgba(16,185,129,0); }
+}
+
+.hero-title {
+  font-size: clamp(48px, 10vw, 80px);
+  font-weight: 800;
+  line-height: 1.05;
+  letter-spacing: -2px;
+  margin-bottom: 24px;
+}
+
+.title-line { display: block; }
+.title-line.accent {
+  background: linear-gradient(135deg, #3b82f6, #06b6d4);
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+}
+
+.hero-subtitle {
+  font-size: 17px;
+  color: #64748b;
+  line-height: 1.8;
+  margin-bottom: 28px;
+}
+
+.hl { color: #94a3b8; font-weight: 500; }
+
+.hero-tags {
+  display: flex;
+  gap: 10px;
+  justify-content: center;
+  flex-wrap: wrap;
+  margin-bottom: 40px;
+}
+
+.hero-cta {
+  display: flex;
+  gap: 14px;
+  justify-content: center;
+  flex-wrap: wrap;
+}
+
+.btn-primary {
+  background: linear-gradient(135deg, #1d4ed8, #1e40af);
+  color: #fff !important;
+  border: 1px solid rgba(59,130,246,0.4);
+  border-radius: 10px;
+  padding: 12px 28px;
+  font-size: 14px;
+  font-weight: 600;
+  text-decoration: none;
+  transition: all 0.25s;
+  box-shadow: 0 4px 14px rgba(59,130,246,0.25);
+}
+
+.btn-primary:hover {
+  transform: translateY(-2px);
+  box-shadow: 0 6px 20px rgba(59,130,246,0.4);
+}
+
+.btn-ghost {
+  background: transparent;
+  color: #94a3b8 !important;
+  border: 1px solid rgba(59,130,246,0.2);
+  border-radius: 10px;
+  padding: 12px 28px;
+  font-size: 14px;
+  font-weight: 500;
+  text-decoration: none;
+  transition: all 0.25s;
+}
+
+.btn-ghost:hover {
+  background: rgba(59,130,246,0.08);
+  border-color: rgba(59,130,246,0.4);
+  color: #60a5fa !important;
+}
+
+/* Posts Section */
+.posts-section {
+  padding: 60px 0;
+}
+
+.section-header {
+  margin-bottom: 40px;
+}
+
+.section-label {
+  font-size: 12px;
+  font-family: 'SF Mono', 'Fira Code', monospace;
+  color: #3b82f6;
+  margin-bottom: 8px;
+}
+
+.section-title {
+  font-size: 28px;
+  font-weight: 700;
+  color: #f1f5f9;
+  letter-spacing: -0.5px;
+}
+
+.posts-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fill, minmax(340px, 1fr));
+  gap: 16px;
+}
+
+.post-card {
+  background: rgba(17,24,39,0.8);
+  border: 1px solid rgba(59,130,246,0.1);
+  border-radius: 14px;
+  transition: all 0.3s ease;
+  position: relative;
+  overflow: hidden;
+}
+
+.post-card::after {
+  content: '';
+  position: absolute;
+  top: 0; left: 0; right: 0;
+  height: 2px;
+  background: linear-gradient(90deg, #3b82f6, #06b6d4);
+  opacity: 0;
+  transition: opacity 0.3s;
+}
+
+.post-card:hover {
+  border-color: rgba(59,130,246,0.3);
+  transform: translateY(-3px);
+  box-shadow: 0 8px 30px rgba(59,130,246,0.12);
+}
+
+.post-card:hover::after { opacity: 1; }
+
+.post-card-inner {
+  padding: 24px 28px;
+  display: flex;
+  flex-direction: column;
+  height: 100%;
+  gap: 16px;
+}
+
+.post-top { flex: 1; }
+
+.post-meta-top {
+  display: flex;
+  align-items: center;
+  gap: 12px;
+  margin-bottom: 12px;
+}
+
+.post-date {
+  font-size: 11px;
+  color: #475569;
+  font-family: 'SF Mono', 'Fira Code', monospace;
+}
+
+.post-title {
+  font-size: 17px;
+  font-weight: 700;
+  line-height: 1.35;
+  margin: 0;
+}
+
+.post-title a {
+  color: #e2e8f0;
+  text-decoration: none;
+  transition: color 0.2s;
+}
+
+.post-title a:hover { color: #60a5fa; }
+
+.excerpt {
+  font-size: 13px;
+  color: #64748b;
+  line-height: 1.65;
+  margin-top: 10px;
+}
+
+.post-footer {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding-top: 14px;
+  border-top: 1px solid rgba(51,65,85,0.5);
+}
+
+.reading-time {
+  font-size: 11px;
+  color: #475569;
+  font-family: 'SF Mono', 'Fira Code', monospace;
+}
+
+.read-more {
+  font-size: 12px;
+  color: #3b82f6;
+  text-decoration: none;
+  font-weight: 600;
+  transition: color 0.2s;
+}
+
+.read-more:hover { color: #06b6d4; }
+
+/* Stats */
+.stats-section {
+  padding: 40px 0 60px;
+}
+
+.stats-grid {
+  display: grid;
+  grid-template-columns: repeat(4, 1fr);
+  gap: 16px;
+}
+
+.stat-card {
+  background: rgba(17,24,39,0.6);
+  border: 1px solid rgba(59,130,246,0.1);
+  border-radius: 12px;
+  padding: 24px 20px;
+  text-align: center;
+  transition: all 0.25s;
+}
+
+.stat-card:hover {
+  border-color: rgba(59,130,246,0.25);
+  transform: translateY(-2px);
+}
+
+.stat-icon { font-size: 24px; margin-bottom: 12px; }
+
+.stat-num {
+  font-size: 32px;
+  font-weight: 800;
+  background: linear-gradient(135deg, #60a5fa, #34d399);
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+  line-height: 1;
+  margin-bottom: 6px;
+}
+
+.stat-label {
+  font-size: 12px;
+  color: #64748b;
+  font-weight: 500;
+}
+
+.load-more {
+  text-align: center;
+  margin-top: 40px;
+}
+
+.btn-outline {
+  background: transparent;
+  border: 1px solid rgba(59,130,246,0.25);
+  color: #60a5fa !important;
+  border-radius: 10px;
+  padding: 11px 24px;
+  font-size: 14px;
+  font-weight: 500;
+  text-decoration: none;
+  display: inline-block;
+  transition: all 0.25s;
+}
+
+.btn-outline:hover {
+  background: rgba(59,130,246,0.1);
+  border-color: rgba(59,130,246,0.5);
+  transform: translateY(-1px);
+}
+
+@media (max-width: 768px) {
+  .posts-grid { grid-template-columns: 1fr; }
+  .stats-grid { grid-template-columns: repeat(2, 1fr); }
+  .hero-section { padding: 80px 0 40px; }
+}
+</style>
+{{- end -}}

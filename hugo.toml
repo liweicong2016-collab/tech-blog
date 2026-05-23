@@ -1,0 +1,72 @@
+baseURL = "https://liweicong2016-collab.github.io/my-website/"
+languageCode = "zh-cn"
+title = "Levi's Tech Pulse"
+name = "Levi's Tech Pulse"
+enableRobotsTXT = true
+enableGitInfo = false
+hasCJKLanguage = true
+pygmentsUseClasses = true
+
+theme = ["PaperMod"]
+
+[build]
+  writeStats = true
+
+[outputs]
+  home = ["HTML", "RSS", "JSON"]
+
+[params]
+  env = "production"
+  description = "AI · 算力 · 半导体 · 东南亚市场"
+  author = "Levi 李维聪"
+  license = "MIT"
+  licenseURL = ""
+
+  useShortcodeInfo = false
+  displayName = "Levi's Tech Pulse"
+  subtitle = "AI · 算力 · 半导体 · 东南亚市场"
+
+  homeInfoParams = {}
+  socialLabels = {}
+
+  customCSS = ["/css/custom.css"]
+
+  [params.assets]
+    disableHLJS = false
+    favicon = "/favicon.svg"
+
+  [params.label]
+    text = "Levi's Tech Pulse"
+    icon = "/favicon.svg"
+    iconHeight = 35
+
+  # PaperMod cover
+  cover.imageWithParticles = false
+
+  # PaperMod params
+  ShowBreadCrumbs = false
+  ShowDraftsLabel = false
+  ShowReadingTime = true
+  Showtoc = true
+  invertTOC = true
+  tocOpen = false
+  ShowPostNavLinks = true
+  ShowCommentsButton = false
+  ShowCodeCopyButtons = true
+
+  [params.PaperMod]
+    showupanimation = true
+    disableSmoothScroll = false
+    hideFooter = false
+    showHero = true
+    heroText = ["Levi's Tech Pulse"]
+    cover.imageTitle = true
+
+  # No comments
+  commentsProvider = ""
+
+  # Links
+  [[params.links]]
+    name = "GitHub"
+    url = "https://github.com/liweicong2016-collab"
+    icon = "github"
