@@ -1,0 +1,51 @@
+name: Tweet on new article
+
+on:
+  push:
+    branches: [main]
+    paths:
+      - 'content/**/*.md'
+  workflow_dispatch:
+    inputs:
+      article_title:
+        description: 'Article title to tweet'
+        required: false
+        type: string
+
+jobs:
+  tweet:
+    runs-on: ubuntu-latest
+    steps:
+      - name: Checkout
+        uses: actions/checkout@v4
+
+      - name: Get latest article
+        id: article
+        run: |
+          # Find the most recently modified markdown file
+          ARTICLE=$(ls -t content/**/*.md 2>/dev/null | head -1)
+          if [ -z "$ARTICLE" ]; then
+            echo "No article found"
+            exit 0
+          fi
+          TITLE=$(head -20 "$ARTICLE" | grep -m1 "^# " | sed 's/^# //')
+          if [ -z "$TITLE" ]; then
+            TITLE="${{ github.event.inputs.article_title }}"
+          fi
+          echo "title=$TITLE" >> $GITHUB_OUTPUT
+          echo "file=$ARTICLE" >> $GITHUB_OUTPUT
+
+      - name: Post tweet
+        if: steps.article.outputs.title != ''
+        env:
+          X_API_KEY: ${{ secrets.X_API_KEY }}
+          X_API_SECRET: ${{ secrets.X_API_SECRET }}
+          X_ACCESS_TOKEN: ${{ secrets.X_ACCESS_TOKEN }}
+          X_ACCESS_TOKEN_SECRET: ${{ secrets.X_ACCESS_TOKEN_SECRET }}
+        run: |
+          BLOG_URL="https://liweicong2016-collab.github.io/tech-blog/"
+          TEXT="${{ steps.article.outputs.title }} $BLOG_URL #AI #Huawei #Ascend"
+          
+          # Post via x-cli (install first)
+          pip install x-cli 2>/dev/null || pip install git+https://github.com/Infatoshi/x-cli.git
+          x-cli tweet post "$TEXT"
