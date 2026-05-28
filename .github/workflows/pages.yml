@@ -36,15 +36,6 @@ jobs:
       - name: Build Hugo
         run: hugo --theme PaperMod --gc --minify --buildDrafts
 
-      - name: Copy Manus MENA report SPA
-        run: |
-          # Copy Manus-built SPA files to public/ after Hugo build
-          cp index.html public/
-          cp index.html public/404.html  # SPA fallback — lets React Router handle /company/* routes
-          cp -r assets_mena/* public/assets/ 2>/dev/null || true
-          cp *.md public/ 2>/dev/null || true
-          cp *.html public/ 2>/dev/null || true
-
       - name: Upload artifact
         uses: actions/upload-pages-artifact@v3
         with:
