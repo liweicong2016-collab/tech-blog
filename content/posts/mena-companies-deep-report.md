@@ -173,6 +173,10 @@ AWS (核心) + GCP (大数据分析)
 MENA互联网市场是一个"政策驱动大于市场驱动"的特殊存在。沙特PIF的强势布局，让Shahid和Noon获得了其他国家无法想象的资本支持。而Yalla的盈利奇迹则证明，本地化做到极致，即使不依赖融资也能活得很好。
 
 ![MENA 城市天际线](/images/photo2.jpg)
+![MENA照片3](/images/photo3.jpg)
+![MENA照片4](/images/photo4.jpg)
+![MENA照片5](/images/photo5.jpg)
+![MENA照片6](/images/photo6.jpg)
 
 反观中国出海企业，在MENA区域的成功案例多集中在游戏（如米哈游、腾讯）和新能源（如Temu、SHEIN），纯互联网平台仍面临本地化壁垒。AWS和Azure的垄断性优势，也让中国云厂商的机会集中在混合云场景。
 
