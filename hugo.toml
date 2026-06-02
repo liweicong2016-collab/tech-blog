@@ -7,13 +7,21 @@ enableGitInfo = false
 hasCJKLanguage = true
 pygmentsUseClasses = true
 
+[markup]
+  [markup.goldmark]
+    [markup.goldmark.renderer]
+      unsafe = true
+
 theme = ["PaperMod"]
 
 [build]
   writeStats = true
 
 [outputs]
-  home = ["HTML", "RSS", "JSON"]
+  home = ["HTML", "RSS"]
+  section = ["HTML"]
+  taxonomy = ["HTML"]
+  term = ["HTML"]
 
 [params]
   env = "production"
