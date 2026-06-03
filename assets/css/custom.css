@@ -1,433 +1,678 @@
 /* ========================================
-   Levi's Tech Pulse — Custom Styles
-   科技感深色主题
+   Livius's Tech Pulse — Custom Styles
+   Cold dark theme · 冷调深色 · 编辑型排版
+   参考：Paul Graham / Stratechery / Marginal Revolution
+   风格关键词：serif、窄行宽、单一焦点、克制的留白
    ======================================== */
 
 :root {
-    --cyber-blue: #3b82f6;
-    --cyber-cyan: #06b6d4;
-    --cyber-purple: #8b5cf6;
-    --cyber-green: #10b981;
-    --cyber-amber: #f59e0b;
-    --cyber-red: #ef4444;
-    --bg-primary: #0a0e17;
-    --bg-secondary: #0f172a;
-    --bg-card: #111827;
-    --border-color: rgba(59, 130, 246, 0.2);
-    --accent-gradient: linear-gradient(135deg, var(--cyber-blue), var(--cyber-cyan));
-    --glow-blue: 0 0 20px rgba(59, 130, 246, 0.3);
-    --glow-cyan: 0 0 20px rgba(6, 182, 212, 0.3);
+    /* === 调色板（冷调深色） === */
+    --bg-page: #121418;            /* 页面底色 — 冷调深灰 */
+    --bg-card: #1A1D24;            /* 卡片底色 — 比页面亮 1 阶 */
+    --bg-soft: #1F232C;            /* 二级表面（如引用块底） */
+    --fg-primary: #DDE2E8;         /* 主文字 — 冷纸白 */
+    --fg-secondary: #8A95A5;       /* 次要文字 — 冷灰 */
+    --fg-muted: #5C6470;           /* 弱化文字 — footer/meta */
+    --fg-faint: #383E48;           /* ghost 水印 */
+
+    --accent: #C778C0;             /* 强调色 — 夜梅粉（PG 黄橙的冷调对应） */
+    --accent-soft: rgba(199, 120, 192, 0.12);
+    --link: #79B8FF;               /* 链接 — 冷蓝 */
+    --link-hover: #A8CEFF;
+    --link-underline: rgba(121, 184, 255, 0.3);
+
+    --border: rgba(141, 149, 165, 0.12);   /* 微妙分隔线 */
+    --border-soft: rgba(141, 149, 165, 0.06);
+    --selection-bg: rgba(199, 120, 192, 0.25);
+
+    /* === 字体（PG 路线：serif 优先） === */
+    --font-serif: Charter, "Iowan Old Style", "Source Serif Pro", "Songti SC",
+                  "Source Han Serif SC", "Noto Serif CJK SC",
+                  "Hiragino Mincho ProN", "STSong", Georgia, serif;
+    --font-sans: -apple-system, BlinkMacSystemFont, "PingFang SC",
+                 "Hiragino Sans GB", "Microsoft YaHei", "Helvetica Neue",
+                 Helvetica, Arial, sans-serif;
+    --font-mono: "SF Mono", "JetBrains Mono", "Fira Code", Menlo, Consolas, monospace;
 }
 
-/* ---- 全局 ---- */
+/* 强制 dark color-scheme（让 PaperMod 内置 dark 变量被选中） */
+:root {
+    color-scheme: dark;
+}
+
+html, body {
+    color-scheme: dark;
+}
+
+/* PaperMod 主题本身的 dark 主题变量覆盖 */
+[data-theme="dark"] {
+    --theme: #121418;
+    --entry: #1A1D24;
+    --primary: #DDE2E8;
+    --secondary: #8A95A5;
+    --tertiary: #5C6470;
+    --content: #DDE2E8;
+    --code-block-bg: #1A1D24;
+    --code-bg: #1F232C;
+    --border: rgba(141, 149, 165, 0.12);
+    --background: #121418;
+    color-scheme: dark;
+}
+
+/* 覆盖 PaperMod 的 LIGHT 主题 — 强制让它长成 dark（避免 light 模式覆盖我们的暗色） */
+[data-theme="light"] {
+    --theme: #121418;
+    --entry: #1A1D24;
+    --primary: #DDE2E8;
+    --secondary: #8A95A5;
+    --tertiary: #5C6470;
+    --content: #DDE2E8;
+    --code-block-bg: #1A1D24;
+    --code-bg: #1F232C;
+    --border: rgba(141, 149, 165, 0.12);
+    --background: #121418;
+    color-scheme: dark;
+}
+
+/* 覆盖 PaperMod 的 AUTO 主题（PaperMod 的内联 JS 会在 html 上加 data-theme="light"|"dark"） */
+html:not([data-theme]) {
+    --theme: #121418;
+    --entry: #1A1D24;
+    --primary: #DDE2E8;
+    --secondary: #8A95A5;
+    --tertiary: #5C6470;
+    --content: #DDE2E8;
+    --code-block-bg: #1A1D24;
+    --code-bg: #1F232C;
+    --background: #121418;
+}
+
+/* 即使 data-theme="auto" 也强制 dark 变量生效 */
+@media (prefers-color-scheme: dark) {
+    :root:not([data-theme="light"]) {
+        --theme: #121418;
+        --entry: #1A1D24;
+        --primary: #DDE2E8;
+        --secondary: #8A95A5;
+        --tertiary: #5C6470;
+        --content: #DDE2E8;
+        --code-block-bg: #1A1D24;
+        --code-bg: #1F232C;
+        --border: rgba(141, 149, 165, 0.12);
+        --background: #121418;
+    }
+}
+
+/* ========================================
+   1. 全局基础
+   ======================================== */
+html { scroll-behavior: smooth; }
+
+::selection {
+    background: var(--selection-bg);
+    color: var(--fg-primary);
+}
+
 body {
-    background: var(--bg-primary);
-    font-family: 'Inter', 'Noto Sans SC', -apple-system, sans-serif;
-    color: #e2e8f0;
+    background: var(--bg-page);
+    font-family: var(--font-sans);     /* 全局默认 sans（导航/UI） */
+    color: var(--fg-primary);
     line-height: 1.7;
+    -webkit-font-smoothing: antialiased;
+    -moz-osx-font-smoothing: grayscale;
+    /* 关键：去掉 cyber 网格背景 */
 }
 
-/* 网格背景 */
-body::before {
-    content: '';
-    position: fixed;
-    top: 0; left: 0; right: 0; bottom: 0;
-    background-image:
-        linear-gradient(rgba(59, 130, 246, 0.03) 1px, transparent 1px),
-        linear-gradient(90deg, rgba(59, 130, 246, 0.03) 1px, transparent 1px);
-    background-size: 40px 40px;
-    pointer-events: none;
-    z-index: -1;
+/* 滚动条 — 极简 */
+::-webkit-scrollbar { width: 8px; height: 8px; }
+::-webkit-scrollbar-track { background: transparent; }
+::-webkit-scrollbar-thumb {
+    background: rgba(141, 149, 165, 0.18);
+    border-radius: 4px;
 }
+::-webkit-scrollbar-thumb:hover { background: rgba(141, 149, 165, 0.3); }
 
-/* 滚动条 */
-::-webkit-scrollbar { width: 6px; }
-::-webkit-scrollbar-track { background: var(--bg-primary); }
-::-webkit-scrollbar-thumb { background: var(--cyber-blue); border-radius: 3px; }
-
-/* ---- 导航栏 ---- */
+/* ========================================
+   2. 导航栏（冷调深色，弱化品牌色）
+   ======================================== */
 #nav {
-    background: rgba(10, 14, 23, 0.85) !important;
-    backdrop-filter: blur(20px) saturate(180%);
-    -webkit-backdrop-filter: blur(20px) saturate(180%);
-    border-bottom: 1px solid var(--border-color) !important;
-    padding: 0 24px;
+    background: rgba(18, 20, 24, 0.88) !important;
+    backdrop-filter: blur(20px) saturate(140%);
+    -webkit-backdrop-filter: blur(20px) saturate(140%);
+    border-bottom: 1px solid var(--border-soft) !important;
+    padding: 0 32px;
 }
 
 #nav a {
-    color: #94a3b8 !important;
-    font-size: 14px;
+    color: var(--fg-secondary) !important;
+    font-size: 13.5px;
     font-weight: 500;
-    letter-spacing: 0.3px;
-    transition: color 0.2s;
+    letter-spacing: 0.2px;
+    transition: color 0.15s;
+    text-decoration: none;
 }
 
 #nav a:hover,
 #nav a.active {
-    color: var(--cyber-blue) !important;
+    color: var(--fg-primary) !important;
 }
 
 .site-title {
     font-weight: 700 !important;
-    font-size: 17px !important;
-    letter-spacing: -0.3px;
-    background: var(--accent-gradient);
-    -webkit-background-clip: text;
-    -webkit-text-fill-color: transparent;
+    font-size: 16px !important;
+    letter-spacing: -0.2px;
+    color: var(--fg-primary) !important;
+    /* 去掉渐变文字 */
+    background: none !important;
+    -webkit-text-fill-color: var(--fg-primary) !important;
 }
 
-/* ---- 首页 Hero ---- */
+/* ========================================
+   3. 首页 Hero（PG 风：ghost 大字 + serif 主标 + 极简）
+   ======================================== */
 .home-profile {
     text-align: center;
-    padding: 80px 24px 40px;
+    padding: 120px 24px 60px;
+    position: relative;
+}
+
+/* Ghost 水印（PG 招牌：低透明度的英文站名） */
+.home-profile::before,
+.hero-section::before {
+    content: "LIVIUS'S TECH PULSE";
+    position: absolute;
+    top: 30px;
+    left: 50%;
+    transform: translateX(-50%);
+    font-family: var(--font-serif);
+    font-size: 14px;
+    font-weight: 400;
+    letter-spacing: 0.45em;
+    color: var(--fg-faint);
+    pointer-events: none;
+    user-select: none;
+    z-index: 0;
 }
 
 .home-profile h1 {
-    font-size: clamp(36px, 6vw, 64px);
-    font-weight: 800;
-    letter-spacing: -1.5px;
-    background: linear-gradient(135deg, #fff 30%, var(--cyber-blue) 70%, var(--cyber-cyan) 100%);
-    -webkit-background-clip: text;
-    -webkit-text-fill-color: transparent;
-    margin-bottom: 16px;
-    line-height: 1.1;
+    font-family: var(--font-serif);
+    font-size: clamp(32px, 5vw, 52px);
+    font-weight: 700;
+    letter-spacing: -0.8px;
+    color: var(--fg-primary);
+    margin: 0 0 18px;
+    line-height: 1.15;
+    /* 去掉渐变 */
+    background: none;
+    -webkit-text-fill-color: var(--fg-primary);
 }
 
 .home-profile .subtitle {
+    font-family: var(--font-serif);
     font-size: 18px;
-    color: #64748b;
-    margin-bottom: 8px;
+    color: var(--fg-secondary);
+    margin-bottom: 12px;
+    font-weight: 400;
+    font-style: italic;
 }
 
 .home-profile .tagline {
-    font-size: 15px;
-    color: #475569;
-    font-family: 'SF Mono', 'Fira Code', monospace;
-    margin-bottom: 32px;
+    font-size: 14px;
+    color: var(--fg-muted);
+    font-family: var(--font-mono);
+    margin-bottom: 40px;
+    letter-spacing: 0.2px;
 }
 
 .home-profile .tagline span {
-    color: var(--cyber-cyan);
+    color: var(--accent);
 }
 
-/* 标签行 */
+/* 标签行（弱化、不抢戏） */
 .tag-row {
     display: flex;
-    gap: 8px;
+    gap: 6px;
     justify-content: center;
     flex-wrap: wrap;
-    margin-bottom: 40px;
+    margin-bottom: 0;
 }
 
 .tag-pill {
     display: inline-block;
-    padding: 5px 14px;
-    border-radius: 20px;
-    font-size: 12px;
-    font-weight: 600;
-    border: 1px solid;
+    padding: 4px 12px;
+    border-radius: 4px;        /* 方角 — 比原 20px 圆角更"编辑" */
+    font-size: 11.5px;
+    font-weight: 500;
+    border: 1px solid var(--border);
+    background: transparent;
+    color: var(--fg-secondary);
 }
 
-.tag-ai { background: rgba(59,130,246,0.1); border-color: rgba(59,130,246,0.3); color: #93c5fd; }
-.tag-gpu { background: rgba(6,182,212,0.1); border-color: rgba(6,182,212,0.3); color: #67e8f9; }
-.tag-chip { background: rgba(139,92,246,0.1); border-color: rgba(139,92,246,0.3); color: #c4b5fd; }
-.tag-sea { background: rgba(16,185,129,0.1); border-color: rgba(16,185,129,0.3); color: #6ee7b7; }
-.tag-hw { background: rgba(245,158,11,0.1); border-color: rgba(245,158,11,0.3); color: #fcd34d; }
-.tag-data { background: rgba(239,68,68,0.1); border-color: rgba(239,68,68,0.3); color: #fca5a5; }
+/* 标签配色（统一弱化，不再每类一色） */
+.tag-ai, .tag-gpu, .tag-chip, .tag-sea, .tag-hw, .tag-data {
+    background: transparent;
+    border-color: var(--border);
+    color: var(--fg-secondary);
+}
 
-/* ---- 文章列表 ---- */
+/* ========================================
+   4. 文章列表（窄、serif、minimal 边框）
+   ======================================== */
 .post-title {
-    font-size: clamp(18px, 2.5vw, 22px);
+    font-family: var(--font-serif);
+    font-size: clamp(19px, 2.4vw, 23px);
     font-weight: 700;
-    color: #f1f5f9;
-    transition: color 0.2s;
+    color: var(--fg-primary);
+    transition: color 0.15s;
     line-height: 1.3;
+    letter-spacing: -0.2px;
 }
 
-.post-title:hover { color: var(--cyber-blue); }
+.post-title:hover { color: var(--accent); }
 
 .entry-content.excerpt {
-    color: #64748b;
-    font-size: 14px;
+    color: var(--fg-secondary);
+    font-size: 14.5px;
     line-height: 1.7;
-    margin-top: 8px;
+    margin-top: 10px;
+    font-family: var(--font-sans);
 }
 
 .entry-meta {
     font-size: 12px;
-    color: #475569;
-    font-family: 'SF Mono', 'Fira Code', monospace;
-    margin-top: 10px;
+    color: var(--fg-muted);
+    font-family: var(--font-mono);
+    margin-top: 12px;
+    letter-spacing: 0.1px;
 }
 
 .entry-meta .tag-pill {
-    font-size: 10px;
+    font-size: 10.5px;
     padding: 2px 8px;
     margin-right: 6px;
+    border-radius: 3px;
 }
 
-/* 文章卡片 */
+/* 文章卡片：极简分隔线 + 微妙背景 */
 .post-card {
-    background: var(--bg-card);
-    border: 1px solid rgba(59, 130, 246, 0.12);
-    border-radius: 12px;
-    padding: 24px 28px;
-    margin-bottom: 16px;
-    transition: all 0.25s ease;
+    background: transparent;
+    border: 0;
+    border-top: 1px solid var(--border-soft);
+    border-radius: 0;
+    padding: 32px 0 36px;
+    margin-bottom: 0;
+    transition: none;
     position: relative;
-    overflow: hidden;
+    overflow: visible;
 }
 
-.post-card::before {
-    content: '';
-    position: absolute;
-    left: 0; top: 0; bottom: 0;
-    width: 3px;
-    background: var(--accent-gradient);
-    opacity: 0;
-    transition: opacity 0.25s;
-}
-
+/* 去掉 cyber 风格的左侧渐变条 + glow */
+.post-card::before { display: none; }
 .post-card:hover {
-    border-color: rgba(59, 130, 246, 0.3);
-    box-shadow: var(--glow-blue);
-    transform: translateX(2px);
+    border-color: var(--border-soft);
+    box-shadow: none;
+    transform: none;
 }
 
-.post-card:hover::before { opacity: 1; }
+.post-card:hover .post-title { color: var(--accent); }
 
 /* 阅读时间 */
 .reading-time {
-    font-size: 11px;
-    color: #475569;
-    font-family: 'SF Mono', 'Fira Code', monospace;
+    font-size: 11.5px;
+    color: var(--fg-muted);
+    font-family: var(--font-mono);
 }
 
-/* ---- 归档页 ---- */
-.heading { color: #e2e8f0; }
-h1, h2, h3, h4 { color: #f1f5f9; }
+/* ========================================
+   5. 归档页与标题
+   ======================================== */
+.heading {
+    color: var(--fg-primary);
+    font-family: var(--font-serif);
+    letter-spacing: -0.3px;
+}
 
-/* ---- 侧边栏 TOC ---- */
+h1, h2, h3, h4 {
+    color: var(--fg-primary);
+    font-family: var(--font-serif);
+    letter-spacing: -0.2px;
+}
+
+/* ========================================
+   6. 侧边栏 TOC（弱化、不抢戏）
+   ======================================== */
 #toc {
-    background: var(--bg-card);
-    border: 1px solid var(--border-color);
-    border-radius: 10px;
-    padding: 16px 20px;
+    background: transparent;
+    border: 0;
+    border-left: 1px solid var(--border-soft);
+    border-radius: 0;
+    padding: 4px 0 4px 18px;
     font-size: 13px;
+    font-family: var(--font-sans);
 }
 
 #toc a {
-    color: #64748b !important;
-    transition: color 0.2s;
+    color: var(--fg-muted) !important;
+    transition: color 0.15s;
+    text-decoration: none;
 }
 
-#toc a:hover { color: var(--cyber-blue) !important; }
-#toc a.active { color: var(--cyber-blue) !important; }
+#toc a:hover { color: var(--fg-primary) !important; }
+#toc a.active { color: var(--accent) !important; }
 
-/* ---- 文章内容 ---- */
+/* ========================================
+   7. 文章内容（serif、窄行宽、编辑感）
+   ======================================== */
 .single-content {
-    max-width: 720px;
+    max-width: 680px;            /* 比 PaperMod 默认 720 收窄 */
     margin: 0 auto;
+    font-family: var(--font-serif);
+    font-size: 17px;
+    line-height: 1.75;
+    color: var(--fg-primary);
 }
 
 .single-content h1,
 .single-content h2,
 .single-content h3,
 .single-content h4 {
-    color: #f1f5f9;
-    border-bottom: 1px solid rgba(59, 130, 246, 0.1);
-    padding-bottom: 8px;
+    color: var(--fg-primary);
+    font-family: var(--font-serif);
+    font-weight: 700;
+    letter-spacing: -0.3px;
+    border-bottom: 0;
+    padding-bottom: 0;
 }
 
+.single-content h1 { font-size: 34px; line-height: 1.2; margin: 28px 0 24px; }
+.single-content h2 {
+    font-size: 24px;
+    line-height: 1.3;
+    margin: 44px 0 16px;
+    padding-top: 12px;
+}
+.single-content h3 {
+    font-size: 19px;
+    line-height: 1.4;
+    margin: 32px 0 10px;
+    color: var(--fg-secondary);
+}
+
+.single-content p {
+    margin: 0 0 18px;
+    color: var(--fg-primary);
+}
+
+.single-content strong { color: var(--fg-primary); font-weight: 700; }
+.single-content em { color: var(--fg-primary); font-style: italic; }
+
+/* 链接（PG 风：始终下划线） */
 .single-content a {
-    color: var(--cyber-blue);
-    text-decoration: none;
-    border-bottom: 1px solid rgba(59, 130, 246, 0.3);
-    transition: all 0.2s;
+    color: var(--link);
+    text-decoration: underline;
+    text-decoration-color: var(--link-underline);
+    text-underline-offset: 3px;
+    text-decoration-thickness: 1px;
+    transition: all 0.15s;
+    border-bottom: 0;
 }
 
 .single-content a:hover {
-    color: var(--cyber-cyan);
-    border-bottom-color: var(--cyber-cyan);
+    color: var(--link-hover);
+    text-decoration-color: var(--link);
 }
 
+/* 行内代码 */
 .single-content code {
-    background: rgba(59, 130, 246, 0.1);
-    border: 1px solid rgba(59, 130, 246, 0.2);
-    border-radius: 4px;
-    padding: 2px 6px;
-    font-size: 13px;
-    color: #93c5fd;
+    background: var(--bg-soft);
+    border: 0;
+    border-radius: 3px;
+    padding: 1px 6px;
+    font-size: 0.88em;
+    color: var(--accent);
+    font-family: var(--font-mono);
 }
 
+/* 代码块 */
 .single-content pre {
     background: var(--bg-card);
-    border: 1px solid var(--border-color);
-    border-radius: 8px;
-    padding: 20px;
+    border: 1px solid var(--border);
+    border-radius: 6px;
+    padding: 18px 20px;
     overflow-x: auto;
+    font-family: var(--font-mono);
+    font-size: 13.5px;
+    line-height: 1.6;
 }
 
+.single-content pre code {
+    background: transparent;
+    color: var(--fg-primary);
+    padding: 0;
+    font-size: inherit;
+}
+
+/* 引用块（PG 风：左边线 + 衬线斜体） */
 .single-content blockquote {
-    border-left: 3px solid var(--cyber-blue);
-    background: rgba(59, 130, 246, 0.05);
-    border-radius: 0 8px 8px 0;
-    padding: 12px 20px;
-    color: #94a3b8;
-    margin: 24px 0;
+    border-left: 2px solid var(--accent);
+    background: transparent;
+    border-radius: 0;
+    padding: 4px 0 4px 20px;
+    margin: 28px 0;
+    color: var(--fg-secondary);
+    font-style: italic;
+    font-family: var(--font-serif);
 }
 
+/* 表格（极简分隔线） */
 .single-content table {
     border-collapse: collapse;
     width: 100%;
-    font-size: 14px;
+    font-size: 14.5px;
+    font-family: var(--font-sans);
+    margin: 20px 0;
 }
 
 .single-content th {
-    background: rgba(59, 130, 246, 0.1);
-    border: 1px solid var(--border-color);
-    padding: 10px 16px;
+    background: transparent;
+    border: 0;
+    border-bottom: 2px solid var(--border);
+    padding: 10px 14px;
     text-align: left;
-    color: #94a3b8;
-    font-weight: 600;
-    font-size: 12px;
+    color: var(--fg-primary);
+    font-weight: 700;
+    font-size: 12.5px;
     text-transform: uppercase;
-    letter-spacing: 0.5px;
+    letter-spacing: 0.4px;
+    font-family: var(--font-mono);
 }
 
 .single-content td {
-    border: 1px solid rgba(51, 65, 85, 0.5);
-    padding: 10px 16px;
-    color: #cbd5e1;
+    border: 0;
+    border-bottom: 1px solid var(--border-soft);
+    padding: 10px 14px;
+    color: var(--fg-primary);
 }
 
-.single-content tr:hover td { background: rgba(59, 130, 246, 0.03); }
+.single-content tr:hover td {
+    background: rgba(199, 120, 192, 0.04);
+}
 
-/* ---- 归档页 ---- */
-.list .entry-meta { color: #475569; font-size: 12px; }
+/* 列表 */
+.single-content ul, .single-content ol {
+    padding-left: 22px;
+    margin: 0 0 18px;
+}
+.single-content li {
+    margin-bottom: 6px;
+    color: var(--fg-primary);
+}
 
-/* ---- 底部 ---- */
+/* 水平分隔线 — 极简 */
+.single-content hr {
+    border: 0;
+    border-top: 1px solid var(--border-soft);
+    margin: 40px 0;
+}
+
+/* ========================================
+   8. 归档页
+   ======================================== */
+.list .entry-meta {
+    color: var(--fg-muted);
+    font-size: 12px;
+}
+
+/* ========================================
+   9. 底部（极简、灰色）
+   ======================================== */
 footer {
-    background: var(--bg-secondary) !important;
-    border-top: 1px solid var(--border-color) !important;
-    color: #475569 !important;
-    font-size: 13px;
+    background: transparent !important;
+    border-top: 1px solid var(--border-soft) !important;
+    color: var(--fg-muted) !important;
+    font-size: 12.5px;
+    padding: 32px 0;
+    margin-top: 80px;
 }
 
-footer a { color: var(--cyber-blue) !important; }
+footer a {
+    color: var(--fg-secondary) !important;
+    text-decoration: underline;
+    text-decoration-color: var(--border);
+}
 
-/* ---- 分页 ---- */
+footer a:hover { color: var(--fg-primary) !important; }
+
+/* ========================================
+   10. 分页（极简方角）
+   ======================================== */
 .pagination .page-item a {
-    background: var(--bg-card);
-    border: 1px solid var(--border-color);
-    color: #94a3b8;
-    border-radius: 8px;
+    background: transparent;
+    border: 1px solid var(--border);
+    color: var(--fg-secondary);
+    border-radius: 4px;
     padding: 6px 14px;
     font-size: 13px;
     font-weight: 500;
-    transition: all 0.2s;
+    transition: all 0.15s;
+    text-decoration: none;
 }
 
 .pagination .page-item a:hover {
-    background: rgba(59, 130, 246, 0.1);
-    border-color: rgba(59, 130, 246, 0.4);
-    color: var(--cyber-blue);
+    background: var(--bg-card);
+    border-color: var(--accent);
+    color: var(--fg-primary);
 }
 
 .pagination .page-item.active a {
-    background: var(--cyber-blue) !important;
-    border-color: var(--cyber-blue) !important;
+    background: var(--accent) !important;
+    border-color: var(--accent) !important;
     color: #fff !important;
 }
 
-/* ---- 搜索 ---- */
+/* ========================================
+   11. 搜索
+   ======================================== */
 .search {
     background: var(--bg-card);
-    border: 1px solid var(--border-color);
-    border-radius: 8px;
+    border: 1px solid var(--border);
+    border-radius: 6px;
 }
 
-/* ---- 按钮 ---- */
+/* ========================================
+   12. 按钮
+   ======================================== */
 .btn {
-    background: rgba(59, 130, 246, 0.1);
-    border: 1px solid rgba(59, 130, 246, 0.3);
-    color: #93c5fd;
-    border-radius: 8px;
-    padding: 8px 20px;
-    font-size: 14px;
+    background: transparent;
+    border: 1px solid var(--border);
+    color: var(--fg-primary);
+    border-radius: 4px;
+    padding: 7px 18px;
+    font-size: 13.5px;
     font-weight: 500;
-    transition: all 0.2s;
+    transition: all 0.15s;
     text-decoration: none;
 }
 
 .btn:hover {
-    background: var(--cyber-blue);
+    background: var(--accent);
     color: #fff;
-    border-color: var(--cyber-blue);
+    border-color: var(--accent);
 }
 
-/* ---- 归档线 ---- */
+/* ========================================
+   13. 年份分隔
+   ======================================== */
 .year-divider {
-    font-size: 13px;
-    font-weight: 700;
-    color: var(--cyber-blue);
-    font-family: 'SF Mono', 'Fira Code', monospace;
-    border-bottom: 1px solid var(--border-color);
+    font-size: 12px;
+    font-weight: 600;
+    color: var(--fg-muted);
+    font-family: var(--font-mono);
+    border-bottom: 1px solid var(--border-soft);
     padding-bottom: 8px;
-    margin: 32px 0 16px;
+    margin: 48px 0 20px;
+    letter-spacing: 0.5px;
+    text-transform: uppercase;
 }
 
-/* ---- 分类标签 ---- */
+/* ========================================
+   14. 分类标签
+   ======================================== */
 .terms-badge {
-    background: rgba(59, 130, 246, 0.08);
-    border: 1px solid rgba(59, 130, 246, 0.2);
-    border-radius: 6px;
-    padding: 4px 12px;
+    background: transparent;
+    border: 1px solid var(--border);
+    border-radius: 3px;
+    padding: 3px 10px;
     font-size: 12px;
-    color: #64748b;
-    transition: all 0.2s;
+    color: var(--fg-secondary);
+    transition: all 0.15s;
 }
 
 .terms-badge:hover {
-    background: rgba(59, 130, 246, 0.15);
-    color: var(--cyber-blue);
+    background: var(--bg-card);
+    color: var(--fg-primary);
+    border-color: var(--accent);
 }
 
-/* ---- 响应式 ---- */
+/* ========================================
+   15. 响应式（手机窄屏收得更紧）
+   ======================================== */
 @media (max-width: 768px) {
-    .home-profile { padding: 60px 16px 30px; }
-    .home-profile h1 { font-size: 32px; }
-    .post-card { padding: 18px 20px; }
+    .home-profile { padding: 80px 16px 40px; }
+    .home-profile h1 { font-size: 30px; }
+    .single-content { font-size: 16px; max-width: 100%; }
+    .post-card { padding: 24px 0 28px; }
     #toc { display: none; }
+    #nav { padding: 0 16px; }
 }
 
-/* ---- 打字机动画 ---- */
-@keyframes blink {
-    0%, 100% { opacity: 1; }
-    50% { opacity: 0; }
+@media (max-width: 480px) {
+    .home-profile h1 { font-size: 26px; }
+    .home-profile .subtitle { font-size: 16px; }
+    .single-content h2 { font-size: 20px; }
+    .single-content h3 { font-size: 17px; }
+    .single-content pre { padding: 14px 16px; font-size: 12.5px; }
 }
 
-.cursor::after {
-    content: '▋';
-    color: var(--cyber-cyan);
-    animation: blink 1s infinite;
-    margin-left: 2px;
-}
-
-/* ---- 滚动渐入 ---- */
+/* ========================================
+   16. 删除所有 cyber 动画（不再"酷"）
+   ======================================== */
+/* 取消 fadeUp 动画（避免滚动时重排） */
 .post-card {
-    opacity: 0;
-    transform: translateY(16px);
-    animation: fadeUp 0.5s ease forwards;
+    opacity: 1 !important;
+    transform: none !important;
+    animation: none !important;
 }
 
-@keyframes fadeUp {
-    to { opacity: 1; transform: translateY(0); }
-}
+/* 取消打字机光标 */
+.cursor::after { display: none; }
 
-.post-card:nth-child(1) { animation-delay: 0.05s; }
-.post-card:nth-child(2) { animation-delay: 0.1s; }
-.post-card:nth-child(3) { animation-delay: 0.15s; }
-.post-card:nth-child(4) { animation-delay: 0.2s; }
-.post-card:nth-child(5) { animation-delay: 0.25s; }
-.post-card:nth-child(6) { animation-delay: 0.3s; }
+/* ========================================
+   17. 焦点可访问性
+   ======================================== */
+a:focus-visible,
+button:focus-visible {
+    outline: 2px solid var(--accent);
+    outline-offset: 3px;
+    border-radius: 2px;
+}

@@ -1,7 +1,7 @@
 baseURL = "https://liweicong2016-collab.github.io/tech-blog/"
 languageCode = "zh-cn"
-title = "Levi's Tech Pulse"
-name = "Levi's Tech Pulse"
+title = "Livius's Tech Pulse"
+name = "Livius's Tech Pulse"
 enableRobotsTXT = true
 enableGitInfo = false
 hasCJKLanguage = true
@@ -31,8 +31,7 @@ theme = ["PaperMod"]
   licenseURL = ""
 
   useShortcodeInfo = false
-  displayName = "Levi's Tech Pulse"
-  subtitle = "AI · 算力 · 半导体 · 东南亚市场"
+  displayName = "Livius's Tech Pulse"
 
   homeInfoParams = {}
   socialLabels = {}
@@ -44,7 +43,7 @@ theme = ["PaperMod"]
     favicon = "/favicon.svg"
 
   [params.label]
-    text = "Levi's Tech Pulse"
+    text = "Livius's Tech Pulse"
     icon = "/favicon.svg"
     iconHeight = 35
 
@@ -67,7 +66,7 @@ theme = ["PaperMod"]
     disableSmoothScroll = false
     hideFooter = false
     showHero = true
-    heroText = ["Levi's Tech Pulse"]
+    heroText = ["Livius's Tech Pulse"]
     cover.imageTitle = true
 
   # No comments

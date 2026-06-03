@@ -10,20 +10,9 @@
         科技观察 · AI · 算力 · 东南亚
       </div>
       <h1 class="hero-title">
-        <span class="title-line">Levi's</span>
+        <span class="title-line">Livius's</span>
         <span class="title-line accent">Tech Pulse</span>
       </h1>
-      <p class="hero-subtitle">
-        聚焦 <span class="hl">AI算力</span> · <span class="hl">半导体</span> · <span class="hl">东南亚市场</span>
-        <br>记录有深度的技术分析与行业洞察
-      </p>
-      <div class="hero-tags">
-        <span class="tag-pill tag-ai">🤖 AI</span>
-        <span class="tag-pill tag-gpu">⚡ GPU/昇腾</span>
-        <span class="tag-pill tag-chip">💠 半导体</span>
-        <span class="tag-pill tag-sea">🌏 东南亚</span>
-        <span class="tag-pill tag-hw">🖥️ 硬件</span>
-      </div>
       <div class="hero-cta">
         <a href="/posts/" class="btn btn-primary">📖 浏览文章</a>
         <a href="https://github.com/liweicong2016-collab" class="btn btn-ghost">⚡ GitHub</a>
@@ -113,22 +102,21 @@
 {{- partial "footer.html" . -}}
 
 <style>
-/* Hero */
+/* ============================================
+   首页专用样式（冷调深色 · 编辑型）
+   与 custom.css 风格一致：serif · 窄 · 单一焦点
+   ============================================ */
+
+/* === HERO === */
 .hero-section {
   position: relative;
-  padding: 100px 0 60px;
+  padding: 120px 0 64px;
   overflow: hidden;
+  background: var(--bg-page);
 }
 
-.hero-bg-grid {
-  position: absolute;
-  inset: 0;
-  background-image:
-    linear-gradient(rgba(59,130,246,0.04) 1px, transparent 1px),
-    linear-gradient(90deg, rgba(59,130,246,0.04) 1px, transparent 1px);
-  background-size: 40px 40px;
-  mask-image: radial-gradient(ellipse at center, black 30%, transparent 70%);
-}
+/* 取消 cyber 网格背景（PG 风：纯色 + 极多留白） */
+.hero-bg-grid { display: none; }
 
 .hero-content {
   text-align: center;
@@ -136,275 +124,334 @@
   margin: 0 auto;
   position: relative;
   z-index: 1;
+  padding: 0 24px;
 }
 
+/* 顶部小标（PG 风：mono 灰字，弱化） */
 .hero-badge {
   display: inline-flex;
   align-items: center;
   gap: 8px;
-  background: rgba(59,130,246,0.08);
-  border: 1px solid rgba(59,130,246,0.2);
-  border-radius: 20px;
-  padding: 6px 16px;
-  font-size: 12px;
-  color: #64748b;
+  background: transparent;
+  border: 1px solid var(--border);
+  border-radius: 4px;
+  padding: 5px 14px;
+  font-size: 11.5px;
+  color: var(--fg-secondary);
   margin-bottom: 32px;
-  font-family: 'SF Mono', 'Fira Code', monospace;
+  font-family: var(--font-mono);
+  letter-spacing: 0.4px;
+  text-transform: uppercase;
 }
 
-.badge-dot {
-  width: 6px; height: 6px;
-  background: #10b981;
-  border-radius: 50%;
-  animation: pulse-green 2s infinite;
-}
+/* 取消跳动点 — 编辑型不需要 pulse */
+.badge-dot { display: none; }
 
-@keyframes pulse-green {
-  0%, 100% { box-shadow: 0 0 0 0 rgba(16,185,129,0.4); }
-  50% { box-shadow: 0 0 0 6px rgba(16,185,129,0); }
-}
-
+/* 主标题 — 大 serif，single line，最克制 */
 .hero-title {
-  font-size: clamp(48px, 10vw, 80px);
-  font-weight: 800;
-  line-height: 1.05;
-  letter-spacing: -2px;
+  font-family: var(--font-serif);
+  font-size: clamp(40px, 7vw, 64px);
+  font-weight: 700;
+  line-height: 1.1;
+  letter-spacing: -1.2px;
   margin-bottom: 24px;
+  color: var(--fg-primary);
 }
 
-.title-line { display: block; }
+.title-line { display: inline; }
 .title-line.accent {
-  background: linear-gradient(135deg, #3b82f6, #06b6d4);
-  -webkit-background-clip: text;
-  -webkit-text-fill-color: transparent;
+  color: var(--accent);    /* 夜梅粉，不是渐变 */
+  background: none;
+  -webkit-text-fill-color: var(--accent);
 }
 
+/* 副标题 — 衬线 + 冷灰 */
 .hero-subtitle {
+  font-family: var(--font-serif);
   font-size: 17px;
-  color: #64748b;
-  line-height: 1.8;
-  margin-bottom: 28px;
+  color: var(--fg-secondary);
+  line-height: 1.7;
+  margin-bottom: 32px;
+  font-weight: 400;
 }
 
-.hl { color: #94a3b8; font-weight: 500; }
+.hero-subtitle .hl {
+  color: var(--fg-primary);
+  font-weight: 500;
+}
 
+/* 标签 — 全部统一方角小标签，不按类分色 */
 .hero-tags {
   display: flex;
-  gap: 10px;
+  gap: 8px;
   justify-content: center;
   flex-wrap: wrap;
-  margin-bottom: 40px;
+  margin-bottom: 36px;
 }
 
+.hero-tags .tag-pill {
+  background: transparent;
+  border: 1px solid var(--border);
+  color: var(--fg-secondary);
+  font-size: 12px;
+  padding: 4px 12px;
+  border-radius: 3px;
+  font-family: var(--font-mono);
+}
+
+/* CTA 按钮 — 极简方角 */
 .hero-cta {
   display: flex;
-  gap: 14px;
+  gap: 12px;
   justify-content: center;
   flex-wrap: wrap;
 }
 
 .btn-primary {
-  background: linear-gradient(135deg, #1d4ed8, #1e40af);
+  background: var(--accent);
   color: #fff !important;
-  border: 1px solid rgba(59,130,246,0.4);
-  border-radius: 10px;
-  padding: 12px 28px;
-  font-size: 14px;
-  font-weight: 600;
+  border: 1px solid var(--accent);
+  border-radius: 4px;
+  padding: 10px 24px;
+  font-size: 13.5px;
+  font-weight: 500;
   text-decoration: none;
-  transition: all 0.25s;
-  box-shadow: 0 4px 14px rgba(59,130,246,0.25);
+  transition: all 0.15s;
+  font-family: var(--font-sans);
 }
 
 .btn-primary:hover {
-  transform: translateY(-2px);
-  box-shadow: 0 6px 20px rgba(59,130,246,0.4);
+  background: #B566AE;
+  border-color: #B566AE;
+  color: #fff !important;
 }
 
 .btn-ghost {
   background: transparent;
-  color: #94a3b8 !important;
-  border: 1px solid rgba(59,130,246,0.2);
-  border-radius: 10px;
-  padding: 12px 28px;
-  font-size: 14px;
+  color: var(--fg-secondary) !important;
+  border: 1px solid var(--border);
+  border-radius: 4px;
+  padding: 10px 24px;
+  font-size: 13.5px;
   font-weight: 500;
   text-decoration: none;
-  transition: all 0.25s;
+  transition: all 0.15s;
+  font-family: var(--font-sans);
 }
 
 .btn-ghost:hover {
-  background: rgba(59,130,246,0.08);
-  border-color: rgba(59,130,246,0.4);
-  color: #60a5fa !important;
+  background: var(--bg-card);
+  border-color: var(--accent);
+  color: var(--fg-primary) !important;
 }
 
-/* Posts Section */
+/* === POSTS SECTION === */
 .posts-section {
-  padding: 60px 0;
+  padding: 40px 0 60px;
+  background: var(--bg-page);
 }
+
+.container { max-width: 760px; margin: 0 auto; padding: 0 24px; }
 
 .section-header {
-  margin-bottom: 40px;
+  margin-bottom: 32px;
+  padding-bottom: 16px;
+  border-bottom: 1px solid var(--border-soft);
 }
 
 .section-label {
-  font-size: 12px;
-  font-family: 'SF Mono', 'Fira Code', monospace;
-  color: #3b82f6;
-  margin-bottom: 8px;
+  font-size: 11.5px;
+  font-family: var(--font-mono);
+  color: var(--fg-muted);
+  margin-bottom: 6px;
+  letter-spacing: 0.5px;
+  text-transform: uppercase;
 }
 
 .section-title {
-  font-size: 28px;
+  font-family: var(--font-serif);
+  font-size: 26px;
   font-weight: 700;
-  color: #f1f5f9;
-  letter-spacing: -0.5px;
+  color: var(--fg-primary);
+  letter-spacing: -0.4px;
+  margin: 0;
 }
 
+/* 文章列表 — 极简：纯分隔线，无背景卡 */
 .posts-grid {
-  display: grid;
-  grid-template-columns: repeat(auto-fill, minmax(340px, 1fr));
-  gap: 16px;
+  display: flex;
+  flex-direction: column;
+  gap: 0;
 }
 
 .post-card {
-  background: rgba(17,24,39,0.8);
-  border: 1px solid rgba(59,130,246,0.1);
-  border-radius: 14px;
-  transition: all 0.3s ease;
+  background: transparent;
+  border: 0;
+  border-top: 1px solid var(--border-soft);
+  border-radius: 0;
+  padding: 28px 0 32px;
+  transition: none;
   position: relative;
-  overflow: hidden;
 }
 
-.post-card::after {
-  content: '';
-  position: absolute;
-  top: 0; left: 0; right: 0;
-  height: 2px;
-  background: linear-gradient(90deg, #3b82f6, #06b6d4);
-  opacity: 0;
-  transition: opacity 0.3s;
+.post-card:last-child {
+  border-bottom: 1px solid var(--border-soft);
 }
+
+.post-card::after { display: none; }   /* 取消顶部渐变线 */
 
 .post-card:hover {
-  border-color: rgba(59,130,246,0.3);
-  transform: translateY(-3px);
-  box-shadow: 0 8px 30px rgba(59,130,246,0.12);
+  border-top-color: var(--accent);
+  background: transparent;
+  transform: none;
+  box-shadow: none;
 }
 
-.post-card:hover::after { opacity: 1; }
+.post-card:hover .post-title a { color: var(--accent); }
 
 .post-card-inner {
-  padding: 24px 28px;
-  display: flex;
-  flex-direction: column;
-  height: 100%;
-  gap: 16px;
+  padding: 0;
+  display: block;
+  height: auto;
+  gap: 0;
 }
 
-.post-top { flex: 1; }
+.post-top { margin-bottom: 0; }
 
 .post-meta-top {
   display: flex;
   align-items: center;
-  gap: 12px;
-  margin-bottom: 12px;
+  gap: 10px;
+  margin-bottom: 10px;
+  font-family: var(--font-mono);
+  font-size: 11.5px;
+}
+
+.post-meta-top .tag-pill {
+  font-size: 10.5px;
+  padding: 2px 8px;
+  border-radius: 3px;
+  background: transparent;
+  border: 1px solid var(--border);
+  color: var(--fg-secondary);
+  text-transform: uppercase;
+  letter-spacing: 0.3px;
 }
 
 .post-date {
-  font-size: 11px;
-  color: #475569;
-  font-family: 'SF Mono', 'Fira Code', monospace;
+  font-size: 11.5px;
+  color: var(--fg-muted);
+  font-family: var(--font-mono);
 }
 
 .post-title {
-  font-size: 17px;
+  font-family: var(--font-serif);
+  font-size: 22px;
   font-weight: 700;
-  line-height: 1.35;
-  margin: 0;
+  line-height: 1.3;
+  margin: 0 0 8px;
+  letter-spacing: -0.2px;
 }
 
 .post-title a {
-  color: #e2e8f0;
+  color: var(--fg-primary);
   text-decoration: none;
-  transition: color 0.2s;
+  transition: color 0.15s;
 }
 
-.post-title a:hover { color: #60a5fa; }
+.post-title a:hover { color: var(--accent); }
 
 .excerpt {
-  font-size: 13px;
-  color: #64748b;
+  font-size: 14.5px;
+  color: var(--fg-secondary);
   line-height: 1.65;
-  margin-top: 10px;
+  margin-top: 6px;
+  font-family: var(--font-sans);
 }
 
 .post-footer {
   display: flex;
   justify-content: space-between;
   align-items: center;
-  padding-top: 14px;
-  border-top: 1px solid rgba(51,65,85,0.5);
+  margin-top: 12px;
+  padding-top: 0;
+  border-top: 0;
 }
 
 .reading-time {
-  font-size: 11px;
-  color: #475569;
-  font-family: 'SF Mono', 'Fira Code', monospace;
+  font-size: 11.5px;
+  color: var(--fg-muted);
+  font-family: var(--font-mono);
 }
 
 .read-more {
-  font-size: 12px;
-  color: #3b82f6;
+  font-size: 12.5px;
+  color: var(--fg-secondary);
   text-decoration: none;
-  font-weight: 600;
-  transition: color 0.2s;
+  font-weight: 500;
+  font-family: var(--font-mono);
+  transition: color 0.15s;
 }
 
-.read-more:hover { color: #06b6d4; }
+.read-more:hover { color: var(--accent); }
 
-/* Stats */
+/* === STATS === */
 .stats-section {
-  padding: 40px 0 60px;
+  padding: 24px 0 60px;
 }
 
 .stats-grid {
   display: grid;
   grid-template-columns: repeat(4, 1fr);
-  gap: 16px;
+  gap: 0;
+  border-top: 1px solid var(--border-soft);
+  border-bottom: 1px solid var(--border-soft);
 }
 
 .stat-card {
-  background: rgba(17,24,39,0.6);
-  border: 1px solid rgba(59,130,246,0.1);
-  border-radius: 12px;
-  padding: 24px 20px;
+  background: transparent;
+  border: 0;
+  border-right: 1px solid var(--border-soft);
+  border-radius: 0;
+  padding: 24px 16px;
   text-align: center;
-  transition: all 0.25s;
+  transition: none;
 }
+
+.stat-card:last-child { border-right: 0; }
 
 .stat-card:hover {
-  border-color: rgba(59,130,246,0.25);
-  transform: translateY(-2px);
+  background: transparent;
+  transform: none;
 }
 
-.stat-icon { font-size: 24px; margin-bottom: 12px; }
+.stat-icon {
+  font-size: 18px;
+  margin-bottom: 10px;
+  filter: grayscale(0.4);
+  opacity: 0.7;
+}
 
 .stat-num {
-  font-size: 32px;
-  font-weight: 800;
-  background: linear-gradient(135deg, #60a5fa, #34d399);
-  -webkit-background-clip: text;
-  -webkit-text-fill-color: transparent;
+  font-family: var(--font-serif);
+  font-size: 28px;
+  font-weight: 700;
+  color: var(--fg-primary);
+  background: none;
+  -webkit-text-fill-color: var(--fg-primary);
+  -webkit-background-clip: initial;
   line-height: 1;
   margin-bottom: 6px;
+  letter-spacing: -0.5px;
 }
 
 .stat-label {
-  font-size: 12px;
-  color: #64748b;
+  font-size: 11.5px;
+  color: var(--fg-muted);
   font-weight: 500;
+  font-family: var(--font-mono);
+  text-transform: uppercase;
+  letter-spacing: 0.4px;
 }
 
 .load-more {
@@ -414,27 +461,39 @@
 
 .btn-outline {
   background: transparent;
-  border: 1px solid rgba(59,130,246,0.25);
-  color: #60a5fa !important;
-  border-radius: 10px;
-  padding: 11px 24px;
-  font-size: 14px;
+  border: 1px solid var(--border);
+  color: var(--fg-secondary) !important;
+  border-radius: 4px;
+  padding: 9px 22px;
+  font-size: 13.5px;
   font-weight: 500;
   text-decoration: none;
   display: inline-block;
-  transition: all 0.25s;
+  transition: all 0.15s;
+  font-family: var(--font-sans);
 }
 
 .btn-outline:hover {
-  background: rgba(59,130,246,0.1);
-  border-color: rgba(59,130,246,0.5);
-  transform: translateY(-1px);
+  background: var(--bg-card);
+  border-color: var(--accent);
+  color: var(--fg-primary) !important;
+  transform: none;
 }
 
 @media (max-width: 768px) {
   .posts-grid { grid-template-columns: 1fr; }
   .stats-grid { grid-template-columns: repeat(2, 1fr); }
   .hero-section { padding: 80px 0 40px; }
+  .stat-card:nth-child(2) { border-right: 0; }
+  .stat-card:nth-child(1),
+  .stat-card:nth-child(2) { border-bottom: 1px solid var(--border-soft); }
+}
+
+@media (max-width: 480px) {
+  .hero-title { font-size: 34px; }
+  .hero-subtitle { font-size: 15px; }
+  .stat-num { font-size: 22px; }
+  .post-title { font-size: 19px; }
 }
 </style>
 {{- end -}}
