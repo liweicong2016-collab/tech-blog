@@ -5,13 +5,27 @@
   <div class="hero-bg-grid"></div>
   <div class="container">
     <div class="hero-content">
+      <div class="hero-badge">
+        <span class="badge-dot"></span>
+        AI · 算力 · 半导体 · 东南亚
+      </div>
       <h1 class="hero-title">
         <span class="title-line">Livius's</span>
         <span class="title-line accent">Tech Pulse</span>
       </h1>
+      <p class="hero-subtitle">
+        深度追踪全球科技产业动态，专注 <strong>AI 基础设施</strong>、<strong>半导体格局</strong>与<strong>东南亚市场崛起</strong>的深度分析。
+      </p>
+      <div class="hero-tags">
+        <span class="tag-pill tag-ai">AI</span>
+        <span class="tag-pill tag-chip">半导体</span>
+        <span class="tag-pill tag-sea">东南亚</span>
+        <span class="tag-pill tag-gpu">GPU</span>
+        <span class="tag-pill tag-hw">硬件</span>
+      </div>
       <div class="hero-cta">
-        <a href="/posts/" class="btn btn-primary">📖 浏览文章</a>
-        <a href="https://github.com/liweicong2016-collab" class="btn btn-ghost">⚡ GitHub</a>
+        <a href="/posts/" class="btn-primary">📖 浏览文章</a>
+        <a href="https://github.com/liweicong2016-collab" class="btn-ghost">⚡ GitHub</a>
       </div>
     </div>
   </div>
@@ -27,30 +41,25 @@
 
     <div class="posts-grid">
       {{- $pages := .Site.RegularPages -}}
-      {{- $featured := slice -}}
       {{- range first 6 $pages -}}
       <article class="post-card">
         <div class="post-card-inner">
-          <div class="post-top">
-            <div class="post-meta-top">
-              {{- with .Params.tags -}}
-                {{- range first 1 . -}}
-                  <span class="tag-pill {{ if eq . "AI" }}tag-ai{{ else if eq . "GPU" }}tag-gpu{{ else if eq . "半导体" }}tag-chip{{ else if eq . "东南亚" }}tag-sea{{ else if eq . "硬件" }}tag-hw{{ else }}tag-data{{ end }}">{{ . }}</span>
-                {{- end -}}
+          <div class="post-meta-top">
+            {{- with .Params.tags -}}
+              {{- range first 1 . -}}
+                <span class="tag-pill {{ if eq . "AI" }}tag-ai{{ else if eq . "GPU" }}tag-gpu{{ else if eq . "半导体" }}tag-chip{{ else if eq . "东南亚" }}tag-sea{{ else if eq . "硬件" }}tag-hw{{ else }}{{ end }}">{{ . }}</span>
               {{- end -}}
-              <span class="post-date">{{ .Date.Format "2006.01.02" }}</span>
-            </div>
-            <h2 class="post-title">
-              <a href="{{ .RelPermalink }}">{{ .Title }}</a>
-            </h2>
-            {{- with .Description -}}
-            <p class="excerpt">{{ . }}</p>
             {{- end -}}
+            <span class="post-date">{{ .Date.Format "2006.01.02" }}</span>
           </div>
+          <h2 class="post-title">
+            <a href="{{ .RelPermalink }}">{{ .Title }}</a>
+          </h2>
+          {{- with .Description -}}
+          <p class="excerpt">{{ . }}</p>
+          {{- end -}}
           <div class="post-footer">
-            <span class="reading-time">
-              ⏱ {{ math.Round (div (countwords .Content) 400.0) }} 分钟阅读
-            </span>
+            <span class="reading-time">⏱ {{ math.Round (div (countwords .Content) 400.0) }} 分钟阅读</span>
             <a href="{{ .RelPermalink }}" class="read-more">Read →</a>
           </div>
         </div>
@@ -60,9 +69,23 @@
 
     {{- with .Site.RegularPages -}}
     <div class="load-more">
-      <a href="/posts/" class="btn btn-outline">查看全部 {{ len . }} 篇文章 →</a>
+      <a href="/posts/" class="btn-outline">查看全部 {{ len . }} 篇文章 →</a>
     </div>
     {{- end -}}
+  </div>
+</section>
+
+{{/* ===== NEWSLETTER ===== */}}
+<section class="posts-section" style="padding-top:0;">
+  <div class="container">
+    <div class="newsletter-section">
+      <h3 class="newsletter-title">订阅深度分析</h3>
+      <p class="newsletter-desc">获取最新 AI、算力、半导体及东南亚市场深度报告，每周更新，直接送达。</p>
+      <form class="newsletter-form" onsubmit="event.preventDefault(); this.querySelector('.newsletter-btn').textContent='已订阅 ✓'; this.querySelector('.newsletter-btn').disabled=true;">
+        <input type="email" class="newsletter-input" placeholder="your@email.com" required>
+        <button type="submit" class="newsletter-btn">立即订阅</button>
+      </form>
+    </div>
   </div>
 </section>
 
@@ -81,14 +104,14 @@
         <div class="stat-label">标签</div>
       </div>
       <div class="stat-card">
-        <div class="stat-icon">🕐</div>
-        <div class="stat-num">Hugo</div>
-        <div class="stat-label">字数</div>
+        <div class="stat-icon">📊</div>
+        <div class="stat-num">AI</div>
+        <div class="stat-label">热门方向</div>
       </div>
       <div class="stat-card">
-        <div class="stat-icon">🚀</div>
-        <div class="stat-num">v1.0</div>
-        <div class="stat-label">站点版本</div>
+        <div class="stat-icon">🌏</div>
+        <div class="stat-num">SEA</div>
+        <div class="stat-label">市场</div>
       </div>
     </div>
   </div>
@@ -97,399 +120,4 @@
 {{/* ===== FOOTER ===== */}}
 {{- partial "footer.html" . -}}
 
-<style>
-/* ============================================
-   首页专用样式（冷调深色 · 编辑型）
-   与 custom.css 风格一致：serif · 窄 · 单一焦点
-   ============================================ */
-
-/* === HERO === */
-.hero-section {
-  position: relative;
-  padding: 120px 0 64px;
-  overflow: hidden;
-  background: var(--bg-page);
-}
-
-/* 取消 cyber 网格背景（PG 风：纯色 + 极多留白） */
-.hero-bg-grid { display: none; }
-
-.hero-content {
-  text-align: center;
-  max-width: 720px;
-  margin: 0 auto;
-  position: relative;
-  z-index: 1;
-  padding: 0 24px;
-}
-
-/* 顶部小标（PG 风：mono 灰字，弱化） */
-.hero-badge {
-  display: inline-flex;
-  align-items: center;
-  gap: 8px;
-  background: transparent;
-  border: 1px solid var(--border);
-  border-radius: 4px;
-  padding: 5px 14px;
-  font-size: 11.5px;
-  color: var(--fg-secondary);
-  margin-bottom: 32px;
-  font-family: var(--font-mono);
-  letter-spacing: 0.4px;
-  text-transform: uppercase;
-}
-
-/* 取消跳动点 — 编辑型不需要 pulse */
-.badge-dot { display: none; }
-
-/* 主标题 — 大 serif，single line，最克制 */
-.hero-title {
-  font-family: var(--font-serif);
-  font-size: clamp(40px, 7vw, 64px);
-  font-weight: 700;
-  line-height: 1.1;
-  letter-spacing: -1.2px;
-  margin-bottom: 24px;
-  color: var(--fg-primary);
-}
-
-.title-line { display: inline; }
-.title-line.accent {
-  color: var(--accent);    /* 夜梅粉，不是渐变 */
-  background: none;
-  -webkit-text-fill-color: var(--accent);
-}
-
-/* 副标题 — 衬线 + 冷灰 */
-.hero-subtitle {
-  font-family: var(--font-serif);
-  font-size: 17px;
-  color: var(--fg-secondary);
-  line-height: 1.7;
-  margin-bottom: 32px;
-  font-weight: 400;
-}
-
-.hero-subtitle .hl {
-  color: var(--fg-primary);
-  font-weight: 500;
-}
-
-/* 标签 — 全部统一方角小标签，不按类分色 */
-.hero-tags {
-  display: flex;
-  gap: 8px;
-  justify-content: center;
-  flex-wrap: wrap;
-  margin-bottom: 36px;
-}
-
-.hero-tags .tag-pill {
-  background: transparent;
-  border: 1px solid var(--border);
-  color: var(--fg-secondary);
-  font-size: 12px;
-  padding: 4px 12px;
-  border-radius: 3px;
-  font-family: var(--font-mono);
-}
-
-/* CTA 按钮 — 极简方角 */
-.hero-cta {
-  display: flex;
-  gap: 12px;
-  justify-content: center;
-  flex-wrap: wrap;
-}
-
-.btn-primary {
-  background: var(--accent);
-  color: #fff !important;
-  border: 1px solid var(--accent);
-  border-radius: 4px;
-  padding: 10px 24px;
-  font-size: 13.5px;
-  font-weight: 500;
-  text-decoration: none;
-  transition: all 0.15s;
-  font-family: var(--font-sans);
-}
-
-.btn-primary:hover {
-  background: #B566AE;
-  border-color: #B566AE;
-  color: #fff !important;
-}
-
-.btn-ghost {
-  background: transparent;
-  color: var(--fg-secondary) !important;
-  border: 1px solid var(--border);
-  border-radius: 4px;
-  padding: 10px 24px;
-  font-size: 13.5px;
-  font-weight: 500;
-  text-decoration: none;
-  transition: all 0.15s;
-  font-family: var(--font-sans);
-}
-
-.btn-ghost:hover {
-  background: var(--bg-card);
-  border-color: var(--accent);
-  color: var(--fg-primary) !important;
-}
-
-/* === POSTS SECTION === */
-.posts-section {
-  padding: 40px 0 60px;
-  background: var(--bg-page);
-}
-
-.container { max-width: 760px; margin: 0 auto; padding: 0 24px; }
-
-.section-header {
-  margin-bottom: 32px;
-  padding-bottom: 16px;
-  border-bottom: 1px solid var(--border-soft);
-}
-
-.section-label {
-  font-size: 11.5px;
-  font-family: var(--font-mono);
-  color: var(--fg-muted);
-  margin-bottom: 6px;
-  letter-spacing: 0.5px;
-  text-transform: uppercase;
-}
-
-.section-title {
-  font-family: var(--font-serif);
-  font-size: 26px;
-  font-weight: 700;
-  color: var(--fg-primary);
-  letter-spacing: -0.4px;
-  margin: 0;
-}
-
-/* 文章列表 — 极简：纯分隔线，无背景卡 */
-.posts-grid {
-  display: flex;
-  flex-direction: column;
-  gap: 0;
-}
-
-.post-card {
-  background: transparent;
-  border: 0;
-  border-top: 1px solid var(--border-soft);
-  border-radius: 0;
-  padding: 28px 0 32px;
-  transition: none;
-  position: relative;
-}
-
-.post-card:last-child {
-  border-bottom: 1px solid var(--border-soft);
-}
-
-.post-card::after { display: none; }   /* 取消顶部渐变线 */
-
-.post-card:hover {
-  border-top-color: var(--accent);
-  background: transparent;
-  transform: none;
-  box-shadow: none;
-}
-
-.post-card:hover .post-title a { color: var(--accent); }
-
-.post-card-inner {
-  padding: 0;
-  display: block;
-  height: auto;
-  gap: 0;
-}
-
-.post-top { margin-bottom: 0; }
-
-.post-meta-top {
-  display: flex;
-  align-items: center;
-  gap: 10px;
-  margin-bottom: 10px;
-  font-family: var(--font-mono);
-  font-size: 11.5px;
-}
-
-.post-meta-top .tag-pill {
-  font-size: 10.5px;
-  padding: 2px 8px;
-  border-radius: 3px;
-  background: transparent;
-  border: 1px solid var(--border);
-  color: var(--fg-secondary);
-  text-transform: uppercase;
-  letter-spacing: 0.3px;
-}
-
-.post-date {
-  font-size: 11.5px;
-  color: var(--fg-muted);
-  font-family: var(--font-mono);
-}
-
-.post-title {
-  font-family: var(--font-serif);
-  font-size: 22px;
-  font-weight: 700;
-  line-height: 1.3;
-  margin: 0 0 8px;
-  letter-spacing: -0.2px;
-}
-
-.post-title a {
-  color: var(--fg-primary);
-  text-decoration: none;
-  transition: color 0.15s;
-}
-
-.post-title a:hover { color: var(--accent); }
-
-.excerpt {
-  font-size: 14.5px;
-  color: var(--fg-secondary);
-  line-height: 1.65;
-  margin-top: 6px;
-  font-family: var(--font-sans);
-}
-
-.post-footer {
-  display: flex;
-  justify-content: space-between;
-  align-items: center;
-  margin-top: 12px;
-  padding-top: 0;
-  border-top: 0;
-}
-
-.reading-time {
-  font-size: 11.5px;
-  color: var(--fg-muted);
-  font-family: var(--font-mono);
-}
-
-.read-more {
-  font-size: 12.5px;
-  color: var(--fg-secondary);
-  text-decoration: none;
-  font-weight: 500;
-  font-family: var(--font-mono);
-  transition: color 0.15s;
-}
-
-.read-more:hover { color: var(--accent); }
-
-/* === STATS === */
-.stats-section {
-  padding: 24px 0 60px;
-}
-
-.stats-grid {
-  display: grid;
-  grid-template-columns: repeat(4, 1fr);
-  gap: 0;
-  border-top: 1px solid var(--border-soft);
-  border-bottom: 1px solid var(--border-soft);
-}
-
-.stat-card {
-  background: transparent;
-  border: 0;
-  border-right: 1px solid var(--border-soft);
-  border-radius: 0;
-  padding: 24px 16px;
-  text-align: center;
-  transition: none;
-}
-
-.stat-card:last-child { border-right: 0; }
-
-.stat-card:hover {
-  background: transparent;
-  transform: none;
-}
-
-.stat-icon {
-  font-size: 18px;
-  margin-bottom: 10px;
-  filter: grayscale(0.4);
-  opacity: 0.7;
-}
-
-.stat-num {
-  font-family: var(--font-serif);
-  font-size: 28px;
-  font-weight: 700;
-  color: var(--fg-primary);
-  background: none;
-  -webkit-text-fill-color: var(--fg-primary);
-  -webkit-background-clip: initial;
-  line-height: 1;
-  margin-bottom: 6px;
-  letter-spacing: -0.5px;
-}
-
-.stat-label {
-  font-size: 11.5px;
-  color: var(--fg-muted);
-  font-weight: 500;
-  font-family: var(--font-mono);
-  text-transform: uppercase;
-  letter-spacing: 0.4px;
-}
-
-.load-more {
-  text-align: center;
-  margin-top: 40px;
-}
-
-.btn-outline {
-  background: transparent;
-  border: 1px solid var(--border);
-  color: var(--fg-secondary) !important;
-  border-radius: 4px;
-  padding: 9px 22px;
-  font-size: 13.5px;
-  font-weight: 500;
-  text-decoration: none;
-  display: inline-block;
-  transition: all 0.15s;
-  font-family: var(--font-sans);
-}
-
-.btn-outline:hover {
-  background: var(--bg-card);
-  border-color: var(--accent);
-  color: var(--fg-primary) !important;
-  transform: none;
-}
-
-@media (max-width: 768px) {
-  .posts-grid { grid-template-columns: 1fr; }
-  .stats-grid { grid-template-columns: repeat(2, 1fr); }
-  .hero-section { padding: 80px 0 40px; }
-  .stat-card:nth-child(2) { border-right: 0; }
-  .stat-card:nth-child(1),
-  .stat-card:nth-child(2) { border-bottom: 1px solid var(--border-soft); }
-}
-
-@media (max-width: 480px) {
-  .hero-title { font-size: 34px; }
-  .hero-subtitle { font-size: 15px; }
-  .stat-num { font-size: 22px; }
-  .post-title { font-size: 19px; }
-}
-</style>
 {{- end -}}

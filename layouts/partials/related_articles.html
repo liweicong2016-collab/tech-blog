@@ -1,0 +1,14 @@
+{{- $related := .Site.RegularPages | complement (slice .) | first 4 }}
+{{- if $related }}
+<section class="related-articles">
+  <h3 class="related-articles-title">Related Articles</h3>
+  <div class="related-grid">
+    {{- range $related }}
+    <a href="{{ .RelPermalink }}" class="related-card">
+      <div class="related-card-title">{{ .Title }}</div>
+      <div class="related-card-meta">{{ .Date.Format "2006.01.02" }} · {{ math.Round (div (countwords .Content) 400.0) }} min</div>
+    </a>
+    {{- end }}
+  </div>
+</section>
+{{- end }}

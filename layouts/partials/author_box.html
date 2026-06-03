@@ -1,0 +1,10 @@
+{{- $author := site.Params.author | default "Tech Observer" }}
+{{- $authorBio := "深度科技观察者，专注 AI、算力、半导体及东南亚市场分析。" }}
+{{- $avatar := "/images/photo-user-1.jpg" }}
+<div class="author-box">
+  <img src="{{ $avatar }}" alt="{{ $author }}" class="author-avatar" onerror="this.style.display='none'">
+  <div class="author-info">
+    <div class="author-name">{{ $author }}</div>
+    <p class="author-bio">{{ $authorBio }}</p>
+  </div>
+</div>
