@@ -1,0 +1,52 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1200 675" font-family="system-ui, -apple-system, 'PingFang SC', sans-serif">
+  <!-- BG -->
+  <rect width="1200" height="675" fill="#121418"/>
+
+  <!-- Title -->
+  <text x="600" y="60" fill="#DDE2E8" font-size="36" font-weight="700" text-anchor="middle">三条主线决定 2026 MaaS 胜负</text>
+  <text x="600" y="92" fill="#8B92A0" font-size="18" text-anchor="middle">Three Main Lines Reshaping China's MaaS Market</text>
+
+  <!-- 3 axis lines (Y shape) -->
+  <g transform="translate(600, 380)">
+    <!-- Axes -->
+    <line x1="0" y1="0" x2="-300" y2="-180" stroke="#3A4048" stroke-width="2"/>
+    <line x1="0" y1="0" x2="300" y2="-180" stroke="#3A4048" stroke-width="2"/>
+    <line x1="0" y1="0" x2="0" y2="220" stroke="#3A4048" stroke-width="2"/>
+
+    <!-- Center circle -->
+    <circle cx="0" cy="0" r="220" fill="none" stroke="#3A4048" stroke-width="1" stroke-dasharray="4 4"/>
+    <circle cx="0" cy="0" r="140" fill="none" stroke="#3A4048" stroke-width="1" stroke-dasharray="4 4"/>
+    <circle cx="0" cy="0" r="60" fill="none" stroke="#3A4048" stroke-width="1" stroke-dasharray="4 4"/>
+
+    <!-- Node 1: Token 规模化 (top-left) -->
+    <circle cx="-300" cy="-180" r="80" fill="#79B8FF" opacity="0.15"/>
+    <circle cx="-300" cy="-180" r="80" fill="none" stroke="#79B8FF" stroke-width="2"/>
+    <text x="-300" y="-200" fill="#79B8FF" font-size="22" font-weight="700" text-anchor="middle">Token</text>
+    <text x="-300" y="-178" fill="#79B8FF" font-size="22" font-weight="700" text-anchor="middle">规模化</text>
+    <text x="-300" y="-150" fill="#DDE2E8" font-size="14" text-anchor="middle">日均调用量 = 商业化第一指标</text>
+    <text x="-300" y="-130" fill="#A8FFB0" font-size="13" text-anchor="middle">120 万亿 (豆包)</text>
+
+    <!-- Node 2: 成本曲线 (top-right) -->
+    <circle cx="300" cy="-180" r="80" fill="#C778C0" opacity="0.15"/>
+    <circle cx="300" cy="-180" r="80" fill="none" stroke="#C778C0" stroke-width="2"/>
+    <text x="300" y="-200" fill="#C778C0" font-size="22" font-weight="700" text-anchor="middle">成本曲线</text>
+    <text x="300" y="-176" fill="#C778C0" font-size="22" font-weight="700" text-anchor="middle">下探</text>
+    <text x="300" y="-150" fill="#DDE2E8" font-size="14" text-anchor="middle">多层定价锁开发者</text>
+    <text x="300" y="-130" fill="#A8FFB0" font-size="13" text-anchor="middle">Batch / 缓存 / 套餐</text>
+
+    <!-- Node 3: 生态入口 (bottom) -->
+    <circle cx="0" cy="220" r="80" fill="#A8FFB0" opacity="0.15"/>
+    <circle cx="0" cy="220" r="80" fill="none" stroke="#A8FFB0" stroke-width="2"/>
+    <text x="0" y="200" fill="#A8FFB0" font-size="22" font-weight="700" text-anchor="middle">生态入口</text>
+    <text x="0" y="225" fill="#A8FFB0" font-size="22" font-weight="700" text-anchor="middle">重排</text>
+    <text x="0" y="252" fill="#DDE2E8" font-size="14" text-anchor="middle">字节/阿里/腾讯各占位</text>
+    <text x="0" y="272" fill="#A8FFB0" font-size="13" text-anchor="middle">C 端 / 企业 / 微信</text>
+
+    <!-- Center -->
+    <circle cx="0" cy="0" r="14" fill="#DDE2E8"/>
+    <text x="0" y="-30" fill="#8B92A0" font-size="12" text-anchor="middle">MaaS 商业化</text>
+  </g>
+
+  <!-- Footer -->
+  <text x="600" y="640" fill="#5A6170" font-size="13" text-anchor="middle">数据来源：火山引擎 / 阿里云百炼 / 腾讯云 TokenHub 公开报道 (2026)</text>
+</svg>

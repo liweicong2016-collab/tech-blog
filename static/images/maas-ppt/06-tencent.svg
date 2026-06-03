@@ -1,0 +1,67 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1200 675" font-family="system-ui, -apple-system, 'PingFang SC', sans-serif">
+  <rect width="1200" height="675" fill="#121418"/>
+
+  <text x="600" y="55" fill="#DDE2E8" font-size="34" font-weight="700" text-anchor="middle">腾讯混元 + TokenHub</text>
+  <text x="600" y="85" fill="#8B92A0" font-size="16" text-anchor="middle">聚合入口押注 — 自研 + 第三方 + 微信生态</text>
+
+  <!-- Hero: 50-80% 折扣 -->
+  <g transform="translate(600, 200)">
+    <!-- 50% bar -->
+    <rect x="-280" y="0" width="280" height="60" rx="6" fill="#79B8FF" opacity="0.6"/>
+    <text x="-140" y="38" fill="#121418" font-size="22" font-weight="700" text-anchor="middle">套餐 −50%</text>
+
+    <!-- 80% bar -->
+    <rect x="0" y="0" width="280" height="60" rx="6" fill="#79B8FF"/>
+    <text x="140" y="38" fill="#121418" font-size="22" font-weight="700" text-anchor="middle">套餐 −80%</text>
+
+    <text x="0" y="90" fill="#8B92A0" font-size="14" text-anchor="middle">TokenHub 套餐相对按量 API 折扣区间</text>
+  </g>
+
+  <!-- TokenHub platform: central hub + spokes -->
+  <g transform="translate(600, 410)">
+    <!-- Center: TokenHub -->
+    <circle cx="0" cy="0" r="60" fill="#79B8FF" opacity="0.2" stroke="#79B8FF" stroke-width="3"/>
+    <text x="0" y="-5" fill="#79B8FF" font-size="16" font-weight="700" text-anchor="middle">TokenHub</text>
+    <text x="0" y="15" fill="#DDE2E8" font-size="11" text-anchor="middle">统一入口</text>
+
+    <!-- Spokes (5 models) -->
+    <g stroke="#5A6170" stroke-width="1.5" stroke-dasharray="4 3" fill="none">
+      <line x1="0" y1="0" x2="-260" y2="-80"/>
+      <line x1="0" y1="0" x2="260" y2="-80"/>
+      <line x1="0" y1="0" x2="-280" y2="100"/>
+      <line x1="0" y1="0" x2="280" y2="100"/>
+      <line x1="0" y1="0" x2="0" y2="-150"/>
+    </g>
+
+    <g>
+      <circle cx="-260" cy="-80" r="40" fill="#1A1E26" stroke="#C778C0" stroke-width="2"/>
+      <text x="-260" y="-78" fill="#C778C0" font-size="12" font-weight="700" text-anchor="middle">混元</text>
+      <text x="-260" y="-62" fill="#8B92A0" font-size="9" text-anchor="middle">自研</text>
+
+      <circle cx="260" cy="-80" r="40" fill="#1A1E26" stroke="#A8FFB0" stroke-width="2"/>
+      <text x="260" y="-78" fill="#A8FFB0" font-size="12" font-weight="700" text-anchor="middle">Qwen</text>
+      <text x="260" y="-62" fill="#8B92A0" font-size="9" text-anchor="middle">第三方</text>
+
+      <circle cx="-280" cy="100" r="40" fill="#1A1E26" stroke="#FFD580" stroke-width="2"/>
+      <text x="-280" y="102" fill="#FFD580" font-size="12" font-weight="700" text-anchor="middle">豆包</text>
+      <text x="-280" y="118" fill="#8B92A0" font-size="9" text-anchor="middle">第三方</text>
+
+      <circle cx="280" cy="100" r="40" fill="#1A1E26" stroke="#9D7CD8" stroke-width="2"/>
+      <text x="280" y="102" fill="#9D7CD8" font-size="12" font-weight="700" text-anchor="middle">DeepSeek</text>
+      <text x="280" y="118" fill="#8B92A0" font-size="9" text-anchor="middle">第三方</text>
+
+      <circle cx="0" cy="-150" r="40" fill="#1A1E26" stroke="#FF9E64" stroke-width="2"/>
+      <text x="0" y="-148" fill="#FF9E64" font-size="12" font-weight="700" text-anchor="middle">视觉/视频</text>
+      <text x="0" y="-132" fill="#8B92A0" font-size="9" text-anchor="middle">多模态</text>
+    </g>
+  </g>
+
+  <!-- Bottom: Hy3 price -->
+  <g transform="translate(0, 590)">
+    <rect x="350" y="0" width="500" height="50" rx="8" fill="#1A1E26" stroke="#79B8FF" stroke-width="2"/>
+    <text x="600" y="22" fill="#DDE2E8" font-size="14" text-anchor="middle">混元 Hy3 preview 输入价</text>
+    <text x="600" y="42" fill="#79B8FF" font-size="18" font-weight="700" text-anchor="middle">≈ 1.2 元 / 百万 Tokens</text>
+  </g>
+
+  <text x="600" y="660" fill="#5A6170" font-size="12" text-anchor="middle">来源：腾讯云 TokenHub 产品页 / 腾讯云开发者社区 (2026)</text>
+</svg>

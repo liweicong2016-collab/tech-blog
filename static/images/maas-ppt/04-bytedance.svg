@@ -1,0 +1,69 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1200 675" font-family="system-ui, -apple-system, 'PingFang SC', sans-serif">
+  <rect width="1200" height="675" fill="#121418"/>
+
+  <text x="600" y="55" fill="#DDE2E8" font-size="34" font-weight="700" text-anchor="middle">字节火山引擎</text>
+  <text x="600" y="85" fill="#8B92A0" font-size="16" text-anchor="middle">用应用流量 + 低价模型拉 Token 飞轮</text>
+
+  <!-- Hero number -->
+  <rect x="350" y="115" width="500" height="100" rx="12" fill="#79B8FF" opacity="0.12" stroke="#79B8FF" stroke-width="2"/>
+  <text x="600" y="160" fill="#79B8FF" font-size="42" font-weight="700" text-anchor="middle">120 万亿+</text>
+  <text x="600" y="190" fill="#DDE2E8" font-size="15" text-anchor="middle">豆包大模型日均 Token 使用量</text>
+
+  <!-- 5 product entry boxes -->
+  <g transform="translate(0, 250)">
+    <!-- 豆包 -->
+    <rect x="60" y="0" width="200" height="120" rx="10" fill="#1A1E26" stroke="#79B8FF" stroke-width="2"/>
+    <text x="160" y="35" fill="#79B8FF" font-size="20" font-weight="700" text-anchor="middle">豆包 2.0</text>
+    <text x="160" y="62" fill="#8B92A0" font-size="12" text-anchor="middle">Pro / Lite / Mini / Code</text>
+    <text x="160" y="88" fill="#DDE2E8" font-size="12" text-anchor="middle">Agent 编程通用</text>
+    <text x="160" y="106" fill="#A8FFB0" font-size="11" text-anchor="middle">C 端高频入口</text>
+
+    <!-- 抖音 -->
+    <rect x="280" y="0" width="200" height="120" rx="10" fill="#1A1E26" stroke="#79B8FF" stroke-width="2"/>
+    <text x="380" y="35" fill="#79B8FF" font-size="20" font-weight="700" text-anchor="middle">抖音</text>
+    <text x="380" y="62" fill="#8B92A0" font-size="12" text-anchor="middle">短视频 / 内容生成</text>
+    <text x="380" y="88" fill="#DDE2E8" font-size="12" text-anchor="middle">视频大模型调用</text>
+    <text x="380" y="106" fill="#A8FFB0" font-size="11" text-anchor="middle">C 端流量基本盘</text>
+
+    <!-- 即梦 -->
+    <rect x="500" y="0" width="200" height="120" rx="10" fill="#1A1E26" stroke="#79B8FF" stroke-width="2"/>
+    <text x="600" y="35" fill="#79B8FF" font-size="20" font-weight="700" text-anchor="middle">即梦</text>
+    <text x="600" y="62" fill="#8B92A0" font-size="12" text-anchor="middle">AIGC 图像 / 视频</text>
+    <text x="600" y="88" fill="#DDE2E8" font-size="12" text-anchor="middle">创意工具流量</text>
+    <text x="600" y="106" fill="#A8FFB0" font-size="11" text-anchor="middle">内容生成场景</text>
+
+    <!-- TRAE -->
+    <rect x="720" y="0" width="200" height="120" rx="10" fill="#1A1E26" stroke="#79B8FF" stroke-width="2"/>
+    <text x="820" y="35" fill="#79B8FF" font-size="20" font-weight="700" text-anchor="middle">TRAE</text>
+    <text x="820" y="62" fill="#8B92A0" font-size="12" text-anchor="middle">AI IDE / 代码助手</text>
+    <text x="820" y="88" fill="#DDE2E8" font-size="12" text-anchor="middle">代码类 Token 放大</text>
+    <text x="820" y="106" fill="#A8FFB0" font-size="11" text-anchor="middle">开发者心智占领</text>
+
+    <!-- 火山方舟 -->
+    <rect x="940" y="0" width="200" height="120" rx="10" fill="#1A1E26" stroke="#79B8FF" stroke-width="2"/>
+    <text x="1040" y="35" fill="#79B8FF" font-size="20" font-weight="700" text-anchor="middle">火山方舟</text>
+    <text x="1040" y="62" fill="#8B92A0" font-size="12" text-anchor="middle">企业级 MaaS 平台</text>
+    <text x="1040" y="88" fill="#DDE2E8" font-size="12" text-anchor="middle">承接 B 端 API</text>
+    <text x="1040" y="106" fill="#A8FFB0" font-size="11" text-anchor="middle">企业收入转化</text>
+  </g>
+
+  <!-- SWOT bottom -->
+  <g transform="translate(0, 410)">
+    <rect x="60" y="0" width="540" height="160" rx="10" fill="#1A1E26" stroke="#A8FFB0" stroke-width="2" opacity="0.4"/>
+    <text x="330" y="30" fill="#A8FFB0" font-size="16" font-weight="700" text-anchor="middle">✓ 优势</text>
+    <text x="80" y="60" fill="#DDE2E8" font-size="13">· C 端高频入口</text>
+    <text x="80" y="84" fill="#DDE2E8" font-size="13">· 内容生成场景丰富</text>
+    <text x="80" y="108" fill="#DDE2E8" font-size="13">· 价格激进</text>
+    <text x="80" y="132" fill="#DDE2E8" font-size="13">· C 端 + B 端调用飞轮</text>
+
+    <rect x="620" y="0" width="540" height="160" rx="10" fill="#1A1E26" stroke="#C778C0" stroke-width="2" opacity="0.4"/>
+    <text x="890" y="30" fill="#C778C0" font-size="16" font-weight="700" text-anchor="middle">✗ 约束</text>
+    <text x="640" y="60" fill="#DDE2E8" font-size="13">· 企业云心智弱于阿里 / 腾讯</text>
+    <text x="640" y="84" fill="#DDE2E8" font-size="13">· 需证明 SLA</text>
+    <text x="640" y="108" fill="#DDE2E8" font-size="13">· 行业交付能力建设期</text>
+    <text x="640" y="132" fill="#DDE2E8" font-size="13">· 合规与安全挑战</text>
+  </g>
+
+  <!-- Footer -->
+  <text x="600" y="640" fill="#5A6170" font-size="12" text-anchor="middle">来源：新浪科技 / 火山引擎开发者社区 / 豆包 2.0 API (2026)</text>
+</svg>

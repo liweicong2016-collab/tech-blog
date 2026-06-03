@@ -1,0 +1,33 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1200 675" font-family="system-ui, -apple-system, 'PingFang SC', sans-serif">
+  <rect width="1200" height="675" fill="#121418"/>
+
+  <text x="600" y="55" fill="#DDE2E8" font-size="34" font-weight="700" text-anchor="middle">MaaS 从 API 升级为 AI 操作系统</text>
+  <text x="600" y="85" fill="#8B92A0" font-size="16" text-anchor="middle">三层堆栈：模型 → 平台 → 应用</text>
+
+  <!-- Pyramid: 3 layers (top = 应用, middle = 平台, bottom = 模型) -->
+  <g transform="translate(600, 380)">
+    <!-- 应用层 (top, small) -->
+    <polygon points="0,-150 320,-30 -320,-30" fill="#C778C0" opacity="0.18" stroke="#C778C0" stroke-width="2"/>
+    <text x="0" y="-100" fill="#C778C0" font-size="22" font-weight="700" text-anchor="middle">应用层 Application</text>
+    <text x="0" y="-78" fill="#DDE2E8" font-size="13" text-anchor="middle">Agent · 办公 · 客服 · 营销 · 搜索 · 代码生成</text>
+    <text x="0" y="-58" fill="#A8FFB0" font-size="12" text-anchor="middle">价值：订阅 / 增值 / 广告 / 电商转化</text>
+
+    <!-- 平台层 (middle) -->
+    <polygon points="-320,-30 320,-30 480,90 -480,90" fill="#79B8FF" opacity="0.18" stroke="#79B8FF" stroke-width="2"/>
+    <text x="0" y="0" fill="#79B8FF" font-size="22" font-weight="700" text-anchor="middle">平台层 Platform</text>
+    <text x="0" y="22" fill="#DDE2E8" font-size="13" text-anchor="middle">模型市场 · API 网关 · 评测 · 监控 · 数据治理</text>
+    <text x="0" y="42" fill="#A8FFB0" font-size="12" text-anchor="middle">价值：企业合同 / 套餐 / 云资源联动</text>
+    <text x="0" y="68" fill="#8B92A0" font-size="11" text-anchor="middle">竞争：开发体验 · SLA · 合规 · 私有化</text>
+
+    <!-- 模型层 (bottom, wide) -->
+    <polygon points="-480,90 480,90 640,210 -640,210" fill="#A8FFB0" opacity="0.18" stroke="#A8FFB0" stroke-width="2"/>
+    <text x="0" y="120" fill="#A8FFB0" font-size="22" font-weight="700" text-anchor="middle">模型层 Model</text>
+    <text x="0" y="142" fill="#DDE2E8" font-size="13" text-anchor="middle">通用 · 推理 · 代码 · 多模态 · 视频 · 语音</text>
+    <text x="0" y="162" fill="#A8FFB0" font-size="12" text-anchor="middle">价值：按 Token / 任务收费</text>
+    <text x="0" y="188" fill="#8B92A0" font-size="11" text-anchor="middle">竞争：性能 · 成本 · 上下文 · 开源/闭源策略</text>
+  </g>
+
+  <!-- Bottom takeaway -->
+  <rect x="120" y="610" width="960" height="50" rx="8" fill="#1A1E26" stroke="#3A4048" stroke-width="1"/>
+  <text x="600" y="640" fill="#DDE2E8" font-size="15" text-anchor="middle">2026 关键判断：竞争不再是"谁有模型"，而是"谁把模型嵌入企业流程 + 消费者入口"</text>
+</svg>

@@ -1,0 +1,81 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1200 675" font-family="system-ui, -apple-system, 'PingFang SC', sans-serif">
+  <rect width="1200" height="675" fill="#121418"/>
+
+  <text x="600" y="55" fill="#DDE2E8" font-size="34" font-weight="700" text-anchor="middle">主要来源</text>
+  <text x="600" y="85" fill="#8B92A0" font-size="14" text-anchor="middle">7 个权威信源 · 2026 年最新公开数据</text>
+
+  <!-- 7 source cards (2 rows) -->
+  <g transform="translate(40, 130)">
+    <!-- Row 1 -->
+    <g transform="translate(0, 0)">
+      <rect x="0" y="0" width="370" height="160" rx="10" fill="#1A1E26" stroke="#79B8FF" stroke-width="1.5"/>
+      <text x="20" y="32" fill="#79B8FF" font-size="13" font-weight="700">阿里云百炼</text>
+      <text x="20" y="60" fill="#DDE2E8" font-size="12">Qwen 系列价格页</text>
+      <text x="20" y="80" fill="#8B92A0" font-size="11">上下文 / 输入输出 / 思考模式</text>
+      <text x="20" y="100" fill="#8B92A0" font-size="11">Batch / 缓存折扣</text>
+      <line x1="20" y1="115" x2="350" y2="115" stroke="#3A4048" stroke-width="1"/>
+      <text x="20" y="138" fill="#5A6170" font-size="10">help.aliyun.com/zh/model-studio</text>
+    </g>
+
+    <g transform="translate(385, 0)">
+      <rect x="0" y="0" width="370" height="160" rx="10" fill="#1A1E26" stroke="#A8FFB0" stroke-width="1.5"/>
+      <text x="20" y="32" fill="#A8FFB0" font-size="13" font-weight="700">腾讯云 TokenHub</text>
+      <text x="20" y="60" fill="#DDE2E8" font-size="12">统一大模型服务入口</text>
+      <text x="20" y="80" fill="#8B92A0" font-size="11">套餐 50-80% 折扣</text>
+      <text x="20" y="100" fill="#8B92A0" font-size="11">整合混元 + 第三方模型</text>
+      <line x1="20" y1="115" x2="350" y2="115" stroke="#3A4048" stroke-width="1"/>
+      <text x="20" y="138" fill="#5A6170" font-size="10">cloud.tencent.com/product/tokenhub</text>
+    </g>
+
+    <g transform="translate(770, 0)">
+      <rect x="0" y="0" width="370" height="160" rx="10" fill="#1A1E26" stroke="#C778C0" stroke-width="1.5"/>
+      <text x="20" y="32" fill="#C778C0" font-size="13" font-weight="700">腾讯云开发者社区</text>
+      <text x="20" y="60" fill="#DDE2E8" font-size="12">混元 Hy3 preview 开源</text>
+      <text x="20" y="80" fill="#8B92A0" font-size="11">输入价 1.2 元/百万 Tokens</text>
+      <text x="20" y="100" fill="#8B92A0" font-size="11">面向 Agent 开发者 Token Plan</text>
+      <line x1="20" y1="115" x2="350" y2="115" stroke="#3A4048" stroke-width="1"/>
+      <text x="20" y="138" fill="#5A6170" font-size="10">developer.cloud.tencent.com/article/2660040</text>
+    </g>
+
+    <!-- Row 2 -->
+    <g transform="translate(0, 180)">
+      <rect x="0" y="0" width="370" height="160" rx="10" fill="#1A1E26" stroke="#FFD580" stroke-width="1.5"/>
+      <text x="20" y="32" fill="#FFD580" font-size="13" font-weight="700">火山引擎开发者社区</text>
+      <text x="20" y="60" fill="#DDE2E8" font-size="12">豆包 2.0 API</text>
+      <text x="20" y="80" fill="#8B92A0" font-size="11">Pro / Lite / Mini / Code</text>
+      <text x="20" y="100" fill="#8B92A0" font-size="11">Agent / 编程 / 通用</text>
+      <line x1="20" y1="115" x2="350" y2="115" stroke="#3A4048" stroke-width="1"/>
+      <text x="20" y="138" fill="#5A6170" font-size="10">developer.volcengine.com/articles/7610285824933445675</text>
+    </g>
+
+    <g transform="translate(385, 180)">
+      <rect x="0" y="0" width="370" height="160" rx="10" fill="#1A1E26" stroke="#FF9E64" stroke-width="1.5"/>
+      <text x="20" y="32" fill="#FF9E64" font-size="13" font-weight="700">新浪科技</text>
+      <text x="20" y="60" fill="#DDE2E8" font-size="12">豆包日均 Token 使用量</text>
+      <text x="20" y="80" fill="#DDE2E8" font-size="20" font-weight="700">120 万亿+</text>
+      <text x="20" y="108" fill="#8B92A0" font-size="11">2026-04-02 公开报道</text>
+      <line x1="20" y1="120" x2="350" y2="120" stroke="#3A4048" stroke-width="1"/>
+      <text x="20" y="142" fill="#5A6170" font-size="10">finance.sina.com.cn/tech/roll/2026-04-02</text>
+    </g>
+
+    <g transform="translate(770, 180)">
+      <rect x="0" y="0" width="370" height="160" rx="10" fill="#1A1E26" stroke="#9D7CD8" stroke-width="1.5"/>
+      <text x="20" y="32" fill="#9D7CD8" font-size="13" font-weight="700">新浪财经</text>
+      <text x="20" y="60" fill="#DDE2E8" font-size="12">百炼 Token 消耗</text>
+      <text x="20" y="80" fill="#DDE2E8" font-size="20" font-weight="700">三个月 ↑ 6×</text>
+      <text x="20" y="108" fill="#8B92A0" font-size="11">2026-03-19 公开报道</text>
+      <line x1="20" y1="120" x2="350" y2="120" stroke="#3A4048" stroke-width="1"/>
+      <text x="20" y="142" fill="#5A6170" font-size="10">finance.sina.com.cn/tob/2026-03-19</text>
+    </g>
+  </g>
+
+  <!-- Bottom: 每经网 -->
+  <g transform="translate(40, 500)">
+    <rect x="0" y="0" width="1120" height="100" rx="10" fill="#1A1E26" stroke="#5A6170" stroke-width="1.5"/>
+    <text x="30" y="38" fill="#DDE2E8" font-size="14" font-weight="700">每经网 — 阿里云 MaaS 与 Agent 叙事</text>
+    <text x="30" y="65" fill="#8B92A0" font-size="12">全栈布局分析 · 阿里试图把 Token 收入与云资源消耗绑定</text>
+    <text x="30" y="88" fill="#5A6170" font-size="11">nbd.com.cn/articles/2026-05-21/4402582.html</text>
+  </g>
+
+  <text x="600" y="640" fill="#5A6170" font-size="11" text-anchor="middle">Sources checked in June 2026 · 7 权威信源 · 全部为公开可验证</text>
+</svg>
