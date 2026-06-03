@@ -27,6 +27,17 @@ ShowToc: true
   <strong>这是一个反常识的案例</strong>。2026 年 2 月 10 日发布、4 个月内单月销售突破 10 亿元；它不是"消费级 App"（小红书/抖音/视频号上的创作者根本用不到 API），而是<strong>一个纯 B2B API</strong>，客户<strong>几乎全是 AI 短剧公司</strong>。本文拆解它怎么变现、谁在付钱、为什么对手追不上、以及对中国 MaaS 战场的终局意义。
 </div>
 
+<div class="bis-signal">
+<h3>💡 Key Takeaways</h3>
+<ul>
+  <li><strong>B2B API 是视频模型变现的正确路径</strong> — C 端创作者用即梦/小云雀（订阅/免费），B 端短剧公司用 API（Token计费）；两个市场互不重叠，月销10亿全部来自后者</li>
+  <li><strong>视频模型收入量级已超过所有LLM通用模型</strong> — 模型甲 ARR 保守测算150亿，是字节MaaS 2026目标150亿的100%，超过任何单一LLM公司收入</li>
+  <li><strong>58%的AI短剧产值流向生成环节</strong> — 短剧公司付得起钱，因为用户ARPU 10-50元、复购率高、投流ROI为正，AI替代真人拍摄成本后整体ROI依然为正</li>
+  <li><strong>4.4倍差距意味着用户根本没在试可灵</strong> — 可灵ARR 34亿 vs 模型甲150亿；切换成本（3-6个月工作流重写、数千万产能损失）让短剧公司不可能迁移</li>
+  <li><strong>视频生成赛道的单点战争已结束</strong> — 模型甲在某头部视频云渠道事实垄断；其他云厂商应转打多模态组合、行业方案和Agent平台</li>
+</ul>
+</div>
+
 <!-- ============ MOD-01 一图速览 ============ -->
 <div class="bis-section">
 <h2><span class="num">1</span>一图速览 — 2026/6/3 公开数据</h2>

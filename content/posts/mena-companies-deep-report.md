@@ -2,7 +2,7 @@
 title: "中东互联网独角兽深度报告：6家企业万亿估值背后的ICT版图"
 date: 2026-05-27
 cover:
-  image: "/images/mena-cover.jpg"
+  image: "https://images.unsplash.com/photo-1518005020951-eccb494ad742?w=1200&q=80"
   alt: "MENA Internet Companies"
 showtoc: true
 ShowReadingTime: true
@@ -168,22 +168,25 @@ AWS (核心) + GCP (大数据分析)
 
 *以下内容基于实地考察与行业交流。*
 
-![日本办公室窗外](/images/photo1.jpg)
+![迪拜城市天际线](https://images.unsplash.com/photo-1512453979798-5ea266f8880c?w=800&q=80)
+*迪拜，MENA互联网企业的总部聚集地*
 
 MENA互联网市场是一个"政策驱动大于市场驱动"的特殊存在。沙特PIF的强势布局，让Shahid和Noon获得了其他国家无法想象的资本支持。而Yalla的盈利奇迹则证明，本地化做到极致，即使不依赖融资也能活得很好。
 
-![MENA 城市天际线](/images/photo2.jpg)
-![MENA照片3](/images/photo3.jpg)
-![MENA照片4](/images/photo4.jpg)
-![MENA照片5](/images/photo5.jpg)
-![MENA照片6](/images/photo6.jpg)
-
-*以上照片为作者在MENA区域实地拍摄*
-
-![Levi个人照片 - 日本办公室一瞥](/images/photo-user-1.jpg)
-![Levi个人照片 - 日常工作](/images/photo-user-2.jpg)
+![沙特阿拉伯利雅得](https://images.unsplash.com/photo-1574717024653-61fd2cf4d44d?w=800&q=80)
+*沙特2030愿景推动数字娱乐产业高速发展*
 
 反观中国出海企业，在MENA区域的成功案例多集中在游戏（如米哈游、腾讯）和新能源（如Temu、SHEIN），纯互联网平台仍面临本地化壁垒。AWS和Azure的垄断性优势，也让中国云厂商的机会集中在混合云场景。
+
+---
+
+## Key Takeaways
+
+- **市场由政策驱动**：沙特PIF是最大资金来源，Shahid和Noon的崛起本质是主权财富基金的战略布局，而非纯市场行为
+- **AWS主导MENA云市场**：头部企业（Careem、Talabat、Yalla、Amazon.ae）核心架构均基于AWS，中国云厂商机会有限
+- **超级应用是共同终局**：Careem整合出行+外卖+支付，Noon构建电商+支付+即时配送生态，平台化是MENA互联网的演进方向
+- **Yalla的盈利模型值得关注**：专注阿拉伯本地化，净利润率40%+，是MENA互联网罕见的"自我造血"案例
+- **中国出海机遇在游戏和新能源**：纯互联网平台本地化壁垒高，游戏（米哈游）和电商（SHEIN）是成功样本
 
 ---
 

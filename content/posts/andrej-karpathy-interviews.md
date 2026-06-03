@@ -2,7 +2,7 @@
 title: "Andrej Karpathy 访谈与演讲全记录"
 date: 2026-05-28
 cover:
-  image: "/images/karpathy-cover.jpg"
+  image: "https://images.unsplash.com/photo-1677442135703-1787eea5ce01?w=1200&q=80"
   alt: "Andrej Karpathy"
 showtoc: true
 ShowReadingTime: true
@@ -18,6 +18,10 @@ tags:
 # Andrej Karpathy 访谈与演讲全记录
 
 **作者：AI Observer | 2026年5月**
+
+
+![Andrej Karpathy - AI Researcher](https://images.unsplash.com/photo-1677442135703-1787eea5ce01?w=800&q=80)
+*Andrej Karpathy，OpenAI 创始成员、Tesla AI 高级总监、AI 教育先驱*
 
 > Andrej Karpathy 是人工智能领域的知名研究员、工程师和教育家，曾任 Tesla AI 高级总监、OpenAI 创始成员，并创立了 AI 教育公司 Eureka Labs。本文全面汇总了他在播客、会议演讲、媒体专访等不同平台的访谈和演讲记录。
 
@@ -82,7 +86,7 @@ tags:
 
 ## 关于 Andrej Karpathy
 
-Andrej Karpathy 是人工智能领域最具影响力的研究者之一：
+Andrej Karpathy 是人工智能领域最具影响力的研究者之一，横跨学术、工程和教育多个方向：
 
 - **OpenAI 创始成员**（2015-2017），参与 GPT-1/GPT-2 早期研发
 - **Tesla AI 高级总监**（2017-2022），主导 Autopilot/FSD 计算机视觉架构
@@ -91,9 +95,19 @@ Andrej Karpathy 是人工智能领域最具影响力的研究者之一：
 
 **核心观点摘录：**
 
+
 > "AGI is still a decade away — we're summoning ghosts, not building animals." — 2025年10月 Dwarkesh Podcast
 
 > "Software is changing again" — Software 3.0 时代，神经网络成为新的编程范式
+
+---
+
+## Key Takeaways
+
+- Karpathy 将 AGI 时间线定在「十年之外」，其著名的「召唤幽灵，而非构建动物」比喻深刻揭示了当前 AI 发展的本质
+- 他是 AI 教育领域最具影响力的布道者，Zero to Hero 系列视频是深度学习入门必看资源
+- 从 Tesla Autopilot 到 Eureka Labs，Karpathy 的职业轨迹折射出 AI 从学术研究走向大规模产品化的完整路径
+- Software 3.0 理念是他的核心框架：神经网络替代传统代码，成为新的编程范式
 
 ---
 

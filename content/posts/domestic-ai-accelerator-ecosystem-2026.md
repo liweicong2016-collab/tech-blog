@@ -27,6 +27,17 @@ ShowToc: true
 ⚠️ <strong>最大误解</strong>：国产 AI 加速器 ≠ 只跑 FP16。本文用真实下载数据 + 30 个原生模型快照，证明整条 INT4/INT8/旋转量化/MTP 优化栈已经做齐，对位 NVIDIA TensorRT-LLM。这不是 PPT，这是 GitCode 上正在跑的事实。
 </div>
 
+<div class="bis-signal">
+<h3>💡 Key Takeaways</h3>
+<ul>
+  <li><strong>6,841 个模型</strong>已在平台沉淀，头部集中度高（TOP 1 占首屏30模型累计下载的29%），明星模型已形成</li>
+  <li><strong>量化栈完整</strong>：W4A8、W8A8、QuaRot、MTP、Flash/Turbo 全覆盖，直接对位 NVIDIA TensorRT-LLM 生态</li>
+  <li><strong>推理框架兼容</strong>：vLLM Ascend + SGLang Ascend 已适配，现有 PyTorch 代码 0 改动即可运行</li>
+  <li><strong>6 大任务族全覆盖</strong>：通用LLM、代码LLM、多模态VLM、语音ASR/TTS、视觉/OCR、行业垂直</li>
+  <li><strong>2026年重点方向是工业视觉</strong>：PatchCore、WinCLIP、YOLOv10 三天内连发，制造/质检是核心目标场景</li>
+</ul>
+</div>
+
 <!-- ============ MOD-01 生态规模 ============ -->
 <div class="bis-section">
 <h2><span class="num">1</span>生态规模 — 一个被低估的平台</h2>

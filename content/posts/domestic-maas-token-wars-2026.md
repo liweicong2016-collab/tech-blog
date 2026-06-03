@@ -27,6 +27,17 @@ ShowToc: true
 ⚠️ <strong>2026 年行业共识已经清晰</strong>：做出顶尖模型 = 拉高 Token 消耗 + 客户付费意愿的最好方式。LLM 通用赛道已饱和，<strong>Coding（代码模型）+ 视频模型</strong>成为两条赚钱主战场。本文基于 2026/6/3 公开行业报道还原 MaaS 业务全貌。
 </div>
 
+<div class="bis-signal">
+<h3>💡 Key Takeaways</h3>
+<ul>
+  <li><strong>视频模型：单点战争已结束</strong> — 模型甲在某头部视频云 ARR 保守测算 150 亿+，短剧行业渗透率 95%，形成事实垄断；可灵 ARR 仅 34 亿，差距 4.4 倍</li>
+  <li><strong>Coding 模型：涨价不掉量</strong> — 某头部 Coding 公司 Q1 涨价 83%，同时调用量增长 400%，首次在核心场景实现与海外头部价格对齐</li>
+  <li><strong>LLM 通用赛道已被地板价击穿</strong> — 未来属于顶尖模型 + 行业渗透，而非价格竞争</li>
+  <li><strong>灰姑娘水晶鞋效应</strong>：AI 模型先发优势极强，早期用户黏性极高，解释了为何头部模型敢持续涨价</li>
+  <li><strong>平台战争远未结束</strong>：单点模型胜负已分，但整体 MaaS 平台（多模态/API编排/行业方案）的战争预计 2026 Q3 才见分晓</li>
+</ul>
+</div>
+
 <div class="bis-update">
   <span class="tag">📌 6/3 数据更新</span>
   <p>公开数据显示，<strong>某视频模型（模型甲）在某头部视频云渠道月销 10 亿元</strong>，推算 ARR 150 亿+；AI 短剧年产值 220-300 亿元，模型甲一家约占 58%。详见 <a href="#mod-02-deep">2.4 章 短剧经济解剖</a> 与 <a href="#mod-06-extreme">6.2 章 水晶鞋极端案例</a>，并参考关联案例博客 <a href="/tech-blog/posts/ai-short-drama-260-billion-market-revenue-case-2026/"><strong>《AI 短剧 260 亿市场：视频大模型如何变现》</strong></a>。
