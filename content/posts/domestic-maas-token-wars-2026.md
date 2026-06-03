@@ -27,6 +27,12 @@ ShowToc: true
 ⚠️ <strong>2026 年行业共识已经清晰</strong>：做出顶尖模型 = 拉高 Token 消耗 + 客户付费意愿的最好方式。LLM 通用赛道已饱和，<strong>Coding（代码模型）+ 视频模型</strong>成为两条赚钱主战场。本文基于 2026/6/3 公开行业报道还原 MaaS 业务全貌。
 </div>
 
+<div class="bis-update">
+  <span class="tag">📌 6/3 数据更新</span>
+  <p>公开数据显示，<strong>某视频模型（模型甲）在某头部视频云渠道月销 10 亿元</strong>，推算 ARR 150 亿+；AI 短剧年产值 220-300 亿元，模型甲一家约占 58%。详见 <a href="#mod-02-deep">2.4 章 短剧经济解剖</a> 与 <a href="#mod-06-extreme">6.2 章 水晶鞋极端案例</a>，并参考关联案例博客 <a href="/tech-blog/posts/ai-short-drama-260-billion-market-revenue-case-2026/"><strong>《AI 短剧 260 亿市场：视频大模型如何变现》</strong></a>。
+  </p>
+</div>
+
 <!-- ============ MOD-01 一图速览 ============ -->
 <div class="bis-section">
 <h2><span class="num">1</span>一图速览 — 2026 MaaS 战场数据</h2>
@@ -112,6 +118,88 @@ ShowToc: true
   <li>2026 目标：全球第 1</li>
 </ul>
 </div>
+
+<!-- ============ MOD-02-Deep 短剧经济解剖 ============ -->
+<div class="bis-section" id="mod-02-deep">
+<h2><span class="num">2.5</span>短剧经济解剖 — 模型甲 10 亿月销的真正来源</h2>
+
+<p>2026/6/3 公开行业数据显示：<strong>模型甲在某头部视频云的月销已达 10 亿元</strong>（≈ARR 120 亿）。考虑三大变量后，<strong>保守 ARR 测算 150 亿+</strong>：</p>
+
+<div class="bis-table-wrap">
+<table class="bis-table">
+  <thead>
+    <tr>
+      <th>变量</th>
+      <th>贡献</th>
+      <th>说明</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr>
+      <td>基础月销（某头部视频云渠道）</td>
+      <td>10 亿元</td>
+      <td>数据披露点</td>
+    </tr>
+    <tr>
+      <td>爬升期加权</td>
+      <td>+20-30%</td>
+      <td>业务在涨</td>
+    </tr>
+    <tr>
+      <td>第三方渠道</td>
+      <td>+15-20%</td>
+      <td>部分授权代理</td>
+    </tr>
+    <tr>
+      <td>海外未全量</td>
+      <td>+30-50%</td>
+      <td>海外正式上线后增量</td>
+    </tr>
+    <tr>
+      <td><strong>保守 ARR 测算</strong></td>
+      <td><strong>~150 亿元</strong></td>
+      <td>中性偏下</td>
+    </tr>
+  </tbody>
+</table>
+</div>
+
+<p><strong>横向对比：可灵 ARR 34 亿</strong>（快手公开披露），模型甲是其 <strong>4.4 倍</strong>。差距源于：</p>
+
+<ul>
+  <li>短剧场景几乎由模型甲垄断，<strong>95% 渗透率</strong>是事实标准</li>
+  <li>创作者端（小红书/抖音/视频号 C 端）由即梦、小云雀等"够用模型"覆盖，<strong>创作者根本用不到 API 计费</strong></li>
+  <li>走 API 的<strong>几乎全是 AI 短剧公司</strong>——需要批量化、可控成本、5 秒以上视频片段生成</li>
+</ul>
+
+<div class="bis-punchline">
+<h2>💰 中国 AI 短剧 260 亿市场，模型甲一家吃 ~58%</h2>
+<p style="font-size:15.5px;line-height:1.7;margin:0">
+  <strong>2026 年中国 AI 短剧年产值 220-300 亿元（中值 260 亿元）</strong>。模型甲 ARR 150 亿 ÷ 短剧产值 260 亿 = <strong>~58%</strong>。这意味着 AI 短剧产业链上每赚 1 元，其中 6 角是直接付给模型甲的 API Token 费。<br><br>
+  <strong>剩下的 4 角</strong>：剧本/分镜/演员替换/配音/分发/投流，<strong>但生成环节</strong>已基本被模型甲<strong>事实上垄断</strong>。
+</p>
+</div>
+
+<p><strong>某头部视频云的反应</strong>：</p>
+
+<ul>
+  <li><strong>2025 年底</strong> MaaS 营收目标：100 亿元</li>
+  <li><strong>2026 年 4 月</strong> 上调至：<strong>150 亿元</strong>（去年 15 亿的 10 倍）</li>
+  <li>2025 实际：~15 亿元 → 2026 目标 150 亿元 = <strong>10x 同比增长</strong></li>
+  <li>核心驱动：模型甲 ARR 单点就占 150 亿中的 ~100%（其他视频模型合计贡献占比小）</li>
+</ul>
+
+<div class="bis-quote">
+"兄弟们的判断：<strong>中国云厂商在 MaaS 市场的战争，至少在今年，是已经提前结束了</strong>。" —— 2026/6/3 行业讨论
+</div>
+
+<p><strong>对此判断的拆解</strong>：</p>
+
+<ul>
+  <li>✅ <strong>成立的部分</strong>：<strong>单点视频模型</strong>（视频生成赛道），模型甲在某头部视频云渠道事实上已无对手</li>
+  <li>⚠️ <strong>不成立的部分</strong>：<strong>整体 MaaS 平台</strong>（多模态、API 编排、行业方案），公司 B/公司 C 仍在持续投入，2026 Q3 才会见分晓</li>
+  <li>📊 <strong>更准确表述</strong>：<strong>"单点模型"（视频生成）的战争在某头部视频云渠道已赢；"整体 MaaS 平台"的战争远远没结束</strong></li>
+</ul>
 </div>
 
 <!-- ============ MOD-03 Coding 模型线 ============ -->
@@ -248,6 +336,47 @@ ShowToc: true
   <li>解释了为什么 Coding 模型能涨价不掉量（用户已被绑定）</li>
   <li>解释了为什么某视频模型 95% 渗透短剧行业后形成事实标准</li>
 </ul>
+
+<!-- ============ MOD-06-Extreme 水晶鞋极端案例 ============ -->
+<div class="bis-signal" id="mod-06-extreme">
+<h3>👠 6.1 水晶鞋的极端案例 — 模型甲的 150 亿 ARR 经济学</h3>
+<p>水晶鞋效应在模型甲身上达到了<strong>极端形态</strong>——已经不是"用户黏性高"，而是"用户<strong>根本没得选</strong>"：</p>
+
+<ul>
+  <li><strong>短剧 API 调用 95% 由模型甲承担</strong>（"短剧从业者很难不是模型甲用户"）</li>
+  <li>对手可灵 ARR 34 亿 = 模型甲的 0.22 倍，<strong>差距已是 4.4 倍</strong>，不是 4.4%</li>
+  <li>短剧公司切换模型的边际成本极高：
+    <ul>
+      <li>Prompt 工程 / 分镜 / 角色一致性的工作流都是按模型甲的接口重新做的</li>
+      <li>团队的 prompt 知识资产沉淀在模型甲上</li>
+      <li>下游分销渠道（红果、点众、九州）的内容也认模型甲出品的"质感"</li>
+    </ul>
+  </li>
+  <li>因此<strong>模型甲不是单纯"涨价不掉量"</strong>，而是"涨价<strong>没法</strong>被替代"</li>
+</ul>
+
+<p><strong>对比 Coding 模型</strong>（涨价不掉量）：</p>
+
+<ul>
+  <li>Coding 模型有<strong>多家头部</strong>（公司 X + 公司 Y + 创业公司 Z），用户能切换</li>
+  <li>模型甲在视频生成赛道<strong>几乎一家独大</strong>，用户<strong>切换成本</strong>远超 Coding</li>
+  <li>结论：<strong>视频模型的护城河比 Coding 更深</strong>，单点战争的结束时间更早</li>
+</ul>
+
+<p><strong>给竞争者（可灵）的启示</strong>：</p>
+
+<ul>
+  <li>❌ <strong>不能</strong>用价格战抢用户（模型甲 ARR 150 亿 vs 可灵 34 亿，<strong>价格战=自杀</strong>）</li>
+  <li>✅ <strong>应该</strong>切<strong>模型甲没覆盖的细分场景</strong>：
+    <ul>
+      <li>超长视频（5 分钟以上连续剧情）</li>
+      <li>3D / 虚拟人 / 数字孪生（短剧外的工业场景）</li>
+      <li>海外华人 / 东南亚市场（模型甲海外未全量）</li>
+    </ul>
+  </li>
+  <li>✅ <strong>应该</strong>走<strong>开源 / 本地部署</strong>路线（避开与模型甲的正面 API 竞争）</li>
+</ul>
+</div>
 </div>
 
 <!-- ============ MOD-07 一句话总结 + 数据局限 ============ -->
@@ -255,9 +384,10 @@ ShowToc: true
 <h2><span class="num">7</span>结论与数据局限</h2>
 
 <div class="bis-punchline">
-<h2>🎯 一句话总结</h2>
+<h2>🎯 一句话总结（v2 修订）</h2>
 <p style="font-size:16px;line-height:1.7;margin:0">
-<strong>2026 年 MaaS 战场已分裂为 Coding + 视频两条线</strong>，头部公司能涨价 83% 同时调用量增 400%，说明头部 AI 模型已具备<strong>"提价不掉量"</strong>的护城河；视频模型依靠 95% 行业渗透形成事实标准，营收爆发可期；<strong>LLM 通用赛道已被地板价击穿</strong>，未来属于顶尖模型 + 行业渗透。
+  <strong>2026 年 MaaS 战场已分裂为 Coding + 视频两条线</strong>，头部公司能涨价 83% 同时调用量增 400%，说明头部 AI 模型已具备<strong>"提价不掉量"</strong>的护城河；视频模型依靠 95% 行业渗透形成事实标准，<strong>ARR 150 亿</strong>，某头部视频云 MaaS 目标上调至 150 亿；<strong>LLM 通用赛道已被地板价击穿</strong>，未来属于顶尖模型 + 行业渗透。<br><br>
+  <strong>关键修订</strong>：在视频生成赛道，<strong>单点战争的胜负已分</strong>，模型甲在某头部视频云渠道事实上已无对手；但在<strong>整体 MaaS 平台</strong>（多模态 / API 编排 / 行业方案）层面，公司 B/公司 C 仍在持续投入，<strong>真正的平台战争 2026 Q3 才会见分晓</strong>。
 </p>
 </div>
 
