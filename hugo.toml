@@ -39,14 +39,9 @@ theme = ["PaperMod"]
 
   customCSS = ["css/custom.css"]
 
-  [params.assets]
-    disableHLJS = false
-    favicon = "/favicon.svg"
-
   [params.label]
     text = "Livius's Tech Pulse"
-    icon = "/tech-blog/favicon.svg"
-    iconHeight = 35
+
 
   # PaperMod cover
   cover.imageWithParticles = false
