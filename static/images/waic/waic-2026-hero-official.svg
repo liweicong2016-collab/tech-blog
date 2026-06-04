@@ -1,0 +1,99 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1200 500">
+  <defs>
+    <linearGradient id="bgGrad" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" stop-color="#0B1426"/>
+      <stop offset="100%" stop-color="#0F1D35"/>
+    </linearGradient>
+    <radialGradient id="sphereGrad" cx="40%" cy="35%" r="60%">
+      <stop offset="0%" stop-color="#9B7BFF"/>
+      <stop offset="40%" stop-color="#7B5CF5"/>
+      <stop offset="80%" stop-color="#4A90D9"/>
+      <stop offset="100%" stop-color="#2A5AAA"/>
+    </radialGradient>
+    <radialGradient id="sphereOuter" cx="50%" cy="50%" r="50%">
+      <stop offset="60%" stop-color="#7B5CF5" stop-opacity="0"/>
+      <stop offset="85%" stop-color="#7B5CF5" stop-opacity="0.15"/>
+      <stop offset="100%" stop-color="#7B5CF5" stop-opacity="0"/>
+    </radialGradient>
+    <filter id="sphereGlow">
+      <feGaussianBlur stdDeviation="8" result="blur"/>
+      <feMerge><feMergeNode in="blur"/><feMergeNode in="SourceGraphic"/></feMerge>
+    </filter>
+    <filter id="softGlow">
+      <feGaussianBlur stdDeviation="4" result="blur"/>
+      <feMerge><feMergeNode in="blur"/><feMergeNode in="SourceGraphic"/></feMerge>
+    </filter>
+    <filter id="textGlow">
+      <feGaussianBlur stdDeviation="3" result="blur"/>
+      <feMerge><feMergeNode in="blur"/><feMergeNode in="SourceGraphic"/></feMerge>
+    </filter>
+    <linearGradient id="lineGrad" x1="0%" y1="0%" x2="100%" y2="0%">
+      <stop offset="0%" stop-color="#7B5CF5" stop-opacity="0"/>
+      <stop offset="30%" stop-color="#7B5CF5" stop-opacity="0.5"/>
+      <stop offset="70%" stop-color="#7B5CF5" stop-opacity="0.5"/>
+      <stop offset="100%" stop-color="#7B5CF5" stop-opacity="0"/>
+    </linearGradient>
+    <linearGradient id="orbLine" x1="0%" y1="0%" x2="100%" y2="0%">
+      <stop offset="0%" stop-color="#00D4FF" stop-opacity="0"/>
+      <stop offset="50%" stop-color="#00D4FF" stop-opacity="0.6"/>
+      <stop offset="100%" stop-color="#00D4FF" stop-opacity="0"/>
+    </linearGradient>
+  </defs>
+
+  <!-- Background -->
+  <rect width="1200" height="500" fill="url(#bgGrad)"/>
+
+  <!-- Subtle grid -->
+  <g stroke="#FFFFFF" stroke-opacity="0.03" stroke-width="1">
+    <line x1="0" y1="125" x2="1200" y2="125"/>
+    <line x1="0" y1="250" x2="1200" y2="250"/>
+    <line x1="0" y1="375" x2="1200" y2="375"/>
+    <line x1="300" y1="0" x2="300" y2="500"/>
+    <line x1="600" y1="0" x2="600" y2="500"/>
+    <line x1="900" y1="0" x2="900" y2="500"/>
+  </g>
+
+  <!-- Outer glow ring -->
+  <circle cx="600" cy="210" r="200" fill="url(#sphereOuter)"/>
+
+  <!-- Main sphere -->
+  <circle cx="600" cy="210" r="140" fill="url(#sphereGrad)" filter="url(#sphereGlow)"/>
+
+  <!-- Inner highlight -->
+  <ellipse cx="560" cy="170" rx="50" ry="35" fill="#FFFFFF" opacity="0.08"/>
+
+  <!-- Orbital ring -->
+  <ellipse cx="600" cy="210" rx="220" ry="80" fill="none" stroke="url(#orbLine)" stroke-width="1.5"/>
+  <ellipse cx="600" cy="210" rx="260" ry="100" fill="none" stroke="#00D4FF" stroke-opacity="0.08" stroke-width="1"/>
+
+  <!-- Floating node dots -->
+  <circle cx="380" cy="170" r="6" fill="#00D4FF" opacity="0.6" filter="url(#softGlow)"/>
+  <circle cx="820" cy="250" r="5" fill="#7B5CF5" opacity="0.7" filter="url(#softGlow)"/>
+  <circle cx="430" cy="300" r="4" fill="#00D4FF" opacity="0.5"/>
+  <circle cx="770" cy="160" r="4" fill="#7B5CF5" opacity="0.6"/>
+  <circle cx="350" cy="240" r="3" fill="#00D4FF" opacity="0.4"/>
+  <circle cx="850" cy="190" r="3" fill="#7B5CF5" opacity="0.5"/>
+
+  <!-- Connecting orbital path -->
+  <path d="M380 170 Q600 80 820 250" fill="none" stroke="#00D4FF" stroke-opacity="0.15" stroke-width="1" stroke-dasharray="6,4"/>
+
+  <!-- Main title -->
+  <text x="600" y="400" text-anchor="middle" font-family="Arial, sans-serif" font-size="88" font-weight="900" fill="#FFFFFF" letter-spacing="6" filter="url(#textGlow)">WAIC 2026</text>
+
+  <!-- Subtitle -->
+  <text x="600" y="450" text-anchor="middle" font-family="Arial, sans-serif" font-size="24" font-weight="300" fill="#00D4FF" letter-spacing="10">世界人工智能大会</text>
+
+  <!-- Date & location -->
+  <text x="600" y="480" text-anchor="middle" font-family="Arial, sans-serif" font-size="13" fill="#A8B8D8" letter-spacing="4">2026.07.17 — 20  ·  中国 · 上海  ·  世博展览馆</text>
+
+  <!-- Bottom decorative line -->
+  <line x1="300" y1="492" x2="900" y2="492" stroke="url(#lineGrad)" stroke-width="1"/>
+
+  <!-- Corner L-shapes -->
+  <g stroke="#7B5CF5" stroke-opacity="0.3" stroke-width="1.5" fill="none">
+    <path d="M20 20 L20 50 M20 20 L50 20"/>
+    <path d="M1180 20 L1180 50 M1180 20 L1150 20"/>
+    <path d="M20 480 L20 450 M20 480 L50 480"/>
+    <path d="M1180 480 L1180 450 M1180 480 L1150 480"/>
+  </g>
+</svg>

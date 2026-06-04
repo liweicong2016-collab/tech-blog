@@ -1,0 +1,102 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1000 400">
+  <defs>
+    <linearGradient id="bgGrad3" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" stop-color="#0B1426"/>
+      <stop offset="100%" stop-color="#0F1D35"/>
+    </linearGradient>
+    <linearGradient id="nodeGrad" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" stop-color="#4A90D9"/>
+      <stop offset="100%" stop-color="#7B5CF5"/>
+    </linearGradient>
+    <radialGradient id="glowGrad" cx="50%" cy="50%" r="50%">
+      <stop offset="0%" stop-color="#7B5CF5" stop-opacity="0.4"/>
+      <stop offset="100%" stop-color="#7B5CF5" stop-opacity="0"/>
+    </radialGradient>
+    <filter id="nodeGlow">
+      <feGaussianBlur stdDeviation="5" result="blur"/>
+      <feMerge><feMergeNode in="blur"/><feMergeNode in="SourceGraphic"/></feMerge>
+    </filter>
+    <filter id="softGlow3">
+      <feGaussianBlur stdDeviation="3" result="blur"/>
+      <feMerge><feMergeNode in="blur"/><feMergeNode in="SourceGraphic"/></feMerge>
+    </filter>
+  </defs>
+  <rect width="1000" height="400" fill="url(#bgGrad3)"/>
+
+  <!-- Title -->
+  <text x="500" y="35" text-anchor="middle" font-family="Arial, sans-serif" font-size="15" font-weight="700" fill="#FFFFFF" letter-spacing="5">WAIC 八年历程</text>
+  <text x="500" y="55" text-anchor="middle" font-family="Arial, sans-serif" font-size="10" fill="#7B5CF5" letter-spacing="4">WORLD ARTIFICIAL INTELLIGENCE CONFERENCE · 2018-2026</text>
+
+  <!-- Timeline baseline -->
+  <line x1="55" y1="200" x2="945" y2="200" stroke="#7B5CF5" stroke-opacity="0.15" stroke-width="2"/>
+  <line x1="55" y1="200" x2="945" y2="200" stroke="url(#nodeGrad)" stroke-width="2" stroke-opacity="0.3"/>
+
+  <!-- Year nodes: x positions = 55 + i*111, i=0..8 -->
+  <!-- 2018 -->
+  <circle cx="55" cy="200" r="6" fill="#4A90D9" opacity="0.6"/>
+  <line x1="55" y1="200" x2="55" y2="220" stroke="#4A90D9" stroke-opacity="0.3" stroke-width="1"/>
+  <text x="55" y="238" text-anchor="middle" font-family="Arial, sans-serif" font-size="11" font-weight="700" fill="#4A90D9">2018</text>
+  <text x="55" y="254" text-anchor="middle" font-family="Arial, sans-serif" font-size="8" fill="#A8B8D8" opacity="0.7">人工智能</text>
+  <text x="55" y="266" text-anchor="middle" font-family="Arial, sans-serif" font-size="8" fill="#A8B8D8" opacity="0.7">赋能新时代</text>
+
+  <!-- 2019 -->
+  <circle cx="166" cy="200" r="6" fill="#4A90D9" opacity="0.6"/>
+  <line x1="166" y1="200" x2="166" y2="220" stroke="#4A90D9" stroke-opacity="0.3" stroke-width="1"/>
+  <text x="166" y="238" text-anchor="middle" font-family="Arial, sans-serif" font-size="11" font-weight="700" fill="#4A90D9">2019</text>
+  <text x="166" y="254" text-anchor="middle" font-family="Arial, sans-serif" font-size="8" fill="#A8B8D8" opacity="0.7">智联世界</text>
+  <text x="166" y="266" text-anchor="middle" font-family="Arial, sans-serif" font-size="8" fill="#A8B8D8" opacity="0.7">无限可能</text>
+
+  <!-- 2020 -->
+  <circle cx="277" cy="200" r="6" fill="#5B8FD9" opacity="0.65"/>
+  <line x1="277" y1="200" x2="277" y2="220" stroke="#5B8FD9" stroke-opacity="0.3" stroke-width="1"/>
+  <text x="277" y="238" text-anchor="middle" font-family="Arial, sans-serif" font-size="11" font-weight="700" fill="#5B8FD9">2020</text>
+  <text x="277" y="254" text-anchor="middle" font-family="Arial, sans-serif" font-size="8" fill="#A8B8D8" opacity="0.7">智能世界</text>
+  <text x="277" y="266" text-anchor="middle" font-family="Arial, sans-serif" font-size="8" fill="#A8B8D8" opacity="0.7">共同家园</text>
+
+  <!-- 2021 -->
+  <circle cx="388" cy="200" r="6" fill="#5C8EDA" opacity="0.7"/>
+  <line x1="388" y1="200" x2="388" y2="220" stroke="#5C8EDA" stroke-opacity="0.3" stroke-width="1"/>
+  <text x="388" y="238" text-anchor="middle" font-family="Arial, sans-serif" font-size="11" font-weight="700" fill="#5C8EDA">2021</text>
+  <text x="388" y="254" text-anchor="middle" font-family="Arial, sans-serif" font-size="8" fill="#A8B8D8" opacity="0.7">智联世界</text>
+  <text x="388" y="266" text-anchor="middle" font-family="Arial, sans-serif" font-size="8" fill="#A8B8D8" opacity="0.7">众智成城</text>
+
+  <!-- 2022 -->
+  <circle cx="499" cy="200" r="6" fill="#6A85DA" opacity="0.75"/>
+  <line x1="499" y1="200" x2="499" y2="220" stroke="#6A85DA" stroke-opacity="0.3" stroke-width="1"/>
+  <text x="499" y="238" text-anchor="middle" font-family="Arial, sans-serif" font-size="11" font-weight="700" fill="#6A85DA">2022</text>
+  <text x="499" y="254" text-anchor="middle" font-family="Arial, sans-serif" font-size="8" fill="#A8B8D8" opacity="0.7">智联世界</text>
+  <text x="499" y="266" text-anchor="middle" font-family="Arial, sans-serif" font-size="8" fill="#A8B8D8" opacity="0.7">元生无界</text>
+
+  <!-- 2023 -->
+  <circle cx="610" cy="200" r="6" fill="#7275DB" opacity="0.8"/>
+  <line x1="610" y1="200" x2="610" y2="220" stroke="#7275DB" stroke-opacity="0.3" stroke-width="1"/>
+  <text x="610" y="238" text-anchor="middle" font-family="Arial, sans-serif" font-size="11" font-weight="700" fill="#7275DB">2023</text>
+  <text x="610" y="254" text-anchor="middle" font-family="Arial, sans-serif" font-size="8" fill="#A8B8D8" opacity="0.7">智联世界</text>
+  <text x="610" y="266" text-anchor="middle" font-family="Arial, sans-serif" font-size="8" fill="#A8B8D8" opacity="0.7">生成未来</text>
+
+  <!-- 2024 -->
+  <circle cx="721" cy="200" r="6" fill="#7B5CF5" opacity="0.85"/>
+  <line x1="721" y1="200" x2="721" y2="220" stroke="#7B5CF5" stroke-opacity="0.3" stroke-width="1"/>
+  <text x="721" y="238" text-anchor="middle" font-family="Arial, sans-serif" font-size="11" font-weight="700" fill="#7B5CF5">2024</text>
+  <text x="721" y="254" text-anchor="middle" font-family="Arial, sans-serif" font-size="8" fill="#A8B8D8" opacity="0.7">以共商促共享</text>
+  <text x="721" y="266" text-anchor="middle" font-family="Arial, sans-serif" font-size="8" fill="#A8B8D8" opacity="0.7">以善治促善智</text>
+
+  <!-- 2025 -->
+  <circle cx="832" cy="200" r="6" fill="#7B5CF5" opacity="0.9"/>
+  <line x1="832" y1="200" x2="832" y2="220" stroke="#7B5CF5" stroke-opacity="0.3" stroke-width="1"/>
+  <text x="832" y="238" text-anchor="middle" font-family="Arial, sans-serif" font-size="11" font-weight="700" fill="#7B5CF5">2025</text>
+  <text x="832" y="254" text-anchor="middle" font-family="Arial, sans-serif" font-size="8" fill="#A8B8D8" opacity="0.7">智能时代</text>
+  <text x="832" y="266" text-anchor="middle" font-family="Arial, sans-serif" font-size="8" fill="#A8B8D8" opacity="0.7">同球共济</text>
+
+  <!-- 2026 — highlighted -->
+  <circle cx="943" cy="200" r="12" fill="url(#glowGrad)" filter="url(#nodeGlow)"/>
+  <circle cx="943" cy="200" r="8" fill="#7B5CF5" filter="url(#softGlow3)"/>
+  <circle cx="943" cy="200" r="4" fill="#FFFFFF"/>
+  <line x1="943" y1="200" x2="943" y2="220" stroke="#7B5CF5" stroke-opacity="0.5" stroke-width="1.5"/>
+  <text x="943" y="238" text-anchor="middle" font-family="Arial, sans-serif" font-size="12" font-weight="900" fill="#FFFFFF">2026</text>
+  <text x="943" y="255" text-anchor="middle" font-family="Arial, sans-serif" font-size="9" fill="#FFFFFF" font-weight="600">★ 今年 ★</text>
+  <text x="943" y="270" text-anchor="middle" font-family="Arial, sans-serif" font-size="8" fill="#00D4FF">7月17-20日</text>
+
+  <!-- Connecting gradient line through nodes -->
+  <line x1="55" y1="200" x2="943" y2="200" stroke="url(#nodeGrad)" stroke-width="2" stroke-opacity="0.4" stroke-dasharray="4,3"/>
+</svg>
