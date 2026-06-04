@@ -19,6 +19,8 @@ TocOpen: false
 
 ### 💰 价格：砍掉95%的成本
 
+<img src="/tech-blog/images/deepseek/deepseek-price-comparison---14803624-a948-43f7-9afb-53a72dc4e193.png" alt="DeepSeek vs GPT-4o 价格对比" style="max-width:100%; height:auto; border-radius:8px;">
+
 | 模型 | 输入价格 | 输出价格 |
 |---|---|---|
 | GPT-4o | $2.5/M tokens | $10/M tokens |
@@ -63,6 +65,8 @@ Ramp榜单证明了：**DeepSeek完成了从技术到收入的跨越**。
 
 ### ⚔️ 竞争：动了谁的奶酪？
 
+<img src="/tech-blog/images/deepseek/deepseek-market-position---2f263938-884a-423a-818b-47fb2c5ccaeb.png" alt="AI LLM 市场定位图" style="max-width:100%; height:auto; border-radius:8px;">
+
 **OpenAI的中小企业客户正在流失。**
 
 GPT-4很强，但DeepSeek够用且便宜。对于代码生成、客服机器人、内容处理这些场景，"GPT-4的性能"是奢侈品，不是必需品。
@@ -85,6 +89,8 @@ DeepSeek在美国芯片管制背景下仍然崛起，有三个可能原因：
 ---
 
 ## 三、DeepSeek的三大软肋
+
+<img src="/tech-blog/images/deepseek/deepseek-three-weaknesses---c5ab5e34-ae73-4079-b935-1433d7213128.png" alt="DeepSeek三大软肋" style="max-width:100%; height:auto; border-radius:8px;">
 
 ### ❌ 软肋1：大客户信任是空白
 
@@ -115,6 +121,8 @@ DeepSeek目前API定价低于成本，靠融资补贴。
 ---
 
 ## 四、预测：下一步怎么走？
+
+<img src="/tech-blog/images/deepseek/deepseek-roadmap-2026---019a3d24-0174-48c2-9aa7-cd03bc786e2a.png" alt="DeepSeek 2026 路线图预测" style="max-width:100%; height:auto; border-radius:8px;">
 
 ### 🔮 预测1：DeepSeek推出企业版
 
