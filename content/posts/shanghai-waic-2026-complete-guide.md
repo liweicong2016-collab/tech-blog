@@ -9,13 +9,13 @@ ShowToc: true
 TocOpen: true
 ---
 
-![WAIC 2026 主视觉](/tech-blog/images/waic/waic-2026-hero-official.svg)
+![WAIC 2026 主视觉](/tech-blog/images/waic/waic-2026-hero-official.png)
 
 > **核心判断**：WAIC已从最初的学术会议，成长为全球最具影响力的AI产业峰会之一。2026年，大会首次突破7万平方米展览面积，800+家企业参展，1000+位全球嘉宾出席——这不只是数字，更是中国AI力量从追赶到引领的缩影。
 
 ## WAIC八年历程：从"智联世界"到"智能时代"
 
-![WAIC 八年历程时间线](/tech-blog/images/waic/waic-history-official.svg)
+![WAIC 八年历程时间线](/tech-blog/images/waic/waic-history-official.png)
 
 | 年份 | 主题 | 展览面积 | 参展企业 | 亮点回顾 |
 |---|---|---|---|---|
@@ -38,9 +38,9 @@ TocOpen: true
 
 ## WAIC 2026 九大看点（7月17-20日）
 
-![WAIC 2026 九大看点](/tech-blog/images/waic/waic-2026-nine-highlights-official.svg)
+![WAIC 2026 九大看点](/tech-blog/images/waic/waic-2026-nine-highlights-official.png)
 
-![WAIC 2026 关键数据](/tech-blog/images/waic/waic-2026-stats-official.svg)
+![WAIC 2026 关键数据](/tech-blog/images/waic/waic-2026-stats-official.png)
 
 WAIC 2026将于2026年7月17日至20日在**上海世博展览馆**举行，主题尚未官方揭晓，但根据大会惯例和产业趋势，以下九大看点值得关注：
 
