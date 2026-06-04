@@ -9,7 +9,7 @@ ShowToc: false
 TocOpen: false
 ---
 
-![WAIC 2026 主视觉](/tech-blog/images/waic/waic-2026-hero-official.png)
+<img src="/tech-blog/images/waic/waic-2026-hero-official.png" alt="WAIC 2026 主视觉" style="max-width:100%; height:auto; border-radius:8px;">
 
 **📅 7月17-20日 · 上海世博展览馆**
 **📊 800+展商 · 7万㎡+ · 70+国家**
@@ -18,7 +18,7 @@ TocOpen: false
 
 ## WAIC 八年历程
 
-![WAIC 八年历程时间线](/tech-blog/images/waic/waic-history-official.png)
+<img src="/tech-blog/images/waic/waic-history-official.png" alt="WAIC 八年历程时间线" style="max-width:100%; height:auto; border-radius:8px;">
 
 | 年份 | 主题 | 亮点 |
 |---|---|---|
@@ -37,9 +37,9 @@ TocOpen: false
 
 ## WAIC 2026 九大看点
 
-![WAIC 2026 九大看点](/tech-blog/images/waic/waic-2026-nine-highlights-official.png)
+<img src="/tech-blog/images/waic/waic-2026-nine-highlights-official.png" alt="WAIC 2026 九大看点" style="max-width:100%; height:auto; border-radius:8px;">
 
-![WAIC 2026 关键数据](/tech-blog/images/waic/waic-2026-stats-official.png)
+<img src="/tech-blog/images/waic/waic-2026-stats-official.png" alt="WAIC 2026 关键数据" style="max-width:100%; height:auto; border-radius:8px;">
 
 - 🔵 **展览规模** — 7万㎡+，800+企业，国际占比50%+
 - 🔵 **大模型** — 多模态、长上下文、垂直领域模型
