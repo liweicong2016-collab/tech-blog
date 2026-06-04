@@ -24,7 +24,7 @@
         <span class="tag-pill tag-hw">硬件</span>
       </div>
       <div class="hero-cta">
-        <a href="/posts/" class="btn-primary">📖 浏览文章</a>
+        <a href="{{ "posts/" | relURL }}" class="btn-primary">📖 浏览文章</a>
         <a href="https://github.com/liweicong2016-collab" class="btn-ghost">⚡ GitHub</a>
       </div>
     </div>
@@ -69,7 +69,7 @@
 
     {{- with .Site.RegularPages -}}
     <div class="load-more">
-      <a href="/posts/" class="btn-outline">查看全部 {{ len . }} 篇文章 →</a>
+      <a href="{{ "posts/" | relURL }}" class="btn-outline">查看全部 {{ len . }} 篇文章 →</a>
     </div>
     {{- end -}}
   </div>
