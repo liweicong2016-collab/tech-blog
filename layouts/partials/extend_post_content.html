@@ -1,0 +1,19 @@
+{{- /* Custom post content extension */ -}}
+<div class="reading-progress" id="reading-progress"></div>
+
+<script>
+  // Reading progress bar
+  window.addEventListener('scroll', function() {
+    var el = document.getElementById('reading-progress');
+    if (!el) return;
+    var doc = document.documentElement;
+    var scrollTop = doc.scrollTop || document.body.scrollTop;
+    var scrollHeight = doc.scrollHeight - doc.clientHeight;
+    var progress = (scrollTop / scrollHeight) * 100;
+    el.style.width = progress + '%';
+  });
+</script>
+
+{{- partial "author_box.html" . }}
+
+{{- partial "related_articles.html" . }}
