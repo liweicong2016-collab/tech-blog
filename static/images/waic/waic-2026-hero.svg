@@ -1,0 +1,70 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1200 400">
+  <defs>
+    <linearGradient id="bg" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" stop-color="#0A1628"/>
+      <stop offset="100%" stop-color="#0D1F3C"/>
+    </linearGradient>
+    <linearGradient id="cyanGlow" x1="0%" y1="0%" x2="100%" y2="0%">
+      <stop offset="0%" stop-color="#00D4FF" stop-opacity="0"/>
+      <stop offset="50%" stop-color="#00D4FF" stop-opacity="1"/>
+      <stop offset="100%" stop-color="#00D4FF" stop-opacity="0"/>
+    </linearGradient>
+    <filter id="glow">
+      <feGaussianBlur stdDeviation="3" result="coloredBlur"/>
+      <feMerge><feMergeNode in="coloredBlur"/><feMergeNode in="SourceGraphic"/></feMerge>
+    </filter>
+    <filter id="softGlow">
+      <feGaussianBlur stdDeviation="6" result="coloredBlur"/>
+      <feMerge><feMergeNode in="coloredBlur"/><feMergeNode in="SourceGraphic"/></feMerge>
+    </filter>
+  </defs>
+  <rect width="1200" height="400" fill="url(#bg)"/>
+  <g stroke="#00D4FF" stroke-opacity="0.08" stroke-width="1">
+    <line x1="0" y1="100" x2="1200" y2="100"/>
+    <line x1="0" y1="200" x2="1200" y2="200"/>
+    <line x1="0" y1="300" x2="1200" y2="300"/>
+    <line x1="200" y1="0" x2="200" y2="400"/>
+    <line x1="400" y1="0" x2="400" y2="400"/>
+    <line x1="600" y1="0" x2="600" y2="400"/>
+    <line x1="800" y1="0" x2="800" y2="400"/>
+    <line x1="1000" y1="0" x2="1000" y2="400"/>
+  </g>
+  <g stroke="#00D4FF" stroke-opacity="0.3" stroke-width="1.5" fill="none" filter="url(#glow)">
+    <path d="M0 320 L80 320 L100 300 L200 300 L220 280 L350 280"/>
+    <path d="M0 360 L60 360 L80 340 L150 340"/>
+    <circle cx="350" cy="280" r="4" fill="#00D4FF"/>
+    <circle cx="150" cy="340" r="3" fill="#00D4FF"/>
+  </g>
+  <g stroke="#00D4FF" stroke-opacity="0.3" stroke-width="1.5" fill="none" filter="url(#glow)">
+    <path d="M1200 320 L1120 320 L1100 300 L1000 300 L980 280 L850 280"/>
+    <path d="M1200 360 L1140 360 L1120 340 L1050 340"/>
+    <circle cx="850" cy="280" r="4" fill="#00D4FF"/>
+    <circle cx="1050" cy="340" r="3" fill="#00D4FF"/>
+  </g>
+  <line x1="200" y1="200" x2="1000" y2="200" stroke="url(#cyanGlow)" stroke-width="2" filter="url(#softGlow)"/>
+  <g fill="none" stroke="#00D4FF" stroke-opacity="0.15" stroke-width="1">
+    <polygon points="100,80 120,68 140,80 140,104 120,116 100,104"/>
+    <polygon points="1080,320 1100,308 1120,320 1120,344 1100,356 1080,344"/>
+    <polygon points="60,240 80,228 100,240 100,264 80,276 60,264"/>
+  </g>
+  <text x="600" y="165" text-anchor="middle" font-family="Arial Black, sans-serif" font-size="96" font-weight="900" fill="#FFFFFF" letter-spacing="8" filter="url(#softGlow)">WAIC 2026</text>
+  <text x="600" y="220" text-anchor="middle" font-family="Arial, sans-serif" font-size="28" font-weight="300" fill="#00D4FF" letter-spacing="12">世界人工智能大会</text>
+  <line x1="350" y1="245" x2="850" y2="245" stroke="#00D4FF" stroke-opacity="0.4" stroke-width="1"/>
+  <text x="600" y="285" text-anchor="middle" font-family="Arial, sans-serif" font-size="20" fill="#FFFFFF" letter-spacing="4" opacity="0.9">2026.07.17 — 20</text>
+  <text x="600" y="320" text-anchor="middle" font-family="Arial, sans-serif" font-size="16" fill="#00D4FF" letter-spacing="6" opacity="0.8">上海 · 世博展览馆</text>
+  <g fill="#00D4FF">
+    <circle cx="540" cy="360" r="3" opacity="0.6"/>
+    <circle cx="560" cy="360" r="4" opacity="0.9" filter="url(#glow)"/>
+    <circle cx="580" cy="360" r="3" opacity="0.6"/>
+    <circle cx="600" cy="360" r="4" opacity="0.9" filter="url(#glow)"/>
+    <circle cx="620" cy="360" r="3" opacity="0.6"/>
+    <circle cx="640" cy="360" r="4" opacity="0.9" filter="url(#glow)"/>
+    <circle cx="660" cy="360" r="3" opacity="0.6"/>
+  </g>
+  <g stroke="#00D4FF" stroke-opacity="0.25" stroke-width="2" fill="none">
+    <path d="M20 20 L20 50 M20 20 L50 20"/>
+    <path d="M1180 20 L1180 50 M1180 20 L1150 20"/>
+    <path d="M20 380 L20 350 M20 380 L50 380"/>
+    <path d="M1180 380 L1180 350 M1180 380 L1150 380"/>
+  </g>
+</svg>

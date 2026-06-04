@@ -61,6 +61,7 @@ theme = ["PaperMod"]
   ShowPostNavLinks = true
   ShowCommentsButton = false
   ShowCodeCopyButtons = true
+  defaultTheme = "light"
 
   [params.PaperMod]
     showupanimation = true

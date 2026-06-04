@@ -40,10 +40,10 @@
 }
 
 [data-theme="light"] {
-  --bg-page: #f8f9fa;
+  --bg-page: #fafafa;
   --bg-card: #ffffff;
-  --bg-elevated: #f0f1f3;
-  --bg-hover: #e8e9ec;
+  --bg-elevated: #f0f2f5;
+  --bg-hover: #e8eaed;
   --border: #d8d8de;
   --border-soft: #ebebef;
   --fg-primary: #0f0f12;
