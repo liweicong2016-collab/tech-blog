@@ -9,8 +9,6 @@ ShowToc: false
 TocOpen: false
 ---
 
-![昇腾小模型生态概览](/tech-blog/images/ascend/ascend-ecosystem-hero---340caad9-f1ad-4d40-9dbe-d5733290f813.png)
-
 > **核心判断**：昇腾生态的真正机会不在大模型，而在小模型。2026年，AI落地的主战场是传统行业，而传统行业需要的是低成本、低延迟、隐私安全的小模型。
 
 ---
@@ -68,8 +66,6 @@ AtomGit 平台上的昇腾适配模型已达 **6929+**，仍在快速增长。
 ---
 
 ## 三、按行业分类：谁在用昇腾小模型？
-
-![昇腾小模型行业应用](/tech-blog/images/ascend/ascend-industry-applications---76145ec2-dba2-4260-a5c1-799a175d7364.png)
 
 ### 🏥 医疗：OCR+病例分析
 
