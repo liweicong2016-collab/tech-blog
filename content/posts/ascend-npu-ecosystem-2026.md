@@ -106,12 +106,19 @@ TocOpen: false
 
 ### 1.4 关键指标：350 vs 6,841 = 5.1% 真实适配率
 
-| 指标 | 数字 | 含义 |
-|------|------|------|
-| 带"昇腾适配"标签的仓库 | 6,841 | GitCode AI 平台含此标签的所有模型 |
-| 真正可用 (通过 AC-β 验证) | 350 | 完整迁移指导 + 开箱即用 |
-| **真实适配率** | **5.1%** | 350 / 6,841 |
-| 头部国产 NPU 平台覆盖 | 100% | C-δ / K-β (寒武纪系) / K-ζ2 (海光系) / K-ζ3 (燧原系) |
+<div class="bis-table-wrap">
+<table class="bis-table">
+  <thead>
+    <tr><th>指标</th><th>数字</th><th>含义</th></tr>
+  </thead>
+  <tbody>
+    <tr><td>带"昇腾适配"标签的仓库</td><td>6,841</td><td>GitCode AI 平台含此标签的所有模型</td></tr>
+    <tr><td>真正可用 (通过 AC-β 验证)</td><td>350</td><td>完整迁移指导 + 开箱即用</td></tr>
+    <tr><td><strong>真实适配率</strong></td><td><strong>5.1%</strong></td><td>350 / 6,841</td></tr>
+    <tr><td>头部国产 NPU 平台覆盖</td><td>100%</td><td>C-δ / K-β (寒武纪系) / K-ζ2 (海光系) / K-ζ3 (燧原系)</td></tr>
+  </tbody>
+</table>
+</div>
 
 **结论**：昇腾生态"有 > 真正能用"之间的 gap 仍然巨大。AC-β 团队是填补这个 gap 的关键力量。
 
@@ -123,16 +130,23 @@ TocOpen: false
 
 下表汇总了经过真实适配的各领域模型分布及代表性项目（已脱敏）：
 
-| 领域 | 数量 | 代表性模型 (脱敏代号) |
-|------|------|----------------------|
-| **多模态 (M-1)** | 120 | M-1-α (视觉语言)、M-1-β (InternVL 系列)、M-1-γ (T2V 视频生成)、M-1-δ (Qwen3-VL 思维推理) |
-| **自然语言处理 (M-2)** | 104 | M-2-α (DeepSeek 推理版)、M-2-β (GLM 量化版)、M-2-γ (Qwen3-Next Instruct)、M-2-δ (QwQ-32B) |
-| **计算机视觉 (M-3)** | 53 | M-3-α (RF-DETR 检测)、M-3-β (DINOv3 自监督)、M-3-γ (YOLOv11s 分类)、M-3-δ (HunyuanVideo)、M-3-ε (SAM2 分割) |
-| **语音处理 (M-4)** | 36 | M-4-α (Whisper-large-v3)、M-4-β (CosyVoice2-0.5B TTS)、M-4-γ (FunASR)、M-4-δ (SenseVoiceSmall) |
-| **科学计算 (M-5)** | 16 | M-5-α (FNO-3D 傅里叶算子)、M-5-β (OpenFold2 蛋白质结构)、M-5-γ (Grover)、M-5-δ (Boltz2) |
-| **时序预测 (M-6)** | 7 | M-6-α ~ M-6-ζ (工业/气象时序) |
-| **自动驾驶 (M-7)** | 2 | M-7-α, M-7-β (多传感器融合 + 路径规划) |
-| **基础设施 (M-8)** | ≈10 | M-8-α (`RUN-BENCH` 性能测试工具)、M-8-β (`ASC-DOCKER` 镜像仓) |
+<div class="bis-table-wrap">
+<table class="bis-table">
+  <thead>
+    <tr><th>领域</th><th>数量</th><th>代表性模型 (脱敏代号)</th></tr>
+  </thead>
+  <tbody>
+    <tr><td><strong>多模态 (M-1)</strong></td><td><strong>120</strong></td><td>M-1-α (视觉语言)、M-1-β (InternVL 系列)、M-1-γ (T2V 视频生成)、M-1-δ (Qwen3-VL 思维推理)</td></tr>
+    <tr><td><strong>自然语言处理 (M-2)</strong></td><td><strong>104</strong></td><td>M-2-α (DeepSeek 推理版)、M-2-β (GLM 量化版)、M-2-γ (Qwen3-Next Instruct)、M-2-δ (QwQ-32B)</td></tr>
+    <tr><td><strong>计算机视觉 (M-3)</strong></td><td><strong>53</strong></td><td>M-3-α (RF-DETR 检测)、M-3-β (DINOv3 自监督)、M-3-γ (YOLOv11s 分类)、M-3-δ (HunyuanVideo)、M-3-ε (SAM2 分割)</td></tr>
+    <tr><td><strong>语音处理 (M-4)</strong></td><td><strong>36</strong></td><td>M-4-α (Whisper-large-v3)、M-4-β (CosyVoice2-0.5B TTS)、M-4-γ (FunASR)、M-4-δ (SenseVoiceSmall)</td></tr>
+    <tr><td><strong>科学计算 (M-5)</strong></td><td><strong>16</strong></td><td>M-5-α (FNO-3D 傅里叶算子)、M-5-β (OpenFold2 蛋白质结构)、M-5-γ (Grover)、M-5-δ (Boltz2)</td></tr>
+    <tr><td>时序预测 (M-6)</td><td>7</td><td>M-6-α ~ M-6-ζ (工业/气象时序)</td></tr>
+    <tr><td>自动驾驶 (M-7)</td><td>2</td><td>M-7-α, M-7-β (多传感器融合 + 路径规划)</td></tr>
+    <tr><td>基础设施 (M-8)</td><td>≈10</td><td>M-8-α (<code>RUN-BENCH</code> 性能测试工具)、M-8-β (<code>ASC-DOCKER</code> 镜像仓)</td></tr>
+  </tbody>
+</table>
+</div>
 
 **关键观察**：
 
@@ -336,7 +350,9 @@ CANN 算子映射需要硬件-软件深度协同。如果 S-4 CANN 团队与 T-3
 
 **最后一个判断**：**跨硬件编译 (S-8 Triton) 是破局 S-2 生态霸权的最大变量**。当同一份代码可在 C-δ 昇腾 + AC-θ + C-ν (G-1 GPU/FPGA) 上无缝运行时，"硬件归属"将不再重要——重要的是**模型本身的能力**。
 
-昇腾生态的下一阶段，不是"追赶 CUDA"，而是"超越 CUDA 范式"。
+<blockquote class="bis-quote">
+<strong>昇腾生态的下一阶段，不是"追赶 CUDA"，而是"超越 CUDA 范式"。</strong>
+</blockquote>
 
 ---
 
