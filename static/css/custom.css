@@ -679,3 +679,72 @@ a:hover { color: var(--accent-hover); }
   .header, .footer, .top-link, .post-tags, .share-buttons, .post-nav-links { display: none !important; }
   body { background: white; color: black; }
 }
+
+/* ============================================================
+   Custom 4-language switcher (replaces PaperMod's default lang-menu)
+   ============================================================ */
+.lang-switch {
+  display: inline-flex;
+  align-items: center;
+  gap: 3px;
+  background: var(--bg-elevated);
+  border: 1px solid var(--border);
+  border-radius: 10px;
+  padding: 4px;
+  margin-left: 12px;
+  flex-shrink: 0;
+}
+.lang-btn {
+  display: inline-block;
+  background: transparent;
+  border: 1px solid transparent;
+  color: var(--fg-secondary);
+  font-size: 14px;
+  font-weight: 800;
+  padding: 7px 13px;
+  border-radius: 7px;
+  cursor: pointer;
+  transition: all 0.15s ease;
+  font-family: inherit;
+  min-width: 42px;
+  text-align: center;
+  text-decoration: none;
+  line-height: 1.2;
+  letter-spacing: 0.3px;
+}
+.lang-btn:hover {
+  color: var(--accent-warm);
+  background: rgba(224, 74, 16, 0.08);
+  border-color: rgba(224, 74, 16, 0.35);
+  transform: translateY(-1px);
+}
+.lang-btn.active {
+  color: #ffffff;
+  background: linear-gradient(135deg, #f59e0b, #e04a10);
+  box-shadow: 0 3px 10px rgba(224, 74, 16, 0.4);
+  border-color: #e04a10;
+}
+.lang-btn.disabled {
+  opacity: 0.4;
+  cursor: not-allowed;
+  pointer-events: none;
+}
+/* Hide PaperMod's default lang-menu (we replaced it) */
+.logo-switches .lang-menu,
+.logo-switches .nav-sep {
+  display: none !important;
+}
+@media (max-width: 768px) {
+  .lang-switch {
+    margin-left: auto;
+  }
+  .menu {
+    display: none !important;
+  }
+  .lang-btn {
+    padding: 6px 9px;
+    min-width: 36px;
+    font-size: 13px;
+  }
+}
+/* ============================================================ */
