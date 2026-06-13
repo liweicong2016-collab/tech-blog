@@ -4,11 +4,10 @@ date: 2026-06-04T16:00:00+08:00
 draft: false
 tags: ["AI chip", "NVIDIA", "energy efficiency", "Compute", "Token", "H100", "B200"]
 description: "Using 1MW of power as a baseline, compare the token generation efficiency of NVIDIA H100, H200, and B200, analyzing energy efficiency gaps and constraints."
-summary: "英伟达H100每MW可部署约1400张卡，生成约18-22T Token/MWh；B200性能大幅领先，Token效率可达36T/MWh，是下一代AI推理的顶配选择。"
+summary: "NVIDIA H100 can deploy about 1400 cards per MW, generating about 18-22T Token/MWh; B200 performance is far ahead, with Token efficiency up to 36T/MWh, making it the top-tier choice for next-generation AI inference."
 ShowToc: true
 TocOpen: false
 ---
-
 ## Background: Why Measure in "Token / MW"?
 
 In the AI compute race, **power is the ultimate constraint**. No matter how powerful the chips are, ultimately it comes down to "how many tokens can be generated per unit of electricity cost."

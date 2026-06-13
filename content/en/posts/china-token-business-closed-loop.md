@@ -1,13 +1,13 @@
 ---
-title: "中国 Token 商业闭环深度研究：1/10 价格还能运转的 5 个机制"
+title: "In-depth study on China's Token commercial closed-loop: 5 mechanisms that still operate at 1/10 price"
 date: 2026-06-11
 draft: false
-description: "中国 Token 商业闭环是否成立？MaaS 销售范式是否值得学？为什么中国 API 价格是海外 1/10 还能持续运转？拆解 5 个底层机制 + 单 token 成本结构 + 闭环判定标准 + 9 家公司评级。"
-tags: ["Token经济", "MaaS", "商业闭环", "国产AI", "推理成本", "大模型", "云计算", "正循环"]
+description: "Is China’s token business loop viable? Is the MaaS sales paradigm worth learning? Why can China’s API prices be 1/10 of overseas levels yet continue to operate? Breaking down 5 underlying mechanisms + single token cost structure + loop viability criteria + ratings of 9 companies."
+tags: ["Token Economy", "MaaS", "Business closed loop", "Domestic AI", "inference cost", "Large Model", "cloud computing", "virtuous cycle"]
 slug: "china-token-business-closed-loop"
 cover:
   image: "https://images.unsplash.com/photo-1551288049-bebda4e38f71?w=1200&q=80"
-  alt: "Token 工厂与商业闭环"
+  alt: "Token Factory and Closed-Loop Business"
   caption: "Token 1/10 不是补贴战，是结构性低成本 + 量价齐升的双轮驱动"
 ShowToc: true
 ---

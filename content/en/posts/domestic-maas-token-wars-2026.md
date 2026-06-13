@@ -11,7 +11,6 @@ cover:
   caption: "Two main fronts of the token battlefield: coding and video"
 ShowToc: true
 ---
-
 <link rel="stylesheet" href="/tech-blog/css/bis.css">
 
 <div class="bis-wrap">

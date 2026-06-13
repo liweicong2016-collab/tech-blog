@@ -6,15 +6,8 @@ cover:
   alt: "Andrej Karpathy"
 showtoc: true
 ShowReadingTime: true
-tags:
-  - AI
-  - Andrej Karpathy
-  - 大模型
-  - Tesla
-  - OpenAI
-  - 深度学习
+tags: ["AI", "Andrej Karpathy", "Large Model", "Tesla", "OpenAI", "deep learning"]
 ---
-
 # Andrej Karpathy Interviews and Talks Compilation
 
 **Author: AI Observer | May 2026**

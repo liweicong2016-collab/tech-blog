@@ -1,14 +1,14 @@
 ---
-title: "为什么初创公司应该用 RTX 6000 / L40S 而不是 4090 / 5090"
+title: "Tại sao startup nên dùng RTX 6000 / L40S thay vì 4090 / 5090"
 date: 2026-06-11
 draft: false
-description: "4090 / 5090 看似便宜 3 倍，但 VRAM、ECC、RMA、服务器适配四项硬伤让初创公司 6 个月内多花 76%。拆解 5 个真实案例和 2026-06 最新规格对比。"
-tags: ["GPU", "AI算力", "硬件选型", "RTX6000", "L40S", "4090", "5090", "初创公司"]
+description: "4090 / 5090 có vẻ rẻ hơn 3 lần, nhưng bốn điểm yếu VRAM, ECC, RMA và tương thích máy chủ khiến startup tốn thêm 76% chi phí trong 6 tháng. Phân tích 5 case thực tế và so sánh thông số mới nhất 2026-06."
+tags: ["GPU", "Sức mạnh tính toán AI", "Lựa chọn phần cứng", "RTX6000", "L40S", "4090", "5090", "Startup"]
 slug: "gpu-startup-rtx6000-vs-4090"
 cover:
   image: "https://images.unsplash.com/photo-1591488320449-011701bb6704?w=1200&q=80"
-  alt: "数据中心机柜中的 GPU 服务器"
-  caption: "GPU 选型：表面是硬件问题，本质是 TCO 和风险问题"
+  alt: "Máy chủ GPU trong tủ trung tâm dữ liệu"
+  caption: "Chọn GPU: bề ngoài là câu hỏi phần cứng, bản chất là câu hỏi TCO và rủi ro"
 ShowToc: true
 ---
 ![GPU Servers](https://images.unsplash.com/photo-1591488320449-011701bb6704?w=1200&q=80)
