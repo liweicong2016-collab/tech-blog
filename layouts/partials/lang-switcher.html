@@ -1,43 +1,38 @@
 {{- /*
   Custom 4-language switcher.
   - 中 (zh) → current page (defaultContentLanguageInSubdir=false so zh has no prefix)
-  - EN / 越 → real translated pages via Hugo's .Translations (detected by URL)
+  - EN / 越 → real translated pages (construct URL manually from RelPermalink + lang prefix)
   - 日 (ja) → Google Translate URL wrapper (no real translation yet)
-  Note: Hugo v0.161 has a quirk where .Lang returns the default lang even on translated pages,
-  so we detect the current lang from the URL.
+  Note: Hugo v0.161 has a quirk where .Translations on the default-lang page returns empty,
+  so we build the EN/VI URLs manually from the current page's relative path.
 */ -}}
 {{- $currentUrl := .Permalink -}}
-{{- $currentLang := "" -}}
-{{- if strings.Contains $currentUrl "/en/" }}{{ $currentLang = "en" }}{{ else -}}
-  {{- if strings.Contains $currentUrl "/vi/" }}{{ $currentLang = "vi" }}{{ else -}}
-    {{- if strings.Contains $currentUrl "/ja/" }}{{ $currentLang = "ja" }}{{ else -}}
-      {{- $currentLang = "zh" }}{{ end -}}{{- end -}}{{- end -}}
-{{- $enUrl := "" -}}
-{{- $viUrl := "" -}}
-{{- range .Translations -}}
-  {{- $trUrl := .Permalink -}}
-  {{- if strings.Contains $trUrl "/en/" -}}{{- $enUrl = $trUrl -}}{{- end -}}
-  {{- if strings.Contains $trUrl "/vi/" -}}{{- $viUrl = $trUrl -}}{{- end -}}
-{{- end -}}
-{{- /* on en/vi pages, the current page IS the en/vi version */ -}}
-{{- if eq $currentLang "en" -}}{{- $enUrl = $currentUrl -}}{{- end -}}
-{{- if eq $currentLang "vi" -}}{{- $viUrl = $currentUrl -}}{{- end -}}
-{{- $enDisabled := and (ne $currentLang "en") (not $enUrl) -}}
-{{- $viDisabled := and (ne $currentLang "vi") (not $viUrl) -}}
+{{- $currentRel := .RelPermalink -}}
+{{- $parsed := urls.Parse .Permalink -}}
+{{- $host := $parsed.Host -}}
+{{- /* detect current lang from URL */ -}}
+{{- $currentLang := "zh" -}}
+{{- if strings.Contains $currentRel "/en/" }}{{ $currentLang = "en" }}{{ end -}}
+{{- if strings.Contains $currentRel "/vi/" }}{{ $currentLang = "vi" }}{{ end -}}
+{{- if strings.Contains $currentRel "/ja/" }}{{ $currentLang = "ja" }}{{ end -}}
+{{- /* build EN/VI URLs: base + lang prefix + path-without-lang-prefix */ -}}
+{{- $cleanRel := $currentRel -}}
+{{- if strings.Contains $currentRel "/en/" }}{{ $cleanRel = replace $cleanRel "/en/" "/" 1 }}{{ end -}}
+{{- if strings.Contains $currentRel "/vi/" }}{{ $cleanRel = replace $cleanRel "/vi/" "/" 1 }}{{ end -}}
+{{- if strings.Contains $currentRel "/ja/" }}{{ $cleanRel = replace $cleanRel "/ja/" "/" 1 }}{{ end -}}
+{{- $base := printf "https://%s" $host -}}
+{{- $enUrl := printf "%s%s" $base (replace $cleanRel "/posts/" "/en/posts/" 1) -}}
+{{- $viUrl := printf "%s%s" $base (replace $cleanRel "/posts/" "/vi/posts/" 1) -}}
 {{- $jaUrl := printf "https://translate.google.com/translate?sl=%s&tl=ja&u=%s" $currentLang ($currentUrl | safeURL) -}}
 
 <div class="lang-switch" data-current="{{ $currentLang }}">
   <a class="lang-btn{{ if eq $currentLang "zh" }} active{{ end }}" data-lang="zh"
      href="{{ $currentUrl }}" aria-label="中文">中</a>
-  <a class="lang-btn{{ if eq $currentLang "en" }} active{{ end }}{{ if $enDisabled }} disabled{{ end }}" data-lang="en"
-     href="{{ if $enUrl }}{{ $enUrl }}{{ else }}#{{ end }}"
-     aria-label="English"
-     {{ if $enDisabled }}title="English translation coming soon"{{ end }}>EN</a>
+  <a class="lang-btn{{ if eq $currentLang "en" }} active{{ end }}" data-lang="en"
+     href="{{ $enUrl }}" aria-label="English">EN</a>
   <a class="lang-btn" data-lang="ja"
      href="{{ $jaUrl }}" aria-label="日本語"
      title="日本語版を準備中 (Google Translate)">日</a>
-  <a class="lang-btn{{ if eq $currentLang "vi" }} active{{ end }}{{ if $viDisabled }} disabled{{ end }}" data-lang="vi"
-     href="{{ if $viUrl }}{{ $viUrl }}{{ else }}#{{ end }}"
-     aria-label="Tiếng Việt"
-     {{ if $viDisabled }}title="Phiên bản tiếng Việt sắp ra mắt"{{ end }}>VI</a>
+  <a class="lang-btn{{ if eq $currentLang "vi" }} active{{ end }}" data-lang="vi"
+     href="{{ $viUrl }}" aria-label="Tiếng Việt">VI</a>
 </div>
