@@ -1,0 +1,43 @@
+{{- /*
+  Custom 4-language switcher.
+  - 中 (zh) → current page (defaultContentLanguageInSubdir=false so zh has no prefix)
+  - EN / 越 → real translated pages via Hugo's .Translations (detected by URL)
+  - 日 (ja) → Google Translate URL wrapper (no real translation yet)
+  Note: Hugo v0.161 has a quirk where .Lang returns the default lang even on translated pages,
+  so we detect the current lang from the URL.
+*/ -}}
+{{- $currentUrl := .Permalink -}}
+{{- $currentLang := "" -}}
+{{- if strings.Contains $currentUrl "/en/" }}{{ $currentLang = "en" }}{{ else -}}
+  {{- if strings.Contains $currentUrl "/vi/" }}{{ $currentLang = "vi" }}{{ else -}}
+    {{- if strings.Contains $currentUrl "/ja/" }}{{ $currentLang = "ja" }}{{ else -}}
+      {{- $currentLang = "zh" }}{{ end -}}{{- end -}}{{- end -}}
+{{- $enUrl := "" -}}
+{{- $viUrl := "" -}}
+{{- range .Translations -}}
+  {{- $trUrl := .Permalink -}}
+  {{- if strings.Contains $trUrl "/en/" -}}{{- $enUrl = $trUrl -}}{{- end -}}
+  {{- if strings.Contains $trUrl "/vi/" -}}{{- $viUrl = $trUrl -}}{{- end -}}
+{{- end -}}
+{{- /* on en/vi pages, the current page IS the en/vi version */ -}}
+{{- if eq $currentLang "en" -}}{{- $enUrl = $currentUrl -}}{{- end -}}
+{{- if eq $currentLang "vi" -}}{{- $viUrl = $currentUrl -}}{{- end -}}
+{{- $enDisabled := and (ne $currentLang "en") (not $enUrl) -}}
+{{- $viDisabled := and (ne $currentLang "vi") (not $viUrl) -}}
+{{- $jaUrl := printf "https://translate.google.com/translate?sl=%s&tl=ja&u=%s" $currentLang ($currentUrl | safeURL) -}}
+
+<div class="lang-switch" data-current="{{ $currentLang }}">
+  <a class="lang-btn{{ if eq $currentLang "zh" }} active{{ end }}" data-lang="zh"
+     href="{{ $currentUrl }}" aria-label="中文">中</a>
+  <a class="lang-btn{{ if eq $currentLang "en" }} active{{ end }}{{ if $enDisabled }} disabled{{ end }}" data-lang="en"
+     href="{{ if $enUrl }}{{ $enUrl }}{{ else }}#{{ end }}"
+     aria-label="English"
+     {{ if $enDisabled }}title="English translation coming soon"{{ end }}>EN</a>
+  <a class="lang-btn" data-lang="ja"
+     href="{{ $jaUrl }}" aria-label="日本語"
+     title="日本語版を準備中 (Google Translate)">日</a>
+  <a class="lang-btn{{ if eq $currentLang "vi" }} active{{ end }}{{ if $viDisabled }} disabled{{ end }}" data-lang="vi"
+     href="{{ if $viUrl }}{{ $viUrl }}{{ else }}#{{ end }}"
+     aria-label="Tiếng Việt"
+     {{ if $viDisabled }}title="Phiên bản tiếng Việt sắp ra mắt"{{ end }}>VI</a>
+</div>

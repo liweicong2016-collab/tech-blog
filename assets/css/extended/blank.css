@@ -1,0 +1,68 @@
+/*
+This is just a placeholder blank stylesheet so as to support adding custom styles budled with theme's default styles
+
+Read https://github.com/adityatelange/hugo-PaperMod/wiki/FAQs#bundling-custom-css-with-themes-assets for more info
+*/
+
+/* === Custom 4-language switcher === */
+.lang-switch {
+  display: inline-flex;
+  align-items: center;
+  gap: 3px;
+  background: rgba(255, 255, 255, 0.06);
+  border: 1px solid #2d3f5e;
+  border-radius: 10px;
+  padding: 4px;
+  margin-left: 12px;
+  flex-shrink: 0;
+  font-family: var(--font-body, inherit);
+}
+.lang-btn {
+  display: inline-block;
+  background: transparent;
+  border: 1px solid transparent;
+  color: var(--secondary, #94a3b8);
+  font-size: 14px;
+  font-weight: 800;
+  padding: 7px 13px;
+  border-radius: 7px;
+  cursor: pointer;
+  transition: all 0.15s ease;
+  font-family: inherit;
+  min-width: 42px;
+  text-align: center;
+  text-decoration: none;
+  line-height: 1.2;
+  letter-spacing: 0.3px;
+}
+.lang-btn:hover {
+  color: var(--primary, #e8eaf0);
+  background: rgba(245, 158, 11, 0.15);
+  border-color: rgba(245, 158, 11, 0.4);
+  transform: translateY(-1px);
+}
+.lang-btn.active {
+  color: #070b14;
+  background: linear-gradient(135deg, #fbbf24, #f59e0b);
+  box-shadow: 0 3px 10px rgba(245, 158, 11, 0.5);
+  border-color: #f59e0b;
+}
+.lang-btn.disabled {
+  opacity: 0.4;
+  cursor: not-allowed;
+  pointer-events: none;
+}
+/* Hide PaperMod's default lang-menu (we replaced it) */
+.logo-switches .lang-menu,
+.logo-switches .nav-sep {
+  display: none !important;
+}
+@media (max-width: 768px) {
+  .lang-switch {
+    margin-left: auto;
+  }
+  .menu {
+    display: none !important;
+  }
+}
+/* === /Custom 4-language switcher === */

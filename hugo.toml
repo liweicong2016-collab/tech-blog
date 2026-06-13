@@ -1,5 +1,33 @@
 baseURL = "https://liweicong2016-collab.github.io/tech-blog/"
-languageCode = "zh-cn"
+defaultContentLanguage = "zh"
+defaultContentLanguageInSubdir = false
+
+[languages]
+  [languages.zh]
+    label = "中文"
+    weight = 1
+    title = "Livius's Tech Pulse"
+    [languages.zh.params]
+      description = "AI · 算力 · 半导体 · 东南亚市场"
+  [languages.en]
+    label = "English"
+    weight = 2
+    title = "Livius's Tech Pulse"
+    [languages.en.params]
+      description = "AI · Compute · Semiconductors · Southeast Asia"
+  [languages.vi]
+    label = "Tiếng Việt"
+    weight = 3
+    title = "Livius's Tech Pulse"
+    [languages.vi.params]
+      description = "AI · Điện toán · Bán dẫn · Thị trường Đông Nam Á"
+  [languages.ja]
+    label = "日本語"
+    weight = 4
+    title = "Livius's Tech Pulse"
+    [languages.ja.params]
+      description = "AI · コンピューティング · 半導体 · 東南アジア市場"
+
 title = "Livius's Tech Pulse"
 name = "Livius's Tech Pulse"
 enableRobotsTXT = true
@@ -30,6 +58,7 @@ theme = ["PaperMod"]
   author = "Tech Observer"
   license = "MIT"
   licenseURL = ""
+  mainSections = ["posts"]
 
   useShortcodeInfo = false
   displayName = "Livius's Tech Pulse"
