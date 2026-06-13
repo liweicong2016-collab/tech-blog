@@ -748,25 +748,3 @@ a:hover { color: var(--accent-hover); }
   }
 }
 /* ============================================================ */
-/* === Language switcher toast (Google Translate feedback) === */
-.lang-toast {
-  position: fixed;
-  bottom: 30px;
-  left: 50%;
-  transform: translateX(-50%) translateY(20px);
-  background: #e04a10;
-  color: #ffffff;
-  padding: 12px 20px;
-  border-radius: 10px;
-  font-size: 14px;
-  font-weight: 600;
-  opacity: 0;
-  pointer-events: none;
-  transition: all 0.3s ease;
-  z-index: 1000;
-  box-shadow: 0 8px 24px rgba(0, 0, 0, 0.4);
-}
-.lang-toast.show {
-  opacity: 1;
-  transform: translateX(-50%) translateY(0);
-}

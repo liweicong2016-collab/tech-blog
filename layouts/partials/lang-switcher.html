@@ -1,8 +1,8 @@
 {{- /*
-  Custom 4-language switcher.
-  Uses Google Translate URL wrapper for all 4 languages (consistent with my-website).
-  EN/越 do not have real translations yet, so GT wrapper is the practical fallback.
-  Right-click "open in new tab" works because hrefs are real URLs.
+  Custom 4-language switcher — uses real translation page URLs (NOT Google Translate).
+  Each click takes the user to the same article in that language.
+  Hugo v0.161 has a quirk where .Translations returns empty on the default-lang page,
+  so we build EN/VI/JA URLs manually from the current page's relative path.
 */ -}}
 {{- $currentUrl := .Permalink -}}
 {{- $currentRel := .RelPermalink -}}
@@ -13,20 +13,24 @@
 {{- if strings.Contains $currentRel "/en/" }}{{ $currentLang = "en" }}{{ end -}}
 {{- if strings.Contains $currentRel "/vi/" }}{{ $currentLang = "vi" }}{{ end -}}
 {{- if strings.Contains $currentRel "/ja/" }}{{ $currentLang = "ja" }}{{ end -}}
-{{- $gtBase := "https://translate.google.com/translate" -}}
-{{- $zhUrl := $currentUrl -}}
-{{- $enUrl := printf "%s?sl=%s&tl=en&u=%s" $gtBase $currentLang ($currentUrl | safeURL) -}}
-{{- $jaUrl := printf "%s?sl=%s&tl=ja&u=%s" $gtBase $currentLang ($currentUrl | safeURL) -}}
-{{- $viUrl := printf "%s?sl=%s&tl=vi&u=%s" $gtBase $currentLang ($currentUrl | safeURL) -}}
+{{- /* build target URLs by swapping the lang prefix in RelPermalink */ -}}
+{{- $cleanRel := $currentRel -}}
+{{- if strings.Contains $currentRel "/en/" }}{{ $cleanRel = replace $cleanRel "/en/" "/" 1 }}{{ end -}}
+{{- if strings.Contains $currentRel "/vi/" }}{{ $cleanRel = replace $cleanRel "/vi/" "/" 1 }}{{ end -}}
+{{- if strings.Contains $currentRel "/ja/" }}{{ $cleanRel = replace $cleanRel "/ja/" "/" 1 }}{{ end -}}
+{{- $base := printf "https://%s" $host -}}
+{{- $zhUrl := printf "%s%s" $base $cleanRel -}}
+{{- $enUrl := printf "%s%s" $base (replace $cleanRel "/posts/" "/en/posts/" 1) -}}
+{{- $viUrl := printf "%s%s" $base (replace $cleanRel "/posts/" "/vi/posts/" 1) -}}
+{{- $jaUrl := printf "%s%s" $base (replace $cleanRel "/posts/" "/ja/posts/" 1) -}}
 
 <div class="lang-switch" data-current="{{ $currentLang }}">
   <a class="lang-btn{{ if eq $currentLang "zh" }} active{{ end }}" data-lang="zh"
      href="{{ $zhUrl }}" aria-label="中文">中</a>
   <a class="lang-btn{{ if eq $currentLang "en" }} active{{ end }}" data-lang="en"
-     href="{{ $enUrl }}" aria-label="English" target="_blank" rel="noopener">EN</a>
-  <a class="lang-btn" data-lang="ja"
-     href="{{ $jaUrl }}" aria-label="日本語"
-     title="日本語版 (Google Translate)" target="_blank" rel="noopener">日</a>
+     href="{{ $enUrl }}" aria-label="English">EN</a>
+  <a class="lang-btn{{ if eq $currentLang "ja" }} active{{ end }}" data-lang="ja"
+     href="{{ $jaUrl }}" aria-label="日本語">日</a>
   <a class="lang-btn{{ if eq $currentLang "vi" }} active{{ end }}" data-lang="vi"
-     href="{{ $viUrl }}" aria-label="Tiếng Việt" target="_blank" rel="noopener">VI</a>
+     href="{{ $viUrl }}" aria-label="Tiếng Việt">VI</a>
 </div>
