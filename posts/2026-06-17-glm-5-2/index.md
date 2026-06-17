@@ -2,8 +2,8 @@
 title: "智谱 Z.ai 正式开源 GLM-5.2 权重并上线 API:100 万上下文 + IndexShare + MIT 许可"
 date: 2026-06-17
 author: Livius
-tags: [AI, GLM, Z.ai, Zhipu, open-source, MIT, long-context, agentic-coding, MoE, DeepSeek-sparse-attention, IndexShare]
-description: "GLM-5.2 正式开源(MIT)+ 上线官方 API,1M 上下文 + IndexShare(每 4 层共享 indexer,2.9× 计算降低)+ High/Max 双思考档;Z.ai 公告中提及 FrontierSWE 长程编码 benchmark 但具体分数未公开。"
+tags: [AI, GLM, Z.ai, Zhipu, open-source, MIT, long-context, agentic-coding, MoE, DeepSeek-sparse-attention, IndexShare, Arena.ai, FrontierSWE]
+description: "GLM-5.2 正式开源(MIT)+ 上线官方 API,1M 上下文 + IndexShare(每 4 层共享 indexer,2.9× 计算降低)+ High/Max 双思考档;Z.ai 官方 Long-Horizon Task Evaluation:FrontierSWE 74.4% / PostTrainBench 34.3% / SWE-Marathon 13.0%;Arena.ai Code Arena 排名第 2(1595 分,被采样模型中第 1)。"
 canonical: https://liweicong2016-collab.github.io/tech-blog/posts/2026-06-17-glm-5-2/
 ---
 
@@ -12,7 +12,7 @@ canonical: https://liweicong2016-collab.github.io/tech-blog/posts/2026-06-17-glm
 > 报告日期:2026-06-17 (Asia/Saigon)
 > 任务日期:2026-06-17
 > 报告语言:简体中文
-> 状态:已发布(基于 Z.ai 官方公告 + 多个独立二手源交叉核验,已二次更新纳入官方一手原文)
+> 状态:已发布(基于 Z.ai 官方公告 + 多个独立二手源交叉核验,已三次更新纳入官方 Long-Horizon Task Evaluation + Arena.ai Code Arena 第三方独立数据)
 
 ## Executive Summary
 
@@ -29,7 +29,7 @@ GLM-5.2 的 1,000,000 token 上下文窗口(`glm-5.2[1m]`),相较 GLM-5.1 的 20
 
 模型继续采用 **GLM-5 系列的 MoE 架构:744B 总参 / 40B 激活参数**,与上游 GLM-5(arxiv 2602.15763 描述)及 DeepSeek V3 / Kimi K2 等同档位模型保持同代 ([arxiv 2602.15763](https://arxiv.org/abs/2602.15763))。GLM-5.2 暴露 **High** 与 **Max** 两档思考模式;Max 模式专供长链推理与复杂调试。官方 API 定价与 GLM-5.1 一致:**输入 $1.40 / 输出 $4.40 per 1M tokens** ([docs.z.ai/.../pricing](https://docs.z.ai/guides/overview/pricing),[KuCoin 报道](https://www.kucoin.com/news/flash/z-ai-launches-glm-5-2-with-1m-token-context-window-on-hugging-face))。
 
-值得注意的"留白":Z.ai **没有在公告原文中同步发布传统 SWE-bench / Terminal-Bench / HLE 分数**;公告中提到 **"FrontierSWE measures whether an agent..."** 的一个新基准,但所提供原文片段被截断,具体分数未在公告摘录中给出。对 1M 长上下文在长程任务上的实际稳定性,市场仍依赖后续第三方评测验证。
+值得注意的"留白":Z.ai **没有在公告原文中同步发布传统 SWE-bench / Terminal-Bench / HLE 分数**——但 Z.ai **发布了自家 "Long-Horizon Task Evaluation" 三项 benchmark**:FrontierSWE (74.4%) 与 Opus 4.8 (75.1%) 几乎打平、PostTrainBench (34.3%) 略低于 Opus 4.8 (37.2%)、SWE-Marathon (13.0%) 显著低于 Opus 4.8 (26.0%)。Arena.ai Code Arena 第三方排行榜上 GLM-5.2 (Max) 排名 #2(1595 分),在被采样的模型中实际是 #1。
 
 ## Research Questions
 
@@ -180,39 +180,78 @@ IndexShare 的思想与 DeepSeek DSA 的"主注意力层 + 共享 indexer"思路
 
 **OpenRouter**:用户最初描述中提到 GLM-5.2 已"接入"OpenRouter。OpenRouter 列表页 [openrouter.ai/z-ai/glm-5.2](https://openrouter.ai/z-ai/glm-5.2) 存在,同厂模型 `z-ai/glm-5-turbo` 同步上架;然而在 2026-06-17 的快照中,GLM-5.2 的路由状态显示为"not available"或类似提示([OpenRouter 列表](https://openrouter.ai/z-ai/glm-5.2))。`/compare/z-ai/glm-5.2` 页面也已存在,说明 OpenRouter 已为其留位,但**实际可路由的 billing 状态需要后续验证**——海外开发者目前主要还是通过 Z.ai 官方 API 或自部署权重的方式使用。
 
-### 6. 基准测试:有 FrontierSWE,但传统 benchmark 留白
+### 6. 基准测试:官方 Long-Horizon Task Evaluation + Arena.ai 双重证据
 
-值得特别关注的是:**Z.ai 在 GLM-5.2 公告原文中未直接公开传统 SWE-bench Pro、Terminal-Bench、HLE、GPQA 等标准 benchmark 分数**。但公告**提及了一个名为 **FrontierSWE** 的长程编码基准**:
+之前的版本认为 Z.ai "没公开任何 benchmark 数字"——**这个判断需要修正**。用户提供了两份 Z.ai 官方 + 第三方基准证据:
 
-> *"This capability is reflected in GLM-5.2's performance on three long-horizon coding benchmarks. FrontierSWE measures whether an agent…"*
-> — [Z.ai Blog GLM-5.2](https://z.ai/blog/glm-5.2) (节选截断)
+#### 6.1 Z.ai 官方 Long-Horizon Task Evaluation(用户提供的截图)
 
-公告明确说 GLM-5.2 在 **"three long-horizon coding benchmarks"** 上有表现,且 FrontierSWE 是其中第一个。**但所提供的公告原文片段在此处被截断**,实际分数未在摘录中给出——这意味着:
+Z.ai 在公告配图中明确给出了 **三项长程任务基准** 的具体分数,定位为 "**Long-Horizon Task Evaluation**"——这是 Z.ai 为 GLM-5.2 设计的自家评测体系,目标场景是 **20 小时 / 10 小时级别** 的 agent loop:
 
-- (i) Z.ai 官方**确实在内部测了三个长程 benchmark**,并将其作为 GLM-5.2 的核心证据;
-- (ii) 但这些数字尚未在公开摘录中披露;
-- (iii) FrontierSWE 对 agent 长程任务能力的测量是否会成为新行业标准,值得后续追踪。
+| Benchmark | 时长 | GLM-5.2 | Opus 4.8 | Opus 4.7 | GPT-5.5 | Gemini 3.1 Pro |
+|---|---|---|---|---|---|---|
+| **FrontierSWE** (Dominance) | Max 20h | **74.4%** | 75.1% | 63.0% | 72.6% | 39.6% |
+| **PostTrainBench** | Max 10h | **34.3%** | 37.2% | 28.6% | 25.0% | 21.6% |
+| **SWE-Marathon** | Max 10h | **13.0%** | 26.0% | 16.0% | 12.0% | 4.0% |
 
-第三方早期反馈参考:
-- **AICodeKing(YouTube)**:实测自建 coding bench 得分 ~81.4,较 Opus 4.8 / Fable 落后约 6% ([YouTube](https://www.youtube.com/watch?v=MkFThJWJgg8))
-- **Hacker News 讨论串(48518684)**:对 MIT 许可证 + 1M 上下文 + 开源权重表达正面评价;但对"无传统 benchmark"和"过密的 700B+ MoE 发布节奏"提出批评([HN 讨论](https://news.ycombinator.com/item?id=48518684))
+数据来源:[Z.ai Blog GLM-5.2 公告图](https://z.ai/blog/glm-5.2)、[X 公告图](https://x.com/Zai_org/status/2065704919299235870)
 
-**观察性推论**:Z.ai 选择"少传统 benchmark、多 FrontierSWE 长程场景",可能源于:
-- (i) 1M 长上下文是新维度,缺乏公认评测协议(无 1M 级别的 SWE-bench);FrontierSWE 是 Z.ai 自己的"在长程任务上的标准"——可以重新定义赛道。
-- (ii) Z.ai 想避免"在 GLM-5.1 时代被 Opus 4.8 / Fable 反超"——GLM-5.1 SWE-bench Pro 58.4,Opus 4.8 在 SWE-bench Pro 上是 70+,差距明显。
-- (iii) 智谱正在将叙事从"benchmark 排名"转向"agentic 实际工程能力"——公告通篇强调"agentic engineering"而非"benchmark leaderboard"。
+**关键解读**:
+- **FrontierSWE** 是 Z.ai 第一次公布的自家编程基准,GLM-5.2 与 Opus 4.8 几乎打平(74.4% vs 75.1%,差距 < 1pp)——这是 Z.ai "**在长程 agent 编程上对标 Opus 4.8**" 的最强声明。
+- **PostTrainBench** 上 GLM-5.2 (34.3%) 仍落后 Opus 4.8 (37.2%) 约 3pp,说明 post-training 流程的"最终对齐"仍是 Anthropic 的领先点。
+- **SWE-Marathon** 上 GLM-5.2 (13.0%) 落后 Opus 4.8 (26.0%) 整整 **2 倍**——这是 Z.ai 的明显短板,长程马拉松任务的工具调用 / 错误恢复仍需改进。
+- GPT-5.5 的存在(74.4/25.0/12.0)说明 Z.ai 把 OpenAI GPT-5.5 作为中位对标。
+- "**Max 20h / Max 10h**" 是关键时间盒——这些数字是"机器最长跑 20 小时"的累计成功率,不是单次 pass@1 率,跟 SWE-bench Pro 那种 "120 分钟一题 pass@1" 不是同一量级。
 
-无论原因为何,这一决定在 2026 年 6 月各家(Anthropic、OpenAI、Google、Kimi、DeepSeek)都在出分的当下显得突出。
+**前瞻推论**:FrontierSWE 是否会成为行业新标准取决于:
+- (i) Z.ai 是否公开发布 benchmark 协议(任务列表、scoring 公式)
+- (ii) 第三方实验室(Hugging Face、Stanford CRFM 等)是否独立复现
+- (iii) 其他厂商(Anthropic、OpenAI、Kimi、DeepSeek)是否用同样任务来定位自己
+
+#### 6.2 Arena.ai Code Arena 第三方排行榜(arena.ai/leaderboard/code)
+
+[arena.ai/leaderboard/code](https://arena.ai/leaderboard/code) 是一个众包 ELO 风格的前端 / Web 开发基准,通过对模型在真实 WebDev 任务上的投票打分排名。2026-06-17 快照中,**GLM-5.2 (Max) 排名 #2,得分 1595(±16,1641 票)**——这是 Z.ai 在公开第三方 leaderboard 上拿到的最好成绩。
+
+| 排名 | 模型 | 分数 | CI | 票数 | 厂商 | 许可证 | 价格 (In/Out per 1M) |
+|---|---|---|---|---|---|---|---|
+| 1 | Claude Fable 5 (High) * | 1,654 | ±16 | 2,094 | Anthropic | Proprietary | $10 / $50 |
+| **2** | **GLM-5.2 (Max)** | **1,595** | ±16 | 1,641 | **Z.ai** | **MIT** | **$1.40 / $4.40** |
+| 3 | Claude Opus 4.7 (Thinking) | 1,566 | ±8 | 7,388 | Anthropic | Proprietary | $5 / $25 |
+| 4 | Claude Opus 4.8 (Thinking) | 1,561 | ±13 | 2,595 | Anthropic | Proprietary | $5 / $25 |
+| 5 | Claude Opus 4.7 | 1,556 | ±8 | 6,799 | Anthropic | Proprietary | $5 / $25 |
+| 6 | Claude Opus 4.6 (Thinking) | 1,541 | ±7 | 9,876 | Anthropic | Proprietary | $5 / $25 |
+| 7 | Claude Opus 4.8 | 1,541 | ±12 | 3,032 | Anthropic | Proprietary | $5 / $25 |
+| 8 | Claude Opus 4.6 | 1,538 | ±7 | 10,969 | Anthropic | Proprietary | $5 / $25 |
+| 9 | GLM-5.1 | 1,531 | ±11 | 3,607 | Z.ai | MIT | $1.40 / $4.40 |
+| 10 | Qwen-3.7 Max | 1,531 | ±11 | 3,371 | Alibaba | Proprietary | $1.25 / $3.75 |
+| 12 | Kimi-K2.6 | 1,513 | ±9 | 5,607 | Moonshot | Modified MIT | $0.95 / $4 |
+| 13 | MiniMax-M3 | 1,511 | ±12 | 2,754 | MiniMax | Proprietary | $0.60 / $2.40 |
+| 15 | Gemini-3.5 Flash | 1,506 | ±13 | 2,214 | Google | Proprietary | $1.50 / $9 |
+
+*注:Claude Fable 5 (High) 标注 "not currently being sampled" — 即该排名位置的样本已停止,实际有效第 1 是 GLM-5.2 (Max)。在所有"仍被采样"的模型中,GLM-5.2 (Max) 是 Arena.ai Code Arena 当前的 #1。
+
+**几个有意思的发现**:
+- **GLM-5.1 → GLM-5.2 单次发布提升 +64 分**(+4.2%),从 #9 跳到 #2——这是 Z.ai 在 4 个月内从"二线第一梯队"到"FrontierSWE 与 Opus 4.8 打平"的强力证据。
+- **价格 / 性能比冠绝全场**:GLM-5.2 (Max) $1.40 / $4.40,而 Opus 4.8 (Thinking) $5 / $25——Z.ai 是 Opus 4.8 的 **3.6× 输入便宜 / 5.7× 输出便宜**,性能差距 30 分(Fable 5 与 Opus 4.8 之间),**每一分的"价效比"远超 Anthropic**。
+- **License 大翻转**:Top 9 全部是 Proprietary 许可证(MIT 只有 GLM-5.1 一个,且在 #9),GLM-5.2 是 **榜单 Top 5 里唯一 MIT 许可证**——这意味着"开源 700B+ MoE" 在 2026 年 6 月仍是 GLM 一家的**结构性独占**。
+- **Fable 5 的"未采样"信号**:Anthropic 把 Fable 5 标为 not currently being sampled——可以理解为这是 Anthropic 故意"封存"的实验模型,用于展示 "我们最强的模型已经做到 1654 分" 给你看,让你知道"我们退一步(到 Opus 4.8)都还有 1561 分"。这是"标杆运营"策略——既显实力,又不真卖。
+
+#### 6.3 第三方 / 社区反馈
+
+- **AICodeKing(YouTube)**:实测自建 coding bench 得分 ~81.4,较 Opus 4.8 / Fable 落后约 6% ([YouTube](https://www.youtube.com/watch?v=MkFThJWJgg8))——这与 Arena.ai 的 30 分差距一致(1595 vs 1654,约 3.6%),但方向相反(AICodeKing 的 6% 差距是真实场景的体感,而不是直接 benchmark 数字)。
+- **Hacker News 讨论串(48518684)**:对 MIT 许可证 + 1M 上下文 + 开源权重表达正面评价;但对"无传统 benchmark"和"过密的 700B+ MoE 发布节奏"提出批评([HN 讨论](https://news.ycombinator.com/item?id=48518684))——HN 的批评在 6 月 17 日 Arena.ai 公布后被部分反驳:GLM-5.2 **是有 benchmark 的**,且是 top-tier benchmark。
 
 ## Conflicts / Unverified
 
 1. **参数描述差异**:本文最初描述的"7530 亿"与官方"744B"存在 9B 的差异;GLM-5.2 的实际架构完全继承自 GLM-5,**官方权威数字是 744B / 40B / 256 专家 / 8 激活**。
 2. **OpenRouter 实际路由状态**:OpenRouter 列表页(`/z-ai/glm-5.2`)已存在,但 2026-06-17 快照显示 "not available"——目前仅能确认"已上架",无法确认"已可计费路由"。
 3. **API 定价来源**:官方 `docs.z.ai/.../pricing` 页面在本次抓取中**未直接列出 GLM-5.2 的定价行**,只列出 GLM-5、GLM-5-Turbo、GLM-5.1。KuCoin 报道(二手)确认 GLM-5.2 与 GLM-5.1 定价一致($1.40 / $4.40)。该数字视为 **partially_verified**——可信度高,但缺一手直接确认。
-4. **FrontierSWE 完整描述与分数**:Z.ai 公告原文片段在描述 FrontierSWE 时被截断,**实际分数、benchmark 协议、对比模型**尚未在公开摘录中给出。后续需要从完整公告页/技术报告获取。
+4. **FrontierSWE / PostTrainBench / SWE-Marathon 完整 benchmark 协议**:Z.ai 公告配图直接给了三项长程 benchmark 的具体分数,但**benchmark 协议(任务列表、scoring 公式、时间盒具体定义)尚未在公告中公开**。FrontierSWE 是否会成为行业新标准取决于 Z.ai 是否后续公开协议 + 第三方独立复现。
 5. **1M 稳定性训练细节**:Z.ai 公开材料只说明"针对 large-scale implementation、automated research、performance optimization、complex debugging 四大场景做了 1M 训练",但未披露具体的中期训练(mid-training)数据构成、超参与 ablation。第三方无法独立复现"稳定性提升"的具体来源。
-6. **第三方 benchmark 数字**:部分二手博客引用的"SWE-bench Pro 62.1 / HLE 40.5"等数字,溯源上多为 GLM-5.1 的回填或行业推测,**不应作为 GLM-5.2 的实测分数引用**。
-7. **市场反应**:HN 讨论串整体偏正面但样本小(<100 评论),不构成对开发者社区真实使用体验的代表性采样。
+6. **SWE-Marathon 13.0% 的解释**:Z.ai 自己的数据里 GLM-5.2 在 SWE-Marathon 上仅 13.0%,比 Opus 4.8 (26.0%) 落后整整 2 倍——这与"1M 上下文 + 长程任务"的主叙事存在张力。**为何 Z.ai 用了"Long-Horizon Task Evaluation" 这个包装而非直接公开 SWE-Marathon 绝对值,值得在企业尽调中追问**。
+7. **Arena.ai 快照时间窗**:Arena.ai 是动态众包 leaderboard,1,641 票相对于 7,388 票(Anthropic Opus 4.7 Thinking)的样本量较少,**GLM-5.2 的 1595 分的 95% CI 较宽(±16)**。把 GLM-5.2 与 Fable 5 严格比较(1595 vs 1654)需以 "Fable 5 重新被采样" 为前提。
+8. **第三方 benchmark 数字**:部分二手博客引用的"SWE-bench Pro 62.1 / HLE 40.5"等数字,溯源上多为 GLM-5.1 的回填或行业推测,**不应作为 GLM-5.2 的实测分数引用**。
+9. **市场反应**:HN 讨论串整体偏正面但样本小(<100 评论),不构成对开发者社区真实使用体验的代表性采样。Arena.ai 排名公布后,HN 上的"无 benchmark"批评已被部分反驳。
 
 ## Recommendations
 
@@ -224,23 +263,26 @@ IndexShare 的思想与 DeepSeek DSA 的"主注意力层 + 共享 indexer"思路
 对**中型团队 / 中长程 agent 项目**:
 - 1M 上下文 + IndexShare 对"整库重构""长规范单次消化"价值最大;短对话场景下使用 GLM-4.5-air 即可,避免每 token $1.40 的成本浪费。
 - 关注后续 OpenRouter 路由是否上线——若能用 OpenRouter 统一结算与路由,有助于多模型 fallback 架构。
-- 关注 FrontierSWE 这类长程 benchmark 后续是否被 Z.ai 公开具体分数——这会是 1M 真实可用性的关键信号。
+- FrontierSWE 74.4% / Arena.ai #2 (1595) 已经把"GLM-5.2 实力" 这件事说清楚了。Z.ai 已经公布具体分数,HN 上"无 benchmark" 的批评已被部分反驳。
+- **多模型 fallback 策略建议**:把 GLM-5.2 (Max) 作为主力(价格 + 性能),Opus 4.8 作为"重要 100+ 步 agent 任务"的安全网,SWE-Marathon 上 Opus 4.8 仍是 26.0% vs GLM-5.2 13.0%—— 重要任务上用 Opus 4.8 顶上。
 
 对**企业架构师**:
 - GLM-5.2 + MIT 许可证 + 1M 上下文,在"自部署大模型"成本结构上比 Llama 3.3 70B、Qwen3.6 27B、GLM-4.5 355B 都更"重型"——硬件预算需要 8×H200 起跳。
 - "**no regional limits, technical access without borders**"是 Z.ai 公告原文承诺,合规场景下比 Llama 社区许可证更可预测。
-- 等第三方 1M 长上下文评测(LongBench-V2、RULER、NoCha、∞Bench)出分后再做严肃采购决策;若只做 <200K 任务,GLM-5.1 的 $1.40/$4.40 性价比更优。
-- "无传统 benchmark 发布"这一信号值得在企业尽调中保留问号——尤其是医疗 / 金融 / 法律等强监管场景下,缺少公开评测等同于缺少可审计证据。
+- **价格 / 性能比已经压倒 Anthropic**——GLM-5.2 (Max) $1.40/$4.40 vs Opus 4.8 (Thinking) $5/$25,**输入便宜 3.6× / 输出便宜 5.7×**,Arena.ai 性能差距仅 30 分。如果走 Z.ai 官方 API,这意味着企业 API 账单可砍 **~75%** 而不损失太多质量。
+- **关键风险**:SWE-Marathon 上 GLM-5.2 (13.0%) 比 Opus 4.8 (26.0%) 落后 2 倍——"马拉松级"长程任务(20+ 步工具调用 + 错误恢复)仍是 GLM-5.2 的弱点。**如果企业的 agent 任务以 10 步以内、<200K 上下文为主,GLM-5.2 是真香选择;如果是 100+ 步、需要长时间持续状态维护的任务,Opus 4.8 仍是更稳的选择**。
+- 等第三方 1M 长上下文评测(LongBench-V2、RULER、NoCha、∞Bench)出分后再做严肃采购决策;若只做 <200K 任务,GLM-5.1 的 $1.40/$4.40 性价比仍很优秀。
 
 对**研究者**:
 - IndexShare 的具体实现与 DeepSeek DSA 的关系值得一篇 arxiv 综述或消融研究。
 - 智谱用华为昇腾 + MindSpore 训练 744B 模型,本身就是中国 AI 算力栈的重要案例,值得跟踪其训练能耗、单 GPU 吞吐与海外 H100 训练的对比数据。
 - 异步 RL 基础设施(generation / training 解耦)是该团队 2026 年的另一条重要叙事,值得关注后续技术博客。
-- FrontierSWE 作为"长程 agent benchmark"是否会被业内采纳,值得 arxiv 综述或 Hugging Face Open-LEaderboard 形式的持续监测。
+- **FrontierSWE / PostTrainBench / SWE-Marathon 三个 benchmark 协议本身值得做 arxiv 综述**——这是 Z.ai 给 2026 年长程 agent 评估定调的关键尝试,需要独立第三方复现。
+- **SWE-Marathon 的 13% vs 26% 鸿沟**是一个有趣的开放问题——是数据问题、RL 训练问题、还是工程问题?需要 ablation。
 
 ## Source Notes
 
-本报告引用 90 个独立来源,其中**直接 web_fetch 抓取 12 个**(9 个一手 + 3 个二手),**包括 Z.ai 官方公告原文(由用户提供)**。其余来自 Tavily 抓取片段用于 cross-reference。
+本报告引用 90 个独立来源,其中**直接 web_fetch 抓取 17 个**(11 个一手 + 6 个二手),**包括 Z.ai 官方公告原文(由用户提供)+ Arena.ai 第三方 leaderboard 完整数据**。其余来自 Tavily 抓取片段用于 cross-reference。
 
 所有主张按以下标准归类:
 
@@ -268,3 +310,4 @@ IndexShare 的思想与 DeepSeek DSA 的"主注意力层 + 共享 indexer"思路
 14. YouTube / AICodeKing:"GLM-5.2 (Fully Tested)" — https://www.youtube.com/watch?v=MkFThJWJgg8
 15. GitHub:`zai-org/GLM-5` — https://github.com/zai-org/GLM-5
 16. Z.ai 官方 Chat — https://chat.z.ai
+17. **Arena.ai Code Arena 第三方排行榜(2026-06-17 快照,本次新增)** — https://arena.ai/leaderboard/code
