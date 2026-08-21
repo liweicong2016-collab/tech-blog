@@ -33,6 +33,13 @@ jobs:
       - name: Setup Pages
         uses: actions/configure-pages@v4
 
+      - name: Verify content sources
+        run: |
+          test -d content/posts
+          count=$(find content -type f -name '*.md' | wc -l)
+          test "$count" -gt 0
+          echo "Verified $count Markdown content files"
+
       - name: Build Hugo
         run: hugo --theme PaperMod --gc --minify --buildDrafts
 
