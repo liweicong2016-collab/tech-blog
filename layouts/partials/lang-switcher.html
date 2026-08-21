@@ -1,36 +1,16 @@
-{{- /*
-  Custom 4-language switcher — uses real translation page URLs (NOT Google Translate).
-  Each click takes the user to the same article in that language.
-  Hugo v0.161 has a quirk where .Translations returns empty on the default-lang page,
-  so we build EN/VI/JA URLs manually from the current page's relative path.
-*/ -}}
-{{- $currentUrl := .Permalink -}}
-{{- $currentRel := .RelPermalink -}}
-{{- $parsed := urls.Parse .Permalink -}}
-{{- $host := $parsed.Host -}}
-{{- /* detect current lang from URL */ -}}
-{{- $currentLang := "zh" -}}
-{{- if strings.Contains $currentRel "/en/" }}{{ $currentLang = "en" }}{{ end -}}
-{{- if strings.Contains $currentRel "/vi/" }}{{ $currentLang = "vi" }}{{ end -}}
-{{- if strings.Contains $currentRel "/ja/" }}{{ $currentLang = "ja" }}{{ end -}}
-{{- /* build target URLs by swapping the lang prefix in RelPermalink */ -}}
-{{- $cleanRel := $currentRel -}}
-{{- if strings.Contains $currentRel "/en/" }}{{ $cleanRel = replace $cleanRel "/en/" "/" 1 }}{{ end -}}
-{{- if strings.Contains $currentRel "/vi/" }}{{ $cleanRel = replace $cleanRel "/vi/" "/" 1 }}{{ end -}}
-{{- if strings.Contains $currentRel "/ja/" }}{{ $cleanRel = replace $cleanRel "/ja/" "/" 1 }}{{ end -}}
-{{- $base := printf "https://%s" $host -}}
-{{- $zhUrl := printf "%s%s" $base $cleanRel -}}
-{{- $enUrl := printf "%s%s" $base (replace $cleanRel "/posts/" "/en/posts/" 1) -}}
-{{- $viUrl := printf "%s%s" $base (replace $cleanRel "/posts/" "/vi/posts/" 1) -}}
-{{- $jaUrl := printf "%s%s" $base (replace $cleanRel "/posts/" "/ja/posts/" 1) -}}
-
+{{- $rel := .RelPermalink -}}
+{{- $baseRel := $rel -}}
+{{- if strings.Contains $baseRel "/en/" }}{{ $baseRel = replace $baseRel "/en/" "/" 1 }}{{ end -}}
+{{- if strings.Contains $baseRel "/vi/" }}{{ $baseRel = replace $baseRel "/vi/" "/" 1 }}{{ end -}}
+{{- if strings.Contains $baseRel "/ja/" }}{{ $baseRel = replace $baseRel "/ja/" "/" 1 }}{{ end -}}
+{{- $zhUrl := $baseRel -}}
+{{- $enUrl := replace $baseRel "/tech-blog/" "/tech-blog/en/" 1 -}}
+{{- $viUrl := replace $baseRel "/tech-blog/" "/tech-blog/vi/" 1 -}}
+{{- $jaUrl := replace $baseRel "/tech-blog/" "/tech-blog/ja/" 1 -}}
+{{- $currentLang := .Lang -}}
 <div class="lang-switch" data-current="{{ $currentLang }}">
-  <a class="lang-btn{{ if eq $currentLang "zh" }} active{{ end }}" data-lang="zh"
-     href="{{ $zhUrl }}" aria-label="中文">中</a>
-  <a class="lang-btn{{ if eq $currentLang "en" }} active{{ end }}" data-lang="en"
-     href="{{ $enUrl }}" aria-label="English">EN</a>
-  <a class="lang-btn{{ if eq $currentLang "ja" }} active{{ end }}" data-lang="ja"
-     href="{{ $jaUrl }}" aria-label="日本語">日</a>
-  <a class="lang-btn{{ if eq $currentLang "vi" }} active{{ end }}" data-lang="vi"
-     href="{{ $viUrl }}" aria-label="Tiếng Việt">VI</a>
+  <a class="lang-btn{{ if eq $currentLang "zh" }} active{{ end }}" data-lang="zh" href="{{ $zhUrl }}" aria-label="中文">中</a>
+  <a class="lang-btn{{ if eq $currentLang "en" }} active{{ end }}" data-lang="en" href="{{ $enUrl }}" aria-label="English">EN</a>
+  <a class="lang-btn{{ if eq $currentLang "ja" }} active{{ end }}" data-lang="ja" href="{{ $jaUrl }}" aria-label="日本語">日</a>
+  <a class="lang-btn{{ if eq $currentLang "vi" }} active{{ end }}" data-lang="vi" href="{{ $viUrl }}" aria-label="Tiếng Việt">VI</a>
 </div>
