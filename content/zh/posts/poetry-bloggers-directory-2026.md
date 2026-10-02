@@ -18,7 +18,7 @@ ShowToc: true
 
 整理过程中有两个发现让我挺意外。一是「野生诗人」比我想象的多得多——快手有个「田埂诗人」韩仕梅，河南农村的普通农妇，靠写诗上了新华网；王计兵一边送外卖一边写诗，出了本诗集叫《赶时间的人》。二是很多流传的「官方账号链接」其实是错的——这份清单里，假链接、重复链接、占位符链接，一度比真实链接还多。我把能验证的都逐个验证了，验证不了的也如实标了出来。
 
-**数据说明**：200 位博主里，136 个链接已验证可点击；60 个标了「🔍 平台内搜索」（快手、抖音、小红书这些平台的网页端不开放主页链接，只能 App 内搜）；4 个账号已停用（比如 Poetry Slam Inc，组织已经破产）。
+**数据说明**：200 位博主里，158 个链接已验证可点击；38 个标了「🔍 平台内搜索」（快手、抖音、小红书这些平台的网页端不开放主页链接，只能 App 内搜）；4 个账号已停用（比如 Poetry Slam Inc，组织已经破产）。
 
 ---
 
@@ -35,41 +35,41 @@ ShowToc: true
 - **钱理群**（15万+） — [主页](https://space.bilibili.com/1892359255)
 - **国家玮-开明致学**（200万+） — [主页](https://space.bilibili.com/485578465)
 - **我就是皮皮儿**（30万+） — [主页](https://space.bilibili.com/34579535)
-- **小强语文**（20万+） — 🔍 平台内搜索
-- **梓墨说语文**（23万+） — 🔍 平台内搜索
-- **谢明波语文网课**（18万+） — 🔍 平台内搜索
-- **中华经典资源库**（10万+） — 🔍 平台内搜索
-- **学过石油的语文老师**（80万+） — 🔍 平台内搜索
+- **小强语文**（20万+） — [主页](https://space.bilibili.com/1837358156)
+- **梓墨说语文**（23万+） — [主页](https://space.bilibili.com/316069678)
+- **谢明波语文网课**（18万+） — [主页](https://space.bilibili.com/336107633)
+- **中华经典资源库**（10万+） — [主页](https://space.bilibili.com/2006027680)
+- **学过石油的语文老师**（80万+） — [主页](https://space.bilibili.com/39737405)
 - **大宴朗诵**（5万+） — 🔍 平台内搜索
-- **纳兰莫逆**（8万+） — 🔍 平台内搜索
-- **天鸿国学**（3万+） — 🔍 平台内搜索
-- **青禾未秀**（2万+） — 🔍 平台内搜索
-- **jack老师分享**（6万+） — 🔍 平台内搜索
-- **黄色荧光笔90**（15万+） — 🔍 平台内搜索
-- **墨韵凝诗**（10万+） — 🔍 平台内搜索
-- **阿帅派克**（50万+） — 🔍 平台内搜索
-- **小嵩搞笑视频**（20万+） — 🔍 平台内搜索
-- **隔花人**（5万+） — 🔍 平台内搜索
-- **祺白石**（8万+） — 🔍 平台内搜索
+- **纳兰莫逆**（8万+） — [主页](https://space.bilibili.com/1922317533)
+- **天鸿国学**（3万+） — [主页](https://space.bilibili.com/3493079673735248)
+- **青禾未秀**（2万+） — [主页](https://space.bilibili.com/351607506)
+- **jack老师分享**（6万+） — [主页](https://space.bilibili.com/3546382900136807)
+- **黄色荧光笔90**（15万+） — [主页](https://space.bilibili.com/373395823)
+- **墨韵凝诗**（10万+） — [主页](https://space.bilibili.com/3546969706334738)
+- **阿帅派克**（50万+） — [主页](https://space.bilibili.com/395089518)
+- **小嵩搞笑视频**（20万+） — [主页](https://space.bilibili.com/400184304)
+- **隔花人**（5万+） — [主页](https://space.bilibili.com/1861036799)
+- **祺白石**（8万+） — [主页](https://space.bilibili.com/2009238634)
 - **焦野绿**（6万+） — 🔍 平台内搜索
-- **小韬CHENTY**（4万+） — 🔍 平台内搜索
-- **谈亦默**（12万+） — 🔍 平台内搜索
+- **小韬CHENTY**（4万+） — [主页](https://space.bilibili.com/433874679)
+- **谈亦默**（12万+） — [主页](https://space.bilibili.com/437677867)
 - **康震**（50万+） — 🔍 平台内搜索
 - **蒙曼**（40万+） — 🔍 平台内搜索
-- **郦波**（35万+） — 🔍 平台内搜索
+- **郦波**（35万+） — [主页](https://space.bilibili.com/595430437)
 - **杨雨**（30万+） — 🔍 平台内搜索
 - **蒋勋**（100万+） — 🔍 平台内搜索
 
 ### 抖音（10 位）
 
 - **戴建业**（500万+） — [主页](https://www.douyin.com/user/MS4wLjABAAAAej1p52cLe5huZloQJPQKTxSWcL4et_SbZhSINWX1VY0)
-- **有山先生**（200万+） — 🔍 平台内搜索
+- **有山先生**（200万+） — [主页](https://www.douyin.com/user/MS4wLjABAAAAKQ9_Qw14XuFgwIn8Mk0pPbS8B4N9AC_Xslh33k4R6MmLDDQKQ1EWHPB3L42uXnyI)
 - **高盛元**（100万+） — 🔍 平台内搜索
 - **余秀华**（300万+） — 🔍 平台内搜索
 - **隔花人**（50万+） — 🔍 平台内搜索
 - **焦野绿**（80万+） — 🔍 平台内搜索
 - **祺白石**（40万+） — 🔍 平台内搜索
-- **王计兵**（100万+） — 🔍 平台内搜索
+- **王计兵**（100万+） — [主页](https://www.douyin.com/user/MS4wLjABAAAAR3Soqyi6PxPSnV3YYLV-Cm2tohM4RWMD21t916FXFq9Vq-HjFcb0VPRE39JaQBzt)
 - **韩仕梅**（60万+） — 🔍 平台内搜索
 - **诗词大会**（200万+） — 🔍 平台内搜索
 
@@ -88,10 +88,10 @@ ShowToc: true
 
 ### 小红书（20 位）
 
-- **隔花人**（20.8万） — [主页](https://www.xiaohongshu.com/user/profile/5f3c8b4a000000000101e3a6)
-- **焦野绿**（30万+） — 🔍 平台内搜索
+- **隔花人**（20.8万） — [主页](https://www.xiaohongshu.com/user/profile/5c08fc55000000000601ce6c)
+- **焦野绿**（30万+） — [主页](https://www.xiaohongshu.com/user/profile/5e4f93af0000000001004261)
 - **祺白石**（15万+） — [主页](https://www.xiaohongshu.com/user/profile/5f785bfd000000000100b217)
-- **小韬CHENTY**（7万） — 🔍 平台内搜索
+- **小韬CHENTY**（7万） — [主页](https://www.xiaohongshu.com/user/profile/5ec3baf6000000000100250b)
 - **谈亦默**（25万） — 🔍 平台内搜索
 - **乔乌**（8万） — 🔍 平台内搜索
 - **奶字编辑部**（50万+） — [主页](https://www.xiaohongshu.com/user/profile/5976f97650c4b40dc33e5757)
@@ -235,11 +235,11 @@ ShowToc: true
 ### 其他平台/网站（20 位）
 
 - **为你读诗**（1000万+） — [主页](https://www.thepoemforyou.com)
-- **诗歌中国**（100万+） — [主页](https://www.shige.com.cn)
-- **诗刊**（50万+） — [主页](https://www.shikan.org.cn)
-- **星星诗刊**（30万+） — [主页](http://xxsk.400qikan.com)
-- **诗收获**（20万+） — [主页](微信公众号「诗收获」)
-- **光年**（10万+） — [主页](微信公众号「光年」)
+- **诗歌中国**（100万+） — [主页](https://www.shigecn.com)
+- **诗刊**（50万+） — [主页](http://www.shikanzz.cn)
+- **星星诗刊**（30万+） — [主页](https://www.sczjw.net.cn/organization/detail/65.html)
+- **诗收获**（20万+） — [主页](https://www.cjlap.com)
+- **光年**（10万+） — [主页](https://www.guangnian.com)
 - **Poetry Foundation** — [主页](https://www.poetryfoundation.org)
 - **Poets.org** — [主页](https://www.poets.org)
 - **Poetry Daily** — [主页](https://www.poems.com)
@@ -252,7 +252,7 @@ ShowToc: true
 - **The Paris Review** — [主页](https://www.theparisreview.org)
 - **Ploughshares** — [主页](https://www.pshares.org)
 - **The Kenyon Review** — [主页](https://www.kenyonreview.org)
-- **AGNI** — [主页](https://www.agnimagazine.com)
+- **AGNI** — [主页](https://agnionline.bu.edu)
 - **Poetry Magazine** — [主页](https://www.poetryfoundation.org/poetrymagazine)
 
 
