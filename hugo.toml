@@ -17,8 +17,8 @@ defaultContentLanguageInSubdir = false
       weight = 5
     [[languages.zh.menu.main]]
       identifier = "x-evening"
-      name = "喷嚏晚报"
-      url = "/tags/喷嚏晚报/"
+      name = "X晚报"
+      url = "/tags/X晚报/"
       weight = 6
   [languages.en]
     contentDir = "content/en"
