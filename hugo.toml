@@ -16,10 +16,15 @@ defaultContentLanguageInSubdir = false
       url = "/tags/x早报/"
       weight = 5
     [[languages.zh.menu.main]]
+      identifier = "ai-insight"
+      name = "AI洞察日报"
+      url = "/tags/AI洞察日报/"
+      weight = 6
+    [[languages.zh.menu.main]]
       identifier = "x-evening"
       name = "X晚报"
       url = "/tags/X晚报/"
-      weight = 6
+      weight = 7
   [languages.en]
     contentDir = "content/en"
     label = "English"
