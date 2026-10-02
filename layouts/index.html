@@ -122,7 +122,11 @@
       {{- range $i, $p := $picks -}}
       <article class="pick-card">
         <a href="{{ $p.RelPermalink }}" aria-label="{{ $p.Title }}">
+          {{- with $p.Params.cover.image -}}
+          <div class="pick-art has-img"><img src="{{ . }}" alt="{{ $p.Title }}" loading="lazy"></div>
+          {{- else -}}
           <div class="pick-art art-{{ mod $i 4 }}"><span>{{- range first 1 $p.Params.tags -}}{{ substr . 0 1 }}{{- else -}}文{{- end -}}</span></div>
+          {{- end -}}
           <div class="pick-body">
             <div class="pick-kicker">{{- range first 1 $p.Params.tags -}}{{ . }}{{- end -}}</div>
             <h3>{{ $p.Title }}</h3>
