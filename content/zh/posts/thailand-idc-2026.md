@@ -150,7 +150,7 @@ Solar+PPA模式逐步成熟,泰国年均2,500小时日照为自有光伏提供�
 
 泰国IDC市场正在经历质的跃升——从体量有限的新兴市场，迈向AI超大规模基础设施的东南亚重要枢纽。True IDC主导本土市场，中国科技企业（万国数据、阿里云等）快速渗透。对于布局东南亚AI算力和数字基础设施的参与者而言，**2026-2027年是泰国市场最关键的卡位窗口**。
 
-> 📌 数据来源:泰国BOI公告、True IDC官方发布、GDS International财报(2025年Q2)、Cushman & Wakefield APAC DC Report、Structure Research、Thailand PDPA监管文件
+> 数据来源:泰国BOI公告、True IDC官方发布、GDS International财报(2025年Q2)、Cushman & Wakefield APAC DC Report、Structure Research、Thailand PDPA监管文件
 
 ---
 

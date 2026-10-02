@@ -14,8 +14,8 @@ TocOpen: false
 
 <img src="/tech-blog/images/waic/waic-2026-hero-official.png" alt="WAIC 2026 主视觉" style="max-width:100%; height:auto; border-radius:8px;">
 
-**📅 7月17-20日 · 上海世博展览馆**
-**📊 800+展商 · 7万㎡+ · 70+国家**
+**7月17-20日 · 上海世博展览馆**
+**800+展商 · 7万㎡+ · 70+国家**
 
 ---
 
@@ -60,9 +60,9 @@ TocOpen: false
 
 📍 **地点**：上海世博展览馆（国展路1099号）
 
-🏷️ **展区**：大模型/芯片 · 机器人/智驾 · AI+行业 · 量子计算/6G
+**展区**：大模型/芯片 · 机器人/智驾 · AI+行业 · 量子计算/6G
 
-✅ **参与方式**：
+**参与方式**：
 1. worldaic.com.cn 线下注册
 2. 官方平台线上直播
 3. WAIC CONNECT 产业对接

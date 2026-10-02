@@ -18,7 +18,7 @@ TocOpen: false
 
 ---
 
-## 一句话结论
+## 结论
 
 > **AI公司已全面占领企业软件支出榜。DeepSeek登顶，Anthropic增速第一，Granola意外爆发——这不是预测，是已经发生的事实。**
 
