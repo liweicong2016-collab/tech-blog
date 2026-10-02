@@ -95,6 +95,7 @@ theme = ["PaperMod"]
   ShowCommentsButton = false
   ShowCodeCopyButtons = true
   defaultTheme = "light"
+  ShowShareButtons = true
 
   [params.PaperMod]
     showupanimation = true
