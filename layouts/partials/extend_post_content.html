@@ -14,6 +14,47 @@
   });
 </script>
 
+
+<!-- 一键转发分享条 -->
+<div class="share-bar-paper" id="shareBarPaper">
+  <span class="share-label">一键转发</span>
+  <a class="share-btn-paper" id="shareX" target="_blank" rel="noopener" href="#" title="分享到 X">𝕏</a>
+  <button class="share-btn-paper" id="shareCopy" title="复制链接">复制链接</button>
+  <button class="share-btn-paper" id="shareNative" title="系统分享" style="display:none">更多</button>
+  <span class="share-tip" id="shareTip"></span>
+</div>
+<style>
+.share-bar-paper{display:flex;align-items:center;gap:10px;flex-wrap:wrap;margin:36px 0 8px;padding:16px 20px;border:1px solid var(--line);border-radius:10px;background:var(--card);box-shadow:var(--shadow-hard)}
+.share-bar-paper .share-label{font-size:14px;font-weight:700;color:var(--ink-soft);margin-right:4px;font-family:var(--sans)}
+.share-btn-paper{display:inline-flex;align-items:center;background:transparent;border:1px solid var(--line);color:var(--ink);font-size:13px;font-weight:600;padding:8px 16px;border-radius:8px;cursor:pointer;text-decoration:none;font-family:var(--sans);transition:all .15s}
+.share-btn-paper:hover{border-color:var(--accent);color:var(--accent);transform:translateY(-1px)}
+.share-bar-paper .share-tip{font-size:12px;color:var(--accent);min-height:16px;font-family:var(--sans)}
+</style>
+<script>
+(function(){
+  var bar=document.getElementById('shareBarPaper');if(!bar)return;
+  var title=document.title||'';
+  var url=location.href.split('#')[0];
+  var x=document.getElementById('shareX');
+  x.href='https://twitter.com/intent/tweet?text='+encodeURIComponent(title)+'&url='+encodeURIComponent(url);
+  var tip=document.getElementById('shareTip');
+  document.getElementById('shareCopy').addEventListener('click',function(){
+    function done(m){tip.textContent=m;setTimeout(function(){tip.textContent='';},2000);}
+    if(navigator.clipboard&&navigator.clipboard.writeText){
+      navigator.clipboard.writeText(url).then(function(){done('链接已复制');},function(){done('复制失败，请手动复制地址栏');});
+    }else{
+      var ta=document.createElement('textarea');ta.value=url;document.body.appendChild(ta);ta.select();
+      try{document.execCommand('copy');done('链接已复制');}catch(e){done('复制失败，请手动复制地址栏');}
+      ta.remove();
+    }
+  });
+  if(navigator.share){
+    var nb=document.getElementById('shareNative');nb.style.display='';
+    nb.addEventListener('click',function(){navigator.share({title:title,url:url}).catch(function(){});});
+  }
+})();
+</script>
+
 {{- partial "author_box.html" . }}
 
 {{- partial "related_articles.html" . }}
