@@ -4,24 +4,28 @@ defaultContentLanguageInSubdir = false
 
 [languages]
   [languages.zh]
+    contentDir = "content/zh"
     label = "中文"
     weight = 1
     title = "Livius's Tech Pulse"
     [languages.zh.params]
       description = "AI · 算力 · 半导体 · 东南亚市场"
   [languages.en]
+    contentDir = "content/en"
     label = "English"
     weight = 2
     title = "Livius's Tech Pulse"
     [languages.en.params]
       description = "AI · Compute · Semiconductors · Southeast Asia"
   [languages.vi]
+    contentDir = "content/vi"
     label = "Tiếng Việt"
     weight = 3
     title = "Livius's Tech Pulse"
     [languages.vi.params]
       description = "AI · Điện toán · Bán dẫn · Thị trường Đông Nam Á"
   [languages.ja]
+    contentDir = "content/ja"
     label = "日本語"
     weight = 4
     title = "Livius's Tech Pulse"

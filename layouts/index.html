@@ -1,4 +1,86 @@
 {{- define "main" -}}
+{{- /* i18n strings for hero + section headers, keyed by language */ -}}
+{{- $hl := .Site.Language.Lang -}}
+{{- $i18n := dict
+  "zh" (dict
+    "tagline" "AI · 算力 · 半导体 · 东南亚市场"
+    "bio" "技术观察者。写<strong>中国 AI 出海</strong>、<strong>算力成本</strong>与<strong>半导体</strong>的深度分析——每一篇都带着数据和一线体感。Base 胡志明市。"
+    "weekly" "每周一篇深度分析"
+    "browse" "浏览文章"
+    "subTitle" "订阅深度分析"
+    "subDesc" "每周一篇，不发水文。直接送达邮箱。"
+    "subNow" "立即订阅"
+    "picks" "值得一读"
+    "picksKicker" "Editor's picks"
+    "latest" "最新文章"
+    "latestKicker" "Latest writing"
+    "viewAll" "查看全部 %d 篇文章 →"
+    "neverMiss" "不错过每一篇深度分析"
+    "subNote" "邮件订阅，每周一篇。退订随时，无垃圾。"
+    "subscribe" "订阅"
+    "subscribed" "已订阅"
+    "emailAria" "邮箱地址"
+  )
+  "en" (dict
+    "tagline" "AI · Compute · Semiconductors · Southeast Asia"
+    "bio" "Technology observer writing in-depth analysis on <strong>China's AI going global</strong>, <strong>compute costs</strong>, and <strong>semiconductors</strong> — every piece grounded in data and first-hand experience. Based in Ho Chi Minh City."
+    "weekly" "One in-depth essay a week"
+    "browse" "Browse articles"
+    "subTitle" "Get the deep dives"
+    "subDesc" "One essay a week, no fluff. Straight to your inbox."
+    "subNow" "Subscribe"
+    "picks" "Worth reading"
+    "picksKicker" "Editor's picks"
+    "latest" "Latest"
+    "latestKicker" "Latest writing"
+    "viewAll" "View all %d articles →"
+    "neverMiss" "Never miss a deep dive"
+    "subNote" "One email a week. Unsubscribe anytime, no spam."
+    "subscribe" "Subscribe"
+    "subscribed" "Subscribed"
+    "emailAria" "Email address"
+  )
+  "ja" (dict
+    "tagline" "AI · コンピューティング · 半導体 · 東南アジア"
+    "bio" "テクノロジー・オブザーバー。<strong>中国AIの海外展開</strong>、<strong>コンピューティングコスト</strong>、<strong>半導体</strong>をデータと現場感覚で深掘りする。ホーチミン在住。"
+    "weekly" "週1本の深掘り記事"
+    "browse" "記事を読む"
+    "subTitle" "深掘り記事の購読"
+    "subDesc" "週1本、水増しなし。メールで直接お届け。"
+    "subNow" "購読する"
+    "picks" "おすすめ"
+    "picksKicker" "Editor's picks"
+    "latest" "最新記事"
+    "latestKicker" "Latest writing"
+    "viewAll" "全 %d 記事を見る →"
+    "neverMiss" "深掘り記事を見逃さない"
+    "subNote" "週1本のメール購読。いつでも解除可、スパムなし。"
+    "subscribe" "購読"
+    "subscribed" "購読済み"
+    "emailAria" "メールアドレス"
+  )
+  "vi" (dict
+    "tagline" "AI · Điện toán · Bán dẫn · Đông Nam Á"
+    "bio" "Người quan sát công nghệ. Phân tích chuyên sâu về <strong>AI Trung Quốc vươn ra toàn cầu</strong>, <strong>chi phí điện toán</strong> và <strong>bán dẫn</strong> — mỗi bài viết đều dựa trên dữ liệu và trải nghiệm thực tế. Sống tại TP. Hồ Chí Minh."
+    "weekly" "Mỗi tuần một bài phân tích chuyên sâu"
+    "browse" "Xem bài viết"
+    "subTitle" "Nhận bài phân tích"
+    "subDesc" "Mỗi tuần một bài, không lan man. Gửi thẳng vào email của bạn."
+    "subNow" "Đăng ký ngay"
+    "picks" "Đáng đọc"
+    "picksKicker" "Editor's picks"
+    "latest" "Bài mới nhất"
+    "latestKicker" "Latest writing"
+    "viewAll" "Xem tất cả %d bài viết →"
+    "neverMiss" "Đừng bỏ lỡ bài phân tích nào"
+    "subNote" "Email mỗi tuần một bài. Hủy bất cứ lúc nào, không spam."
+    "subscribe" "Đăng ký"
+    "subscribed" "Đã đăng ký"
+    "emailAria" "Địa chỉ email"
+  )
+-}}
+{{- $t := index $i18n $hl -}}
+{{- if not $t }}{{- $t = index $i18n "zh" -}}{{- end -}}
 
 {{/* ===== HERO · 纸质个人风 ===== */}}
 <section class="hero-paper">
@@ -7,23 +89,23 @@
       <div class="hero-portrait" aria-hidden="true">李</div>
       <div class="hero-id">
         <h1 class="hero-name">李维聪 <span class="hero-name-en">Livius</span></h1>
-        <span class="hero-tagline">AI · 算力 · 半导体 · 东南亚市场</span>
-        <p class="hero-bio">技术观察者。写<strong>中国 AI 出海</strong>、<strong>算力成本</strong>与<strong>半导体</strong>的深度分析——每一篇都带着数据和一线体感。Base 胡志明市。</p>
+        <span class="hero-tagline">{{ index $t "tagline" }}</span>
+        <p class="hero-bio">{{ index $t "bio" | safeHTML }}</p>
         <div class="hero-links">
           <a href="https://github.com/liweicong2016-collab" target="_blank" rel="noopener">
             <svg width="14" height="14" viewBox="0 0 24 24" fill="currentColor" aria-hidden="true"><path d="M12 .5C5.65.5.5 5.65.5 12c0 5.08 3.29 9.39 7.86 10.91.58.11.79-.25.79-.55v-2.15c-3.2.7-3.87-1.36-3.87-1.36-.52-1.33-1.28-1.68-1.28-1.68-1.04-.71.08-.7.08-.7 1.15.08 1.76 1.18 1.76 1.18 1.03 1.76 2.7 1.25 3.36.96.1-.75.4-1.25.72-1.54-2.55-.29-5.23-1.28-5.23-5.68 0-1.26.45-2.28 1.18-3.09-.12-.29-.51-1.46.11-3.05 0 0 .96-.31 3.15 1.18a10.9 10.9 0 0 1 5.74 0c2.19-1.49 3.15-1.18 3.15-1.18.62 1.59.23 2.76.11 3.05.74.81 1.18 1.83 1.18 3.09 0 4.41-2.69 5.38-5.25 5.67.41.35.77 1.05.77 2.12v3.14c0 .3.21.67.8.55A11.51 11.51 0 0 0 23.5 12C23.5 5.65 18.35.5 12 .5z"/></svg>
             GitHub</a>
           <span class="sep">·</span>
-          <span>每周一篇深度分析</span>
+          <span>{{ index $t "weekly" }}</span>
         </div>
         <div class="hero-cta">
-          <a href="{{ "posts/" | relURL }}" class="btn-paper-primary">浏览文章</a>
+          <a href="{{ "posts/" | relURL }}" class="btn-paper-primary">{{ index $t "browse" }}</a>
         </div>
       </div>
       <aside class="hero-sub">
-        <h4>订阅深度分析</h4>
-        <p>每周一篇，不发水文。直接送达邮箱。</p>
-        <a class="btn-paper-primary" href="#newsletter">立即订阅</a>
+        <h4>{{ index $t "subTitle" }}</h4>
+        <p>{{ index $t "subDesc" }}</p>
+        <a class="btn-paper-primary" href="#newsletter">{{ index $t "subNow" }}</a>
       </aside>
     </div>
   </div>
@@ -35,7 +117,7 @@
 {{- with where $all "Params.featured" true -}}{{- $picks = first 4 . -}}{{- end -}}
 <section class="sec-paper">
   <div class="container">
-    <div class="sec-head"><h2>值得一读</h2><span>Editor's picks</span></div>
+    <div class="sec-head"><h2>{{ index $t "picks" }}</h2><span>{{ index $t "picksKicker" }}</span></div>
     <div class="picks-grid">
       {{- range $i, $p := $picks -}}
       <article class="pick-card">
@@ -59,7 +141,7 @@
 {{- $listed := first 8 (where $all "RelPermalink" "not in" $pickLinks) -}}
 <section class="sec-paper">
   <div class="container">
-    <div class="sec-head"><h2>最新文章</h2><span>Latest writing</span></div>
+    <div class="sec-head"><h2>{{ index $t "latest" }}</h2><span>{{ index $t "latestKicker" }}</span></div>
     <ul class="paper-list">
       {{- range $listed -}}
       <li>
@@ -69,7 +151,7 @@
       </li>
       {{- end -}}
     </ul>
-    <div class="paper-more"><a href="{{ "posts/" | relURL }}">查看全部 {{ len $all }} 篇文章 →</a></div>
+    <div class="paper-more"><a href="{{ "posts/" | relURL }}">{{ printf (index $t "viewAll") (len $all) }}</a></div>
   </div>
 </section>
 
@@ -78,12 +160,12 @@
   <div class="container">
     <div class="news-dark" id="newsletter">
       <div>
-        <h3>不错过每一篇深度分析</h3>
-        <p>邮件订阅，每周一篇。退订随时，无垃圾。</p>
+        <h3>{{ index $t "neverMiss" }}</h3>
+        <p>{{ index $t "subNote" }}</p>
       </div>
-      <form class="news-form" onsubmit="event.preventDefault();var b=this.querySelector('button');b.textContent='已订阅';b.disabled=true;">
-        <input type="email" placeholder="you@example.com" required aria-label="邮箱地址">
-        <button type="submit">订阅</button>
+      <form class="news-form" onsubmit="event.preventDefault();var b=this.querySelector('button');b.textContent='{{ index $t "subscribed" }}';b.disabled=true;">
+        <input type="email" placeholder="you@example.com" required aria-label="{{ index $t "emailAria" }}">
+        <button type="submit">{{ index $t "subscribe" }}</button>
       </form>
     </div>
   </div>

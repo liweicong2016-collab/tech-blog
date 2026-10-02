@@ -1,34 +1,33 @@
 {{- /*
   Custom 4-language switcher — links to the same page in each language.
-  zh = default language, no URL prefix. en/ja/vi use /en/, /ja/, /vi/ prefixes
-  directly after the site base path (works with or without a subpath like /tech-blog/).
-  Works on homepage, posts, and section pages by swapping the language prefix segment.
+  Uses Hugo's .Translations so the link always points at the real translated
+  page. When a translation is missing, falls back to that language's home
+  page — never generates a 404 link.
+  zh = default language, no URL prefix. en/ja/vi use /en/, /ja/, /vi/.
 */ -}}
-{{- $parsed := urls.Parse .Site.BaseURL -}}
-{{- $basePath := strings.TrimSuffix "/" $parsed.Path -}}
-{{- $base := printf "https://%s" $parsed.Host -}}
-{{- $rel := .RelPermalink -}}
-{{- $after := strings.TrimPrefix $basePath $rel -}}
-{{- /* detect current language from URL prefix */ -}}
-{{- $cur := "zh" -}}
-{{- range slice "en" "ja" "vi" -}}
-  {{- if strings.HasPrefix $after (printf "/%s/" .) }}{{ $cur = . }}{{ end -}}
-{{- end -}}
-{{- /* strip current language prefix to get the language-neutral path */ -}}
-{{- $stripped := $after -}}
-{{- if ne $cur "zh" }}{{ $stripped = replace $after (printf "/%s/" $cur) "/" 1 }}{{ end -}}
-{{- $zhUrl := printf "%s%s%s" $base $basePath $stripped -}}
-{{- $enUrl := printf "%s%s/en%s" $base $basePath $stripped -}}
-{{- $jaUrl := printf "%s%s/ja%s" $base $basePath $stripped -}}
-{{- $viUrl := printf "%s%s/vi%s" $base $basePath $stripped -}}
+{{- $pg := . -}}
+{{- $cur := .Site.Language.Lang -}}
+{{- $langs := slice "zh" "en" "ja" "vi" -}}
+{{- $labels := dict "zh" "中" "en" "EN" "ja" "日" "vi" "VI" -}}
+{{- $arias := dict "zh" "中文" "en" "English" "ja" "日本語" "vi" "Tiếng Việt" -}}
 
 <div class="lang-switch" data-current="{{ $cur }}">
-  <a class="lang-btn{{ if eq $cur "zh" }} active{{ end }}" data-lang="zh"
-     href="{{ $zhUrl }}" aria-label="中文">中</a>
-  <a class="lang-btn{{ if eq $cur "en" }} active{{ end }}" data-lang="en"
-     href="{{ $enUrl }}" aria-label="English">EN</a>
-  <a class="lang-btn{{ if eq $cur "ja" }} active{{ end }}" data-lang="ja"
-     href="{{ $jaUrl }}" aria-label="日本語">日</a>
-  <a class="lang-btn{{ if eq $cur "vi" }} active{{ end }}" data-lang="vi"
-     href="{{ $viUrl }}" aria-label="Tiếng Việt">VI</a>
+{{- range $l := $langs }}
+  {{- $href := "" -}}
+  {{- if eq $l $cur -}}
+    {{- $href = $pg.RelPermalink -}}
+  {{- else -}}
+    {{- range $tr := $pg.Translations -}}
+      {{- if eq $tr.Lang $l -}}{{- $href = $tr.RelPermalink -}}{{- end -}}
+    {{- end -}}
+    {{- if eq $href "" -}}
+      {{- /* no translation for this page: fall back to that language's home */ -}}
+      {{- range $s := $pg.Sites -}}
+        {{- if eq $s.Language.Lang $l -}}{{- $href = $s.Home.RelPermalink -}}{{- end -}}
+      {{- end -}}
+    {{- end -}}
+  {{- end }}
+  <a class="lang-btn{{ if eq $l $cur }} active{{ end }}" data-lang="{{ $l }}"
+     href="{{ $href }}" aria-label="{{ index $arias $l }}">{{ index $labels $l }}</a>
+{{- end }}
 </div>
