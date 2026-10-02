@@ -1,36 +1,34 @@
 {{- /*
-  Custom 4-language switcher — uses real translation page URLs (NOT Google Translate).
-  Each click takes the user to the same article in that language.
-  Hugo v0.161 has a quirk where .Translations returns empty on the default-lang page,
-  so we build EN/VI/JA URLs manually from the current page's relative path.
+  Custom 4-language switcher — links to the same page in each language.
+  zh = default language, no URL prefix. en/ja/vi use /en/, /ja/, /vi/ prefixes
+  directly after the site base path (works with or without a subpath like /tech-blog/).
+  Works on homepage, posts, and section pages by swapping the language prefix segment.
 */ -}}
-{{- $currentUrl := .Permalink -}}
-{{- $currentRel := .RelPermalink -}}
-{{- $parsed := urls.Parse .Permalink -}}
-{{- $host := $parsed.Host -}}
-{{- /* detect current lang from URL */ -}}
-{{- $currentLang := "zh" -}}
-{{- if strings.Contains $currentRel "/en/" }}{{ $currentLang = "en" }}{{ end -}}
-{{- if strings.Contains $currentRel "/vi/" }}{{ $currentLang = "vi" }}{{ end -}}
-{{- if strings.Contains $currentRel "/ja/" }}{{ $currentLang = "ja" }}{{ end -}}
-{{- /* build target URLs by swapping the lang prefix in RelPermalink */ -}}
-{{- $cleanRel := $currentRel -}}
-{{- if strings.Contains $currentRel "/en/" }}{{ $cleanRel = replace $cleanRel "/en/" "/" 1 }}{{ end -}}
-{{- if strings.Contains $currentRel "/vi/" }}{{ $cleanRel = replace $cleanRel "/vi/" "/" 1 }}{{ end -}}
-{{- if strings.Contains $currentRel "/ja/" }}{{ $cleanRel = replace $cleanRel "/ja/" "/" 1 }}{{ end -}}
-{{- $base := printf "https://%s" $host -}}
-{{- $zhUrl := printf "%s%s" $base $cleanRel -}}
-{{- $enUrl := printf "%s%s" $base (replace $cleanRel "/posts/" "/en/posts/" 1) -}}
-{{- $viUrl := printf "%s%s" $base (replace $cleanRel "/posts/" "/vi/posts/" 1) -}}
-{{- $jaUrl := printf "%s%s" $base (replace $cleanRel "/posts/" "/ja/posts/" 1) -}}
+{{- $parsed := urls.Parse .Site.BaseURL -}}
+{{- $basePath := strings.TrimSuffix "/" $parsed.Path -}}
+{{- $base := printf "https://%s" $parsed.Host -}}
+{{- $rel := .RelPermalink -}}
+{{- $after := strings.TrimPrefix $basePath $rel -}}
+{{- /* detect current language from URL prefix */ -}}
+{{- $cur := "zh" -}}
+{{- range slice "en" "ja" "vi" -}}
+  {{- if strings.HasPrefix $after (printf "/%s/" .) }}{{ $cur = . }}{{ end -}}
+{{- end -}}
+{{- /* strip current language prefix to get the language-neutral path */ -}}
+{{- $stripped := $after -}}
+{{- if ne $cur "zh" }}{{ $stripped = replace $after (printf "/%s/" $cur) "/" 1 }}{{ end -}}
+{{- $zhUrl := printf "%s%s%s" $base $basePath $stripped -}}
+{{- $enUrl := printf "%s%s/en%s" $base $basePath $stripped -}}
+{{- $jaUrl := printf "%s%s/ja%s" $base $basePath $stripped -}}
+{{- $viUrl := printf "%s%s/vi%s" $base $basePath $stripped -}}
 
-<div class="lang-switch" data-current="{{ $currentLang }}">
-  <a class="lang-btn{{ if eq $currentLang "zh" }} active{{ end }}" data-lang="zh"
+<div class="lang-switch" data-current="{{ $cur }}">
+  <a class="lang-btn{{ if eq $cur "zh" }} active{{ end }}" data-lang="zh"
      href="{{ $zhUrl }}" aria-label="中文">中</a>
-  <a class="lang-btn{{ if eq $currentLang "en" }} active{{ end }}" data-lang="en"
+  <a class="lang-btn{{ if eq $cur "en" }} active{{ end }}" data-lang="en"
      href="{{ $enUrl }}" aria-label="English">EN</a>
-  <a class="lang-btn{{ if eq $currentLang "ja" }} active{{ end }}" data-lang="ja"
+  <a class="lang-btn{{ if eq $cur "ja" }} active{{ end }}" data-lang="ja"
      href="{{ $jaUrl }}" aria-label="日本語">日</a>
-  <a class="lang-btn{{ if eq $currentLang "vi" }} active{{ end }}" data-lang="vi"
+  <a class="lang-btn{{ if eq $cur "vi" }} active{{ end }}" data-lang="vi"
      href="{{ $viUrl }}" aria-label="Tiếng Việt">VI</a>
 </div>
