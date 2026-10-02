@@ -10,6 +10,11 @@ defaultContentLanguageInSubdir = false
     title = "Livius's Tech Pulse"
     [languages.zh.params]
       description = "AI · 算力 · 半导体 · 东南亚市场"
+    [[languages.zh.menu.main]]
+      identifier = "x-morning"
+      name = "X早报"
+      url = "/tags/x早报/"
+      weight = 5
   [languages.en]
     contentDir = "content/en"
     label = "English"
