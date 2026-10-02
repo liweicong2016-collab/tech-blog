@@ -1,4 +1,7 @@
 ---
+cover:
+  image: "https://liweicong2016-collab.github.io/tech-blog/images/cover-ramp-vendors.jpg"
+  alt: "Ramp 榜单封面"
 title: "Ramp 2026榜单：一个数据揭开AI企业软件真实格局"
 date: 2026-06-04T16:35:00+08:00
 draft: false

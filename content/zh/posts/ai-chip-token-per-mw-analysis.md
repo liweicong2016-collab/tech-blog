@@ -1,4 +1,7 @@
 ---
+cover:
+  image: "https://liweicong2016-collab.github.io/tech-blog/images/cover-ai-chip-token-mw.jpg"
+  alt: "GPU 能效封面"
 title: "1MW电力能跑多少Token？英伟达GPU能效分析"
 date: 2026-06-04T16:00:00+08:00
 draft: false

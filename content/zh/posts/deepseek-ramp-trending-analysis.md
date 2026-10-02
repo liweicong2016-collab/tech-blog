@@ -1,4 +1,7 @@
 ---
+cover:
+  image: "https://liweicong2016-collab.github.io/tech-blog/images/cover-deepseek-ramp.jpg"
+  alt: "DeepSeek 登顶封面"
 title: "DeepSeek登顶Ramp Trending：一个榜单，揭开了AI淘汰赛的底牌"
 date: 2026-06-04T17:20:00+08:00
 draft: false

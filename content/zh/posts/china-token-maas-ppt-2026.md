@@ -1,4 +1,7 @@
 ---
+cover:
+  image: "https://liweicong2016-collab.github.io/tech-blog/images/cover-token-maas.jpg"
+  alt: "Token 经济封面"
 title: "中国互联网大厂的 Token 经济与 MaaS 商业化"
 date: 2026-06-04T00:55:00+08:00
 draft: false

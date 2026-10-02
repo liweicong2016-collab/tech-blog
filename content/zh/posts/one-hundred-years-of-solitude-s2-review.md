@@ -1,4 +1,7 @@
 ---
+cover:
+  image: "https://liweicong2016-collab.github.io/tech-blog/images/cover-solitude-s2.jpg"
+  alt: "百年孤独封面"
 title: "百年孤独 第二季：魔幻退场，政治登场，9.3 分收官"
 date: 2026-10-01T22:20:00+07:00
 draft: false

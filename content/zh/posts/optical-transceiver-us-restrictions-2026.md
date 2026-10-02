@@ -1,4 +1,7 @@
 ---
+cover:
+  image: "https://liweicong2016-collab.github.io/tech-blog/images/cover-optical-transceiver.jpg"
+  alt: "光模块封面"
 title: "光模块的下半场：美国管制从“全面禁令”恐慌到“利润向上游转移”的推演"
 date: 2026-10-02
 draft: false

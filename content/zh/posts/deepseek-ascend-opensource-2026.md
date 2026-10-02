@@ -1,6 +1,6 @@
 ---
 cover:
-  image: "/images/cover-deepseek-ascend.jpg"
+  image: "https://liweicong2016-collab.github.io/tech-blog/images/cover-deepseek-ascend.jpg"
   alt: "DeepSeek×昇腾 封面"
 title: "DeepSeek 开源昇腾基础组件：国模×国算深度耦合，软件生态墙出现系统性裂缝"
 date: 2026-10-02
