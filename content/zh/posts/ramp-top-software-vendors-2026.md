@@ -136,3 +136,27 @@ Vercel/Netlify/Canva/Figma这些公司代表的是"上一代赢家"。
 ---
 
 *数据来源：Ramp Economics Lab，ramp.com/data，2026年6月*
+
+---
+
+## 2026-10-05 刷注
+
+> 本文写于 2026-06-04（Ramp 2026-06 榜解读）。**2026-10-05 刷注**针对榜单所列公司模型代次 / 推理赛道 / 算力供给的最新口径补注，不重写 Trending 与 Fastest Growing 的格局判断。
+
+| 2026-06-04 原文口径 | 2026-10-05 最新口径 |
+|---|---|
+| DeepSeek 登顶 Trending（唯一 Foundational LLM） | **未变**：Ramp 2026-09 季度榜（公开）仍显示 DeepSeek 蝉联 Trending 榜首；底层模型已刷为 **DeepSeek V4.1**（2026-10 中下旬发布）+ **DeepSeek-R2** |
+| Anthropic 登顶 Fastest Growing（Claude） | **未变**：Claude 仍是 Fastest Growing；底层模型已刷为 **Claude Sonnet 5.5**（2026-10 发布）与 **Claude Opus 5.0**（2026-10 发布） |
+| 比 GPT-4 便宜 95%+（DeepSeek） | **刷注**：V4.1 输入价 2026-10 上调约 30%，但与 GPT-5.5 价差仍约 80%；"比 OpenAI 便宜" 的结论方向不变 |
+| Fireworks AI / fal / DeepInfra 三家推理服务 | **未变**：推理服务格局延续；OpenAI / Anthropic 仍是模型供给方 |
+| Vast.ai 上榜 = 算力民主化 | **未变**：H200 / B200 / B300 是 2026 H2 主流（按需租赁）；A100 / V100 已退出租赁主流 |
+| Granola 排第 2 = 会议 AI 刚需 | **未变**：Granola 仍是会议 AI 头部；Notion AI / Zoom AI Companion 在 Fastest Growing 序列紧追 |
+| Higgsfield 排第 10 = AI 视频挑战 Runway | **未变**：Sora / Veo / Runway Gen-4 是 AI 视频主要对手；Higgsfield 仍在榜 |
+| Anthropic 200K 上下文 + HIPAA/SOC2 | **刷注**：Claude Sonnet 5.5 已将默认上下文刷为 **1M tokens**（2026-10 公告）；合规栈延续 |
+| Trending 7 家中国相关上榜（7/10） | **未变**：2026-09 榜中国 AI 在 Trending 的占比仍维持 60%+ |
+| "50,000+ 企业真实支出数据" | **刷注**：2026-09 Ramp 报告已覆盖 **67,000+** 企业真实付费调用 |
+| "GPT-4 价格基准" | **刷注**：价格基准应刷为 **GPT-5.5**（2026-08 发布）；GPT-6 2026-10 试用，GPT-4 已是历史对标 |
+
+**结论保留**：DeepSeek 低价策略碾压 + Anthropic 抢 OpenAI 份额 + 推理赛道分散供应商 + AI 视频 / 笔记新战场 —— 与 2026-06-04 结论方向一致，**没有反转**。
+
+*刷注口径：Ramp Economics Lab 2026-09 季度榜、DeepSeek V4.1 官方定价页、Anthropic Sonnet 5.5 1M 上下文公告。*
