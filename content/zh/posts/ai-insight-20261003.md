@@ -6,8 +6,8 @@ description: "AI洞察日报10月3日：亚马逊80亿美元芯片卖售回租�
 tags: ["AI洞察日报", "算力", "芯片", "安全治理", "Agent"]
 slug: "ai-insight-20261003"
 cover:
-image: "https://liweicong2016-collab.github.io/tech-blog/images/cover-ai-insight-20261003.jpg"
-alt: "AI洞察日报10月3日封面：芯片熔成金币——从堆卡到堆钱"
+  image: "https://liweicong2016-collab.github.io/tech-blog/images/cover-ai-insight-20261003.jpg"
+  alt: "AI洞察日报10月3日封面：芯片熔成金币——从堆卡到堆钱"
 ---
 
 > AI洞察日报，每天 8:30 更新：从互联网与 X 时间线里提炼 3–5 条 AI 洞察。今天的主线只有一个：**AI 不缺故事了，缺的是把故事换成钱的金融工程**。
@@ -72,4 +72,4 @@ alt: "AI洞察日报10月3日封面：芯片熔成金币——从堆卡到堆钱
 
 ---
 
-*口径声明：NVIDIA DGX Spark 64GB 版、腾讯租用 Oracle 芯片两条仅见媒体转述，数字以官方披露为准；DeepSeek 昇腾工具链消息约 9 月 30 日，略早于 24 小时窗口；雷蒙多观点转自 RFI 转述，未独立核实。*
+*口径声明：NVIDIA DGX Spark 64GB 版、O3租用 Oracle 芯片两条仅见媒体转述，数字以官方披露为准；DeepSeek 昇腾工具链消息约 9 月 30 日，略早于 24 小时窗口；雷蒙多观点转自 RFI 转述，未独立核实。*

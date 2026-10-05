@@ -5,6 +5,9 @@ draft: false
 description: "东南亚增长最快的数据中心市场：柔佛 8.5GW 管道、Firmus×OpenAI 落地、YTL 主权 AI 集群，与 2027 年电力硬约束下的供需博弈。"
 tags: ["数据中心", "AI", "算力", "东南亚", "马来西亚", "深度研究"]
 slug: "malaysia-datacenter-report-2026"
+cover:
+  image: "https://images.unsplash.com/photo-1558618666-fcd25c85cd64?w=1200&q=80"
+  alt: "马来西亚柔佛州数据中心园区——东南亚 AI 算力枢纽"
 ---
 
 > **报告日期：2026 年 10 月 ｜ 口径：IT 负载（IT Load）｜ 数据截至 2026 年 9 月**
@@ -17,7 +20,7 @@ slug: "malaysia-datacenter-report-2026"
 
 马来西亚已确立其作为**东南亚增长最快数据中心市场**的地位。2025 年市场规模 **54.8 亿美元**，预计 2026 年达 **65.5 亿美元**，2031 年将增至 **160.2 亿美元**，2026–2031 年复合增速约 **19.6%**；运营 IT 负载预计从 2025 年的约 730MW 增至 2031 年的约 3.34GW，而部分研究机构给出的 IT 负载高增速预测（CAGR 超 30%）则反映了 AI 机架密度跃升带来的口径重估。[1][2] 柔佛州以一州之力承载全国约 **80% 的运营容量**与超过 70% 的电力供应配置，依托毗邻新加坡的地理套利（土地成本低至新加坡的 40%、商业电价约为其一半）完成对新加坡外溢需求的承接，其总管道（含在建与规划）已达 **8.5GW**，为亚太最大。[3][5]
 
-竞争格局呈"**三超多强**"：Bridge Data Centres、YTL Power、AirTrunk 构成第一阵营（管道均超 700MW），DayOne、Vantage、PDG、EdgeConneX 构成第二阵营。云厂商层面，AWS（62 亿美元）、Microsoft（22 亿美元）、Google（20 亿美元）、Oracle（65 亿美元）与阿里、腾讯、字节跳动形成**美系自建 + 中资双轨**的双层布局。2026 年 9 月 Firmus 与 OpenAI 的锚定客户协议（签约容量超 900MW）标志着马来西亚进入全球 AI 算力供应链的核心节点。[11][22]
+竞争格局呈"**三超多强**"：Bridge Data Centres、YTL Power、AirTrunk 构成第一阵营（管道均超 700MW），DayOne、Vantage、PDG、EdgeConneX 构成第二阵营。云厂商层面，AWS（62 亿美元）、Microsoft（22 亿美元）、Google（20 亿美元）、Oracle（65 亿美元）与AL、O3、O1形成**美系自建 + 中资双轨**的双层布局。2026 年 9 月 Firmus 与 OpenAI 的锚定客户协议（签约容量超 900MW）标志着马来西亚进入全球 AI 算力供应链的核心节点。[11][22]
 
 **核心风险是电力**：已向国家电力公司 TNB 提交的电力申请累计约 **11GW，相当于全国发电容量的约 40%**；2027 年半岛无新增燃气机组投运，数据中心用电已占半岛电网 3% 且一年增长三倍，而政府自 2024 年中起实质冻结非 AI 数据中心审批。供需错配将使 2027–2028 年成为项目投运节奏与政策博弈的关键窗口。[15][16][19]
 
@@ -71,7 +74,7 @@ slug: "malaysia-datacenter-report-2026"
 
 | 阵营 | 运营商 | 已运营(MW) | 在建(MW) | 规划/储备(MW) | 总管道(MW) | 锚定/特征 |
 |---|---|---|---|---|---|---|
-| 第一阵营（>700MW） | **Bridge Data Centres** | >300 | ~880 | >1,800 | ~2,980 | 字节跳动 MY06 锚定，贝恩资本旗下[14] |
+| 第一阵营（>700MW） | **Bridge Data Centres** | >300 | ~880 | >1,800 | ~2,980 | O1 MY06 锚定，贝恩资本旗下[14] |
 | | **YTL Power** | 150 | 202 | ~2,400 | ~2,750 | 电力一体化 + NVIDIA Exemplar 认证[6] |
 | | **AirTrunk**（黑石） | ~150 | ~270 | ~280 | ~700 | JHB1/JHB2 近满租，承诺 68 亿美元 |
 | 第二阵营（200–700MW） | **DayOne**（GDS 分拆） | 390 | 83 | 500+ | ~973 | Nusajaya 28.2 万颗 H100 等效[10] |
@@ -86,7 +89,7 @@ slug: "malaysia-datacenter-report-2026"
 
 ### 3.2 第一阵营深描
 
-**Bridge Data Centres（BDC）** 是柔佛超大规模叙事的开拓者。其 MY06（Sedenak）于 2022 年 10 月以破纪录的 314 天建设周期交付一期，字节跳动为锚定租户，园区规划 3 栋建筑；此后 BDC 将 Megaspeed 获分配的 68.4MW 容量整体转给云服务商 Zenlayer，并将 MY06 扩建至约 508MW IT 容量，同时推进 Ulu Tiram 的 MY07（供电协议 400MW、IT 负载 374MW，配备东南亚首个数据中心专用中水回用厂）。[14][25] BDC 在马来西亚累计投资超 **100 亿令吉**，加上正从 Paragon Globe 购入的 Plentong 47.9 英亩地块，其柔佛管道仍在向 3GW 迈进。[8]
+**Bridge Data Centres（BDC）** 是柔佛超大规模叙事的开拓者。其 MY06（Sedenak）于 2022 年 10 月以破纪录的 314 天建设周期交付一期，O1为锚定租户，园区规划 3 栋建筑；此后 BDC 将 Megaspeed 获分配的 68.4MW 容量整体转给云服务商 Zenlayer，并将 MY06 扩建至约 508MW IT 容量，同时推进 Ulu Tiram 的 MY07（供电协议 400MW、IT 负载 374MW，配备东南亚首个数据中心专用中水回用厂）。[14][25] BDC 在马来西亚累计投资超 **100 亿令吉**，加上正从 Paragon Globe 购入的 Plentong 47.9 英亩地块，其柔佛管道仍在向 3GW 迈进。[8]
 
 **YTL Power** 的独特性在于"**电力—可再生能源—土地—光纤—GPU—AI 云**"全栈一体化。2025 年 10 月底，其与 NVIDIA 合作的全国首座 NVIDIA 驱动 AI 数据中心投运——JDC2 内 20MW 设施配备液冷 GB200 NVL72 系统，并获得 NVIDIA Exemplar Cloud 认证；JDC1（48MW，Sea 集团为锚定租户）32MW 已运营，JDC3（80MW）一半已于 2025 年 9 月投产，JDC4（40MW）已签约美国超大规模客户分三期投运。[6][7] 园区规划 500–600MW，配套 500MW  onsite 光伏，YTL AI Cloud 同步承载马来西亚首个主权大模型 ILMU；分析师预计其数据中心业务对集团利润贡献将从 2027 财年的约 24% 升至 2029 财年的约 40%。[6][30]
 
@@ -108,7 +111,7 @@ slug: "malaysia-datacenter-report-2026"
 
 ### 4.2 中资三层布局与双轨模式
 
-中资厂商形成了更为立体的"**三层布局**"：**租赁层**——字节跳动作为 BDC MY06 锚定租户，其在新山与古来的电力规划容量预计 2027 年达 **960MW**，同时通过 Aolani Cloud 以约 500 套 Blackwell 系统（3.6 万颗 B200）获得算力直供，自 2025 年 2 月起亦租赁 Aolani 的 H100 服务器；**自建云区域层**——阿里云 2026 年 6 月上线柔佛区域，使其在马来西亚数据中心总数达 5 座（吉隆坡 3AZ+柔佛 2 座），为其东南亚最大部署；腾讯云 2026 年 8 月宣布柔佛云区域（最多 3 个 AZ，其中 2 个已运营）；**生态层**——DayOne、BDC（秦淮数据系）等中资背景运营商构成了承载层。[13][14][23]
+中资厂商形成了更为立体的"**三层布局**"：**租赁层**——O1作为 BDC MY06 锚定租户，其在新山与古来的电力规划容量预计 2027 年达 **960MW**，同时通过 Aolani Cloud 以约 500 套 Blackwell 系统（3.6 万颗 B200）获得算力直供，自 2025 年 2 月起亦租赁 Aolani 的 H100 服务器；**自建云区域层**——AL云 2026 年 6 月上线柔佛区域，使其在马来西亚数据中心总数达 5 座（吉隆坡 3AZ+柔佛 2 座），为其东南亚最大部署；O3云 2026 年 8 月宣布柔佛云区域（最多 3 个 AZ，其中 2 个已运营）；**生态层**——DayOne、BDC（秦淮数据系）等中资背景运营商构成了承载层。[13][14][23]
 
 ![主要市场参与者投资承诺规模](/images/malaysia-dc/chart4_investment.png)
 
@@ -129,7 +132,7 @@ slug: "malaysia-datacenter-report-2026"
 | Firmus × OpenAI | Firmus | 两座 AI 工厂；全客户签约 >900MW | Vera Rubin NVL72 + HyperCube 液冷 | 2026.9 宣布，24 个月内投运[11] |
 | DayOne Nusajaya | DayOne | 240MW→473MW；28.2 万→58.4 万颗 H100 等效 | H100 + B300，资本成本至 $17.9B | 运营+扩建，2026Q4 跃升[10] |
 | YTL × NVIDIA | YTL Power | 20MW 已投运，园区 500–600MW 规划 | GB200 NVL72 液冷，Exemplar 认证 | 运营+扩建[6] |
-| 字节跳动 × Aolani | Aolani Cloud | ~500 套 Blackwell 系统（3.6 万颗 B200），AI 工厂 >100MW | B200 | 2026.3 报道，2027 年初扩至 2.2 万颗 GPU[13] |
+| O1 × Aolani | Aolani Cloud | ~500 套 Blackwell 系统（3.6 万颗 B200），AI 工厂 >100MW | B200 | 2026.3 报道，2027 年初扩至 2.2 万颗 GPU[13] |
 | Bitdeer AI | Bitdeer | A102 9.5MW 售罄 + A202 65.1MW 在建 | — | 运营+建设 |
 
 ### 5.2 结构性含义
@@ -180,7 +183,7 @@ AI 算力项目的密集落地带来三重结构性变化。**其一是融资结
 
 2. **电力是 2027 年唯一的硬约束，且是全局性的**。11GW 的电力申请对 25GW 级半岛电网的压力、2027 年零新增气电的真空期、以及变电站 3–5 年的建设周期，三者叠加意味着：**2027 年投运节奏将由 TNB 的 energization 日历而非运营商的施工日历决定**。项目尽调中"已签约 ESA + 明确 energization 日期"应列为与土地证同级的先决条件。
 
-3. **中资双轨 + 美系锚定的需求结构使市场深度全球化**。字节跳动（租赁+直采）、阿里/腾讯（自建区域）、DayOne/BDC（中资运营商）与 AWS/Microsoft/Google/Oracle（美系自建）共同构成多元需求底座，需求与全球 AI capex 周期、美元利率及芯片出口政策高度耦合；Firmus×OpenAI 交易进一步将马来西亚绑定在全球模型公司的算力版图上。这既放大了上行弹性，也引入了政策外生冲击的尾部风险。[11][23]
+3. **中资双轨 + 美系锚定的需求结构使市场深度全球化**。O1（租赁+直采）、AL/O3（自建区域）、DayOne/BDC（中资运营商）与 AWS/Microsoft/Google/Oracle（美系自建）共同构成多元需求底座，需求与全球 AI capex 周期、美元利率及芯片出口政策高度耦合；Firmus×OpenAI 交易进一步将马来西亚绑定在全球模型公司的算力版图上。这既放大了上行弹性，也引入了政策外生冲击的尾部风险。[11][23]
 
 4. **政策筛选机制利好头部、出清长尾**。非 AI 审批冻结、PUE≤1.6/1.4 的效率门槛、30% 申请否决率与利用率核查，实质上是监管机构替市场做了一次供给侧改革：拥有 AI 锚定客户、绿电协议与全栈能力的头部运营商将获得几乎全部增量配额，第三阵营中缺乏锚定租户的项目面临无限期延迟或退出。
 
@@ -206,7 +209,7 @@ AI 算力项目的密集落地带来三重结构性变化。**其一是融资结
 25. Underhyped.ai — Johor spillover & power applications
 27. Arizton — Malaysia Data Centers Portfolio（61 在营 / 74 规划）
 8. Mingtiandi — DayOne buying Johor site from Paragon Globe
-23. DCD / Cloud Tech News — Tencent Cloud Johor region、Alibaba Cloud 柔佛区域
+23. DCD / Cloud Tech News — O3 Cloud Johor region、AL Cloud 柔佛区域
 18. InfoLink — Malaysia ESS markets: load growth & data centers
 14. DataCenterDynamics — ByteDance $2.1bn AI deal / BDC MY06
 6. The Star — YTL Power’s DC business to boost earnings growth

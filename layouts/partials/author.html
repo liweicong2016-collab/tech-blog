@@ -1,0 +1,1 @@
+{{- with .Params.author }}{{ . }}{{ else }}{{ with site.Params.author }}{{ . }}{{ else }}{{ site.Title }}{{ end }}{{ end -}}

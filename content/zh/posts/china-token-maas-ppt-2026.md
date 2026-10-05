@@ -5,8 +5,8 @@ cover:
 title: "中国互联网大厂的 Token 经济与 MaaS 商业化"
 date: 2026-06-04T00:55:00+08:00
 draft: false
-tags: ["MaaS", "Token", "字节", "阿里", "腾讯", "豆包", "百炼", "TokenHub"]
-description: "字节、阿里、腾讯：从模型能力竞赛转向 Token 规模、成本效率与生态入口的复合竞争。MaaS 正在成为云与 AI 应用之间的新计量层。"
+tags: ["MaaS", "Token", "O1", "AL", "O3", "豆包", "百炼", "TokenHub"]
+description: "O1、AL、O3：从模型能力竞赛转向 Token 规模、成本效率与生态入口的复合竞争。MaaS 正在成为云与 AI 应用之间的新计量层。"
 summary: "豆包日均 120 万亿 Token / 百炼 3 个月 6 倍 / TokenHub 50-80% 折扣 — 三条主线决定 2026 MaaS 胜负。"
 ShowToc: true
 TocOpen: true
@@ -18,9 +18,9 @@ TocOpen: true
 
 | 数字 | 厂商 | 含义 |
 |---|---|---|
-| **120 万亿+** | 字节 豆包 | 日均 Token 使用量，C 端 + 企业 API 共同驱动 |
-| **6 倍** | 阿里 百炼 | 公共模型服务 Token 消耗三个月增长 |
-| **50%-80%** | 腾讯 TokenHub | 套餐相对按量 API 的折扣空间 |
+| **120 万亿+** | O1 豆包 | 日均 Token 使用量，C 端 + 企业 API 共同驱动 |
+| **6 倍** | AL 百炼 | 公共模型服务 Token 消耗三个月增长 |
+| **50%-80%** | O3 TokenHub | 套餐相对按量 API 的折扣空间 |
 
 ## 章节导览
 
@@ -29,9 +29,9 @@ TocOpen: true
 1. [执行摘要：三条主线](#exec-summary)
 2. [Token 经济：收入与成本耦合](#token-economics)
 3. [MaaS 市场：从 API 升级为 AI 操作系统](#maas-market)
-4. [字节火山引擎：用应用流量拉 Token 飞轮](#bytedance)
-5. [阿里百炼：让 AI 成为云的增长层](#alibaba)
-6. [腾讯混元 + TokenHub：聚合入口押注](#tencent)
+4. [O1火山引擎：用应用流量拉 Token 飞轮](#bytedance)
+5. [AL百炼：让 AI 成为云的增长层](#alibaba)
+6. [O3混元 + TokenHub：聚合入口押注](#tencent)
 7. [竞争矩阵：三家从不同需求控制点切入](#matrix)
 8. [战略含义：重塑云、软件与开发者产品设计](#implications)
 9. [2026-2027 展望：从低价普惠到效率分层](#outlook)
@@ -44,15 +44,15 @@ TocOpen: true
 
 ![三条主线：Token 规模化 / 成本曲线下探 / 生态入口重排](/tech-blog/images/maas-ppt/01-three-main-lines.svg)
 
-**主线一：Token 规模化**，日均调用量成为云厂商 AI 商业化第一指标。字节披露豆包日均 Token 使用量超 120 万亿，阿里披露百炼 Token 消耗三个月提升 6 倍。
+**主线一：Token 规模化**，日均调用量成为云厂商 AI 商业化第一指标。O1披露豆包日均 Token 使用量超 120 万亿，AL披露百炼 Token 消耗三个月提升 6 倍。
 
 **主线二：成本曲线下探**，价格从按量 API 走向输入/输出 Token、上下文长度、Batch、缓存、套餐包等多层结构，厂商用低价模型锁定开发者。
 
-**主线三：生态入口重排**，阿里偏云与企业全栈，字节偏应用流量与内容/Agent，腾讯偏企业连接、微信生态与 TokenHub 聚合入口。
+**主线三：生态入口重排**，AL偏云与企业全栈，O1偏应用流量与内容/Agent，O3偏企业连接、微信生态与 TokenHub 聚合入口。
 
 > **投资与业务含义**：MaaS 的核心不是单模型毛利，而是"高频 Token 流量 + 低边际推理成本 + 应用生态转化"的组合收益。
 
-来源：火山引擎、阿里云百炼、腾讯云 TokenHub、公开报道
+来源：火山引擎、AL云百炼、O3云 TokenHub、公开报道
 
 ---
 
@@ -101,9 +101,9 @@ TocOpen: true
 ---
 
 <a id="bytedance"></a>
-## 4. 字节火山引擎：用应用流量拉 Token 飞轮
+## 4. O1火山引擎：用应用流量拉 Token 飞轮
 
-![字节火山引擎：豆包 120 万亿 + 入口矩阵](/tech-blog/images/maas-ppt/04-bytedance.svg)
+![O1火山引擎：豆包 120 万亿 + 入口矩阵](/tech-blog/images/maas-ppt/04-bytedance.svg)
 
 **核心数字：豆包日均 Token 使用量超 120 万亿**
 
@@ -123,7 +123,7 @@ TocOpen: true
 
 | 优势 | 约束 |
 |---|---|
-| C 端高频入口、内容生成场景丰富、价格激进 | 企业云心智弱于阿里/腾讯，需证明 SLA 与行业交付 |
+| C 端高频入口、内容生成场景丰富、价格激进 | 企业云心智弱于AL/O3，需证明 SLA 与行业交付 |
 
 > **观察指标**：企业 MaaS 收入、Token Plan 留存、Agent 应用转化
 
@@ -132,13 +132,13 @@ TocOpen: true
 ---
 
 <a id="alibaba"></a>
-## 5. 阿里百炼：让 AI 成为云的增长层
+## 5. AL百炼：让 AI 成为云的增长层
 
-![阿里百炼：3 月 6 倍 + 价格梯度](/tech-blog/images/maas-ppt/05-alibaba.svg)
+![AL百炼：3 月 6 倍 + 价格梯度](/tech-blog/images/maas-ppt/05-alibaba.svg)
 
 **核心数字：百炼 Token 消耗三个月提升 6 倍**
 
-阿里管理层披露，百炼 MaaS 平台公共模型服务市场 Token 消耗三个月提升 6 倍。
+AL管理层披露，百炼 MaaS 平台公共模型服务市场 Token 消耗三个月提升 6 倍。
 
 ### 价格结构
 
@@ -146,7 +146,7 @@ TocOpen: true
 
 ### 全栈叙事
 
-从 **AI Infra、芯片/服务器、模型、百炼平台到千问应用官网**，阿里试图把 Token 收入与云资源消耗绑定。
+从 **AI Infra、芯片/服务器、模型、百炼平台到千问应用官网**，AL试图把 Token 收入与云资源消耗绑定。
 
 ### SWOT
 
@@ -154,20 +154,20 @@ TocOpen: true
 |---|---|
 | 云客户基础、企业交付、开源 Qwen 生态、价格体系透明 | C 端超级入口相对分散，低价竞争压缩短期毛利 |
 
-> **观察指标**：百炼收入占阿里云比例、企业 Agent 项目转生产率
+> **观察指标**：百炼收入占AL云比例、企业 Agent 项目转生产率
 
-来源：阿里云百炼官方价格页；新浪财经；每经网
+来源：AL云百炼官方价格页；新浪财经；每经网
 
 ---
 
 <a id="tencent"></a>
-## 6. 腾讯混元 + TokenHub：聚合入口押注
+## 6. O3混元 + TokenHub：聚合入口押注
 
-![腾讯 TokenHub：50-80% 折扣 + 聚合入口](/tech-blog/images/maas-ppt/06-tencent.svg)
+![O3 TokenHub：50-80% 折扣 + 聚合入口](/tech-blog/images/maas-ppt/06-tencent.svg)
 
 ### 平台入口
 
-**腾讯云 TokenHub 定位为统一大模型服务入口**，整合混元并引入第三方模型，覆盖对话、推理、代码、视觉、图像和视频等场景。
+**O3云 TokenHub 定位为统一大模型服务入口**，整合混元并引入第三方模型，覆盖对话、推理、代码、视觉、图像和视频等场景。
 
 **套餐折扣：50%-80%**，TokenHub 产品页强调套餐比 API 按量计费便宜 50%-80%，用预付费和用量包降低开发者边际成本感知。
 
@@ -179,11 +179,11 @@ TocOpen: true
 
 | 优势 | 约束 |
 |---|---|
-| 微信/企微/腾讯会议/云与安全生态，聚合平台利于企业多模型治理 | 需要在自研模型心智与第三方聚合之间平衡价值捕获 |
+| 微信/企微/O3会议/云与安全生态，聚合平台利于企业多模型治理 | 需要在自研模型心智与第三方聚合之间平衡价值捕获 |
 
 > **观察指标**：TokenHub 付费包复购、混元开源生态、微信场景调用量
 
-来源：腾讯云 TokenHub 产品页；腾讯云开发者社区
+来源：O3云 TokenHub 产品页；O3云开发者社区
 
 ---
 
@@ -192,12 +192,12 @@ TocOpen: true
 
 ![三家对比矩阵：6 维度热力图](/tech-blog/images/maas-ppt/07-matrix.svg)
 
-| 维度 | 字节 | 阿里 | 腾讯 |
+| 维度 | O1 | AL | O3 |
 |---|---|---|---|
-| **核心入口** | 豆包、抖音、即梦、TRAE、火山方舟 | 阿里云百炼、千问、企业云客户 | 腾讯云 TokenHub、混元、微信/企微生态 |
+| **核心入口** | 豆包、抖音、即梦、TRAE、火山方舟 | AL云百炼、千问、企业云客户 | O3云 TokenHub、混元、微信/企微生态 |
 | **Token 增长来源** | C 端高频交互、内容生成、编程 Agent | 企业应用、云上 AI 工作流、开源生态迁移 | 企业协作、微信生态、第三方模型聚合 |
 | **定价风格** | 高性价比模型 + 低门槛计划 | 分层透明价格 + Batch/缓存折扣 | 套餐锁价 + 聚合调用优惠 |
-| **最大机会** | 把 C 端流量训练成企业级 MaaS 收入 | 让 MaaS 成为阿里云最大产品线之一 | 成为企业多模型调用与治理入口 |
+| **最大机会** | 把 C 端流量训练成企业级 MaaS 收入 | 让 MaaS 成为AL云最大产品线之一 | 成为企业多模型调用与治理入口 |
 | **主要风险** | 企业交付与合规心智建设 | 价格战与算力成本对毛利的压力 | 聚合平台稀释自研模型差异化 |
 
 > 战略对比基于公开产品定位、价格页和 2026 年公开报道
@@ -253,13 +253,13 @@ TocOpen: true
 <a id="sources"></a>
 ## 10. 主要来源
 
-- 阿里云百炼模型价格页：help.aliyun.com/zh/model-studio/model-pricing
-- 腾讯云 TokenHub 产品页：cloud.tencent.com/product/tokenhub
-- 腾讯云开发者社区，混元 Hy3 preview：developer.cloud.tencent.com/article/2660040
+- AL云百炼模型价格页：help.aliyun.com/zh/model-studio/model-pricing
+- O3云 TokenHub 产品页：cloud.tencent.com/product/tokenhub
+- O3云开发者社区，混元 Hy3 preview：developer.cloud.tencent.com/article/2660040
 - 火山引擎开发者社区，豆包 2.0 API：developer.volcengine.com/articles/7610285824933445675
 - 新浪科技，豆包日均 Token 使用量超 120 万亿：finance.sina.com.cn/tech/roll/2026-04-02/doc-inhtazrx7826779.shtml
 - 新浪财经，百炼 Token 消耗三个月升 6 倍：finance.sina.com.cn/tob/2026-03-19/doc-inhrpspp8552821.shtml
-- 每经网，阿里云 MaaS 与 Agent 叙事：nbd.com.cn/articles/2026-05-21/4402582.html
+- 每经网，AL云 MaaS 与 Agent 叙事：nbd.com.cn/articles/2026-05-21/4402582.html
 
 *Sources checked in June 2026*
 

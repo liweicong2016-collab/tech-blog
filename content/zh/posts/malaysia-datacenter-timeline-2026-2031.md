@@ -6,8 +6,8 @@ description: "马来西亚柔佛已锁定东南亚 AIDC 第二枢纽地位。本
 tags: ["马来西亚", "柔佛", "IDC", "AIDC", "AI算力", "数据中心", "东南亚", "AirTrunk", "YTL", "Bridge", "DayOne", "Equinix"]
 slug: "malaysia-datacenter-timeline-2026-2031"
 cover:
-  image: "https://images.unsplash.com/photo-1558494949-ef010cbdcc31?w=1200&q=80"
-  alt: "马来西亚数据中心"
+  image: "https://images.unsplash.com/photo-1558618666-fcd25c85cd64?w=1200&q=80"
+  alt: "马来西亚柔佛州数据中心夜景——IT 容量时间线"
   caption: "柔佛 · 东南亚 AIDC 第二枢纽 · 2030 年中位预测 3.3 GW"
 ShowToc: true
 ---
@@ -41,7 +41,7 @@ ShowToc: true
 | 项目 | 地点 | IT 容量 | 锚定租户 / 状态 |
 |---|---|---|---|
 | DayOne Nusajaya | 柔佛 Gelang Patah | 240 MW（当前）| 28.2 万颗 H100 等效；2026 Q4 跃升至 473 MW / 58.4 万颗 |
-| Bridge DC MY06 | 柔佛 Sedenak | ~508 MW（规划）| **字节跳动锚定**；Megaspeed 68.4 MW 转给 Zenlayer |
+| Bridge DC MY06 | 柔佛 Sedenak | ~508 MW（规划）| **O1锚定**；Megaspeed 68.4 MW 转给 Zenlayer |
 | YTL Power JDC1-JDC3 | 柔佛 Kulai | 150 MW（运营）| **Sea 集团**为 JDC1 锚定租户；含 20 MW NVIDIA GB200 |
 | AirTrunk JHB1/JHB2 | 柔佛 | ~420 MW | 接近满租；全球云及 AI 客户 |
 | PDG JH1 | 柔佛 Sedenak | 52 MW（一期）| 全球最大科技公司；12 个月交付 |
@@ -114,7 +114,7 @@ ShowToc: true
 | YTL Kulai 总计 | 柔佛 Kulai | 累计 **1.2 GW** | 目标 2030 年前达 1.2 GW |
 | YTL Sedenak 园区 | 柔佛 Sedenak | **1.2–1.5 GW** | 与 JLand Group 合作，远期规划 |
 | **Firmus × OpenAI** | 柔佛（推测）| **>900 MW** | 全客户签约容量；Vera Rubin NVL72 + HyperCube 液冷 |
-| **字节跳动 × Aolani** | 柔佛（推测）| ~100 MW+ | 500 套 Blackwell 系统（3.6 万颗 B200）；2027 年初扩至 2.2 万颗 GPU |
+| **O1 × Aolani** | 柔佛（推测）| ~100 MW+ | 500 套 Blackwell 系统（3.6 万颗 B200）；2027 年初扩至 2.2 万颗 GPU |
 
 **官方 DC 用电目标 vs 行业 IT 负载预测差距：**
 - 2030 官方 DC 用电：**7.7 GW**
@@ -132,7 +132,7 @@ ShowToc: true
 
 | 阵营 | 运营商 | 已运营 | 在建 | 规划/储备 | 总管道 | 锚定租户 / 特征 |
 |---|---|---|---|---|---|---|
-| **第一阵营 >700 MW** | Bridge Data Centres | >300 | ~880 | >1,800 | **~2,980** | 字节跳动 MY06 锚定；贝恩资本旗下 |
+| **第一阵营 >700 MW** | Bridge Data Centres | >300 | ~880 | >1,800 | **~2,980** | O1 MY06 锚定；贝恩资本旗下 |
 | | YTL Power | 150 | 202 | ~2,400 | **~2,750** | 电力一体化 + NVIDIA Exemplar 认证 |
 | | AirTrunk（黑石）| ~150 | ~270 | ~280 | **~700** | JHB1/JHB2 近满租；承诺 68 亿美元 |
 | **第二阵营 200–700 MW** | DayOne（GDS 分拆）| 390 | 83 | 500+ | **~973** | Nusajaya 28.2 万颗 H100 等效 |
