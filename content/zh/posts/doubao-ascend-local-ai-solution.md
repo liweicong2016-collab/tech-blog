@@ -6,7 +6,7 @@ description: "豆包 Coding（TRAE）与豆包 Work 共享本地模型网关、�
 tags: ["AI Agent", "豆包", "TRAE", "私有化部署", "A卡", "企业AI"]
 slug: "doubao-ascend-local-ai-solution"
 cover:
-  image: "https://liweicong2016-collab.github.io/my-website/assets/doubao-ascend/cover.png"
+  image: "/images/covers/doubao-ascend-local-ai-solution.png"
   alt: "豆包 Work × 豆包 TRAE 本地化部署方案架构动画"
   caption: "双场景 Agent 架构动画：办公（豆包 Work）与研发（豆包 TRAE）"
 ShowToc: true

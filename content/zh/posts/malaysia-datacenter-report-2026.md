@@ -6,7 +6,7 @@ description: "东南亚增长最快的数据中心市场：柔佛 8.5GW 管道�
 tags: ["数据中心", "AI", "算力", "东南亚", "马来西亚", "深度研究"]
 slug: "malaysia-datacenter-report-2026"
 cover:
-  image: "https://images.unsplash.com/photo-1558494949-ef010cbdcc31?w=1200&q=80&fit=crop&h=171"
+  image: "/images/covers/malaysia-datacenter-report-2026.png"
   alt: "马来西亚数据中心深度：柔佛"
 ---
 

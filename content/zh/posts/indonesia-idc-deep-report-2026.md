@@ -6,7 +6,7 @@ description: "东南亚增速最快的 IDC 市场:2025 年 16.1→2031 年 34.8 
 tags: ["印尼", "雅加达", "巴淡岛", "数据中心", "IDC", "AIDC", "AI算力", "BDx", "DCI Indonesia", "PDG", "DayOne", "液冷"]
 slug: "indonesia-idc-deep-report-2026"
 cover:
-  image: "https://images.unsplash.com/photo-1558618666-fcd25c85cd64?w=1200&q=80&fit=crop&h=171"
+  image: "/images/covers/indonesia-idc-deep-report-2026.png"
   alt: "印尼数据中心深度：东南亚 IDC"
   caption: "雅加达 · 东南亚 AIDC 第三枢纽 · 2031 年 Mordor 预测 34.8 亿美元"
 ShowToc: true

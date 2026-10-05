@@ -6,7 +6,7 @@ description: "东南亚增长最快的数据中心市场:泰国 IT 负载 0.77�
 tags: ["泰国", "曼谷", "EEC", "IDC", "AIDC", "AI算力", "数据中心", "东南亚", "TrueIDC", "STT", "GSA", "AWS", "Google", "Microsoft", "O1", "Bridge"]
 slug: "thailand-idc-deep-report-2026"
 cover:
-  image: "https://images.unsplash.com/photo-1558618666-fcd25c85cd64?w=1200&q=80&fit=crop&h=171"
+  image: "/images/covers/thailand-idc-deep-report-2026.png"
   alt: "泰国 IDC 深度：东南亚"
   caption: "曼谷 · 东南亚数据中心增长最快市场 · IT 负载 CAGR 30.6%"
 ShowToc: true
