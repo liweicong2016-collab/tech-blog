@@ -3,7 +3,7 @@ title: "泰国数据中心市场深度报告"
 date: 2026-10-04
 draft: false
 description: "东南亚增长最快的数据中心市场:泰国 IT 负载 0.77→2.93 GW,市场规模 18.9→49 亿美元,CAGR 17.21%。BOI 已批准 2,066 MW,电力接入申请 35 GW vs PDP 仅 8.8 GW。曼谷双核 + EEC 崛起 + 中资双轨布局。"
-tags: ["泰国", "曼谷", "EEC", "IDC", "AIDC", "AI算力", "数据中心", "东南亚", "TrueIDC", "STT", "GSA", "AWS", "Google", "Microsoft", "ByteDance", "Bridge"]
+tags: ["泰国", "曼谷", "EEC", "IDC", "AIDC", "AI算力", "数据中心", "东南亚", "TrueIDC", "STT", "GSA", "AWS", "Google", "Microsoft", "O1", "Bridge"]
 slug: "thailand-idc-deep-report-2026"
 cover:
   image: "https://images.unsplash.com/photo-1558618666-fcd25c85cd64?w=1200&q=80&fit=crop&h=171"

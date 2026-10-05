@@ -43,7 +43,7 @@ mindmap
         PDG ~518
         STT GDC ~334
         NeutraDC 200
-      中资/云厂商
+      第一阵营 200+ MW
         O1 250+
         O3云 ~75
         DayOne ~474

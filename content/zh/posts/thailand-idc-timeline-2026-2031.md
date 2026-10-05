@@ -38,7 +38,7 @@ mindmap
       第一阵营 >200 MW
         TrueIDC ~380
         Gulf/GSA ~2,125
-        ByteDance 200
+        O1/TikTok 200
       第二阵营 50-200
         STT 48
         Bridge 60 亿美元
@@ -148,7 +148,7 @@ mindmap
 | True IDC EEC 项目后续期 | 罗勇府 EEC | 累计 200+ MW | AI 超大规模园区，分阶段建设 |
 | Google Chonburi 数据中心 | 春武里 | 100 MW | 追踪容量，与 Gulf 合作的主权云项目（50 MW） |
 | Microsoft 泰国 AI 数据中心 | 春武里 EEC | 100 MW | 追踪容量，超 10 亿美元投资 |
-| ByteDance/TikTok 全量建设 | 曼谷、北榄、北柳 | 累计 200 MW | 总投资约 250 亿美元，分阶段交付 |
+| O1/TikTok 全量建设 | 曼谷、北榄、北柳 | 累计 200 MW | 总投资约 250 亿美元，分阶段交付 |
 | Bridge Data Centres 扩张 | 未披露 | 未披露 | 60 亿美元贷款融资，已锁定水资源与替代能源 |
 
 **2031 年市场规模 49 亿美元。**
@@ -163,7 +163,7 @@ mindmap
 |---|---|---|---|---|---|---|
 | **第一阵营 >200 MW** | True IDC（CP Group） | ~30 | ~250 | ~100 | **~380** | 泰国最大运营商，East Bangna 35 MW 园区 |
 |  | Gulf Development / GSA | 25.6 | ~100 | 2,000 | **~2,125** | Gulf + Singtel + AIS 合资，泰国最大电力生产商背书 |
-|  | ByteDance / TikTok | — | ~200 | — | **200** | 250 亿美元投资，曼谷 + 北榄 + 北柳 |
+|  | O1 / TikTok | — | ~200 | — | **200** | 250 亿美元投资，曼谷 + 北榄 + 北柳 |
 | **第二阵营 50-200 MW** | STT GDC | 22 | 24 | 2 | **~48** | 曼谷园区总设计 46 MW |
 |  | Bridge Data Centres | — | 未披露 | 未披露 | **60 亿美元融资中** | 贝恩资本旗下，已锁定水资源与替代能源 |
 |  | Skyline Data Center | — | 200 | — | **200** | 北柳府，投资 460 亿泰铢 |
