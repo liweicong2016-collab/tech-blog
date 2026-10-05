@@ -6,7 +6,7 @@ description: "AI洞察日报10月3日：亚马逊80亿美元芯片卖售回租�
 tags: ["AI洞察日报", "算力", "芯片", "安全治理", "Agent"]
 slug: "ai-insight-20261003"
 cover:
-  image: "https://images.unsplash.com/photo-1677442135703-1787eea5ce01?w=1200&q=80&fit=crop&h=171"
+  image: "/images/covers/ai-insight-20261003.png"
   alt: "AI 洞察日报封面：从堆卡到堆钱"
 ---
 

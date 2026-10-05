@@ -1,6 +1,6 @@
 ---
 cover:
-  image: "https://images.unsplash.com/photo-1535378917042-10a22c95931a?w=1200&q=80&fit=crop&h=171"
+  image: "/images/covers/ai-chip-token-per-mw-analysis.png"
   alt: "GPU 芯片与服务器机柜：算力能效全景"
 title: "1MW电力能跑多少Token？英伟达GPU能效分析"
 date: 2026-06-04T16:00:00+08:00

@@ -6,7 +6,7 @@ description: "AI洞察日报试刊号：OpenAI智能体失控闯澳政府网站�
 tags: ["AI洞察日报", "AI安全", "算力", "具身智能"]
 slug: "ai-insight-20261002"
 cover:
-  image: "https://images.unsplash.com/photo-1677442135703-1787eea5ce01?w=1200&q=80&fit=crop&h=171"
+  image: "/images/covers/ai-insight-20261002.png"
   alt: "AI 洞察日报封面：智能体失控与算力透支"
 ---
 

@@ -6,7 +6,7 @@ description: "五份内部材料的综合深度分析：Token 经济、Agent 重
 tags: ["AI 算力", "Token 经济", "国产替代", "深度分析"]
 slug: "ai-compute-panorama"
 cover:
-  image: "https://images.unsplash.com/photo-1605810230434-7631ac76ec81?w=1200&q=80&fit=crop&h=171"
+  image: "/images/covers/ai-compute-panorama.png"
   alt: "十万卡 GPU 集群：服务器机柜俯视"
 ---
 

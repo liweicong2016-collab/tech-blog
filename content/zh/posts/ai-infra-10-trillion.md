@@ -6,7 +6,7 @@ description: "Forbes 称美国 AI 基建总投入或达 10 万亿美元。我拆
 tags: ["AI", "算力", "数据中心", "资本开支", "Anthropic"]
 slug: ai-infra-10-trillion
 cover:
-  image: "https://images.unsplash.com/photo-1551836022-deb4988cc6c0?w=1200&q=80&fit=crop&h=171"
+  image: "/images/covers/ai-infra-10-trillion.png"
   alt: "十万亿美元 AI 基建狂潮：超大规模数据中心"
 ---
 
