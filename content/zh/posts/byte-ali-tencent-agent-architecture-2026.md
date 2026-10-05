@@ -6,7 +6,7 @@ description: "拆解O1、AL、O3三家的 AI Agent 体系架构：豆包+扣子+
 tags: ["AI Agent", "O1", "AL", "O3", "Coze", "百炼", "ADP", "WorkBuddy", "AgentOps"]
 slug: "byte-ali-tencent-agent-architecture-2026"
 cover:
-  image: "/images/covers/byte-ali-tencent-agent-architecture-2026.png"
+  image: "https://images.unsplash.com/photo-1677442135703-1787eea5ce01?w=1200&q=80&fit=crop&h=171"
   alt: "O1/AL/O3 Agent 架构对比：AI 抽象网络"
 ---
 

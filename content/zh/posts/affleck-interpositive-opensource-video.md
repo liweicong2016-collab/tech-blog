@@ -6,7 +6,7 @@ description: "InterPositive：阿弗莱克 2022 年秘密创办的 16 人 AI 电
 tags: ["AI", "视频生成", "好莱坞", "开源模型", "Netflix"]
 slug: affleck-interpositive-opensource-video
 cover:
-  image: "/images/covers/affleck-interpositive-opensource-video.png"
+  image: "https://images.unsplash.com/photo-1620712943543-bcc4688e7485?w=1200&q=80&fit=crop&h=171"
   alt: "电影片场与 AI 神经网络交织：摄影机对准银幕，数据流环绕"
 ---
 

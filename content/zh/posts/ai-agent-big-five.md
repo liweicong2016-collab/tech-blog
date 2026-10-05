@@ -6,7 +6,7 @@ description: "Instick、OpenAI Dots、GrokBot、Muse、Manus Q：五款近期主
 tags: ["AI Agent", "大模型", "产品观察", "洞察"]
 slug: "ai-agent-big-five"
 cover:
-  image: "/images/covers/ai-agent-big-five.png"
+  image: "https://images.unsplash.com/photo-1677442135703-1787eea5ce01?w=1200&q=80&fit=crop&h=171"
   alt: "AI Agent 决策树：五款产品五种授权曲线"
 ---
 
