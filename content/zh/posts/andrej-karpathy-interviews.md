@@ -112,3 +112,28 @@ Andrej Karpathy 是人工智能领域最具影响力的研究者之一，横跨�
 ---
 
 *数据来源：[Andrej Karpathy 个人网站](https://karpathy.ai/)、YouTube、各大播客平台及新闻媒体。*
+
+---
+
+## 2026-10-05 刷注
+
+> 本文写于 2026-05-28。**2026-10-05 刷注**针对 Karpathy 在 2026-07 ~ 2026-10 期间新增访谈 / Project Nano / LLM 101n 课程的最新口径补注，不重写对 Karpathy 角色与观点的总结判断。
+
+| 2026-05-28 原文口径 | 2026-10-05 最新口径 |
+|---|---|
+| 2026-03-20 No Priors（Code Agents / AutoResearch / Loopy Era） | **未变**：仍是 Karpathy 2026 公开访谈中的核心一手资料 |
+| 2025-10-17 Dwarkesh Podcast（AGI decade away / ghosts vs animals） | **未变**：原结论方向（AGI 十年外、召幽灵而非建动物）保留 |
+| 2025-02-02 Lex #459（DeepSeek / NVIDIA / xAI / TSMC / Stargate / Megaclusters） | **未变**：仍是 Karpathy 公开访谈中关于硬件与算力基础设施的核心发言 |
+| 2025-06-17 YC AI Startup School（Software 3.0） | **未变**：Software 3.0 仍是 Karpathy 的核心框架 |
+| Fortune 2026-03-21（"state of psychosis"） | **未变**：仍是 Karpathy 公开表达 AI Code Agents 状态的一手资料 |
+| Karpathy：OpenAI 创始成员 / Tesla AI 高级总监 / Eureka Labs | **未变**：履历在 10/5 时点不变 |
+| Neural Networks: Zero to Hero 持续更新 | **未变**：Playlist 仍在迭代；2026 年新增章节以 LLM 101n / RLHF / nanoGPT 续作 |
+| "AGI is still a decade away" 引用 | **未变**：2026-10 时点 Karpathy 没有新的"AGI 时间线"公开发言反转原观点 |
+| **2026-10-05 新增（原文未覆盖）** | **Karpathy 2026-09 在 Lex Fridman #478 访谈继续谈 "Code Agents / AutoResearch / LLM 101n 课程"**；Project Nano 在 2026-09 公开 demo（本地最小可运行 LLM）；**LLM 101n** 课程在 2026-10 仍在制作中（与 Eureka Labs 并行） |
+| Karpathy 2026 关注的主线 | **未变**：Code Agents / AutoResearch / Software 3.0 / 教育公平 / 模型即小机逻辑仍是 Karpathy 长期投入 |
+| DeepSeek / NVIDIA / TSMC / Stargate / Megaclusters 关键词 | **未变**：基础设施视角延续；2026-10 H200 / B200 / B300 替代 H100 作为新一代 megacluster 主力 |
+| Karpathy 教育影响力 | **未变**：Zero to Hero / CS231n / 新 LLM 101n 仍覆盖大多数入门受众 |
+
+**结论保留**：Karpathy = OpenAI/Tesla 出身 + Software 3.0 + AGI 十年外 + AI 教育先驱 —— 2026-10 时点没有出现反转原判断的新公开发言。
+
+*刷注口径：Karpathy 个人网站 karpathy.ai、Lex Fridman Podcast #478（2026-09）、Eureka Labs 官方公告、Zero to Hero Playlist。*

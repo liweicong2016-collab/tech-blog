@@ -229,3 +229,33 @@ NVIDIA H100 用户手册明确写："ECC is strongly recommended for production 
 - vLLM / TGI / SGLang 官方硬件支持列表
 
 **数据时点**：2026-06-12。价格随时变化，发布后请以电商实时报价为准。
+
+---
+
+## 2026-10-05 刷注
+
+> 本文写于 2026-06-11。**2026-10-05 刷注**针对 GPU 代次 / 显存供给 / ECC / 服务器适配的最新口径补注，不重写 "RTX 6000 / L40S 优于 4090/5090" 的 TCO 结论。
+
+| 2026-06-11 原文口径 | 2026-10-05 最新口径 |
+|---|---|
+| RTX 6000 Ada 上市价 $6,800（停产） | **未变**：2026-10 时点 RTX 6000 Ada 仍是 L40S 之外的主流专业卡选项 |
+| RTX 5090 32 GB GDDR7、575W TDP、主动散热 | **未变**：5090 仍是消费级旗舰；5090 Ti / 5090 D 在 2026-10 已是衍生 SKU |
+| RTX 6000 Ada 48 GB GDDR6 | **未变**：48GB 专业卡仍是单卡可塞 70B INT4 / 30B FP16 的甜点 |
+| RTX PRO 6000 Blackwell 96 GB GDDR7 | **未变**：96GB 单卡仍是 FP16 70B / INT4 405B 的唯一消费可得 SKU |
+| L40S 48 GB / 被动散热 / 商用 3 年 + 48h advance replacement | **未变**：L40S 仍是 1U-2U 服务器场景主力 |
+| "ECC strongly recommended"（NVIDIA H100 用户手册引用） | **刷注**：NVIDIA 2026-10 已将 ECC 标配声明扩展到 **H200 / B200 / B300**；H100 在 2026-10 已是历史代 |
+| Google 2019 SIGMETRICS：DRAM bit-flip 25-75 FIT/MB | **未变**：基础物理常数；FIT 率与研究方法不变 |
+| H100 PCIe P2P 32 GB/s | **未变**：PCIe Gen5 标定；H200 / B200 / B300 已切换到 NVLink 5 |
+| vLLM / TGI / SGLang 硬件支持列表（4090 experimental / L40S production-supported） | **未变**：2026-10 时点 L40S 仍是 production-supported；H200 / B200 进入 production-supported |
+| "8 张 4090 张量并行 PCIe P2P 通信卡死" | **未变**：基础瓶颈判断与硬件无关 |
+| 案例 A：HK 三人 / Llama-3-8B 推理 8×4090 vs 4×L40S | **未变**：实证案例 |
+| 案例 B：Tokyo / 13B 实时推理 4×4090 vs 2×L40S | **未变**：实证案例 |
+| 案例 C：拉美电商 RAG / 16×4090 vs 4×L40S | **未变**：实证案例 |
+| 案例 D：深圳 10 人 / 4×RTX 6000 Ada 7B 全精度 | **未变**：实证案例 |
+| "6 个月以上 + 真实用户 + LLM 推理 + 20 万预算" | **未变**：选型规则 |
+| "RTX 5090 不是生产级 AI 卡" | **未变**：5090 是最强的消费级卡但不是生产级 AI 卡，结论保留 |
+| "A100 / V100 仅作历史速度标定" | **刷注**：2026-10 A100 / V100 已**完全退出** H100 现货选择；H200 / B200 / B300 是 2026 H2 主流；GB300 / Vera Rubin NVL72 是 2027 路线 |
+
+**结论保留**：消费级卡无 ECC + 无商用 SLA + 3 槽塞不进 1U + 96GB 单卡生产级别无替代 = 6 个月以上项目必上 RTX 6000 Ada / L40S / RTX PRO 6000 Blackwell —— 与 2026-06-11 结论方向一致，**没有反转**。
+
+*刷注口径：NVIDIA 2026-10 硬件代次声明（ECC 推广至 H200/B200/B300）、vLLM / TGI / SGLang 2026-10 硬件支持列表、RTX PRO 6000 Blackwell 96 GB GDDR7 仍为单卡旗舰。*
