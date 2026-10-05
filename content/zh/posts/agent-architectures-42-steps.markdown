@@ -4,8 +4,8 @@ date: 2026-10-05T11:00:00+07:00
 draft: false
 slug: "agent-architectures-42-steps"
 cover:
-  image: "https://liweicong2016-collab.github.io/tech-blog/assets/agent-architectures/视频.png"
-  alt: "四大Agent架构与42步案例"
+  image: "https://images.unsplash.com/photo-1532187863486-abf9dbad1b69?w=1200&q=80&fit=crop&h=171"
+  alt: "四大Agent架构与42步案例拆解"
 description: "用可交互的架构图和具体任务步骤，理解四类 Agent 各自的工作机制。"
 tags:
   - Agent

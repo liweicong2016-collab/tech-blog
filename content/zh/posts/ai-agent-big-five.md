@@ -6,8 +6,8 @@ description: "Instick、OpenAI Dots、GrokBot、Muse、Manus Q：五款近期主
 tags: ["AI Agent", "大模型", "产品观察", "洞察"]
 slug: "ai-agent-big-five"
 cover:
-  image: "https://liweicong2016-collab.github.io/tech-blog/images/cover-ai-agent-big-five.jpg"
-  alt: "五个 AI Agent 产品洞察封面"
+  image: "https://images.unsplash.com/photo-1532187863486-abf9dbad1b69?w=1200&q=80&fit=crop&h=171"
+  alt: "AI Agent 决策树：五款产品五种授权曲线"
 ---
 
 最近梳理了一场关于 AI Agent 的对谈，信息量很大。单看产品，五款 Agent 各有各的打法；但连起来看，我发现它们其实在回答同一个问题：**用户凭什么把"替我办事"的权力交给你？**

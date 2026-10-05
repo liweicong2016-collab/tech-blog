@@ -6,8 +6,8 @@ description: "马来西亚柔佛已锁定东南亚 AIDC 第二枢纽地位。本
 tags: ["马来西亚", "柔佛", "IDC", "AIDC", "AI算力", "数据中心", "东南亚", "AirTrunk", "YTL", "Bridge", "DayOne", "Equinix"]
 slug: "malaysia-datacenter-timeline-2026-2031"
 cover:
-  image: "https://images.unsplash.com/photo-1558618666-fcd25c85cd64?w=1200&q=80"
-  alt: "马来西亚柔佛州数据中心夜景——IT 容量时间线"
+  image: "https://images.unsplash.com/photo-1558494949-ef010cbdcc31?w=1200&q=80&fit=crop&h=171"
+  alt: "马来西亚 IDC 时间轴：柔佛走廊"
   caption: "柔佛 · 东南亚 AIDC 第二枢纽 · 2030 年中位预测 3.3 GW"
 ShowToc: true
 ---

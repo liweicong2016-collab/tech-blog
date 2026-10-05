@@ -6,8 +6,8 @@ description: "李维聪改编小说:2014年电影《星际穿越》的故事改�
 tags: ["小说", "科幻", "星际穿越"]
 slug: "interstellar-novel-2014"
 cover:
-  image: "https://liweicong2016-collab.github.io/tech-blog/images/novel-2014-cover.jpg"
-  alt: "星际穿越·爱与引力 封面"
+  image: "https://images.unsplash.com/photo-1544947950-fa07a98d237f?w=1200&q=80&fit=crop&h=171"
+  alt: "星际穿越：黑洞太空"
 ---
 
 **原著剧本：乔纳森·诺兰 & 克里斯托弗·诺兰**

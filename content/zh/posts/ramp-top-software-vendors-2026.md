@@ -1,7 +1,7 @@
 ---
 cover:
-  image: "https://liweicong2016-collab.github.io/tech-blog/images/cover-ramp-vendors.jpg"
-  alt: "Ramp 榜单封面"
+  image: "https://images.unsplash.com/photo-1556761175-5973dc0f32e7?w=1200&q=80&fit=crop&h=171"
+  alt: "Ramp 企业软件排行榜：SaaS 数字经济"
 title: "Ramp 2026榜单：一个数据揭开AI企业软件真实格局"
 date: 2026-06-04T16:35:00+08:00
 draft: false

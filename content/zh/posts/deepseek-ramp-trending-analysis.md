@@ -1,7 +1,7 @@
 ---
 cover:
-  image: "https://liweicong2016-collab.github.io/tech-blog/images/cover-deepseek-ramp.jpg"
-  alt: "DeepSeek 登顶封面"
+  image: "https://images.unsplash.com/photo-1677442135703-1787eea5ce01?w=1200&q=80&fit=crop&h=171"
+  alt: "DeepSeek Ramp 榜首与 AI 淘汰赛"
 title: "DeepSeek登顶Ramp Trending：一个榜单，揭开了AI淘汰赛的底牌"
 date: 2026-06-04T17:20:00+08:00
 draft: false

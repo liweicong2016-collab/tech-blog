@@ -6,8 +6,8 @@ description: "同 harness、同 TDD、同项目——把 GLM-5.2、Sonnet 4.6、
 tags: ["AI", "Coding 模型", "LLM 评测", "Agent", "方法学", "SWE-bench"]
 slug: "four-coding-models-comparison-2026"
 cover:
-  image: "https://images.unsplash.com/photo-1555949963-aa79dcee981c?w=1200&q=80"
-  alt: "代码编辑器与多模型协作"
+  image: "https://images.unsplash.com/photo-1517694712202-14dd9538aa97?w=1200&q=80&fit=crop&h=171"
+  alt: "四个 coding 模型对比：代码编程"
   caption: "把四个 coding 模型拉到同一份代码、同一份 TDD 流程里跑真实任务"
 ShowToc: true
 ---

@@ -6,8 +6,8 @@ description: "东南亚 AIDC 第三枢纽：雅加达为单极主导、巴淡岛
 tags: ["🇮🇩 印尼", "雅加达", "巴淡岛", "数据中心", "IDC", "AIDC", "AI 算力", "BDx", "DCI Indonesia", "STT GDC", "Digital Edge", "DayOne", "Firmus"]
 slug: "indonesia-idc-timeline-2025-2030"
 cover:
-  image: "https://images.unsplash.com/photo-1558618666-fcd25c85cd64?w=1200&q=80"
-  alt: "雅加达城市夜景"
+  image: "https://images.unsplash.com/photo-1558618666-fcd25c85cd64?w=1200&q=80&fit=crop&h=171"
+  alt: "印尼 IDC 时间轴：东南亚 IDC"
   caption: "印尼 · 东南亚 AIDC 第三枢纽 · 2030 年 Mordor 预测 3,560 MW"
 ShowToc: true
 ---

@@ -6,8 +6,8 @@ description: "当沙特的钱开始寻找新加坡以外的出口，泰国悄悄
 tags: ["东南亚", "IDC", "数据中心", "AI算力", "中东资本", "泰国"]
 slug: "middle-east-southeast-asia-ai-computing"
 cover:
-  image: "https://images.unsplash.com/photo-1512453979798-5ea266f8880c?w=1200&q=80"
-  alt: "迪拜天际线与东南亚城市鸟瞰"
+  image: "https://images.unsplash.com/photo-1547826039-bfc35e0f1ea8?w=1200&q=80&fit=crop&h=171"
+  alt: "中东海湾数据中心：能源与 AI"
   caption: "当资本开始寻找新的出口，东南亚成了那个答案"
 ShowToc: true
 ---

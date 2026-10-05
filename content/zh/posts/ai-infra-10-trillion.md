@@ -6,8 +6,8 @@ description: "Forbes 称美国 AI 基建总投入或达 10 万亿美元。我拆
 tags: ["AI", "算力", "数据中心", "资本开支", "Anthropic"]
 slug: ai-infra-10-trillion
 cover:
-  image: "https://liweicong2016-collab.github.io/tech-blog/images/cover-ai-infra-10-trillion.jpg"
-  alt: "10万亿美元基建狂潮：从堆卡到堆电"
+  image: "https://images.unsplash.com/photo-1551836022-deb4988cc6c0?w=1200&q=80&fit=crop&h=171"
+  alt: "十万亿美元 AI 基建狂潮：超大规模数据中心"
 ---
 
 Forbes 昨天发了篇长文（Giacomo Tognini，2026-10-02），说美国 AI 基建总投入可能冲到 10 万亿美元，最早 2028 年就超过 19 世纪末的铁路狂热。我花了一晚上把原文和 Anthropic 泄露的招股书拆了一遍。

@@ -6,8 +6,8 @@ description: "4090 / 5090 看似便宜 3 倍，但 VRAM、ECC、RMA、服务器�
 tags: ["GPU", "AI算力", "硬件选型", "RTX6000", "L40S", "4090", "5090", "初创公司"]
 slug: "gpu-startup-rtx6000-vs-4090"
 cover:
-  image: "https://images.unsplash.com/photo-1591488320449-011701bb6704?w=1200&q=80"
-  alt: "数据中心机柜中的 GPU 服务器"
+  image: "https://images.unsplash.com/photo-1535378917042-10a22c95931a?w=1200&q=80&fit=crop&h=171"
+  alt: "GPU 芯片对比：RTX 6000 vs 4090"
   caption: "GPU 选型：表面是硬件问题，本质是 TCO 和风险问题"
 ShowToc: true
 ---

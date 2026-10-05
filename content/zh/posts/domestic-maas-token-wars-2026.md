@@ -6,8 +6,8 @@ description: "2026 年国内 MaaS 业务深度观察：某头部视频云 2026 �
 tags: ["MaaS", "Token经济", "国产AI", "云计算", "大模型", "推理", "GitCode", "开源大模型"]
 slug: "domestic-maas-token-wars-2026"
 cover:
-  image: "https://images.unsplash.com/photo-1518770660439-4636190af475?w=1200&q=80"
-  alt: "云计算与 Token 经济"
+  image: "https://images.unsplash.com/photo-1677442135703-1787eea5ce01?w=1200&q=80&fit=crop&h=171"
+  alt: "国内 MaaS 战争：Token 经济神经网络"
   caption: "Token 战场的两条主线：Coding 与视频"
 ShowToc: true
 ---

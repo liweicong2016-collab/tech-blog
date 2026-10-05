@@ -6,8 +6,8 @@ description: "中国大模型在 OpenRouter 拿下 61% 份额只是开始。本�
 tags: ["AI", "Token经济", "出海", "大模型", "MaaS", "市场分析", "开源", "全球市场"]
 slug: "china-token-going-global-2026"
 cover:
-  image: "https://images.unsplash.com/photo-1521295121783-8a321d551ad2?w=1200&q=80"
-  alt: "全球数字网络与节点"
+  image: "https://images.unsplash.com/photo-1521295121783-8a321d551ad2?w=1200&q=80&fit=crop&h=171"
+  alt: "中国 Token 出海：全球市场"
   caption: "中国 Token 出海：不是去卖模型，是去卖调用"
 ShowToc: true
 ---

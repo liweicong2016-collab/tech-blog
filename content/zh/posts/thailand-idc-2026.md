@@ -6,8 +6,8 @@ description: "泰国IDC市场正在从新兴走向成熟,True IDC领跑本土市
 tags: ["泰国", "东南亚", "IDC", "数据中心", "AI算力"]
 slug: "thailand-idc-2026"
 cover:
-  image: "https://images.unsplash.com/photo-1558618666-fcd25c85cd64?w=1200&q=80"
-  alt: "曼谷城市夜景"
+  image: "https://images.unsplash.com/photo-1558618666-fcd25c85cd64?w=1200&q=80&fit=crop&h=171"
+  alt: "泰国 IDC：东南亚数据中心"
   caption: "曼谷 · 东南亚数据中心新兴枢纽"
 ShowToc: true
 ---

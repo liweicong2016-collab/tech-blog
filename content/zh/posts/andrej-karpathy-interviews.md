@@ -2,8 +2,8 @@
 title: "Andrej Karpathy 访谈与演讲全记录"
 date: 2026-05-28
 cover:
-  image: "https://images.unsplash.com/photo-1677442135703-1787eea5ce01?w=1200&q=80"
-  alt: "Andrej Karpathy"
+  image: "https://images.unsplash.com/photo-1639762681485-074b7f938ba0?w=1200&q=80&fit=crop&h=171"
+  alt: "Andrej Karpathy 公开演讲：黑色舞台"
 showtoc: true
 ShowReadingTime: true
 tags:

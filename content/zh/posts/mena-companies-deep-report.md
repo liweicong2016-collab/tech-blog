@@ -2,8 +2,8 @@
 title: "中东互联网独角兽深度报告：6家企业万亿估值背后的ICT版图"
 date: 2026-05-27
 cover:
-  image: "https://images.unsplash.com/photo-1518005020951-eccb494ad742?w=1200&q=80"
-  alt: "MENA Internet Companies"
+  image: "https://images.unsplash.com/photo-1512453979798-5ea266f8880c?w=1200&q=80&fit=crop&h=171"
+  alt: "中东海湾合作：能源富国"
 showtoc: true
 ShowReadingTime: true
 tags:

@@ -6,8 +6,8 @@ description: "AI洞察日报10月3日：亚马逊80亿美元芯片卖售回租�
 tags: ["AI洞察日报", "算力", "芯片", "安全治理", "Agent"]
 slug: "ai-insight-20261003"
 cover:
-  image: "https://liweicong2016-collab.github.io/tech-blog/images/cover-ai-insight-20261003.jpg"
-  alt: "AI洞察日报10月3日封面：芯片熔成金币——从堆卡到堆钱"
+  image: "https://images.unsplash.com/photo-1677442135703-1787eea5ce01?w=1200&q=80&fit=crop&h=171"
+  alt: "AI 洞察日报封面：从堆卡到堆钱"
 ---
 
 > AI洞察日报，每天 8:30 更新：从互联网与 X 时间线里提炼 3–5 条 AI 洞察。今天的主线只有一个：**AI 不缺故事了，缺的是把故事换成钱的金融工程**。

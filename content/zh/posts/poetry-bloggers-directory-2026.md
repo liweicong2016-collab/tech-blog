@@ -6,8 +6,8 @@ description: "从 B站到 YouTube，从北大教授到外卖诗人，200 位读�
 tags: ["诗歌", "文化观察", "内容创作", "短视频"]
 slug: poetry-bloggers-directory-2026
 cover:
-  image: "https://images.unsplash.com/photo-1544947950-fa07a98d237f?w=1200&q=80"
-  alt: "翻开的诗集"
+  image: "https://images.unsplash.com/photo-1495446815901-a7297e633e8d?w=1200&q=80&fit=crop&h=171"
+  alt: "诗歌与书：200 位博主夜读"
   caption: "诗歌没有死，它只是换了个分发渠道"
 ShowToc: true
 ---

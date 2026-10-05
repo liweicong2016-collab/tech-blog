@@ -1,7 +1,7 @@
 ---
 cover:
-  image: "https://liweicong2016-collab.github.io/tech-blog/images/cover-waic-shanghai.jpg"
-  alt: "WAIC 封面"
+  image: "https://images.unsplash.com/photo-1540575467063-178a50c2df87?w=1200&q=80&fit=crop&h=171"
+  alt: "上海 WAIC 会议现场：会场展览"
 title: "上海 WAIC 2026：世界人工智能大会全解析"
 date: 2026-06-04T14:00:00+08:00
 draft: false

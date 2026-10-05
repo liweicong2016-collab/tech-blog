@@ -6,8 +6,8 @@ description: "国内头部 LLM 已追平第一梯队头部水平，差距缩短�
 tags: ["AI", "多模态", "视频生成", "出海", "市场分析"]
 slug: "china-multimodal-ai-leadership-2026"
 cover:
-  image: "https://images.unsplash.com/photo-1639762681485-074b7f938ba0?w=1200&q=80"
-  alt: "数字经济与多模态 AI"
+  image: "https://images.unsplash.com/photo-1620712943543-bcc4688e7485?w=1200&q=80&fit=crop&h=171"
+  alt: "多模态 AI 与视频生成：中国 AI 抽象"
   caption: "LLM 追到半步之遥，视频模型却领先一整年——国内 AI 的真实格局"
 ShowToc: true
 ---

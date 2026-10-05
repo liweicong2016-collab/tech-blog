@@ -6,8 +6,8 @@ description: "泰国 2025 运营 ~770 MW → 2026 年底 1,100 MW → 2027 年�
 tags: ["泰国", "曼谷", "EEC", "IDC", "AIDC", "AI算力", "数据中心", "东南亚", "TrueIDC", "STT", "GSA", "AWS", "Google", "Microsoft"]
 slug: "thailand-idc-timeline-2026-2031"
 cover:
-  image: "https://images.unsplash.com/photo-1558618666-fcd25c85cd64?w=1200&q=80"
-  alt: "曼谷城市夜景"
+  image: "https://images.unsplash.com/photo-1558618666-fcd25c85cd64?w=1200&q=80&fit=crop&h=171"
+  alt: "泰国 IDC 时间轴：春武里"
   caption: "曼谷 · 东南亚数据中心增长最快市场 · 2030 IT 负载 2,930 MW"
 ShowToc: true
 ---

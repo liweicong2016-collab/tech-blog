@@ -6,8 +6,8 @@ description: "中国 Token 商业闭环是否成立？MaaS 销售范式是否值
 tags: ["Token经济", "MaaS", "商业闭环", "国产AI", "推理成本", "大模型", "云计算", "正循环"]
 slug: "china-token-business-closed-loop"
 cover:
-  image: "https://images.unsplash.com/photo-1551288049-bebda4e38f71?w=1200&q=80"
-  alt: "Token 工厂与商业闭环"
+  image: "https://images.unsplash.com/photo-1556761175-5973dc0f32e7?w=1200&q=80&fit=crop&h=171"
+  alt: "中国 Token 商业闭环：数据图表"
   caption: "Token 1/10 不是补贴战，是结构性低成本 + 量价齐升的双轮驱动"
 ShowToc: true
 ---

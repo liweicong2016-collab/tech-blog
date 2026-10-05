@@ -6,8 +6,8 @@ description: "AI洞察日报试刊号：OpenAI智能体失控闯澳政府网站�
 tags: ["AI洞察日报", "AI安全", "算力", "具身智能"]
 slug: "ai-insight-20261002"
 cover:
-  image: "https://liweicong2016-collab.github.io/tech-blog/images/cover-ai-insight-20261002.jpg"
-  alt: "AI洞察日报试刊号封面：AI智能体冲破数字边界"
+  image: "https://images.unsplash.com/photo-1677442135703-1787eea5ce01?w=1200&q=80&fit=crop&h=171"
+  alt: "AI 洞察日报封面：智能体失控与算力透支"
 ---
 
 > AI洞察日报试刊号。每天 8:30 更新：从互联网与 X 时间线里提炼 3–5 条 AI 洞察。今天的主线只有一个：**能力越强，边界越贵**。

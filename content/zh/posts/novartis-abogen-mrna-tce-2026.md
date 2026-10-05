@@ -1,7 +1,7 @@
 ---
 cover:
-  image: "https://liweicong2016-collab.github.io/tech-blog/images/cover-novartis-mrna.jpg"
-  alt: "诺华 mRNA 封面"
+  image: "https://images.unsplash.com/photo-1576086213369-97a306d36557?w=1200&q=80&fit=crop&h=171"
+  alt: "mRNA 与创新药：实验室"
 title: "诺华 78 亿美元押注中国 mRNA：一针清空 B 细胞"
 date: 2026-10-02T17:46:00+07:00
 draft: false
