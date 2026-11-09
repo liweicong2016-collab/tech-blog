@@ -7,7 +7,7 @@ tags: ["AI", "Agent", "架构设计", "Harness", "工程方法"]
 slug: agent-architecture-2026
 ShowToc: true
 cover:
-  image: "/images/agent-arch/cover-agent-architecture-2026.jpg"
+  image: "/tech-blog/images/agent-arch/cover-agent-architecture-2026.jpg"
   alt: "薄 Harness 厚 Skills — 2026 Agent 架构拆解"
   caption: "Agent 系统设计：把模型的判断接进可验证、可恢复的执行过程"
 ---
@@ -58,7 +58,7 @@ Agent 接过了其中一部分"串"的工作。
 
 循环长这样：
 
-![Agent 执行的完整循环：模型判断与程序执行交替推进，人工只在关键点介入](/images/agent-arch/01-loop.svg)
+![Agent 执行的完整循环：模型判断与程序执行交替推进，人工只在关键点介入](/tech-blog/images/agent-arch/01-loop.svg)
 
 *图 1 — 一次 Agent 执行的完整循环*
 
@@ -74,7 +74,7 @@ Agent 接过了其中一部分"串"的工作。
 
 把系统放进一张职责图里，后面所有设计都能落到具体位置：
 
-![Agent 系统的四组职责：任务与控制、判断与执行、状态与资料、观察与改进](/images/agent-arch/02-four-areas.svg)
+![Agent 系统的四组职责：任务与控制、判断与执行、状态与资料、观察与改进](/tech-blog/images/agent-arch/02-four-areas.svg)
 
 *图 2 — 四组职责，任何一次故障都能归到其中一格*
 
@@ -145,7 +145,7 @@ Agent 接过了其中一部分"串"的工作。
 
 ### 4.5 工具是否设计完整，四个环节自检
 
-![工具设计完整性的四个环节：选得对、调得动、读得懂、失败后知道怎么办](/images/agent-arch/03-tool-check.svg)
+![工具设计完整性的四个环节：选得对、调得动、读得懂、失败后知道怎么办](/tech-blog/images/agent-arch/03-tool-check.svg)
 
 *图 3 — 工具设计自检，缺一个就是半成品*
 
@@ -239,7 +239,7 @@ Agent 接过了其中一部分"串"的工作。
 
 ### 6.3 三层怎么分
 
-![Workflow、Skill、模型三层分工：确定性往左，自由度往右](/images/agent-arch/04-three-layers.svg)
+![Workflow、Skill、模型三层分工：确定性往左，自由度往右](/tech-blog/images/agent-arch/04-three-layers.svg)
 
 *图 4 — 三层不是互斥，是分工*
 

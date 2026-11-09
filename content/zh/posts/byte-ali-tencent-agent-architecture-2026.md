@@ -14,7 +14,7 @@ cover:
 
 三家公司都已形成"自研大模型 + Agent 开发平台 + 场景应用"的完整 Agent 体系，但画的不是同一张图。**O1**走"全栈自建 + 开源生态"路线，**AL**走"模型开源 + 平台工程化"路线，**O3**走"生态驱动 + 云端托管"路线。一句话概括：**O1赢在基础设施与开源，AL赢在模型与开发者生态，O3赢在渠道与生产级治理**。
 
-![三家 Agent 体系分层架构对比](/images/cover-byte-ali-tencent-agent.png)
+![三家 Agent 体系分层架构对比](/tech-blog/images/cover-byte-ali-tencent-agent.png)
 
 ## 一、O1：全栈自建 + 开源生态
 
@@ -61,13 +61,13 @@ cover:
 | 主打应用 | 豆包、TRAE、豆包工作 | 千问办公、通义灵码 | WorkBuddy、CodeBuddy |
 | 2026 组织动作 | TRAE+扣子并入豆包 | 成立 ATH 事业群 | CodeBuddy 统辖 WorkBuddy |
 
-![Agent 核心循环与三家实现映射](/images/fig2_agent_loop.png)
+![Agent 核心循环与三家实现映射](/tech-blog/images/fig2_agent_loop.png)
 
 回到 Agent 核心循环（规划—推理—记忆—工具—反思）本身，三家在每一环的实现各有侧重：**规划**上O1用可视化工作流把规划产品化、AL Agent 2.0 完全交给模型、O3 Claw 下沉到云端沙箱的 Agentic Loop；**反思**上O1用多轮 RL 把反思训练进模型（UI-TARS-2），AL做成原生可观测链路，O3做成断点续跑与裁判模型评测。
 
 一个共同趋势是：**Agent 核心循环正在从提示词工程迁移为平台原生能力**。2024 年反思与规划还靠手写 ReAct 模板，到 2026 年O1把循环做进模型、AL做进运行时、O3做进云端 Harness——竞争焦点从"谁的提示词技巧强"转向"谁的运行时基础设施更可靠"。
 
-![三家 Agent 生态关键量化指标](/images/fig3_metrics.png)
+![三家 Agent 生态关键量化指标](/tech-blog/images/fig3_metrics.png)
 
 ## 五、结论与趋势判断
 

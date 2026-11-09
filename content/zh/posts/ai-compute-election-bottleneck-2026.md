@@ -1,6 +1,6 @@
 ---
 cover:
-  image: "/images/cover-election-bottleneck.png"
+  image: "/tech-blog/images/cover-election-bottleneck.png"
   alt: "卡住 AI 的，不是芯片，是选票 —— 2028 年 62.2 GW 计划新增中 93% 未动土"
 title: "卡住 AI 的，不是芯片，是选票"
 date: 2026-11-05T10:30:00+07:00

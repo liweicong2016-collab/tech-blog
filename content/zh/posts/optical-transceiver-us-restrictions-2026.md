@@ -1,6 +1,6 @@
 ---
 cover:
-  image: "/images/covers/optical-transceiver-us-restrictions-2026.png"
+  image: "/tech-blog/images/covers/optical-transceiver-us-restrictions-2026.png"
   alt: "光模块与电信供应链：网络硬件"
 title: "光模块的下半场：美国管制从“全面禁令”恐慌到“利润向上游转移”的推演"
 date: 2026-10-02

@@ -6,7 +6,7 @@ description: "李维聪改编小说:2014年电影《星际穿越》的故事改�
 tags: ["小说", "科幻", "星际穿越"]
 slug: "interstellar-novel-2014"
 cover:
-  image: "/images/covers/interstellar-novel-2014.png"
+  image: "/tech-blog/images/covers/interstellar-novel-2014.png"
   alt: "星际穿越：黑洞太空"
 ---
 

@@ -1,6 +1,6 @@
 ---
 cover:
-  image: "/images/cover-llm-api-share-2026.png"
+  image: "/tech-blog/images/cover-llm-api-share-2026.png"
   alt: "大模型 API 调用榜：中国厂商合计 45.7%"
 title: "大模型 API 调用榜：第一名不是最赚钱的那家"
 date: 2026-10-26T12:00:00+07:00
@@ -38,7 +38,7 @@ ShowToc: true
 | 9 | 腾讯 | 132 | 1.80% |
 | — | 其他合计 | 599 | 8.30% |
 
-![大模型 API 调用榜](/images/llm-api-share-2026.png)
+![大模型 API 调用榜](/tech-blog/images/llm-api-share-2026.png)
 
 中国厂商五家加起来 45.7%，接近一半。前二（DeepSeek + 谷歌）合计 46.6%，吃掉近半市场。
 
