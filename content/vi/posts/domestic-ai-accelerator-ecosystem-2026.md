@@ -32,7 +32,7 @@ ShowToc: true
 <ul>
   <li><strong>6,841 mô hình</strong> đã lắng đọng trên nền tảng, mức độ tập trung đầu cao (TOP 1 chiếm 29% tổng lượt tải của 30 mô hình trang đầu), các mô hình ngôi sao đã hình thành</li>
   <li><strong>Stack lượng tử hóa hoàn chỉnh</strong>: W4A8, W8A8, QuaRot, MTP, Flash/Turbo phủ toàn diện, đối ứng trực tiếp với hệ sinh thái NVIDIA TensorRT-LLM</li>
-  <li><strong>Tương thích khung suy luận</strong>: vLLM Ascend + SGLang Ascend đã thích ứng, mã PyTorch hiện có 0 thay đổi là có thể chạy</li>
+  <li><strong>Tương thích khung suy luận</strong>: vLLM ASC + SGLang ASC đã thích ứng, mã PyTorch hiện có 0 thay đổi là có thể chạy</li>
   <li><strong>Phủ đầy 6 họ tác vụ</strong>: LLM đa năng, LLM mã, VLM đa phương thức, ASR/TTS giọng nói, thị giác/OCR, ngành dọc</li>
   <li><strong>Hướng trọng điểm năm 2026 là thị giác công nghiệp</strong>: PatchCore, WinCLIP, YOLOv10 phát hành liên tiếp trong ba ngày, sản xuất/kiểm tra chất lượng là kịch bản mục tiêu cốt lõi</li>
 </ul>
@@ -127,15 +127,15 @@ ShowToc: true
 <div class="bis-timeline">
   <div class="bis-tl-item">
     <div class="tl-date">Khung suy luận</div>
-    <div class="tl-text"><strong>vLLM Ascend</strong> — Khung suy luận chủ đạo nước ngoài, đã có thích ứng Qwen3.5, GLM-4.7</div>
+    <div class="tl-text"><strong>vLLM ASC</strong> — Khung suy luận chủ đạo nước ngoài, đã có thích ứng Qwen3.5, GLM-4.7</div>
   </div>
   <div class="bis-tl-item">
     <div class="tl-date">Khung suy luận</div>
-    <div class="tl-text"><strong>SGLang Ascend</strong> — Qwen3-Next-80B-A3B đã thích ứng (hỗ trợ từ 8 tháng trước)</div>
+    <div class="tl-text"><strong>SGLang ASC</strong> — Qwen3-Next-80B-A3B đã thích ứng (hỗ trợ từ 8 tháng trước)</div>
   </div>
   <div class="bis-tl-item">
     <div class="tl-date">Engine suy luận</div>
-    <div class="tl-text"><strong>MindIE</strong> (engine suy luận tự nghiên cứu của nhà sản xuất) — Qwen-Image-series đang dùng</div>
+    <div class="tl-text"><strong>MindIE</strong> (engine suy luận tự nghiên cứu của nhà sản xuất) — C1-M-Image-series đang dùng</div>
   </div>
   <div class="bis-tl-item">
     <div class="tl-date">Khung huấn luyện</div>
@@ -147,7 +147,7 @@ ShowToc: true
   </div>
   <div class="bis-tl-item highlight">
     <div class="tl-date">Tinh chỉnh/Căn chỉnh</div>
-    <div class="tl-text"><strong>Ascend-SACT</strong> — Chuỗi công cụ tinh chỉnh/căn chỉnh, dòng GLM-5 đã dùng</div>
+    <div class="tl-text"><strong>ASC-SACT</strong> — Chuỗi công cụ tinh chỉnh/căn chỉnh, dòng GLM-5 đã dùng</div>
   </div>
 </div>
 
@@ -180,7 +180,7 @@ ShowToc: true
     </tr>
     <tr>
       <td><span class="bis-tag-m">VLM đa phương thức</span></td>
-      <td>Qwen3.5 VLM · Qwen-Image · z-image · HunyuanWorld（3D）</td>
+      <td>Qwen3.5 VLM · C1-M-Image · z-image · HunyuanWorld（3D）</td>
       <td>⭐⭐⭐⭐</td>
     </tr>
     <tr>
@@ -250,12 +250,12 @@ ShowToc: true
     </tr>
     <tr>
       <td><strong>Kiểm tra chất lượng công nghiệp</strong></td>
-      <td>PatchCore · YOLOv10-Ascend · WinCLIP</td>
+      <td>PatchCore · YOLOv10-ASC · WinCLIP</td>
       <td>Bộ ba thị giác công nghiệp, phát hành đầy đủ trong 3 ngày</td>
     </tr>
     <tr>
       <td><strong>Nội dung tiếp thị AIGC</strong></td>
-      <td>Qwen-Image-series · z-image-turbo</td>
+      <td>C1-M-Image-series · z-image-turbo</td>
       <td>Tạo ảnh + phiên bản turbo biên</td>
     </tr>
     <tr>
@@ -265,7 +265,7 @@ ShowToc: true
     </tr>
     <tr>
       <td><strong>Mô hình 3D / Thế giới</strong></td>
-      <td>HunyuanWorld-Mirror-Ascend</td>
+      <td>HunyuanWorld-Mirror-ASC</td>
       <td>Tạo thế giới 3D, đã thích ứng</td>
     </tr>
   </tbody>

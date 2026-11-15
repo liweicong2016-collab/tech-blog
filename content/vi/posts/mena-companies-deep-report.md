@@ -176,7 +176,7 @@ Thị trường Internet MENA là một thực thể đặc biệt "chính sách
 ![Riyadh, Saudi Arabia](https://images.unsplash.com/photo-1574717024653-61fd2cf4d44d?w=800&q=80)
 *Tầm nhìn 2030 Saudi thúc đẩy ngành giải trí số phát triển tốc độ cao*
 
-Ngược lại, các doanh nghiệp Trung Quốc ra nước ngoài, các trường hợp thành công tại khu vực MENA tập trung nhiều vào trò chơi (như miHoYo, Tencent) và năng lượng mới (như Temu, SHEIN), các nền tảng Internet thuần túy vẫn đối mặt với rào cản bản địa hóa. Lợi thế độc quyền của AWS và Azure cũng khiến cơ hội cho các nhà cung cấp đám mây Trung Quốc tập trung ở kịch bản hybrid cloud.
+Ngược lại, các doanh nghiệp Trung Quốc ra nước ngoài, các trường hợp thành công tại khu vực MENA tập trung nhiều vào trò chơi (như miHoYo, C2) và năng lượng mới (như C7-T, SHEIN), các nền tảng Internet thuần túy vẫn đối mặt với rào cản bản địa hóa. Lợi thế độc quyền của AWS và Azure cũng khiến cơ hội cho các nhà cung cấp đám mây Trung Quốc tập trung ở kịch bản hybrid cloud.
 
 ---
 

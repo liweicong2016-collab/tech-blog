@@ -44,7 +44,7 @@ Careem的崛起之路，充满了对本地市场的深刻洞察和持续的技�
 | **2012年7月**   | Mudassir Sheikha和Magnus Olsson在迪拜创立Careem，最初提供基于Web的企业专车服务。                                                                                       | 抓住了中东地区公共交通不便和出租车服务质量参差不齐的市场痛点，开创了本地网约车服务的先河。                                              |
 | **2015年**    | 获得沙特电信（STC）旗下风投基金STC Ventures的投资。                                                                                                                    | 获得了关键的早期资本和强大的本地战略合作伙伴，为其在沙特这个最大市场的扩张铺平了道路。                                                    |
 | **2016年**    | 宣布一项为期5年、总额1亿美元的研发投资计划，用于扩大在阿联酋和巴基斯坦的研发团队。                                                                                       | 标志着公司从业务驱动向技术驱动的转型，开始构建强大的自主研发能力。                                                                          |
-| **2018年**    | 获得包括日本乐天、滴滴出行在内的多方投资，估值达到20亿美元，正式成为“独角兽”企业。                                                                                    | 引入了国际顶级科技公司作为战略投资者，获得了宝贵的经验和资源，为其日后的超级应用战略埋下伏笔。                                            |
+| **2018年**    | 获得包括日本乐天、C11出行在内的多方投资，估值达到20亿美元，正式成为“独角兽”企业。                                                                                    | 引入了国际顶级科技公司作为战略投资者，获得了宝贵的经验和资源，为其日后的超级应用战略埋下伏笔。                                            |
 | **2019年3月**   | Uber宣布以31亿美元（14亿美元现金+17亿美元可转换票据）收购Careem。                                                                                                      | 创下中东科技领域最大规模的并购记录，标志着Careem的巨大成功，并极大地提振了整个区域的创业和投资信心。                                      |
 | **2020年1月**   | Uber正式完成对Careem的收购。Careem作为独立品牌继续运营。                                                                                                               | 在获得Uber全球资源和技术支持的同时，保留了本地决策的灵活性和品牌独立性，实现了“强强联合”。                                              |
 | **2021年**    | 正式启动“超级应用”战略，在单一平台内整合外卖、支付、配送等多种服务。                                                                                                   | 是公司发展史上最重要的战略转型，从垂直领域的领导者，向构建平台生态系统的目标迈进。                                                          |
@@ -97,7 +97,7 @@ Uber对Careem的收购是理解其财务价值的基石。该交易的细节如�
 | 轮次/时间   | 融资金额 (美元) | 投后估值 (美元) | 主要投资者                                                                                             |
 | :---------- | :-------------- | :-------------- | :----------------------------------------------------------------------------------------------------- |
 | **C轮 (2016)** | 3.5亿           | 10亿+           | **沙特电信 (STC)**, **日本乐天 (Rakuten)**, The Abraaj Group                                             |
-| **D轮 (2018)** | 2亿             | 20亿            | **沙特王国控股 (Kingdom Holding)**, **滴滴出行 (Didi Chuxing)**                                          |
+| **D轮 (2018)** | 2亿             | 20亿            | **沙特王国控股 (Kingdom Holding)**, **C11出行 (Didi Chuxing)**                                          |
 | **战略投资 (2023)** | 4亿             | 未披露          | **阿联酋电信集团 (e&)** (针对超级应用业务)                                                               |
 
 Careem的投资者名单星光熠熠，汇集了区域性产业巨头（如STC, Kingdom Holding, e&）和国际科技巨头（如Rakuten, Didi Chuxing）。这种独特的股东结构不仅带来了资金，更重要的是带来了宝贵的战略资源、行业经验和本地网络，是其能够战胜国际竞争对手、在本土市场脱颖而出的关键因素之一。
@@ -287,11 +287,11 @@ Careem的故事是中东科技生态系统崛起的一个缩影。从一个满�
 
 ### 6.2 参考文献
 
-1.  Uber Newsroom. (2019). *Uber to Acquire Careem to Expand the Greater Middle East Regional Opportunity Together*. [https://www.uber.com/newsroom/uber-to-acquire-careem/](https://www.uber.com/newsroom/uber-to-acquire-careem/)
-2.  e& Newsroom. (2023). *e& invests US$400 million in Careem's Super App to accelerate its growth*. [https://www.eand.com/en/news/e-invests-us-400-million-in-careems-super-app-to-accelerate-its-growth.jsp](https://www.eand.com/en/news/e-invests-us-400-million-in-careems-super-app-to-accelerate-its-growth.jsp)
-3.  AWS Case Study. (2023). *Careem Uses Amazon Neptune to Combat Fraud and Protect Customers*. [https://aws.amazon.com/solutions/case-studies/careem-neptune/](https://aws.amazon.com/solutions/case-studies/careem-neptune/)
-4.  Appscrip Blog. (2024). *Dissecting The Careem Tech Stack & System Architecture*. [https://appscrip.com/blog/careem-tech-stack-and-infrastructure/](https://appscrip.com/blog/careem-tech-stack-and-infrastructure/)
-5.  Oracle News Release. (2025). *Careem Drives Finance Efficiency with Oracle Fusion Cloud ERP*. [https://www.oracle.com/news/announcement/careem-drives-finance-efficiency-with-oracle-fusion-cloud-erp-2025-03-15/](https://www.oracle.com/news/announcement/careem-drives-finance-efficiency-with-oracle-fusion-cloud-erp-2025-03-15/)
-6.  Careem Blog. (2024). *Careem’s grocery offering grows by 66% in 2024 as Quik expands across the region*. [https://www.careem.com/en-ae/blog/careems-grocery-offering-grows-by-66-in-2024-as-quik-expands-across-the-region/](https://www.careem.com/en-ae/blog/careems-grocery-offering-grows-by-66-in-2024-as-quik-expands-across-the-region/)
-7.  ZAWYA. (2025). *Careem launches new platform to help businesses manage expenses*. [https://www.zawya.com/en/business/technology-and-telecom/careem-launches-new-platform-to-help-businesses-manage-expenses-w3g9k9q7](https://www.zawya.com/en/business/technology-and-telecom/careem-launches-new-platform-to-help-businesses-manage-expenses-w3g9k9q7)
+1.  Uber Newsroom. (2019). *Uber to Acquire Careem to Expand the Greater Middle East Regional Opportunity Together*. [https://www.uber.com/newsroom/uber-to-acquire-careem/ 0 
+2.  e& Newsroom. (2023). *e& invests US$400 million in Careem's Super App to accelerate its growth*. [https://www.eand.com/en/news/e-invests-us-400-million-in-careems-super-app-to-accelerate-its-growth.jsp 1 
+3.  AWS Case Study. (2023). *Careem Uses Amazon Neptune to Combat Fraud and Protect Customers*. [https://aws.amazon.com/solutions/case-studies/careem-neptune/ 2 
+4.  Appscrip Blog. (2024). *Dissecting The Careem Tech Stack & System Architecture*. [https://appscrip.com/blog/careem-tech-stack-and-infrastructure/ 3 
+5.  Oracle News Release. (2025). *Careem Drives Finance Efficiency with Oracle Fusion Cloud ERP*. [https://www.oracle.com/news/announcement/careem-drives-finance-efficiency-with-oracle-fusion-cloud-erp-2025-03-15/ 4 
+6.  Careem Blog. (2024). *Careem’s grocery offering grows by 66% in 2024 as Quik expands across the region*. [https://www.careem.com/en-ae/blog/careems-grocery-offering-grows-by-66-in-2024-as-quik-expands-across-the-region/ 5 
+7.  ZAWYA. (2025). *Careem launches new platform to help businesses manage expenses*. [https://www.zawya.com/en/business/technology-and-telecom/careem-launches-new-platform-to-help-businesses-manage-expenses-w3g9k9q7 6 
 

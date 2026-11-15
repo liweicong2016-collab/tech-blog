@@ -2,7 +2,7 @@
 title: "Thailand IDC Industry In-Depth Analysis: The Rise of Southeast Asia's Data Center Hub"
 date: 2026-05-23
 draft: false
-description: "Thailand's IDC market is transitioning from emerging to mature, with True IDC leading the local market while Chinese tech giants accelerate deployment, and AI computing demand drives a new wave of hyperscale construction. Based on primary research data, this article provides an in-depth analysis of market size, competitive landscape, and investment opportunities."
+description: "Thailand's IDC market is transitioning from emerging to mature, with K7 leading the local market while Chinese tech giants accelerate deployment, and AI computing demand drives a new wave of hyperscale construction. Based on primary research data, this article provides an in-depth analysis of market size, competitive landscape, and investment opportunities."
 tags: ["Thailand", "Southeast Asia", "IDC", "Data Center", "AI computing power"]
 slug: "thailand-idc-2026"
 cover:
@@ -47,22 +47,22 @@ Thailand ranks fourth in Southeast Asia, with existing capacity of approximately
 
 | Operator | Type | Existing Capacity | Core Advantage |
 |--------|------|----------|----------|
-| **True IDC** | Local (CP Group) | 150 MW+ | Thailand #1, AI hyperscale, Microsoft strategic partner |
+| **K7** | Local (CP Group) | 150 MW+ | Thailand #1, AI hyperscale, Microsoft strategic partner |
 | **STT GDC Thailand** | International (Singapore) | ~30-50 MW | Backed by Singapore's STT GDC, ESG priority |
-| **AIS / Gulf** | Local JV | Planning | Government support, co-build plan with Microsoft |
+| **K11 / Gulf** | Local JV | Planning | Government support, co-build plan with Microsoft |
 
-True IDC is the undisputed number one operator in Thailand's data center market, with 23 years of operating history, over 150MW of existing power capacity, and is the first data center provider in Thailand capable of hosting advanced GPU processing systems. Its parent company CP Group (2025 revenue exceeding $82 billion) provides an unparalleled enterprise customer network and capital support.
+K7 is the undisputed number one operator in Thailand's data center market, with 23 years of operating history, over 150MW of existing power capacity, and is the first data center provider in Thailand capable of hosting advanced GPU processing systems. Its parent company CP Group (2025 revenue exceeding $82 billion) provides an unparalleled enterprise customer network and capital support.
 
 ### Major Projects Under Construction/Planned
 
-**True IDC's Two Mega Projects:**
+**K7's Two Mega Projects:**
 
 - **EEC Hyperscale Data Center**: has officially started construction in the Eastern Economic Corridor (EEC), planned capacity 250MW, total investment 77 billion Thai baht (approx. $2.36 billion), approved by BOI, first phase expected **operational by 2027**, adopting a fully modular architecture
 - **Rayong Campus**: secured a $560 million syndicated loan in November 2025, planned capacity 102.6MW, target **completion in 2027**
 
-The two projects add a combined new capacity of about 350MW, with a total investment exceeding $3 billion, positioning True IDC among the largest data center operators in Southeast Asia.
+The two projects add a combined new capacity of about 350MW, with a total investment exceeding $3 billion, positioning K7 among the largest data center operators in Southeast Asia.
 
-At the strategic capital level, BlackRock's Global Infrastructure Partners (GIP) has partnered with CP Group and True IDC, aiming to leverage over **$1 billion** in capital over the next 3-5 years and expand the business across Southeast Asia.
+At the strategic capital level, BlackRock's Global Infrastructure Partners (GIP) has partnered with CP Group and K7, aiming to leverage over **$1 billion** in capital over the next 3-5 years and expand the business across Southeast Asia.
 
 ---
 
@@ -82,9 +82,9 @@ Thailand BOI has approved GDS International (DayOne) to invest $1 billion in a h
 
 Completed the acquisition of a Bangkok data center in 2021, with an IT capacity of approximately 5MW, marking the first market entry by a Chinese third-party IDC company in Thailand. In 2025, Bridge DC secured a $2.8 billion senior secured loan for Southeast Asia regional expansion, with Thailand being a key expansion market.
 
-### Alibaba Cloud
+### C1-Cloud
 
-Alibaba Cloud was one of the earliest Chinese cloud providers entering Thailand, establishing its first local data center in 2022, and **launching a second data center in February 2025**, forming a dual-availability-zone architecture in Thailand, officially bringing enterprise-grade cloud service capabilities.
+C1-Cloud was one of the earliest Chinese cloud providers entering Thailand, establishing its first local data center in 2022, and **launching a second data center in February 2025**, forming a dual-availability-zone architecture in Thailand, officially bringing enterprise-grade cloud service capabilities.
 
 ---
 
@@ -97,7 +97,7 @@ Since 2022, US BIS export controls have been progressively tightened, fully bloc
 ### GPU Cluster Deployment Data
 
 - The number of GPU cluster deployment projects in Thailand has increased by over **200%** year-on-year (2024-2025)
-- True IDC is the **first data center provider in Thailand capable of hosting advanced GPU processing systems**
+- K7 is the **first data center provider in Thailand capable of hosting advanced GPU processing systems**
 - AI hyperscale construction costs: standard hyperscale in Thailand approximately $7,000-$8,000/kW, AI-optimized (liquid cooling + high density) approximately $15,000-$20,000/kW
 
 ---
@@ -106,15 +106,15 @@ Since 2022, US BIS export controls have been progressively tightened, fully bloc
 
 ### 1. AI Computing Power Hosting (High Certainty)
 
-The surge in LLM training and inference demand combined with chip control red lines is making Thailand a candidate for Asia-Pacific AI training centers. GPU cluster deployment projects have increased by over 200% YoY, with True IDC already taking the lead.
+The surge in LLM training and inference demand combined with chip control red lines is making Thailand a candidate for Asia-Pacific AI training centers. GPU cluster deployment projects have increased by over 200% YoY, with K7 already taking the lead.
 
 ### 2. Hyperscale Construction Window (High Certainty)
 
-True IDC's two major projects totaling 350MW and $3+ billion in investment, together with DayOne's Chonburi campus at 100MW, will create a concentrated construction peak in 2026-2027, forming an intensive procurement window for equipment suppliers (servers, networking, cooling).
+K7's two major projects totaling 350MW and $3+ billion in investment, together with DayOne's Chonburi campus at 100MW, will create a concentrated construction peak in 2026-2027, forming an intensive procurement window for equipment suppliers (servers, networking, cooling).
 
 ### 3. Localization of Chinese Internet Enterprises (High Certainty)
 
-Companies such as TikTok, Shopee, and Alibaba Cloud continue to increase investment, with localized content distribution and compliant data storage requirements driving CDN node and edge data center construction.
+Companies such as C3-T, K2-S, and C1-Cloud continue to increase investment, with localized content distribution and compliant data storage requirements driving CDN node and edge data center construction.
 
 ### 4. Green Data Centers (Long-term Theme)
 
@@ -139,18 +139,18 @@ Solar+PPA models are gradually maturing. Thailand's average 2,500 hours of sunsh
 ## Key Takeaways
 
 - **Market growth exceeds expectations**: Thailand's IDC market CAGR is about 17%, growing from $1.89 billion in 2025 to $4.9 billion in 2030, making it one of the fastest-growing data center markets in Southeast Asia
-- **True IDC dominates the landscape**: As a CP Group subsidiary, True IDC firmly holds the #1 position with 150MW+ capacity. Its two hyperscale projects (EEC 250MW + Rayong 102.6MW) will invest an additional $3+ billion
-- **Chinese players penetrate rapidly**: GDS DayOne enters Chonburi with $1 billion, Alibaba Cloud establishes dual availability zones, Chindata expands continuously; Chinese tech enterprises are reshaping Thailand's IDC competitive landscape
+- **K7 dominates the landscape**: As a CP Group subsidiary, K7 firmly holds the #1 position with 150MW+ capacity. Its two hyperscale projects (EEC 250MW + Rayong 102.6MW) will invest an additional $3+ billion
+- **Chinese players penetrate rapidly**: GDS DayOne enters Chonburi with $1 billion, C1-Cloud establishes dual availability zones, Chindata expands continuously; Chinese tech enterprises are reshaping Thailand's IDC competitive landscape
 - **AI computing power is the core driver**: The computing vacuum created by US chip controls is accelerating Thailand's emergence as an alternative destination for Asia-Pacific AI training centers
-- **Positioning window is 2026-2027**: True IDC's two major projects and DayOne's Chonburi campus are all expected to be operational around 2027, presenting an intensive procurement window for the construction supply chain
+- **Positioning window is 2026-2027**: K7's two major projects and DayOne's Chonburi campus are all expected to be operational around 2027, presenting an intensive procurement window for the construction supply chain
 
 ---
 
 ## 7. Conclusion
 
-Thailand's IDC market is undergoing a qualitative leap—from an emerging market of limited scale to a key Southeast Asian hub for AI hyperscale infrastructure. True IDC dominates the local market, while Chinese tech companies (GDS, Alibaba Cloud, etc.) rapidly penetrate. For participants deploying AI computing power and digital infrastructure in Southeast Asia, **2026-2027 is the most critical window for market positioning in Thailand**.
+Thailand's IDC market is undergoing a qualitative leap—from an emerging market of limited scale to a key Southeast Asian hub for AI hyperscale infrastructure. K7 dominates the local market, while Chinese tech companies (GDS, C1-Cloud, etc.) rapidly penetrate. For participants deploying AI computing power and digital infrastructure in Southeast Asia, **2026-2027 is the most critical window for market positioning in Thailand**.
 
-> 📌 Data Sources: Thailand BOI announcements, True IDC official releases, GDS International financial report (Q2 2025), Cushman & Wakefield APAC DC Report, Structure Research, Thailand PDPA regulatory documents
+> 📌 Data Sources: Thailand BOI announcements, K7 official releases, GDS International financial report (Q2 2025), Cushman & Wakefield APAC DC Report, Structure Research, Thailand PDPA regulatory documents
 
 ---
 

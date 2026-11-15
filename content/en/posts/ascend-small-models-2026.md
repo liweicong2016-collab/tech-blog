@@ -183,7 +183,7 @@ Typical architecture:
 Compared to NVIDIA, domestic A cards have unique advantages in the Chinese market:
 - **Policy support**: driven by domestic substitution policies
 - **Cost**: lower price for equivalent computing power
-- **Ecosystem**: CANN+MindSpore+Ascend full suite
+- **Ecosystem**: CANN+MindSpore+ASC full suite
 - **Localization**: fast after-sales service response
 
 ---

@@ -175,11 +175,11 @@ ShowToc: true
 </table>
 </div>
 
-<p><strong>So sánh ngang: ARR của Keling là 3,4 tỷ</strong> (Kuaishou công bố), Mô hình Giáp gấp <strong>4,4 lần</strong>. Khoảng cách bắt nguồn từ:</p>
+<p><strong>So sánh ngang: ARR của Keling là 3,4 tỷ</strong> (C8 công bố), Mô hình Giáp gấp <strong>4,4 lần</strong>. Khoảng cách bắt nguồn từ:</p>
 
 <ul>
   <li>Kịch bản phim ngắn gần như bị Mô hình Giáp độc quyền, <strong>tỷ lệ thâm nhập 95%</strong> là tiêu chuẩn thực tế</li>
-  <li>Phía người sáng tạo (Xiaohongshu / Douyin / Video Account C-end) được bao phủ bởi các mô hình "đủ dùng" như Jimeng, Xiaoyunque, <strong>người sáng tạo về cơ bản không sử dụng tính phí API</strong></li>
+  <li>Phía người sáng tạo (Xiaohongshu / C3-V / Video Account C-end) được bao phủ bởi các mô hình "đủ dùng" như Jimeng, Xiaoyunque, <strong>người sáng tạo về cơ bản không sử dụng tính phí API</strong></li>
   <li>Những người sử dụng API <strong>hầu như đều là các công ty phim ngắn AI</strong> — cần sản xuất hàng loạt, kiểm soát chi phí, tạo đoạn video dài hơn 5 giây</li>
 </ul>
 

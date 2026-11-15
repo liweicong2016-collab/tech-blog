@@ -2,13 +2,13 @@
 cover:
   image: "/tech-blog/images/xiaowei/chart_timeline.png"
   alt: "小微能力扩展时间线"
-title: "微信小微深度拆解：把 14 亿人的微信变成一个 Agent"
+title: "C2-W小微深度拆解：把 14 亿人的C2-W变成一个 Agent"
 date: 2026-10-28T00:00:00+08:00
 draft: false
-tags: ["腾讯", "微信", "小微", "AI Agent", "WeLM", "小程序"]
-description: "小微不是一个新 App。它是长在微信里的一层 Agent：在聊天、内容、文档和小程序里随叫随到，替你找信息、做准备，最后一步留给你。截至 2026 年 10 月 28 日，它仍在灰度，官方没有公布用户数。"
+tags: ["C2", "C2-W", "小微", "AI Agent", "WeLM", "小程序"]
+description: "小微不是一个新 App。它是长在C2-W里的一层 Agent：在聊天、内容、文档和小程序里随叫随到，替你找信息、做准备，最后一步留给你。截至 2026 年 10 月 28 日，它仍在灰度，官方没有公布用户数。"
 slug: "wechat-xiaowei-agent-deep-dive-2026"
-summary: "小微的价值不在模型多强，而在微信手里的上下文和小程序履约。腾讯选择慢：每一步交给用户确认，边界逐月放宽。成败取决于数百万小程序愿不愿意把业务拆给 AI。"
+summary: "小微的价值不在模型多强，而在C2-W手里的上下文和小程序履约。C2选择慢：每一步交给用户确认，边界逐月放宽。成败取决于数百万小程序愿不愿意把业务拆给 AI。"
 author: "Livius's Tech Pulse"
 ShowToc: true
 TocOpen: false
@@ -16,13 +16,13 @@ TocOpen: false
 
 *Livius's Tech Pulse · AI · 算力 · 半导体 · 东南亚市场*
 
-小微不是一个新 App。它是长在微信里的一层 Agent：在聊天、内容、文档和小程序里随叫随到，替你找信息、做准备，最后一步留给你。截至 2026 年 10 月 28 日，它仍在灰度，官方没有公布用户数。
+小微不是一个新 App。它是长在C2-W里的一层 Agent：在聊天、内容、文档和小程序里随叫随到，替你找信息、做准备，最后一步留给你。截至 2026 年 10 月 28 日，它仍在灰度，官方没有公布用户数。
 
 ## 一、核心判断
 
 | # | 判断 | 来源 | 类型 | 置信度 |
 |---|---|---|---|---|
-| 1 | 腾讯官方定位：微信内的 agentic AI，由定制模型 WeLM 驱动 | [微信官方 LinkedIn（2Q26）](https://www.linkedin.com/posts/teamwechat_tencent-q2-2026-financial-report-weixin-activity-7493310127824007171-tWW7) | 一手 | 高 |
+| 1 | C2官方定位：C2-W内的 agentic AI，由定制模型 WeLM 驱动 | [C2-W官方 LinkedIn（2Q26）](https://www.linkedin.com/posts/teamwechat_tencent-q2-2026-financial-report-weixin-activity-7493310127824007171-tWW7) | 一手 | 高 |
 | 2 | 条款允许小微自主调用技能和接口，高风险操作必须本人完成 | [小微使用条款](https://support.weixin.qq.com/cgi-bin/mmtemplatepage-bin/pages/agreement/hKsQa01yfqwOfEa5) | 一手 | 高 |
 | 3 | 授权边界在放宽：10 月已可定时发消息 | [钛媒体，10-28](https://www.tmtpost.com/8184625.html) | 二手 | 中 |
 | 4 | 瓶颈在小程序改造供给，不在模型 | [钛媒体（中科网转载），10-28](https://zhongkewang.cn/article/4771) | 二手 | 中 |
@@ -32,17 +32,17 @@ TocOpen: false
 
 | 日期 | 事件 | 来源 |
 |---|---|---|
-| 2026-06-08 | 发布《关于开发者接入微信 AI 生态的指引》 | [钛媒体](https://zhongkewang.cn/article/4771) |
-| 2026-06-20 | 手机端小范围灰度，需微信 8.0.75 | [界面新闻](https://www.jiemian.com/article/15063609.html) |
-| 2026-06-22 | 腾讯声明小微在微信小范围测试 | [CNBC](https://www.cnbc.com/2026/06/22/tencent-ai-assistant-wechat-china.html) |
-| 2026-08-12 | 2Q26 财报：小微由 WeLM 驱动 | [微信官方 LinkedIn](https://www.linkedin.com/posts/teamwechat_tencent-q2-2026-financial-report-weixin-activity-7493310127824007171-tWW7) |
+| 2026-06-08 | 发布《关于开发者接入C2-W AI 生态的指引》 | [钛媒体](https://zhongkewang.cn/article/4771) |
+| 2026-06-20 | 手机端小范围灰度，需C2-W 8.0.75 | [界面新闻](https://www.jiemian.com/article/15063609.html) |
+| 2026-06-22 | C2声明小微在C2-W小范围测试 | [CNBC](https://www.cnbc.com/2026/06/22/tencent-ai-assistant-wechat-china.html) |
+| 2026-08-12 | 2Q26 财报：小微由 WeLM 驱动 | [C2-W官方 LinkedIn](https://www.linkedin.com/posts/teamwechat_tencent-q2-2026-financial-report-weixin-activity-7493310127824007171-tWW7) |
 | 2026-09-07 | 内测“小微 AI 社交” | [界面新闻](https://www.jiemian.com/article/15063609.html) |
 | 2026-09-15 | 电脑版灰度 | [新黄河](https://news.qq.com/rain/a/20260915A054OW00) |
 | 2026-10 | 可定时发消息，仍未全量 | [钛媒体](https://www.tmtpost.com/8184625.html) |
 
 ![小微能力扩展时间线](/tech-blog/images/xiaowei/chart_timeline.png)
 
-## 三、入口：几乎铺满微信
+## 三、入口：几乎铺满C2-W
 
 | 入口 | 能否读当前聊天 | 来源 |
 |---|---|---|
@@ -57,7 +57,7 @@ TocOpen: false
 
 ![小微入口数量](/tech-blog/images/xiaowei/chart_entry_points.png)
 
-入口数量的口径不一：6 月智东西实测 12 处，10 月微信官方披露 16 处，第三方实测 28 处（后两项均为钛媒体转述，二手）。首页主入口至今仍在灰度。
+入口数量的口径不一：6 月智东西实测 12 处，10 月C2-W官方披露 16 处，第三方实测 28 处（后两项均为钛媒体转述，二手）。首页主入口至今仍在灰度。
 
 ## 四、能力：能做什么，停在哪一步
 
@@ -86,9 +86,9 @@ TocOpen: false
 - 删除聊天记录、人脸识别、输入验证码或密码、特定小程序，不支持代办。
 - 权限不超出用户本人能访问的范围。仅限个人使用，不得商用。
 
-微信员工 9 月回应称，只有在聊天中主动“问小微”时才从本地临时读取，分析后不保存；记忆功能可在“记忆与隐私”中关闭（[界面新闻](https://m.jiemian.com/article/15097600.html)，二手，置信度：中）。
+C2-W员工 9 月回应称，只有在聊天中主动“问小微”时才从本地临时读取，分析后不保存；记忆功能可在“记忆与隐私”中关闭（[界面新闻](https://m.jiemian.com/article/15097600.html)，二手，置信度：中）。
 
-## 六、模型：WeLM 而不是混元
+## 六、模型：WeLM 而不是C2-M
 
 | 项目 | 值 | 来源 | 置信度 |
 |---|---|---|---|
@@ -99,38 +99,38 @@ TocOpen: false
 | 上下文 | 128K tokens | [界面新闻](https://www.jiemian.com/article/15063609.html) | 中 |
 | 外部兜底 | DeepSeek | [36氪](https://eu.36kr.com/en/p/3865425714795525) | 高 |
 
-小模型、低激活参数，是为了把十亿级调用的成本和时延压下来。小微归微信事业群，与集团混元团队相互独立（[钛媒体](https://www.tmtpost.com/8184625.html)，二手）。
+小模型、低激活参数，是为了把十亿级调用的成本和时延压下来。小微归C2-W事业群，与集团C2-M团队相互独立（[钛媒体](https://www.tmtpost.com/8184625.html)，二手）。
 
 ## 七、生态：小程序要被拆成“零件”
 
-微信要求开发者把小程序拆成原子接口和原子组件，再写一份叫 SKILL 的说明书。开发模式需通过评测才可被调用；不接入的小程序“将无法被微信 AI 推荐及调用”。首批内测企业包括京东、美团、滴滴、携程、同程、得物、肯德基；携程称 4 月中旬已接入（[钛媒体](https://zhongkewang.cn/article/4771)，二手，置信度：中）。
+C2-W要求开发者把小程序拆成原子接口和原子组件，再写一份叫 SKILL 的说明书。开发模式需通过评测才可被调用；不接入的小程序“将无法被C2-W AI 推荐及调用”。首批内测企业包括C5、C6、C11、携程、同程、得物、肯德基；携程称 4 月中旬已接入（[钛媒体](https://zhongkewang.cn/article/4771)，二手，置信度：中）。
 
-支付侧，微信支付 6 月推出 AI 专属卡，把 Agent 消费额度与主账户隔离（[钛媒体](https://www.tmtpost.com/8184625.html)，二手）。
+支付侧，C2-W支付 6 月推出 AI 专属卡，把 Agent 消费额度与主账户隔离（[钛媒体](https://www.tmtpost.com/8184625.html)，二手）。
 
 ## 八、竞争格局
 
 | 对手 | 形态 | 要点 | 来源 | 置信度 |
 |---|---|---|---|---|
-| 豆包手机助手 | 系统级跨 App 操作 | 2025-12 操作微信触发风控，随后下线该能力 | [澎湃新闻](https://www.thepaper.cn/newsDetail_forward_32094679) | 高 |
-| 阿里千问 | 独立 App + 开放 Agent | 6 月宣布向第三方 Agent 和 Skill 开放 | [钛媒体](https://zhongkewang.cn/article/4771) | 中 |
-| Apple Intelligence（中国） | 系统级，阿里千问供模型 | 12 月随 iOS 27.3 上线，不含新版 Siri | [MacRumors](https://www.macrumors.com/2026/10/14/apple-intelligence-china-ios-27-3/) | 中 |
+| C3-A手机助手 | 系统级跨 App 操作 | 2025-12 操作C2-W触发风控，随后下线该能力 | [澎湃新闻](https://www.thepaper.cn/newsDetail_forward_32094679) | 高 |
+| C1千问 | 独立 App + 开放 Agent | 6 月宣布向第三方 Agent 和 Skill 开放 | [钛媒体](https://zhongkewang.cn/article/4771) | 中 |
+| Apple Intelligence（中国） | 系统级，C1千问供模型 | 12 月随 iOS 27.3 上线，不含新版 Siri | [MacRumors](https://www.macrumors.com/2026/10/14/apple-intelligence-china-ios-27-3/) | 中 |
 | Gemini Intelligence | Android 系统级 Agent | 跨 App 完成多步任务 | [Google](https://blog.google/products-and-platforms/platforms/android/gemini-intelligence/) | 高 |
 | Gemini in Google Messages | 消息 App 内对话 | 覆盖 165+ 国家 | [Google 帮助](https://support.google.com/android/answer/14599070?hl=en) | 高 |
 | Meta AI（WhatsApp） | 消息 App 内助手 | 2025-05 后未更新用户数 | [Economic Times](https://economictimes.indiatimes.com/tech/technology/for-meta-ai-india-tops-the-global-charts-will-cathcart/articleshow/131074882.cms) | 中 |
 
-差别在于：豆包和 Gemini 从系统层操作别人的 App；Meta AI 和 Gemini in Messages 停在消息里对话；小微是少有同时握有社交关系、支付和小程序履约的 App 内 Agent。
+差别在于：C3-A和 Gemini 从系统层操作别人的 App；Meta AI 和 Gemini in Messages 停在消息里对话；小微是少有同时握有社交关系、支付和小程序履约的 App 内 Agent。
 
 ## 九、数据缺口
 
 | 指标 | 数值 | 来源 | 置信度 |
 |---|---|---|---|
-| 微信及 WeChat 合并月活 | 14.39 亿 | [腾讯 2Q26 财报](https://www.tencent.com/wp-content/uploads/2026/08/E700_IR.pdf) | 高 |
+| C2-W及 C2-W 合并月活 | 14.39 亿 | [C2 2Q26 财报](https://www.tencent.com/wp-content/uploads/2026/08/E700_IR.pdf) | 高 |
 | 小微日活 | 无公开数据 | — | — |
 | 小微月活 | 无公开数据 | — | — |
 | 调用量 | 无公开数据 | — | — |
 | 全量时间 | 无公开数据 | — | — |
 
-有券商跟踪称灰度比例约 10%、覆盖约 1 亿用户（[一财有看投](https://news.qq.com/rain/a/20261013A06DCT00)，二手，置信度：低），腾讯未证实。
+有券商跟踪称灰度比例约 10%、覆盖约 1 亿用户（[一财有看投](https://news.qq.com/rain/a/20261013A06DCT00)，二手，置信度：低），C2未证实。
 
 ## 十、风险与观察信号
 
@@ -138,7 +138,7 @@ TocOpen: false
 
 **观察信号**：
 
-1. 腾讯 3Q26 业绩（11 月 18 日）是否首次披露小微数据。
+1. C2 3Q26 业绩（11 月 18 日）是否首次披露小微数据。
 2. 全量推送时间。
 3. 小程序开发模式提审开放后的接入比例。
 4. AI 专属卡是否接入小微。
@@ -146,8 +146,8 @@ TocOpen: false
 
 ## 结论
 
-1. 小微的价值不在模型多强，而在微信手里的上下文和小程序履约。
-2. 腾讯选择慢：每一步交给用户确认，边界逐月放宽。
+1. 小微的价值不在模型多强，而在C2-W手里的上下文和小程序履约。
+2. C2选择慢：每一步交给用户确认，边界逐月放宽。
 3. 成败取决于数百万小程序愿不愿意把业务拆给 AI。
 
 ---

@@ -101,7 +101,7 @@ GPU là nguyên liệu thô của nhà máy Token. Nhưng ở đây có một v�
 
 Năm 2025 A100/H100 bị cấm, H200/L20 cũng bị đưa vào diện quản chế, điều này có nghĩa là kênh tiếp cận GPU của thị trường Trung Quốc đang bị thu hẹp. Nhưng đồng thời, nhu cầu huấn luyện của các nhà sản xuất mô hình Trung Quốc đang tăng lên. Đây là một mâu thuẫn mang tính cấu trúc.
 
-Điều thú vị là, trong mâu thuẫn này, NPU dòng Ascend lại trở thành một loại "phương án dự phòng" theo một nghĩa nào đó – không phải vì nó rẻ nhất, mà vì nó khả dụng.
+Điều thú vị là, trong mâu thuẫn này, NPU dòng ASC lại trở thành một loại "phương án dự phòng" theo một nghĩa nào đó – không phải vì nó rẻ nhất, mà vì nó khả dụng.
 
 ### Công đoạn B: Huấn luyện mô hình
 
@@ -133,15 +133,15 @@ Hãy xem một vài nhóm dữ liệu thực tế (nguồn: Morgan Stanley, JPMo
 |------|---------|---------|------|
 | MiniMax | ~$1,00 | ~$0,28 | **72%** |
 | Trung bình ngành | ~$0,50 | — | Thấp hơn |
-| Alibaba Cloud Bailian | Doanh thu kết hợp | Bao gồm phân bổ hạ tầng | Thấp hơn nhà cung cấp API thuần túy |
+| C1-Cloud Bailian | Doanh thu kết hợp | Bao gồm phân bổ hạ tầng | Thấp hơn nhà cung cấp API thuần túy |
 
 **Một phát hiện thú vị:**
 
-Cơ cấu doanh thu AI của Alibaba Cloud không phải là API Token thuần túy, mà là sự kết hợp "sức mạnh tính toán + huấn luyện + nền tảng suy luận + máy ảo riêng + MaaS API". Nếu tính toàn bộ doanh thu quý 89,71 tỷ NDT của mảng AI là API Token (theo đơn giá 3 NDT/triệu), thì sẽ cần đến 3P (triệu tỉ) token mỗi quý – không thực tế ở quy mô hiện tại.
+Cơ cấu doanh thu AI của C1-Cloud không phải là API Token thuần túy, mà là sự kết hợp "sức mạnh tính toán + huấn luyện + nền tảng suy luận + máy ảo riêng + MaaS API". Nếu tính toàn bộ doanh thu quý 89,71 tỷ NDT của mảng AI là API Token (theo đơn giá 3 NDT/triệu), thì sẽ cần đến 3P (triệu tỉ) token mỗi quý – không thực tế ở quy mô hiện tại.
 
 Token là cái vòi nước, giá trị thương mại thực sự nằm ở mạng lưới đường ống.
 
-Nói cách khác: Alibaba Cloud bán không phải giá nước, mà là cả hệ thống cấp nước.
+Nói cách khác: C1-Cloud bán không phải giá nước, mà là cả hệ thống cấp nước.
 
 Logic này, ở một mức độ nào đó, giải thích tại sao các nhà cung cấp API thuần túy lại bị động trong cuộc chiến giá cả – bạn không có "mạng đường ống", chỉ có "cái vòi nước".
 
@@ -203,4 +203,4 @@ Mười tám tháng tới, câu chuyện sẽ còn hấp dẫn hơn.
 
 ---
 
-*Ghi chú của tác giả: Dữ liệu bài viết tổng hợp từ báo cáo tài chính Alibaba FY2026, nghiên cứu của Morgan Stanley/JPMorgan, dữ liệu công khai OpenRouter và ước tính ngành. Một số dữ liệu của doanh nghiệp chưa niêm yết là suy đoán ngược, chỉ mang tính tham khảo định hướng.*
+*Ghi chú của tác giả: Dữ liệu bài viết tổng hợp từ báo cáo tài chính C1 FY2026, nghiên cứu của Morgan Stanley/JPMorgan, dữ liệu công khai OpenRouter và ước tính ngành. Một số dữ liệu của doanh nghiệp chưa niêm yết là suy đoán ngược, chỉ mang tính tham khảo định hướng.*

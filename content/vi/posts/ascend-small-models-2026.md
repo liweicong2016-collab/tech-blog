@@ -184,7 +184,7 @@ Kiến trúc điển hình:
 So với NVIDIA, thẻ đồ họa nội địa có lợi thế độc đáo tại thị trường Trung Quốc:
 - **Hỗ trợ chính sách**: Chính sách thay thế nội địa thúc đẩy
 - **Chi phí**: Cùng sức mạnh tính toán, giá thấp hơn
-- **Hệ sinh thái**: Gói CANN+MindSpore+Ascend
+- **Hệ sinh thái**: Gói CANN+MindSpore+ASC
 - **Bản địa hóa**: Dịch vụ hậu mãi phản hồi nhanh
 
 ---

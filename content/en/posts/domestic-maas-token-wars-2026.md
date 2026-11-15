@@ -29,7 +29,7 @@ ShowToc: true
 <div class="bis-signal">
 <h3>💡 Key Takeaways</h3>
 <ul>
-  <li><strong>Video Models: The single-point war is over</strong> — Model A on a leading video cloud achieves a conservative ARR estimate of 15 billion+, with 95% penetration in the short drama sector, forming a de facto monopoly; Kling ARR is only 3.4 billion, a 4.4× gap</li>
+  <li><strong>Video Models: The single-point war is over</strong> — Model A on a leading video cloud achieves a conservative ARR estimate of 15 billion+, with 95% penetration in the short drama sector, forming a de facto monopoly; C8-K ARR is only 3.4 billion, a 4.4× gap</li>
   <li><strong>Coding Models: Price hikes without volume drop</strong> — A top Coding company raised prices 83% in Q1 while call volume grew 400%, aligning with overseas top-tier pricing for the first time in core scenarios</li>
   <li><strong>The LLM general-purpose track has been pierced by rock-bottom prices</strong> — the future belongs to top models + industry penetration, not price competition</li>
   <li><strong>Cinderella's glass slipper effect</strong>: AI models have an extremely strong first-mover advantage and high early user stickiness, explaining why leading models dare to keep raising prices</li>
@@ -174,11 +174,11 @@ ShowToc: true
 </table>
 </div>
 
-<p><strong>Horizontal comparison: Kling ARR 3.4 billion</strong> (publicly disclosed by Kuaishou), Model A is <strong>4.4×</strong> that amount. The gap stems from:</p>
+<p><strong>Horizontal comparison: C8-K ARR 3.4 billion</strong> (publicly disclosed by C8), Model A is <strong>4.4×</strong> that amount. The gap stems from:</p>
 
 <ul>
   <li>The short drama scene is almost monopolized by Model A; <strong>95% penetration</strong> is the de facto standard</li>
-  <li>Creator-side (Xiaohongshu/Douyin/Video Account C-end) is covered by "good-enough models" like Jimeng, Xiaoyunque, etc. — <strong>creators never need API billing</strong></li>
+  <li>Creator-side (Xiaohongshu/C3-V/Video Account C-end) is covered by "good-enough models" like Jimeng, Xiaoyunque, etc. — <strong>creators never need API billing</strong></li>
   <li>Those using the API are <strong>almost exclusively AI short drama companies</strong> — they require batch processing, controllable costs, and generation of video clips longer than 5 seconds</li>
 </ul>
 
@@ -355,7 +355,7 @@ ShowToc: true
 
 <ul>
   <li><strong>95% of short-drama API calls are handled by Model A</strong> ("It's almost impossible for a short-drama practitioner not to be a Model A user")</li>
-  <li>Competitor Kling's ARR of 3.4 billion = 0.22x that of Model A, the <strong>gap is already 4.4x</strong>, not 4.4%</li>
+  <li>Competitor C8-K's ARR of 3.4 billion = 0.22x that of Model A, the <strong>gap is already 4.4x</strong>, not 4.4%</li>
   <li>The marginal cost for short-drama companies to switch models is extremely high:
     <ul>
       <li>Prompt engineering / storyboarding / character consistency workflows have all been re-built around Model A's APIs</li>
@@ -374,10 +374,10 @@ ShowToc: true
   <li>Conclusion: <strong>The moat for video models is deeper than for Coding</strong>, and the point of no return in a one-on-one war arrives sooner</li>
 </ul>
 
-<p><strong>Implications for the competitor (Kling)</strong>:</p>
+<p><strong>Implications for the competitor (C8-K)</strong>:</p>
 
 <ul>
-  <li>❌ <strong>Cannot</strong> poach users via a price war (Model A's ARR 15 billion vs Kling's 3.4 billion, <strong>a price war = suicide</strong>)</li>
+  <li>❌ <strong>Cannot</strong> poach users via a price war (Model A's ARR 15 billion vs C8-K's 3.4 billion, <strong>a price war = suicide</strong>)</li>
   <li>✅ <strong>Should</strong> target <strong>niche scenarios that Model A does not cover</strong>:
     <ul>
       <li>Ultra-long videos (continuous storylines over 5 minutes)</li>

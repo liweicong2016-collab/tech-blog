@@ -32,7 +32,7 @@ ShowToc: true
 <ul>
   <li><strong>6,841 モデル</strong>がプラットフォームに集積され、上位集中度が高い（TOP 1 が最初の画面に表示される30モデルの累計ダウンロード数の29%を占める）。スターModelが形成されている</li>
   <li><strong>量子化スタックが完全</strong>：W4A8、W8A8、QuaRot、MTP、Flash/Turbo を完全カバー。NVIDIA TensorRT-LLM エコシステムに直接対抗</li>
-  <li><strong>推論フレームワーク互換</strong>：vLLM Ascend + SGLang Ascend が適応済み。既存の PyTorch コードを変更なしで実行可能</li>
+  <li><strong>推論フレームワーク互換</strong>：vLLM ASC + SGLang ASC が適応済み。既存の PyTorch コードを変更なしで実行可能</li>
   <li><strong>6 大タスクカテゴリを完全カバー</strong>：汎用LLM、コードLLM、マルチモーダルVLM、音声ASR/TTS、視覚/OCR、業界特化</li>
   <li><strong>2026年の重点方向は産業用視覚</strong>：PatchCore、WinCLIP、YOLOv10 が3日以内に連続リリース。製造/品質検査が中核ターゲットシナリオ</li>
 </ul>
@@ -127,15 +127,15 @@ ShowToc: true
 <div class="bis-timeline">
   <div class="bis-tl-item">
     <div class="tl-date">推論フレームワーク</div>
-    <div class="tl-text"><strong>vLLM Ascend</strong> — 海外の主要推論フレームワーク。既に Qwen3.5、GLM-4.7 が適応済み</div>
+    <div class="tl-text"><strong>vLLM ASC</strong> — 海外の主要推論フレームワーク。既に Qwen3.5、GLM-4.7 が適応済み</div>
   </div>
   <div class="bis-tl-item">
     <div class="tl-date">推論フレームワーク</div>
-    <div class="tl-text"><strong>SGLang Ascend</strong> — Qwen3-Next-80B-A3B が適応済み（8ヶ月前からサポート）</div>
+    <div class="tl-text"><strong>SGLang ASC</strong> — Qwen3-Next-80B-A3B が適応済み（8ヶ月前からサポート）</div>
   </div>
   <div class="bis-tl-item">
     <div class="tl-date">推論エンジン</div>
-    <div class="tl-text"><strong>MindIE</strong>（ベンダー自社開発推論エンジン）— Qwen-Image-series が使用中</div>
+    <div class="tl-text"><strong>MindIE</strong>（ベンダー自社開発推論エンジン）— C1-M-Image-series が使用中</div>
   </div>
   <div class="bis-tl-item">
     <div class="tl-date">学習フレームワーク</div>
@@ -147,7 +147,7 @@ ShowToc: true
   </div>
   <div class="bis-tl-item highlight">
     <div class="tl-date">ファインチューニング/アライメント</div>
-    <div class="tl-text"><strong>Ascend-SACT</strong> — ファインチューニング/アライメントツールチェーン。GLM-5 シリーズが使用済み</div>
+    <div class="tl-text"><strong>ASC-SACT</strong> — ファインチューニング/アライメントツールチェーン。GLM-5 シリーズが使用済み</div>
   </div>
 </div>
 
@@ -180,7 +180,7 @@ ShowToc: true
     </tr>
     <tr>
       <td><span class="bis-tag-m">マルチモーダル VLM</span></td>
-      <td>Qwen3.5 VLM · Qwen-Image · z-image · HunyuanWorld（3D）</td>
+      <td>Qwen3.5 VLM · C1-M-Image · z-image · HunyuanWorld（3D）</td>
       <td>⭐⭐⭐⭐</td>
     </tr>
     <tr>
@@ -250,12 +250,12 @@ ShowToc: true
     </tr>
     <tr>
       <td><strong>産業用品質検査</strong></td>
-      <td>PatchCore · YOLOv10-Ascend · WinCLIP</td>
+      <td>PatchCore · YOLOv10-ASC · WinCLIP</td>
       <td>産業用視覚の三点セット、3日以内に一斉リリース</td>
     </tr>
     <tr>
       <td><strong>AIGC マーケティングコンテンツ</strong></td>
-      <td>Qwen-Image-series · z-image-turbo</td>
+      <td>C1-M-Image-series · z-image-turbo</td>
       <td>画像生成 + 端末側 turbo 版</td>
     </tr>
     <tr>
@@ -265,7 +265,7 @@ ShowToc: true
     </tr>
     <tr>
       <td><strong>3D / ワールドモデル</strong></td>
-      <td>HunyuanWorld-Mirror-Ascend</td>
+      <td>HunyuanWorld-Mirror-ASC</td>
       <td>3D ワールド生成、適応済み</td>
     </tr>
   </tbody>

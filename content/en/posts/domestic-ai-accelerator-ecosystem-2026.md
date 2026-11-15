@@ -32,7 +32,7 @@ ShowToc: true
 <ul>
   <li><strong>6,841 models</strong> have already accumulated on the platform, with high head concentration (TOP 1 accounts for 29% of cumulative downloads of the first screen’s 30 models), star models have formed.</li>
   <li><strong>Full quantization stack</strong>: W4A8, W8A8, QuaRot, MTP, Flash/Turbo full coverage, directly benchmarking NVIDIA TensorRT-LLM ecosystem.</li>
-  <li><strong>Inference framework compatibility</strong>: vLLM Ascend + SGLang Ascend have been adapted, existing PyTorch code runs with 0 changes.</li>
+  <li><strong>Inference framework compatibility</strong>: vLLM ASC + SGLang ASC have been adapted, existing PyTorch code runs with 0 changes.</li>
   <li><strong>6 major task families fully covered</strong>: general LLM, code LLM, multimodal VLM, speech ASR/TTS, vision/OCR, vertical industry.</li>
   <li><strong>Key direction in 2026 is industrial vision</strong>: PatchCore, WinCLIP, YOLOv10 released within three days, manufacturing/quality inspection are core target scenarios.</li>
 </ul>
@@ -127,15 +127,15 @@ ShowToc: true
 <div class="bis-timeline">
   <div class="bis-tl-item">
     <div class="tl-date">Inference Framework</div>
-    <div class="tl-text"><strong>vLLM Ascend</strong> — main overseas inference framework, already adapted for Qwen3.5, GLM-4.7</div>
+    <div class="tl-text"><strong>vLLM ASC</strong> — main overseas inference framework, already adapted for Qwen3.5, GLM-4.7</div>
   </div>
   <div class="bis-tl-item">
     <div class="tl-date">Inference Framework</div>
-    <div class="tl-text"><strong>SGLang Ascend</strong> — Qwen3-Next-80B-A3B already adapted (supported 8 months ago)</div>
+    <div class="tl-text"><strong>SGLang ASC</strong> — Qwen3-Next-80B-A3B already adapted (supported 8 months ago)</div>
   </div>
   <div class="bis-tl-item">
     <div class="tl-date">Inference Engine</div>
-    <div class="tl-text"><strong>MindIE</strong> (vendor’s own inference engine) — used by Qwen-Image-series</div>
+    <div class="tl-text"><strong>MindIE</strong> (vendor’s own inference engine) — used by C1-M-Image-series</div>
   </div>
   <div class="bis-tl-item">
     <div class="tl-date">Training Framework</div>
@@ -147,7 +147,7 @@ ShowToc: true
   </div>
   <div class="bis-tl-item highlight">
     <div class="tl-date">Fine‑tuning / Alignment</div>
-    <div class="tl-text"><strong>Ascend-SACT</strong> — fine‑tuning/alignment toolchain, already used by GLM-5 series</div>
+    <div class="tl-text"><strong>ASC-SACT</strong> — fine‑tuning/alignment toolchain, already used by GLM-5 series</div>
   </div>
 </div>
 
@@ -180,7 +180,7 @@ ShowToc: true
     </tr>
     <tr>
       <td><span class="bis-tag-m">Multimodal VLM</span></td>
-      <td>Qwen3.5 VLM · Qwen-Image · z-image · HunyuanWorld (3D)</td>
+      <td>Qwen3.5 VLM · C1-M-Image · z-image · HunyuanWorld (3D)</td>
       <td>⭐⭐⭐⭐</td>
     </tr>
     <tr>
@@ -250,12 +250,12 @@ ShowToc: true
     </tr>
     <tr>
       <td><strong>Industrial Quality Inspection</strong></td>
-      <td>PatchCore · YOLOv10-Ascend · WinCLIP</td>
+      <td>PatchCore · YOLOv10-ASC · WinCLIP</td>
       <td>Industrial vision trio, all released within 3 days</td>
     </tr>
     <tr>
       <td><strong>AIGC Marketing Content</strong></td>
-      <td>Qwen-Image-series · z-image-turbo</td>
+      <td>C1-M-Image-series · z-image-turbo</td>
       <td>Image generation + on‑device turbo edition</td>
     </tr>
     <tr>
@@ -265,7 +265,7 @@ ShowToc: true
     </tr>
     <tr>
       <td><strong>3D / World Model</strong></td>
-      <td>HunyuanWorld-Mirror-Ascend</td>
+      <td>HunyuanWorld-Mirror-ASC</td>
       <td>3D world generation, already adapted</td>
     </tr>
   </tbody>

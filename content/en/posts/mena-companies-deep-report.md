@@ -176,7 +176,7 @@ The MENA internet market is a unique case where policy drive outweighs market dr
 ![Riyadh, Saudi Arabia](https://images.unsplash.com/photo-1574717024653-61fd2cf4d44d?w=800&q=80)
 *Saudi Vision 2030 drives rapid development of the digital entertainment industry*
 
-Looking at Chinese companies going overseas, success stories in MENA are concentrated in gaming (like miHoYo, Tencent) and new energy retail (like Temu, SHEIN). Pure internet platforms still face high localization barriers. The dominant advantage of AWS and Azure also limits opportunities for Chinese cloud providers mainly to hybrid cloud scenarios.
+Looking at Chinese companies going overseas, success stories in MENA are concentrated in gaming (like miHoYo, C2) and new energy retail (like C7-T, SHEIN). Pure internet platforms still face high localization barriers. The dominant advantage of AWS and Azure also limits opportunities for Chinese cloud providers mainly to hybrid cloud scenarios.
 
 ---
 

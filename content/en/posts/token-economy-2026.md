@@ -101,7 +101,7 @@ GPUs are the raw material of the Token factory. But here's the problem — GPU s
 
 In 2025, A100/H100 were banned, and H200/L20 were also brought under controls. This means the channels for GPU acquisition in China are narrowing. Yet simultaneously, the training demands of Chinese model manufacturers are growing. This is a structural contradiction.
 
-Interestingly, within this contradiction, the Ascend series NPUs have, in a sense, become an "alternative" — not because they are the cheapest, but because they are available.
+Interestingly, within this contradiction, the ASC series NPUs have, in a sense, become an "alternative" — not because they are the cheapest, but because they are available.
 
 ### Stage B: Model Training
 
@@ -133,15 +133,15 @@ Look at several sets of real-world data (sources: Morgan Stanley, J.P. Morgan):
 |------|---------|---------|------|
 | MiniMax | ~$1.00 | ~$0.28 | **72%** |
 | Industry Avg | ~$0.50 | — | Lower |
-| Alibaba Cloud Bailian | Bundled revenue | Includes infra amortization | Lower than pure API vendors |
+| C1-Cloud Bailian | Bundled revenue | Includes infra amortization | Lower than pure API vendors |
 
 **One interesting finding:**
 
-Alibaba Cloud's AI revenue structure is not a pure token API, but a combination of "compute + training + inference platform + dedicated instances + MaaS API." If all the ¥8.971 billion quarterly AI revenue were counted as token API (at ¥3/million unit price), it would require 3 quadrillion tokens per quarter — unfeasible at the current scale.
+C1-Cloud's AI revenue structure is not a pure token API, but a combination of "compute + training + inference platform + dedicated instances + MaaS API." If all the ¥8.971 billion quarterly AI revenue were counted as token API (at ¥3/million unit price), it would require 3 quadrillion tokens per quarter — unfeasible at the current scale.
 
 Tokens are the faucet; the real business value is in the water network.
 
-In other words: Alibaba Cloud isn't selling the price of water; it's selling the entire water supply system.
+In other words: C1-Cloud isn't selling the price of water; it's selling the entire water supply system.
 
 This logic, to some extent, explains why pure API vendors are so passive in a price war — you don't have the "water network," you only have the "faucet."
 
@@ -203,4 +203,4 @@ The next eighteen months will be even more compelling.
 
 ---
 
-*Author's note: The data in this article is synthesized from Alibaba FY2026 earnings, Morgan Stanley/J.P. Morgan research, OpenRouter public data, and industry estimates. Data for some unlisted companies are reverse-calculated and intended only for directional reference.*
+*Author's note: The data in this article is synthesized from C1 FY2026 earnings, Morgan Stanley/J.P. Morgan research, OpenRouter public data, and industry estimates. Data for some unlisted companies are reverse-calculated and intended only for directional reference.*

@@ -3,8 +3,8 @@ title: "Nền kinh tế Token và thương mại hóa MaaS của các ông lớn
 date: 2026-06-04T00:55:00+08:00
 draft: false
 tags: ["MaaS", "Token", "ByteDance", "Alibaba", "Tencent", "Doubao", "Bailian", "TokenHub"]
-description: "ByteDance, Alibaba, Tencent: từ cạnh tranh năng lực mô hình chuyển sang cạnh tranh tổng hợp về quy mô Token, hiệu quả chi phí và cửa ngõ hệ sinh thái. MaaS đang trở thành lớp đo lường mới giữa đám mây và ứng dụng AI."
-summary: "Doubao xử lý trung bình 120 nghìn tỷ Token mỗi ngày / Bailian tăng gấp 6 lần sau 3 tháng / TokenHub giảm giá 50-80% — ba tuyến chủ đạo quyết định thắng thua của MaaS năm 2026."
+description: "C3, C1, C2: từ cạnh tranh năng lực mô hình chuyển sang cạnh tranh tổng hợp về quy mô Token, hiệu quả chi phí và cửa ngõ hệ sinh thái. MaaS đang trở thành lớp đo lường mới giữa đám mây và ứng dụng AI."
+summary: "C3-A xử lý trung bình 120 nghìn tỷ Token mỗi ngày / Bailian tăng gấp 6 lần sau 3 tháng / TokenHub giảm giá 50-80% — ba tuyến chủ đạo quyết định thắng thua của MaaS năm 2026."
 ShowToc: true
 TocOpen: true
 ---
@@ -15,9 +15,9 @@ TocOpen: true
 
 | Con số | Nhà cung cấp | Ý nghĩa |
 |---|---|---|
-| **120 nghìn tỷ+** | ByteDance 豆包 | Lượng Token sử dụng trung bình hàng ngày, được thúc đẩy bởi cả C-end và API doanh nghiệp |
-| **6 lần** | Alibaba 百炼 | Mức tiêu thụ Token dịch vụ mô hình công cộng tăng trong ba tháng |
-| **50%-80%** | Tencent TokenHub | Mức chiết khấu của gói dịch vụ so với API theo lưu lượng |
+| **120 nghìn tỷ+** | C3 C3-A | Lượng Token sử dụng trung bình hàng ngày, được thúc đẩy bởi cả C-end và API doanh nghiệp |
+| **6 lần** | C1 百炼 | Mức tiêu thụ Token dịch vụ mô hình công cộng tăng trong ba tháng |
+| **50%-80%** | C2 TokenHub | Mức chiết khấu của gói dịch vụ so với API theo lưu lượng |
 
 ## Điều hướng chương
 
@@ -26,9 +26,9 @@ Bài viết này tái hiện chính xác theo 10 slide nghiên cứu gốc, **k�
 1. [Tóm tắt thực hiện: Ba trục chính](#exec-summary)
 2. [Kinh tế Token: Sự kết hợp giữa doanh thu và chi phí](#token-economics)
 3. [Thị trường MaaS: Từ API nâng cấp thành hệ điều hành AI](#maas-market)
-4. [ByteDance 火山引擎: Dùng lưu lượng ứng dụng để kéo bánh đà Token](#bytedance)
-5. [Alibaba 百炼: Biến AI thành tầng tăng trưởng của đám mây](#alibaba)
-6. [Tencent 混元 + TokenHub: Đặt cược vào cổng tổng hợp](#tencent)
+4. [C3 C3-Cloud: Dùng lưu lượng ứng dụng để kéo bánh đà Token](#bytedance)
+5. [C1 百炼: Biến AI thành tầng tăng trưởng của đám mây](#alibaba)
+6. [C2 C2-M + TokenHub: Đặt cược vào cổng tổng hợp](#tencent)
 7. [Ma trận cạnh tranh: Ba bên thâm nhập từ các điểm kiểm soát nhu cầu khác nhau](#matrix)
 8. [Hàm ý chiến lược: Tái định hình thiết kế đám mây, phần mềm và sản phẩm dành cho nhà phát triển](#implications)
 9. [Triển vọng 2026-2027: Từ phổ cập giá rẻ đến phân tầng hiệu quả](#outlook)
@@ -41,15 +41,15 @@ Bài viết này tái hiện chính xác theo 10 slide nghiên cứu gốc, **k�
 
 ![Ba trục chính: Token quy mô / Đường cong chi phí đi xuống / Tái sắp xếp cổng sinh thái](/tech-blog/images/maas-ppt/01-three-main-lines.svg)
 
-**Trục chính thứ nhất: Token quy mô** —— Lượng gọi API hàng ngày trở thành chỉ số thương mại hóa AI số một của các nhà cung cấp đám mây. ByteDance tiết lộ lượng Token 豆包 sử dụng trung bình hằng ngày vượt 120 nghìn tỷ, Alibaba tiết lộ mức tiêu thụ Token 百炼 tăng 6 lần trong ba tháng.
+**Trục chính thứ nhất: Token quy mô** —— Lượng gọi API hàng ngày trở thành chỉ số thương mại hóa AI số một của các nhà cung cấp đám mây. C3 tiết lộ lượng Token C3-A sử dụng trung bình hằng ngày vượt 120 nghìn tỷ, C1 tiết lộ mức tiêu thụ Token 百炼 tăng 6 lần trong ba tháng.
 
 **Trục chính thứ hai: Đường cong chi phí đi xuống** —— Giá chuyển từ API theo lưu lượng sang cấu trúc nhiều lớp như Token đầu vào/đầu ra, độ dài ngữ cảnh, Batch, bộ nhớ đệm, gói cước, các nhà cung cấp khoá chân nhà phát triển bằng mô hình giá rẻ.
 
-**Trục chính thứ ba: Tái sắp xếp cổng sinh thái** —— Alibaba thiên về đám mây và ngăn xếp toàn diện doanh nghiệp, ByteDance thiên về lưu lượng ứng dụng và nội dung/Agent, Tencent thiên về kết nối doanh nghiệp, hệ sinh thái WeChat và cổng tổng hợp TokenHub.
+**Trục chính thứ ba: Tái sắp xếp cổng sinh thái** —— C1 thiên về đám mây và ngăn xếp toàn diện doanh nghiệp, C3 thiên về lưu lượng ứng dụng và nội dung/Agent, C2 thiên về kết nối doanh nghiệp, hệ sinh thái C2-W và cổng tổng hợp TokenHub.
 
 > **Hàm ý đầu tư và kinh doanh**: Cốt lõi của MaaS không phải là lợi nhuận gộp của từng mô hình đơn lẻ, mà là lợi nhuận kết hợp của “lưu lượng Token tần suất cao + chi phí suy luận biên thấp + chuyển đổi ứng dụng trong hệ sinh thái”.
 
-Nguồn: 火山引擎, 阿里云百炼, 腾讯云 TokenHub, các báo cáo công khai
+Nguồn: C3-Cloud, C1-Cloud百炼, C2-Cloud TokenHub, các báo cáo công khai
 
 ---
 
@@ -98,89 +98,89 @@ Nguồn: 火山引擎, 阿里云百炼, 腾讯云 TokenHub, các báo cáo công
 ---
 
 <a id="bytedance"></a>
-## 4. ByteDance 火山引擎: Dùng lưu lượng ứng dụng để kéo bánh đà Token
+## 4. C3 C3-Cloud: Dùng lưu lượng ứng dụng để kéo bánh đà Token
 
-![ByteDance 火山引擎: 豆包 120 nghìn tỷ + ma trận cổng vào](/tech-blog/images/maas-ppt/04-bytedance.svg)
+![C3 C3-Cloud: C3-A 120 nghìn tỷ + ma trận cổng vào](/tech-blog/images/maas-ppt/04-bytedance.svg)
 
-**Con số cốt lõi: Lượng Token 豆包 sử dụng trung bình hằng ngày vượt 120 nghìn tỷ**
+**Con số cốt lõi: Lượng Token C3-A sử dụng trung bình hằng ngày vượt 120 nghìn tỷ**
 
-Các báo cáo công khai cho thấy, lượng Token sử dụng trung bình hằng ngày của mô hình lớn 豆包 đã vượt 120 nghìn tỷ, thể hiện lợi thế quy mô lời gọi từ ứng dụng C-end đến API doanh nghiệp.
+Các báo cáo công khai cho thấy, lượng Token sử dụng trung bình hằng ngày của mô hình lớn C3-A đã vượt 120 nghìn tỷ, thể hiện lợi thế quy mô lời gọi từ ứng dụng C-end đến API doanh nghiệp.
 
 ### Chiến thuật sản phẩm
 
-Dòng 豆包 2.0 bao phủ các cấp **Pro, Lite, Mini, Code**, dùng năng lực/chi phí khác nhau để phối hợp với Agent, lập trình và các ngữ cảnh chung.
+Dòng C3-A 2.0 bao phủ các cấp **Pro, Lite, Mini, Code**, dùng năng lực/chi phí khác nhau để phối hợp với Agent, lập trình và các ngữ cảnh chung.
 
 ### Đòn bẩy thương mại hóa
 
 - **火山方舟** tiếp nhận API doanh nghiệp
-- Hệ sinh thái **豆包 / 即梦 / 抖音** đóng góp ngữ cảnh ứng dụng
+- Hệ sinh thái **C3-A / C3-I / C3-V** đóng góp ngữ cảnh ứng dụng
 - Các công cụ phát triển như **TRAE** khuếch đại mức tiêu thụ Token dạng code
 
 ### SWOT
 
 | Điểm mạnh | Hạn chế |
 |---|---|
-| Cổng vào C-end tần suất cao, ngữ cảnh sinh nội dung phong phú, giá quyết liệt | Tâm trí đám mây doanh nghiệp yếu hơn Alibaba/Tencent, cần chứng minh SLA và khả năng triển khai ngành |
+| Cổng vào C-end tần suất cao, ngữ cảnh sinh nội dung phong phú, giá quyết liệt | Tâm trí đám mây doanh nghiệp yếu hơn C1/C2, cần chứng minh SLA và khả năng triển khai ngành |
 
 > **Chỉ số quan sát**: Doanh thu MaaS doanh nghiệp, tỷ lệ duy trì Token Plan, chuyển đổi ứng dụng Agent
 
-Nguồn: Tân Lãng Khoa Kỹ; cộng đồng nhà phát triển 火山引擎, API 豆包 2.0
+Nguồn: Tân Lãng Khoa Kỹ; cộng đồng nhà phát triển C3-Cloud, API C3-A 2.0
 
 ---
 
 <a id="alibaba"></a>
-## 5. Alibaba 百炼: Biến AI thành tầng tăng trưởng của đám mây
+## 5. C1 百炼: Biến AI thành tầng tăng trưởng của đám mây
 
-![Alibaba 百炼: 3 tháng 6 lần + bậc thang giá](/tech-blog/images/maas-ppt/05-alibaba.svg)
+![C1 百炼: 3 tháng 6 lần + bậc thang giá](/tech-blog/images/maas-ppt/05-alibaba.svg)
 
 **Con số cốt lõi: Mức tiêu thụ Token 百炼 tăng 6 lần trong ba tháng**
 
-Ban lãnh đạo Alibaba tiết lộ, mức tiêu thụ Token trên thị trường dịch vụ mô hình công cộng của nền tảng MaaS 百炼 đã tăng 6 lần trong ba tháng.
+Ban lãnh đạo C1 tiết lộ, mức tiêu thụ Token trên thị trường dịch vụ mô hình công cộng của nền tảng MaaS 百炼 đã tăng 6 lần trong ba tháng.
 
 ### Cấu trúc giá
 
-Trang giá chính thức của 百炼 cho thấy, dòng Qwen được phân lớp theo **độ dài ngữ cảnh, đầu vào/đầu ra, chế độ suy nghĩ**; gọi Batch và bộ nhớ đệm ngữ cảnh cung cấp chiết khấu.
+Trang giá chính thức của 百炼 cho thấy, dòng C1-M được phân lớp theo **độ dài ngữ cảnh, đầu vào/đầu ra, chế độ suy nghĩ**; gọi Batch và bộ nhớ đệm ngữ cảnh cung cấp chiết khấu.
 
 ### Tự sự toàn ngăn xếp
 
-Từ **AI Infra, chip/máy chủ, mô hình, nền tảng 百炼 đến trang ứng dụng 千问**, Alibaba cố gắng gắn kết doanh thu Token với mức tiêu thụ tài nguyên đám mây.
+Từ **AI Infra, chip/máy chủ, mô hình, nền tảng 百炼 đến trang ứng dụng 千问**, C1 cố gắng gắn kết doanh thu Token với mức tiêu thụ tài nguyên đám mây.
 
 ### SWOT
 
 | Điểm mạnh | Hạn chế |
 |---|---|
-| Cơ sở khách hàng đám mây, khả năng triển khai doanh nghiệp, hệ sinh thái Qwen nguồn mở, hệ thống giá minh bạch | Cổng vào siêu ứng dụng C-end tương đối phân tán, chiến tranh giá thấp nén lợi nhuận gộp ngắn hạn |
+| Cơ sở khách hàng đám mây, khả năng triển khai doanh nghiệp, hệ sinh thái C1-M nguồn mở, hệ thống giá minh bạch | Cổng vào siêu ứng dụng C-end tương đối phân tán, chiến tranh giá thấp nén lợi nhuận gộp ngắn hạn |
 
-> **Chỉ số quan sát**: Tỷ trọng doanh thu 百炼 trong Alibaba Cloud, tỷ lệ chuyển đổi dự án Agent doanh nghiệp sang sản xuất
+> **Chỉ số quan sát**: Tỷ trọng doanh thu 百炼 trong C1-Cloud, tỷ lệ chuyển đổi dự án Agent doanh nghiệp sang sản xuất
 
-Nguồn: Trang giá chính thức của 阿里云百炼; Tân Lãng Tài Chính; Mỗi Kinh Võng
+Nguồn: Trang giá chính thức của C1-Cloud百炼; Tân Lãng Tài Chính; Mỗi Kinh Võng
 
 ---
 
 <a id="tencent"></a>
-## 6. Tencent 混元 + TokenHub: Đặt cược vào cổng tổng hợp
+## 6. C2 C2-M + TokenHub: Đặt cược vào cổng tổng hợp
 
-![Tencent TokenHub: chiết khấu 50-80% + cổng tổng hợp](/tech-blog/images/maas-ppt/06-tencent.svg)
+![C2 TokenHub: chiết khấu 50-80% + cổng tổng hợp](/tech-blog/images/maas-ppt/06-tencent.svg)
 
 ### Cổng nền tảng
 
-**腾讯云 TokenHub định vị là cổng vào dịch vụ mô hình lớn thống nhất**, tích hợp 混元 và giới thiệu mô hình bên thứ ba, bao phủ các ngữ cảnh hội thoại, suy luận, code, thị giác, hình ảnh và video.
+**C2-Cloud TokenHub định vị là cổng vào dịch vụ mô hình lớn thống nhất**, tích hợp C2-M và giới thiệu mô hình bên thứ ba, bao phủ các ngữ cảnh hội thoại, suy luận, code, thị giác, hình ảnh và video.
 
 **Chiết khấu gói cước: 50%-80%** —— Trang sản phẩm TokenHub nhấn mạnh gói cước rẻ hơn 50%-80% so với tính phí theo API lưu lượng, dùng trả trước và gói lưu lượng để giảm cảm nhận chi phí biên của nhà phát triển.
 
 ### Lặp mô hình
 
-Bản preview 混元 Hy3 đã được phát hành nguồn mở, dữ liệu công khai cho thấy giá đầu vào khoảng **1,2 NDT/triệu Token**, đồng thời ra mắt Token Plan dành cho nhà phát triển Agent.
+Bản preview C2-M Hy3 đã được phát hành nguồn mở, dữ liệu công khai cho thấy giá đầu vào khoảng **1,2 NDT/triệu Token**, đồng thời ra mắt Token Plan dành cho nhà phát triển Agent.
 
 ### SWOT
 
 | Điểm mạnh | Hạn chế |
 |---|---|
-| Hệ sinh thái WeChat/WeCom/Tencent Meeting/đám mây và bảo mật, nền tảng tổng hợp thuận lợi cho quản trị đa mô hình doanh nghiệp | Cần cân bằng giữa tâm trí mô hình tự nghiên cứu và thu giữ giá trị khi tổng hợp bên thứ ba |
+| Hệ sinh thái C2-W/WeCom/C2 Meeting/đám mây và bảo mật, nền tảng tổng hợp thuận lợi cho quản trị đa mô hình doanh nghiệp | Cần cân bằng giữa tâm trí mô hình tự nghiên cứu và thu giữ giá trị khi tổng hợp bên thứ ba |
 
-> **Chỉ số quan sát**: Tỷ lệ mua lại gói TokenHub, hệ sinh thái nguồn mở 混元, lưu lượng gọi trong ngữ cảnh WeChat
+> **Chỉ số quan sát**: Tỷ lệ mua lại gói TokenHub, hệ sinh thái nguồn mở C2-M, lưu lượng gọi trong ngữ cảnh C2-W
 
-Nguồn: Trang sản phẩm 腾讯云 TokenHub; cộng đồng nhà phát triển 腾讯云
+Nguồn: Trang sản phẩm C2-Cloud TokenHub; cộng đồng nhà phát triển C2-Cloud
 
 ---
 
@@ -189,12 +189,12 @@ Nguồn: Trang sản phẩm 腾讯云 TokenHub; cộng đồng nhà phát triể
 
 ![Ma trận so sánh ba bên: bản đồ nhiệt 6 chiều](/tech-blog/images/maas-ppt/07-matrix.svg)
 
-| Chiều | ByteDance | Alibaba | Tencent |
+| Chiều | C3 | C1 | C2 |
 |---|---|---|---|
-| **Cổng vào cốt lõi** | 豆包, 抖音, 即梦, TRAE, 火山方舟 | 阿里云百炼, 千问, khách hàng doanh nghiệp đám mây | 腾讯云 TokenHub, 混元, hệ sinh thái WeChat/WeCom |
-| **Nguồn tăng trưởng Token** | Tương tác tần suất cao C-end, sinh nội dung, Agent lập trình | Ứng dụng doanh nghiệp, luồng công việc AI trên đám mây, di cư hệ sinh thái nguồn mở | Cộng tác doanh nghiệp, hệ sinh thái WeChat, tổng hợp mô hình bên thứ ba |
+| **Cổng vào cốt lõi** | C3-A, C3-V, C3-I, TRAE, 火山方舟 | C1-Cloud百炼, 千问, khách hàng doanh nghiệp đám mây | C2-Cloud TokenHub, C2-M, hệ sinh thái C2-W/WeCom |
+| **Nguồn tăng trưởng Token** | Tương tác tần suất cao C-end, sinh nội dung, Agent lập trình | Ứng dụng doanh nghiệp, luồng công việc AI trên đám mây, di cư hệ sinh thái nguồn mở | Cộng tác doanh nghiệp, hệ sinh thái C2-W, tổng hợp mô hình bên thứ ba |
 | **Phong cách định giá** | Mô hình hiệu suất/giá cao + kế hoạch ngưỡng thấp | Giá phân lớp minh bạch + chiết khấu Batch/bộ nhớ đệm | Khoá giá gói + ưu đãi gọi tổng hợp |
-| **Cơ hội lớn nhất** | Biến lưu lượng C-end thành doanh thu MaaS cấp doanh nghiệp | Khiến MaaS trở thành một trong những dòng sản phẩm lớn nhất của Alibaba Cloud | Trở thành cổng vào gọi và quản trị đa mô hình cho doanh nghiệp |
+| **Cơ hội lớn nhất** | Biến lưu lượng C-end thành doanh thu MaaS cấp doanh nghiệp | Khiến MaaS trở thành một trong những dòng sản phẩm lớn nhất của C1-Cloud | Trở thành cổng vào gọi và quản trị đa mô hình cho doanh nghiệp |
 | **Rủi ro chính** | Xây dựng tâm trí về triển khai và tuân thủ doanh nghiệp | Chiến tranh giá và áp lực chi phí sức mạnh tính toán lên lợi nhuận gộp | Nền tảng tổng hợp làm loãng sự khác biệt của mô hình tự nghiên cứu |
 
 > So sánh chiến lược dựa trên định vị sản phẩm công khai, trang giá và các báo cáo công khai năm 2026
@@ -250,13 +250,13 @@ Nguồn: Trang sản phẩm 腾讯云 TokenHub; cộng đồng nhà phát triể
 <a id="sources"></a>
 ## 10. Nguồn tham khảo chính
 
-- 阿里云百炼 trang giá mô hình: help.aliyun.com/zh/model-studio/model-pricing
-- 腾讯云 TokenHub trang sản phẩm: cloud.tencent.com/product/tokenhub
-- Cộng đồng nhà phát triển 腾讯云, bản preview 混元 Hy3: developer.cloud.tencent.com/article/2660040
-- Cộng đồng nhà phát triển 火山引擎, API 豆包 2.0: developer.volcengine.com/articles/7610285824933445675
-- Tân Lãng Khoa Kỹ, lượng Token sử dụng hằng ngày của 豆包 vượt 120 nghìn tỷ: finance.sina.com.cn/tech/roll/2026-04-02/doc-inhtazrx7826779.shtml
+- C1-Cloud百炼 trang giá mô hình: help.aliyun.com/zh/model-studio/model-pricing
+- C2-Cloud TokenHub trang sản phẩm: cloud.tencent.com/product/tokenhub
+- Cộng đồng nhà phát triển C2-Cloud, bản preview C2-M Hy3: developer.cloud.tencent.com/article/2660040
+- Cộng đồng nhà phát triển C3-Cloud, API C3-A 2.0: developer.volcengine.com/articles/7610285824933445675
+- Tân Lãng Khoa Kỹ, lượng Token sử dụng hằng ngày của C3-A vượt 120 nghìn tỷ: finance.sina.com.cn/tech/roll/2026-04-02/doc-inhtazrx7826779.shtml
 - Tân Lãng Tài Chính, mức tiêu thụ Token 百炼 tăng 6 lần trong ba tháng: finance.sina.com.cn/tob/2026-03-19/doc-inhrpspp8552821.shtml
-- Mỗi Kinh Võng, tự sự MaaS và Agent của 阿里云: nbd.com.cn/articles/2026-05-21/4402582.html
+- Mỗi Kinh Võng, tự sự MaaS và Agent của C1-Cloud: nbd.com.cn/articles/2026-05-21/4402582.html
 
 *Nguồn được kiểm tra tháng 6/2026*
 

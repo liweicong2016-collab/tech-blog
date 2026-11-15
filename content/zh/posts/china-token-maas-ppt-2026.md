@@ -7,7 +7,7 @@ date: 2026-06-04T00:55:00+08:00
 draft: false
 tags: ["MaaS", "Token", "O1", "AL", "O3", "豆包", "百炼", "TokenHub"]
 description: "O1、AL、O3：从模型能力竞赛转向 Token 规模、成本效率与生态入口的复合竞争。MaaS 正在成为云与 AI 应用之间的新计量层。"
-summary: "豆包日均 120 万亿 Token / 百炼 3 个月 6 倍 / TokenHub 50-80% 折扣 — 三条主线决定 2026 MaaS 胜负。"
+summary: "C3-A日均 120 万亿 Token / 百炼 3 个月 6 倍 / TokenHub 50-80% 折扣 — 三条主线决定 2026 MaaS 胜负。"
 ShowToc: true
 TocOpen: true
 ---
@@ -18,7 +18,7 @@ TocOpen: true
 
 | 数字 | 厂商 | 含义 |
 |---|---|---|
-| **120 万亿+** | O1 豆包 | 日均 Token 使用量，C 端 + 企业 API 共同驱动 |
+| **120 万亿+** | O1 C3-A | 日均 Token 使用量，C 端 + 企业 API 共同驱动 |
 | **6 倍** | AL 百炼 | 公共模型服务 Token 消耗三个月增长 |
 | **50%-80%** | O3 TokenHub | 套餐相对按量 API 的折扣空间 |
 
@@ -29,9 +29,9 @@ TocOpen: true
 1. [执行摘要：三条主线](#exec-summary)
 2. [Token 经济：收入与成本耦合](#token-economics)
 3. [MaaS 市场：从 API 升级为 AI 操作系统](#maas-market)
-4. [O1火山引擎：用应用流量拉 Token 飞轮](#bytedance)
+4. [O1C3-Cloud：用应用流量拉 Token 飞轮](#bytedance)
 5. [AL百炼：让 AI 成为云的增长层](#alibaba)
-6. [O3混元 + TokenHub：聚合入口押注](#tencent)
+6. [O3C2-M + TokenHub：聚合入口押注](#tencent)
 7. [竞争矩阵：三家从不同需求控制点切入](#matrix)
 8. [战略含义：重塑云、软件与开发者产品设计](#implications)
 9. [2026-2027 展望：从低价普惠到效率分层](#outlook)
@@ -44,15 +44,15 @@ TocOpen: true
 
 ![三条主线：Token 规模化 / 成本曲线下探 / 生态入口重排](/tech-blog/images/maas-ppt/01-three-main-lines.svg)
 
-**主线一：Token 规模化**，日均调用量成为云厂商 AI 商业化第一指标。O1披露豆包日均 Token 使用量超 120 万亿，AL披露百炼 Token 消耗三个月提升 6 倍。
+**主线一：Token 规模化**，日均调用量成为云厂商 AI 商业化第一指标。O1披露C3-A日均 Token 使用量超 120 万亿，AL披露百炼 Token 消耗三个月提升 6 倍。
 
 **主线二：成本曲线下探**，价格从按量 API 走向输入/输出 Token、上下文长度、Batch、缓存、套餐包等多层结构，厂商用低价模型锁定开发者。
 
-**主线三：生态入口重排**，AL偏云与企业全栈，O1偏应用流量与内容/Agent，O3偏企业连接、微信生态与 TokenHub 聚合入口。
+**主线三：生态入口重排**，AL偏云与企业全栈，O1偏应用流量与内容/Agent，O3偏企业连接、C2-W生态与 TokenHub 聚合入口。
 
 > **投资与业务含义**：MaaS 的核心不是单模型毛利，而是"高频 Token 流量 + 低边际推理成本 + 应用生态转化"的组合收益。
 
-来源：火山引擎、AL云百炼、O3云 TokenHub、公开报道
+来源：C3-Cloud、AL云百炼、O3云 TokenHub、公开报道
 
 ---
 
@@ -101,22 +101,22 @@ TocOpen: true
 ---
 
 <a id="bytedance"></a>
-## 4. O1火山引擎：用应用流量拉 Token 飞轮
+## 4. O1C3-Cloud：用应用流量拉 Token 飞轮
 
-![O1火山引擎：豆包 120 万亿 + 入口矩阵](/tech-blog/images/maas-ppt/04-bytedance.svg)
+![O1C3-Cloud：C3-A 120 万亿 + 入口矩阵](/tech-blog/images/maas-ppt/04-bytedance.svg)
 
-**核心数字：豆包日均 Token 使用量超 120 万亿**
+**核心数字：C3-A日均 Token 使用量超 120 万亿**
 
-公开报道显示，豆包大模型日均 Token 使用量已超过 120 万亿，体现从 C 端应用到企业 API 的调用规模优势。
+公开报道显示，C3-A大模型日均 Token 使用量已超过 120 万亿，体现从 C 端应用到企业 API 的调用规模优势。
 
 ### 产品打法
 
-豆包 2.0 系列覆盖 **Pro、Lite、Mini、Code** 等梯度，以不同能力/成本匹配 Agent、编程和通用场景。
+C3-A 2.0 系列覆盖 **Pro、Lite、Mini、Code** 等梯度，以不同能力/成本匹配 Agent、编程和通用场景。
 
 ### 商业化抓手
 
 - **火山方舟**承接企业 API
-- **豆包 / 即梦 / 抖音**生态贡献应用场景
+- **C3-A / C3-I / C3-V**生态贡献应用场景
 - **TRAE** 等开发工具放大代码类 Token 消耗
 
 ### SWOT
@@ -127,7 +127,7 @@ TocOpen: true
 
 > **观察指标**：企业 MaaS 收入、Token Plan 留存、Agent 应用转化
 
-来源：新浪科技；火山引擎开发者社区，豆包 2.0 API
+来源：新浪科技；C3-Cloud开发者社区，C3-A 2.0 API
 
 ---
 
@@ -142,7 +142,7 @@ AL管理层披露，百炼 MaaS 平台公共模型服务市场 Token 消耗三�
 
 ### 价格结构
 
-百炼官方价格页显示，Qwen 系列按 **上下文长度、输入/输出、思考模式** 分层；Batch 调用与上下文缓存提供折扣。
+百炼官方价格页显示，C1-M 系列按 **上下文长度、输入/输出、思考模式** 分层；Batch 调用与上下文缓存提供折扣。
 
 ### 全栈叙事
 
@@ -152,7 +152,7 @@ AL管理层披露，百炼 MaaS 平台公共模型服务市场 Token 消耗三�
 
 | 优势 | 约束 |
 |---|---|
-| 云客户基础、企业交付、开源 Qwen 生态、价格体系透明 | C 端超级入口相对分散，低价竞争压缩短期毛利 |
+| 云客户基础、企业交付、开源 C1-M 生态、价格体系透明 | C 端超级入口相对分散，低价竞争压缩短期毛利 |
 
 > **观察指标**：百炼收入占AL云比例、企业 Agent 项目转生产率
 
@@ -161,27 +161,27 @@ AL管理层披露，百炼 MaaS 平台公共模型服务市场 Token 消耗三�
 ---
 
 <a id="tencent"></a>
-## 6. O3混元 + TokenHub：聚合入口押注
+## 6. O3C2-M + TokenHub：聚合入口押注
 
 ![O3 TokenHub：50-80% 折扣 + 聚合入口](/tech-blog/images/maas-ppt/06-tencent.svg)
 
 ### 平台入口
 
-**O3云 TokenHub 定位为统一大模型服务入口**，整合混元并引入第三方模型，覆盖对话、推理、代码、视觉、图像和视频等场景。
+**O3云 TokenHub 定位为统一大模型服务入口**，整合C2-M并引入第三方模型，覆盖对话、推理、代码、视觉、图像和视频等场景。
 
 **套餐折扣：50%-80%**，TokenHub 产品页强调套餐比 API 按量计费便宜 50%-80%，用预付费和用量包降低开发者边际成本感知。
 
 ### 模型迭代
 
-混元 Hy3 preview 已开源发布，公开资料显示输入价约 **1.2 元/百万 Tokens**，并面向 Agent 开发者推出 Token Plan。
+C2-M Hy3 preview 已开源发布，公开资料显示输入价约 **1.2 元/百万 Tokens**，并面向 Agent 开发者推出 Token Plan。
 
 ### SWOT
 
 | 优势 | 约束 |
 |---|---|
-| 微信/企微/O3会议/云与安全生态，聚合平台利于企业多模型治理 | 需要在自研模型心智与第三方聚合之间平衡价值捕获 |
+| C2-W/企微/O3会议/云与安全生态，聚合平台利于企业多模型治理 | 需要在自研模型心智与第三方聚合之间平衡价值捕获 |
 
-> **观察指标**：TokenHub 付费包复购、混元开源生态、微信场景调用量
+> **观察指标**：TokenHub 付费包复购、C2-M开源生态、C2-W场景调用量
 
 来源：O3云 TokenHub 产品页；O3云开发者社区
 
@@ -194,8 +194,8 @@ AL管理层披露，百炼 MaaS 平台公共模型服务市场 Token 消耗三�
 
 | 维度 | O1 | AL | O3 |
 |---|---|---|---|
-| **核心入口** | 豆包、抖音、即梦、TRAE、火山方舟 | AL云百炼、千问、企业云客户 | O3云 TokenHub、混元、微信/企微生态 |
-| **Token 增长来源** | C 端高频交互、内容生成、编程 Agent | 企业应用、云上 AI 工作流、开源生态迁移 | 企业协作、微信生态、第三方模型聚合 |
+| **核心入口** | C3-A、C3-V、C3-I、TRAE、火山方舟 | AL云百炼、千问、企业云客户 | O3云 TokenHub、C2-M、C2-W/企微生态 |
+| **Token 增长来源** | C 端高频交互、内容生成、编程 Agent | 企业应用、云上 AI 工作流、开源生态迁移 | 企业协作、C2-W生态、第三方模型聚合 |
 | **定价风格** | 高性价比模型 + 低门槛计划 | 分层透明价格 + Batch/缓存折扣 | 套餐锁价 + 聚合调用优惠 |
 | **最大机会** | 把 C 端流量训练成企业级 MaaS 收入 | 让 MaaS 成为AL云最大产品线之一 | 成为企业多模型调用与治理入口 |
 | **主要风险** | 企业交付与合规心智建设 | 价格战与算力成本对毛利的压力 | 聚合平台稀释自研模型差异化 |
@@ -255,9 +255,9 @@ AL管理层披露，百炼 MaaS 平台公共模型服务市场 Token 消耗三�
 
 - AL云百炼模型价格页：help.aliyun.com/zh/model-studio/model-pricing
 - O3云 TokenHub 产品页：cloud.tencent.com/product/tokenhub
-- O3云开发者社区，混元 Hy3 preview：developer.cloud.tencent.com/article/2660040
-- 火山引擎开发者社区，豆包 2.0 API：developer.volcengine.com/articles/7610285824933445675
-- 新浪科技，豆包日均 Token 使用量超 120 万亿：finance.sina.com.cn/tech/roll/2026-04-02/doc-inhtazrx7826779.shtml
+- O3云开发者社区，C2-M Hy3 preview：developer.cloud.tencent.com/article/2660040
+- C3-Cloud开发者社区，C3-A 2.0 API：developer.volcengine.com/articles/7610285824933445675
+- 新浪科技，C3-A日均 Token 使用量超 120 万亿：finance.sina.com.cn/tech/roll/2026-04-02/doc-inhtazrx7826779.shtml
 - 新浪财经，百炼 Token 消耗三个月升 6 倍：finance.sina.com.cn/tob/2026-03-19/doc-inhrpspp8552821.shtml
 - 每经网，AL云 MaaS 与 Agent 叙事：nbd.com.cn/articles/2026-05-21/4402582.html
 
@@ -277,15 +277,15 @@ AL管理层披露，百炼 MaaS 平台公共模型服务市场 Token 消耗三�
 
 || 2026-06 原文口径 | 2026-10-05 最新口径 |
 |---|---|
-| O1 豆包 = 日均 120 万亿 Token | **日均 180 万亿 Token**（10/4 行业披露，年增 10 倍；环比增速放缓至 18%） |
-| 豆包 2.0 系列（Pro/Lite/Mini/Code） | **豆包 1.8 / Doubao Pro 2.0** 全梯度（2026-10 FORCE 大会发布，Code 能力并入 Coding Agent 域） |
-| AL 百炼 = 3 个月 Token 消耗 6 倍 | **6 个月 Token 消耗 14 倍**（Qwen 4.0 + 千问 App 推动；FY2026 Q4 AI 收入预估 123 亿/季） |
-| Qwen3 全系 | **Qwen 4.0 全系**（2026-10 发布，含 4.0-Max / 4.0-Coder / 4.0-VL / 4.0-Omni） |
-| O3 TokenHub = 50%-80% 折扣 | **未变**：50%-80% 折扣档位仍维持（10/3 行业披露），但**新增加 Qwen 4.0 + Claude Sonnet 5.5 + Kimi K3** 三家第三方模型 |
-| O3 混元 Hy3 preview = 1.2 元/百万输入 | **混元 3.0 + Hy4 preview**：1.0 元/百万输入（10/5 已开放公测）+ Agent Plan 企业版 |
+| O1 C3-A = 日均 120 万亿 Token | **日均 180 万亿 Token**（10/4 行业披露，年增 10 倍；环比增速放缓至 18%） |
+| C3-A 2.0 系列（Pro/Lite/Mini/Code） | **C3-A 1.8 / C3-A Pro 2.0** 全梯度（2026-10 FORCE 大会发布，Code 能力并入 Coding Agent 域） |
+| AL 百炼 = 3 个月 Token 消耗 6 倍 | **6 个月 Token 消耗 14 倍**（C1-M 4.0 + 千问 App 推动；FY2026 Q4 AI 收入预估 123 亿/季） |
+| Qwen3 全系 | **C1-M 4.0 全系**（2026-10 发布，含 4.0-Max / 4.0-Coder / 4.0-VL / 4.0-Omni） |
+| O3 TokenHub = 50%-80% 折扣 | **未变**：50%-80% 折扣档位仍维持（10/3 行业披露），但**新增加 C1-M 4.0 + Claude Sonnet 5.5 + Kimi K3** 三家第三方模型 |
+| O3 C2-M Hy3 preview = 1.2 元/百万输入 | **C2-M 3.0 + Hy4 preview**：1.0 元/百万输入（10/5 已开放公测）+ Agent Plan 企业版 |
 | DeepSeek 接入 | **DeepSeek V4.1**（2026-10 发布，O3 已正式接入 TokenHub） |
 | GPU / 国产 AI 芯片 = H100 / H200 时代 | **H200 / B200 / B300 / 国产 A 卡 + 燧原 / 壁仞**（H100 不再是主流采购型号） |
-| 行业集中发布季 = "即将到来" | **已发生**：2026-10 集中发布季（豆包 1.8 + Qwen 4.0 + Kimi K3 + DeepSeek V4.1 + 混元 3.0 + Sonnet 5.5 + Opus 5.0 + Gemini 3.5）→ Coding 战场"七国八制"，视频战场"模型甲 vs 海外巨头 V3" |
+| 行业集中发布季 = "即将到来" | **已发生**：2026-10 集中发布季（C3-A 1.8 + C1-M 4.0 + Kimi K3 + DeepSeek V4.1 + C2-M 3.0 + Sonnet 5.5 + Opus 5.0 + Gemini 3.5）→ Coding 战场"七国八制"，视频战场"模型甲 vs 海外巨头 V3" |
 | MaaS 销售范式 = 阶段二（卖 Token） | **进入阶段三过渡**：卖 Token → 卖场景 → 卖结果（年框 + Token 包 + 效果分成已在 10/5 时点成为头部客户主流合同结构） |
 | 短剧行业年产值 220-300 亿 | **2026-10 修正**：上调至 280-360 亿（短剧出海 + 长视频化趋势带动） |
 | Sources checked = June 2026 | **Sources updated to October 2026** |
@@ -294,10 +294,10 @@ AL管理层披露，百炼 MaaS 平台公共模型服务市场 Token 消耗三�
 
 1. **Token 规模化**——日均调用量仍是云厂商 AI 商业化第一指标；10/5 时点国内头部已从 120 万亿升至 180 万亿，单季度翻倍已不稀奇
 2. **成本曲线下探**——按量 API → 套餐 / 缓存 / Batch / 模型路由分层；B200 + 国产 A 卡渗透 + 量化 + 投机解码后单 token 边际成本再降 26%
-3. **生态入口重排**——O1 偏应用流量、AL 偏云与企业全栈、O3 偏企业连接 + 微信生态 + TokenHub 聚合；**10/5 新增变量**：O3 TokenHub 接入 Qwen 4.0 / Sonnet 5.5 / Kimi K3 三家头部模型后，"聚合平台 vs 自研模型心智"的张力进一步加剧
+3. **生态入口重排**——O1 偏应用流量、AL 偏云与企业全栈、O3 偏企业连接 + C2-W生态 + TokenHub 聚合；**10/5 新增变量**：O3 TokenHub 接入 C1-M 4.0 / Sonnet 5.5 / Kimi K3 三家头部模型后，"聚合平台 vs 自研模型心智"的张力进一步加剧
 
 **关键修订补丁**：
 
-- **补丁 A**：原"豆包日均 120 万亿" → 10/5 时点 180 万亿，原文数字保留作为"6 月口径"，新数字以刷注呈现
-- **补丁 B**：原文"O3 混元 Hy3 preview" → 升级为"混元 3.0 + Hy4 preview"，Hy3 已成主力军，Hy4 公测中
+- **补丁 A**：原"C3-A日均 120 万亿" → 10/5 时点 180 万亿，原文数字保留作为"6 月口径"，新数字以刷注呈现
+- **补丁 B**：原文"O3 C2-M Hy3 preview" → 升级为"C2-M 3.0 + Hy4 preview"，Hy3 已成主力军，Hy4 公测中
 - **补丁 C**：原文"行业集中发布季即将到来" → 已发生，10/5 时点 Coding 战场进入"七国八制"，视频战场进入"模型甲 vs 海外巨头 V3"拉锯期

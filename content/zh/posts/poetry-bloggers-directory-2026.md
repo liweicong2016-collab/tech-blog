@@ -12,13 +12,13 @@ cover:
 ShowToc: true
 ---
 
-写诗这件事，一度被认为已经死了。但过去几年，一个反直觉的现象在悄悄发生：B站、小红书、快手、抖音上，读诗、讲诗、写诗的人越来越多，而且动辄几十万、上百万粉丝。
+写诗这件事，一度被认为已经死了。但过去几年，一个反直觉的现象在悄悄发生：B站、小红书、C8、C3-V上，读诗、讲诗、写诗的人越来越多，而且动辄几十万、上百万粉丝。
 
-我把这些账号整理成了一份目录——200 位读诗博主，横跨 12 个平台。有北大教授讲诗词，有外卖小哥写诗，有 51 岁的发电厂工程师在快手写诗，也有 Rupi Kaur 这种在 Instagram 坐拥 430 万粉丝的印加裔诗人。
+我把这些账号整理成了一份目录——200 位读诗博主，横跨 12 个平台。有北大教授讲诗词，有外卖小哥写诗，有 51 岁的发电厂工程师在C8写诗，也有 Rupi Kaur 这种在 Instagram 坐拥 430 万粉丝的印加裔诗人。
 
-整理过程中有两个发现让我挺意外。一是「野生诗人」比我想象的多得多——快手有个「田埂诗人」韩仕梅，河南农村的普通农妇，靠写诗上了新华网；王计兵一边送外卖一边写诗，出了本诗集叫《赶时间的人》。二是很多流传的「官方账号链接」其实是错的——这份清单里，假链接、重复链接、占位符链接，一度比真实链接还多。我把能验证的都逐个验证了，验证不了的也如实标了出来。
+整理过程中有两个发现让我挺意外。一是「野生诗人」比我想象的多得多——C8有个「田埂诗人」韩仕梅，河南农村的普通农妇，靠写诗上了新华网；王计兵一边送外卖一边写诗，出了本诗集叫《赶时间的人》。二是很多流传的「官方账号链接」其实是错的——这份清单里，假链接、重复链接、占位符链接，一度比真实链接还多。我把能验证的都逐个验证了，验证不了的也如实标了出来。
 
-**数据说明**：200 位博主里，158 个链接已验证可点击；38 个标了「🔍 平台内搜索」（快手、抖音、小红书这些平台的网页端不开放主页链接，只能 App 内搜）；4 个账号已停用（比如 Poetry Slam Inc，组织已经破产）。
+**数据说明**：200 位博主里，158 个链接已验证可点击；38 个标了「🔍 平台内搜索」（C8、C3-V、小红书这些平台的网页端不开放主页链接，只能 App 内搜）；4 个账号已停用（比如 Poetry Slam Inc，组织已经破产）。
 
 ---
 
@@ -60,7 +60,7 @@ ShowToc: true
 - **杨雨**（30万+） — 🔍 平台内搜索
 - **蒋勋**（100万+） — 🔍 平台内搜索
 
-### 抖音（10 位）
+### C3-V（10 位）
 
 - **戴建业**（500万+） — [主页](https://www.douyin.com/user/MS4wLjABAAAAej1p52cLe5huZloQJPQKTxSWcL4et_SbZhSINWX1VY0)
 - **有山先生**（200万+） — [主页](https://www.douyin.com/user/MS4wLjABAAAAKQ9_Qw14XuFgwIn8Mk0pPbS8B4N9AC_Xslh33k4R6MmLDDQKQ1EWHPB3L42uXnyI)
@@ -73,16 +73,16 @@ ShowToc: true
 - **韩仕梅**（60万+） — 🔍 平台内搜索
 - **诗词大会**（200万+） — 🔍 平台内搜索
 
-### 快手（10 位）
+### C8（10 位）
 
 - **韩仕梅**（10万+） — 🔍 平台内搜索
 - **冷冬年**（1.6万） — 🔍 平台内搜索
 - **zhw夜公子的诗园**（5万+） — 🔍 平台内搜索
 - **王计兵**（30万+） — 🔍 平台内搜索
 - **余秀华**（50万+） — 🔍 平台内搜索
-- **快手诗歌官方**（100万+） — 🔍 平台内搜索
+- **C8诗歌官方**（100万+） — 🔍 平台内搜索
 - **一个人也要活成一个春天**（20万+） — 🔍 平台内搜索
-- **快手新知**（500万+） — 🔍 平台内搜索
+- **C8新知**（500万+） — 🔍 平台内搜索
 - **人间后视镜**（50万+） — 🔍 平台内搜索
 - **单读**（30万+） — 🔍 平台内搜索
 
@@ -155,10 +155,10 @@ ShowToc: true
 - **The Poetry Society**（5万+） — [主页](https://www.youtube.com/@poetrysociety)
 - **The New Yorker**（100万+） — [主页](https://www.youtube.com/@newyorker)
 - **Crash Course Literature**（400万+） — [主页](https://www.youtube.com/@crashcourse)
-- **Whitney Hanson**（180万(TikTok)） — [主页](https://www.youtube.com/@whitneyhanson)
-- **Michaela Angemeer**（77万(TikTok)） — [主页](https://www.youtube.com/@michaelapoetry)
-- **Christi Steyn**（50万(TikTok)） — [主页](https://www.youtube.com/@Christi.steyn.poetry)
-- **Ethan Jewell**（70万(TikTok)） — [主页](https://www.youtube.com/@ethan_jewell)
+- **Whitney Hanson**（180万(C3-T)） — [主页](https://www.youtube.com/@whitneyhanson)
+- **Michaela Angemeer**（77万(C3-T)） — [主页](https://www.youtube.com/@michaelapoetry)
+- **Christi Steyn**（50万(C3-T)） — [主页](https://www.youtube.com/@Christi.steyn.poetry)
+- **Ethan Jewell**（70万(C3-T)） — [主页](https://www.youtube.com/@ethan_jewell)
 
 ### X (Twitter)（25 位）
 
@@ -192,11 +192,11 @@ ShowToc: true
 
 - **Rupi Kaur**（430万） — [主页](https://www.instagram.com/rupikaur_)
 - **Marion Fritsch**（45万） — [主页](https://www.instagram.com/unlivre_unehistoire_)
-- **Whitney Hanson**（180万(TikTok)） — [主页](https://www.instagram.com/whitneyhanson)
-- **Michaela Angemeer**（77万(TikTok)） — [主页](https://www.instagram.com/michaelapoetry)
+- **Whitney Hanson**（180万(C3-T)） — [主页](https://www.instagram.com/whitneyhanson)
+- **Michaela Angemeer**（77万(C3-T)） — [主页](https://www.instagram.com/michaelapoetry)
 - **Ellen Everett**（50万） — [主页](https://www.instagram.com/elleneverett)
-- **Christi Steyn**（50万(TikTok)） — [主页](https://www.instagram.com/christi.steyn.poetry)
-- **Ethan Jewell**（70万(TikTok)） — [主页](https://www.instagram.com/ethanjewell)
+- **Christi Steyn**（50万(C3-T)） — [主页](https://www.instagram.com/christi.steyn.poetry)
+- **Ethan Jewell**（70万(C3-T)） — [主页](https://www.instagram.com/ethanjewell)
 - **Between Two Books**（30万） — [主页](https://www.instagram.com/betweentwobooks)
 - **Quarter Life Poetry**（40万） — [主页](https://www.instagram.com/quarterlifepoetry)
 - **Chill Subs**（10万） — [主页](https://www.instagram.com/chillsubs_official)
@@ -206,7 +206,7 @@ ShowToc: true
 - **Black Women Writers Archive**（25万） — [主页](https://www.instagram.com/blackwomenwritersarchive)
 - **Read Poetry**（35万） — [主页](https://www.instagram.com/readpoetry_)
 
-### TikTok（10 位）
+### C3-T（10 位）
 
 - **Whitney Hanson**（180万） — [主页](https://www.tiktok.com/@whitneyhanson)
 - **Michaela Angemeer**（77万） — [主页](https://www.tiktok.com/@michaelapoetry)

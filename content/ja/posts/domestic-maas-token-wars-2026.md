@@ -30,7 +30,7 @@ ShowToc: true
 <div class="bis-signal">
 <h3>💡 キーポイント</h3>
 <ul>
-  <li><strong>動画モデル：単点競争は既に終結</strong> — モデル甲は某大手動画クラウドにおいて、保守的なARR試算で150億元超、ショートドラマ業界での普及率95%で事実上の独占状態。Kling（可灵）のARRはわずか34億元、4.4倍の差</li>
+  <li><strong>動画モデル：単点競争は既に終結</strong> — モデル甲は某大手動画クラウドにおいて、保守的なARR試算で150億元超、ショートドラマ業界での普及率95%で事実上の独占状態。C8-K（C8-K）のARRはわずか34億元、4.4倍の差</li>
   <li><strong>Codingモデル：値上げしても利用量減らず</strong> — 某大手Coding企業、Q1に83%値上げするも利用量は400%増加。中核的シーンで初めて海外トップ企業と価格面で肩を並べる</li>
   <li><strong>LLM汎用コースは底値で崩壊</strong> — 未来は最高クラスのモデル＋業界浸透にあり、価格競争ではない</li>
   <li><strong>シンデレラのガラスの靴効果</strong>：AIモデルは先行者利益が極めて強く、初期ユーザーの粘着性が極めて高い。これが、トップモデルが継続的な値上げに踏み切れる理由を説明する</li>
@@ -179,7 +179,7 @@ ShowToc: true
 
 <ul>
   <li>ショートドラマシーンはほぼモデル甲が独占、<strong>95%の普及率</strong>は事実上の標準</li>
-  <li>クリエイター向け（RED/ Douyin/ WeChat ChannelのC側）は、Jimeng（即夢）、XiaoYunQue（小云雀）などの「十分使えるモデル」がカバーし、<strong>クリエイターはAPI課金に全く触れない</strong></li>
+  <li>クリエイター向け（RED/ C3-V/ C2-W ChannelのC側）は、Jimeng（即夢）、XiaoYunQue（小云雀）などの「十分使えるモデル」がカバーし、<strong>クリエイターはAPI課金に全く触れない</strong></li>
   <li>APIを利用するのは<strong>ほぼすべてAIショートドラマ企業</strong>——バッチ処理、コストコントロール、5秒以上の動画クリップ生成が必要</li>
 </ul>
 
@@ -374,10 +374,10 @@ ShowToc: true
   <li>結論：<strong>動画モデルの堀はCodingよりも深く</strong>、単点競争の終結時期はより早い</li>
 </ul>
 
-<p><strong>競合（Kling）への示唆</strong>：</p>
+<p><strong>競合（C8-K）への示唆</strong>：</p>
 
 <ul>
-  <li>❌ <strong>できない</strong>：価格競争でユーザーを奪うこと（モデル甲 ARR 150億 vs Kling 34億、<strong>価格競争＝自殺行為</strong>）</li>
+  <li>❌ <strong>できない</strong>：価格競争でユーザーを奪うこと（モデル甲 ARR 150億 vs C8-K 34億、<strong>価格競争＝自殺行為</strong>）</li>
   <li>✅ <strong>すべきこと</strong>：<strong>モデル甲がカバーしていない細分化シーン</strong>を切り開く：
     <ul>
       <li>超長尺動画（5分以上の連続ドラマ）</li>

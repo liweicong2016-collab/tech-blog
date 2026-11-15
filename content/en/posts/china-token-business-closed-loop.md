@@ -90,7 +90,7 @@ Back-calculated based on mainstream Chinese GPU servers + electricity costs:
 | Leading Coding startup X / Model C | ✅ Coding leader | ✅ Code as product | ✅ 83% price hike + 400% volume increase | ⭐⭐⭐⭐⭐ |
 | Leading comprehensive cloud B / Model B | ✅ Open-source #2 | ⚠️ Open-source, migratable | ⚠️ Fierce price war | ⭐⭐⭐⭐ |
 | Domestic open-source leader R | ✅ Open-source #1 | ❌ Completely open-source free | ⚠️ Overseas closed loop / domestic semi-closed | ⭐⭐⭐⭐ |
-| Leading comprehensive cloud C / Model D | ⚠️ WeChat ecosystem | ✅ Own fish pond | ⚠️ Limited scale | ⭐⭐⭐ |
+| Leading comprehensive cloud C / Model D | ⚠️ C2-W ecosystem | ✅ Own fish pond | ⚠️ Limited scale | ⭐⭐⭐ |
 | AI startup Z | ⚠️ Multimodal differentiator | ⚠️ Open-source + commercial | ⚠️ Video profitable separately | ⭐⭐⭐ |
 | AI startup Y | ⚠️ Long-context leader | ⚠️ Many individual users | ❌ 2024 burn-rate mode | ⭐⭐ |
 | Leading comprehensive cloud E / Model E | ❌ Generic track, no differentiation | ❌ Primarily internal use | ❌ Limited external revenue | ⭐⭐ |
@@ -154,7 +154,7 @@ A variant from a leading video cloud A (more aggressive):
 - ✅ Companion whitepapers + ROI calculation tools
 
 **Unlearnable spirit** (foundational advantages):
-- ❌ **In-group scenario fish pond** — Leading video cloud A has Douyin short dramas (annual 22–30B RMB); leading comprehensive cloud B has Taobao customer service (millions of merchants); leading comprehensive cloud C has official accounts. Overseas giants lack this "own fish pond"
+- ❌ **In-group scenario fish pond** — Leading video cloud A has C3-V short dramas (annual 22–30B RMB); leading comprehensive cloud B has Taobao customer service (millions of merchants); leading comprehensive cloud C has official accounts. Overseas giants lack this "own fish pond"
 - ❌ **In-group GPU / electricity scheduling** — Video cloud A / comprehensive cloud B / comprehensive cloud C can discount "their own idle GPU periods" for MaaS business
 - ❌ **Domestic GPU substitution** — The "good enough" standard for domestic A-cards allows Chinese giants to retain inference capability even with H100/H200 banned
 - ❌ **Data compliance advantage** — Large domestic customers (finance / government / SOEs) naturally choose domestic clouds
@@ -272,7 +272,7 @@ This is the most hardcore section of the article. **China's API prices have long
 ### Tactic 1: Scenario Fish Pond → Token Harvesting
 
 **Leading video cloud A path**:
-1. Douyin short drama business validates → proves Model A capability
+1. C3-V short drama business validates → proves Model A capability
 2. Model A penetration reaches 95% in the short drama industry
 3. Short drama industry annual output 22–30B RMB → company captures 58% = **12.7–17.4B**
 4. Model A opened externally (whitelist + annual framework) → external ARR 3–5B
@@ -282,7 +282,7 @@ This is the most hardcore section of the article. **China's API prices have long
 1. Taobao/1688 merchant customer service scenarios → validate Model B capability
 2. Model B open-sourced → spontaneous adoption by developers worldwide
 3. On OpenRouter, Model B captures 19% share → overseas inference feedback
-4. Alibaba Cloud MaaS platform sells to enterprises → domestic enterprise ARR
+4. C1-Cloud MaaS platform sells to enterprises → domestic enterprise ARR
 5. **MaaS business quarterly revenue ~3B** (estimated from quarterly AI revenue × 30%)
 
 ### Tactic 2: Open-Source Flywheel → Global Inference Amortizes Domestic Costs
@@ -338,7 +338,7 @@ This is the most hardcore section of the article. **China's API prices have long
 
 **Fragile Point 1: Window period for single-point models**
 - Model A's current short-drama penetration 95% → industry saturation
-- Overseas video model Gen 3 catching up → How long can ByteDance's moat last?
+- Overseas video model Gen 3 catching up → How long can C3's moat last?
 - **Assessment**: video model window 18–24 months, must continue investing in next-gen models
 
 **Fragile Point 2: Homogenization of Coding models**

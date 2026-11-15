@@ -24,16 +24,16 @@ ShowToc: true
 </div>
 
 <div class="bis-alert">
-  <strong>Đây là một case study đi ngược lại trực giác thông thường</strong>. Ra mắt ngày 10/02/2026, doanh số một tháng vượt 1 tỷ nhân dân tệ chỉ trong 4 tháng; đó không phải là một "ứng dụng tiêu dùng" (các nhà sáng tạo trên Xiaohongshu/Douyin/Video WeChat hoàn toàn không dùng API), mà là <strong>một API B2B thuần túy</strong>, khách hàng <strong>hầu như toàn bộ là các công ty AI phim ngắn</strong>. Bài viết này phân tích cách nó kiếm tiền, ai đang trả tiền, tại sao đối thủ không đuổi kịp, và ý nghĩa cuối cùng đối với chiến trường MaaS Trung Quốc.
+  <strong>Đây là một case study đi ngược lại trực giác thông thường</strong>. Ra mắt ngày 10/02/2026, doanh số một tháng vượt 1 tỷ nhân dân tệ chỉ trong 4 tháng; đó không phải là một "ứng dụng tiêu dùng" (các nhà sáng tạo trên Xiaohongshu/C3-V/Video C2-W hoàn toàn không dùng API), mà là <strong>một API B2B thuần túy</strong>, khách hàng <strong>hầu như toàn bộ là các công ty AI phim ngắn</strong>. Bài viết này phân tích cách nó kiếm tiền, ai đang trả tiền, tại sao đối thủ không đuổi kịp, và ý nghĩa cuối cùng đối với chiến trường MaaS Trung Quốc.
 </div>
 
 <div class="bis-signal">
 <h3>💡 Key Takeaways</h3>
 <ul>
   <li><strong>API B2B là con đường đúng đắn để kiếm tiền từ mô hình video</strong> — Người sáng tạo C-end dùng Jimeng/XiaoYunQue (đăng ký/miễn phí), các công ty phim ngắn B-end dùng API (tính phí theo Token); hai thị trường không chồng lấn, toàn bộ doanh số 1 tỷ/tháng đến từ B-end</li>
-  <li><strong>Quy mô doanh thu mô hình video đã vượt tất cả các mô hình LLM đa dụng</strong> — ARR ước tính thận trọng của Mô hình A là 15 tỷ, bằng 100% mục tiêu MaaS 2026 của ByteDance (15 tỷ), vượt bất kỳ doanh thu công ty LLM đơn lẻ nào</li>
+  <li><strong>Quy mô doanh thu mô hình video đã vượt tất cả các mô hình LLM đa dụng</strong> — ARR ước tính thận trọng của Mô hình A là 15 tỷ, bằng 100% mục tiêu MaaS 2026 của C3 (15 tỷ), vượt bất kỳ doanh thu công ty LLM đơn lẻ nào</li>
   <li><strong>58% giá trị sản xuất AI phim ngắn đổ vào khâu sinh nội dung</strong> — Các công ty phim ngắn trả được tiền vì ARPU người dùng 10-50 nhân dân tệ, tỷ lệ mua lại cao, ROI quảng cáo vẫn dương; sau khi thay thế chi phí quay phim người thật bằng AI, ROI tổng thể vẫn dương</li>
-  <li><strong>Khoảng cách 4,4 lần có nghĩa người dùng thậm chí còn chưa thử Kling</strong> — ARR của Kling 3,4 tỷ so với Mô hình A 15 tỷ; chi phí chuyển đổi (viết lại workflow 3-6 tháng, tổn thất năng lực sản xuất hàng chục triệu nhân dân tệ) khiến các công ty phim ngắn không thể di chuyển</li>
+  <li><strong>Khoảng cách 4,4 lần có nghĩa người dùng thậm chí còn chưa thử C8-K</strong> — ARR của C8-K 3,4 tỷ so với Mô hình A 15 tỷ; chi phí chuyển đổi (viết lại workflow 3-6 tháng, tổn thất năng lực sản xuất hàng chục triệu nhân dân tệ) khiến các công ty phim ngắn không thể di chuyển</li>
   <li><strong>Cuộc chiến điểm đơn lẻ trong mảng sinh video đã kết thúc</strong> — Mô hình A thực tế độc quyền trên một kênh video cloud hàng đầu; các nhà cung cấp cloud khác nên chuyển hướng sang giải pháp đa phương thức, giải pháp ngành và nền tảng Agent</li>
 </ul>
 </div>
@@ -53,7 +53,7 @@ ShowToc: true
   </div>
   <div class="bis-card green">
     <span class="val">3,4<span style="font-size:14px"> tỷ</span></span>
-    <span class="lab">ARR của Kling (so sánh ngang)</span>
+    <span class="lab">ARR của C8-K (so sánh ngang)</span>
   </div>
   <div class="bis-card purple">
     <span class="val">~58%</span>
@@ -69,7 +69,7 @@ ShowToc: true
   </div>
 </div>
 
-<p><strong>Tín hiệu cốt lõi</strong>: Mô hình video lớn (không phải LLM, không phải mô hình hình ảnh) lần đầu tiên trở thành dịch vụ MaaS <strong>doanh thu điểm đơn vượt 10 tỷ</strong>. Quy mô này <strong>đã</strong> vượt qua doanh thu của bất kỳ công ty LLM đa dụng đơn lẻ nào, <strong>bằng 100% mục tiêu MaaS 2026 của ByteDance là 15 tỷ</strong>.</p>
+<p><strong>Tín hiệu cốt lõi</strong>: Mô hình video lớn (không phải LLM, không phải mô hình hình ảnh) lần đầu tiên trở thành dịch vụ MaaS <strong>doanh thu điểm đơn vượt 10 tỷ</strong>. Quy mô này <strong>đã</strong> vượt qua doanh thu của bất kỳ công ty LLM đa dụng đơn lẻ nào, <strong>bằng 100% mục tiêu MaaS 2026 của C3 là 15 tỷ</strong>.</p>
 </div>
 
 <!-- ============ MOD-02 数据来源与口径 ============ -->
@@ -102,10 +102,10 @@ ShowToc: true
       <td>Tính niên suất đơn giản</td>
     </tr>
     <tr>
-      <td>ARR mới nhất của Kling (Kuaishou)</td>
+      <td>ARR mới nhất của C8-K (C8)</td>
       <td>3,4 tỷ nhân dân tệ</td>
       <td>2026 tính đến hiện tại</td>
-      <td>Công khai từ báo cáo tài chính Kuaishou</td>
+      <td>Công khai từ báo cáo tài chính C8</td>
     </tr>
     <tr>
       <td>Sản lượng niên xuất AI phim ngắn Trung Quốc</td>
@@ -226,7 +226,7 @@ ShowToc: true
       <td><strong>~95%</strong></td>
     </tr>
     <tr>
-      <td>Nhà sáng tạo Xiaohongshu/Douyin/Video WeChat (C-end)</td>
+      <td>Nhà sáng tạo Xiaohongshu/C3-V/Video C2-W (C-end)</td>
       <td>Dùng ứng dụng "đủ dùng" như Jimeng, XiaoYunQue</td>
       <td>Đăng ký / miễn phí</td>
       <td>Gần như 0</td>
@@ -257,7 +257,7 @@ ShowToc: true
 
 <ul>
   <li>Mô hình A <strong>không phải "ứng dụng tiêu dùng"</strong>, mà là <strong>MaaS B2B thuần túy</strong></li>
-  <li>Nhà sáng tạo trên Xiaohongshu/Douyin/Video WeChat <strong>chưa bao giờ là người dùng trả tiền</strong></li>
+  <li>Nhà sáng tạo trên Xiaohongshu/C3-V/Video C2-W <strong>chưa bao giờ là người dùng trả tiền</strong></li>
   <li>Vì vậy "nhà sáng tạo dùng Jimeng" và "Mô hình A bán 1 tỷ/tháng" là <strong>hai việc hoàn toàn không mâu thuẫn</strong></li>
   <li>Điều này giải thích một câu hỏi then chốt: <strong>Tại sao một API hướng B-end có thể đạt doanh số tháng 1 tỷ, mà không bị tác động bởi một sự kiện ăn khách nào đó như ứng dụng tiêu dùng</strong> — khách hàng của nó <strong>là các công ty thương mại</strong>, không phải "người dùng"</li>
 </ul>
@@ -323,7 +323,7 @@ ShowToc: true
   <li><strong>58%</strong> sản lượng được chuyển thẳng cho khâu sinh nội dung (chủ yếu là Mô hình A)</li>
   <li>Biên lợi nhuận của các công ty phim ngắn bị <strong>siết chặt nghiêm trọng</strong>, nhưng vẫn có thể hoạt động <strong>nghĩa là</strong>:<br>
     ① Người dùng có ý định chi trả mạnh (giá mỗi phim ngắn 1-10 nhân dân tệ, ARPU 10-50 nhân dân tệ, tỷ lệ mua lại cao)<br>
-    ② ROI quảng cáo vẫn dương (phân phối nội dung qua Douyin / ứng dụng Hongguo)<br>
+    ② ROI quảng cáo vẫn dương (phân phối nội dung qua C3-V / ứng dụng Hongguo)<br>
     ③ <strong>Tăng hiệu suất</strong> khâu sinh nội dung khiến tổng chi phí giảm (AI thay thế chi phí quay phim người thật)</li>
   <li>Nếu Mô hình A <strong>không</strong> đẩy doanh số tháng lên 1 tỷ, các công ty AI phim ngắn <strong>không đủ tiền</strong> trả cho các khâu khác (sáng tạo, quảng cáo)</li>
   <li><strong>Đây là một vòng khép kín</strong>: Mô hình A giá rẻ → sản lượng phim ngắn bùng nổ → quảng cáo thu hồi → lượng dùng Mô hình A tiếp tục tăng</li>

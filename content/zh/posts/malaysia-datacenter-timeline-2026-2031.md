@@ -48,7 +48,7 @@ ShowToc: true
 | Vantage KUL1 | Cyberjaya | 31 MW | KUL14 的 16 MW 全租单一客户 |
 | EdgeConneX Cyberjaya | Cyberjaya | 6 MW（运营）| KL CBD Tier 3 认证；一期 22.4 MW Q1 2026 |
 | Bitdeer A102 | 柔佛 | 9.5 MW | 已售罄 |
-| TM Nxera 首批 | 柔佛 Iskandar Puteri | 20 MW | 70% 已预售；Singtel 合资 |
+| TM Nxera 首批 | 柔佛 Iskandar Puteri | 20 MW | 70% 已预售；K12 合资 |
 | NTT / Keppel / AIMS | 巴生谷 | ~105 MW | NTT 29 + Keppel 26.6 + AIMS 50 |
 
 ---

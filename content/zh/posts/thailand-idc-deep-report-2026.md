@@ -96,7 +96,7 @@ mindmap
 |---|---|---|
 | 容量占比 | ~52% | ~41% |
 | 核心定位 | 企业托管、互联枢纽、云接入 | 超大规模、AI 训练、工业边缘 |
-| 代表运营商 | True IDC、STT GDC、NTT、AIS | True IDC EEC、GSA、SUPERNAP |
+| 代表运营商 | K7、STT GDC、NTT、K11 | K7 EEC、GSA、SUPERNAP |
 | 电网状态 | 成熟,互联密集 | 升级中,1,150 MW 新增容量 |
 | 水资源 | 充足 | 春武里/罗勇偏紧,北柳 63% |
 
@@ -104,13 +104,13 @@ mindmap
 
 ## 三、Colo 运营商竞争格局
 
-泰国 Colo 市场集中度中等,前五大运营商包括 **True IDC、STT GDC、NTT、CS LoxInfo、United Information Highway**。
+泰国 Colo 市场集中度中等,前五大运营商包括 **K7、STT GDC、NTT、CS LoxInfo、United Information Highway**。
 
 | 运营商 | 已运营 IT | 在建/规划 | 总管道 | 锚定/特征 |
 |---|---|---|---|---|
-| True IDC(CP Group) | ~30 MW | ~350 MW | **~380 MW** | East Bangna 35 MW 园区;EEC AI 超大规模园区;缅甸仰光设施 |
+| K7(CP Group) | ~30 MW | ~350 MW | **~380 MW** | East Bangna 35 MW 园区;EEC AI 超大规模园区;缅甸仰光设施 |
 | STT GDC | 22 MW | 26 MW | **48 MW** | BKK1(22 MW,2021 运营)+ BKK2(24 MW,2026 Q4)+ BKK3(2 MW) |
-| GSA(Gulf+Singtel+AIS) | 25.6 MW | ~100 MW | **~125 MW** | GSA01(2025 年底)+ GSA02(2027 Q1)+ GSA05(120 MW,建设中) |
+| GSA(Gulf+K12+K11) | 25.6 MW | ~100 MW | **~125 MW** | GSA01(2025 年底)+ GSA02(2027 Q1)+ GSA05(120 MW,建设中) |
 | SUPERNAP Thailand | ~15 MW | — | **~15 MW** | Tier IV 认证,春武里 |
 | NTT / CS LoxInfo | ~20 MW | — | **~20 MW** | 企业托管与互联 |
 
@@ -125,9 +125,9 @@ mindmap
 | Microsoft Azure | 泰国 AI 数据中心 | 10 亿美元+ | 2024 年宣布,扩建中 |
 | AL云 | 曼谷两座数据中心 | 未披露 | 2022 年首座 + 2025 年第二座 |
 | O3云 | 曼谷双 AZ | 未披露 | 2021 年 6 月开服 |
-| O1/TikTok | 曼谷、北榄、北柳 | 250 亿美元 | 分阶段建设 |
+| O1/C3-T | 曼谷、北榄、北柳 | 250 亿美元 | 分阶段建设 |
 
-**三大阵营格局清晰**:美系自建(AWS/Google/Microsoft)+ 中资双轨(O1/AL/O3)+ 本土电信运营商(True/AIS/Singtel 合资 GSA)。
+**三大阵营格局清晰**:美系自建(AWS/Google/Microsoft)+ 中资双轨(O1/AL/O3)+ 本土电信运营商(True/K11/K12 合资 GSA)。
 
 ---
 
@@ -178,7 +178,7 @@ mindmap
 | 土地成本 | 中等 | 极高 | 低 |
 | 核心优势 | **本土巨头生态(正大)+ 主权 AI 独立性 + 绿电政策** | 成熟网络生态与金融中心 | 靠近新加坡 + 成本低廉 |
 
-**主权与生态优势**:相比依赖新加坡溢出效应的马来西亚柔佛,泰国作为独立的大型经济体,具有更高的数据主权与地缘平衡能力。以 True IDC(正大集团 CP Group 旗下)为例,正大集团在电信(True Corporation)、零售与农业领域的深厚积淀,在拿地、电力审批及本地化场景落地方面具备强劲竞争力。
+**主权与生态优势**:相比依赖新加坡溢出效应的马来西亚柔佛,泰国作为独立的大型经济体,具有更高的数据主权与地缘平衡能力。以 K7(正大集团 CP Group 旗下)为例,正大集团在电信(True Corporation)、零售与农业领域的深厚积淀,在拿地、电力审批及本地化场景落地方面具备强劲竞争力。
 
 ---
 
@@ -209,11 +209,11 @@ O1(250 亿美元自建)+ AL云(两座数据中心)+ O3云(双 AZ)+ 万国数据(
 - **BOI 审批**:2025 年批准 38 个项目,IT 负载合计 2,066 MW,总投资 4,580 亿泰铢(约 145 亿美元)。
 - **电价**:ERC 批准 2026 年 1-4 月电价 3.88 泰铢/kWh。
 - **绿色电力**:UGT1/UGT2 已推出,Direct PPA 试点 2,000 MW。
-- **运营商数据**:STT GDC 曼谷园区 46 MW(BKK1:22 MW + BKK2:24 MW + BKK3:2 MW);True IDC East Bangna 35 MW 公用事业容量/30 MW IT 负载。
+- **运营商数据**:STT GDC 曼谷园区 46 MW(BKK1:22 MW + BKK2:24 MW + BKK3:2 MW);K7 East Bangna 35 MW 公用事业容量/30 MW IT 负载。
 - **免责声明**:本报告基于公开信息整理,部分容量数据存在口径差异与重叠,预测情景存在不确定性,仅供一般信息与研究参考。
 
 ---
 
 *数据截至 2026-10-05 | 口径 IT Load | 单位 MW*
 
-*本文综合公开资料、Mordor Intelligence、BOI、EGAT、STT GDC、True IDC 官方披露及行业研究交叉验证*
+*本文综合公开资料、Mordor Intelligence、BOI、EGAT、STT GDC、K7 官方披露及行业研究交叉验证*

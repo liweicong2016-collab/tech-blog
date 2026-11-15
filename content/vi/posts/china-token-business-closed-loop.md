@@ -91,7 +91,7 @@ Suy luận ngược dựa trên máy chủ GPU chính thống của Trung Quốc
 | Công ty khởi nghiệp Coding đầu ngành X / Mô hình Bính | ✅ Đầu ngành Coding | ✅ Mã là sản phẩm | ✅ Tăng giá 83% + Lượng tăng 400% | ⭐⭐⭐⭐⭐ |
 | Đám mây tổng hợp đầu ngành B / Mô hình Ất | ✅ Mã nguồn mở số 2 | ⚠️ Mã nguồn mở có thể di chuyển | ⚠️ Cạnh tranh giá khốc liệt | ⭐⭐⭐⭐ |
 | Nhóm dẫn đầu mã nguồn mở nội địa R | ✅ Mã nguồn mở số 1 | ❌ Hoàn toàn mã nguồn mở miễn phí | ⚠️ Vòng khép kín nước ngoài / Bán khép kín nội địa | ⭐⭐⭐⭐ |
-| Đám mây tổng hợp đầu ngành C / Mô hình Đinh | ⚠️ Hệ sinh thái WeChat | ✅ Ao cá riêng | ⚠️ Quy mô hạn chế | ⭐⭐⭐ |
+| Đám mây tổng hợp đầu ngành C / Mô hình Đinh | ⚠️ Hệ sinh thái C2-W | ✅ Ao cá riêng | ⚠️ Quy mô hạn chế | ⭐⭐⭐ |
 | Công ty khởi nghiệp AI Z | ⚠️ Đa phương thức có đặc sắc | ⚠️ Mã nguồn mở + Thương mại | ⚠️ Video kiếm tiền riêng | ⭐⭐⭐ |
 | Công ty khởi nghiệp AI Y | ⚠️ Đầu ngành văn bản dài | ⚠️ Nhiều người dùng cá nhân | ❌ Mô hình đốt tiền 2024 | ⭐⭐ |
 | Đám mây tổng hợp đầu ngành E / Mô hình Mậu | ❌ Đường đua đa năng không đặc sắc | ❌ Chủ yếu dùng nội bộ | ❌ Doanh thu đối ngoại hạn chế | ⭐⭐ |
@@ -155,7 +155,7 @@ Biến thể của Đám mây video đầu ngành A (mạnh mẽ hơn):
 - ✅ Sách trắng + Công cụ tính ROI đi kèm
 
 **Tinh thần không học được** (Lợi thế nền tảng):
-- ❌ **Nuôi cá trong kịch bản tập đoàn** — Đám mây video đầu ngành A có video ngắn Douyin (220-300 tỷ/năm), Đám mây tổng hợp đầu ngành B có CSKH Taobao (triệu người bán), Đám mây tổng hợp đầu ngành C có tài khoản công khai. Các ông lớn nước ngoài không có "ao cá riêng" này
+- ❌ **Nuôi cá trong kịch bản tập đoàn** — Đám mây video đầu ngành A có video ngắn C3-V (220-300 tỷ/năm), Đám mây tổng hợp đầu ngành B có CSKH Taobao (triệu người bán), Đám mây tổng hợp đầu ngành C có tài khoản công khai. Các ông lớn nước ngoài không có "ao cá riêng" này
 - ❌ **Điều phối GPU / Điện trong tập đoàn** — Đám mây video đầu ngành A / Đám mây tổng hợp đầu ngành B / Đám mây tổng hợp đầu ngành C có thể chiết khấu "thời gian rảnh GPU của tập đoàn" cho mảng kinh doanh MaaS
 - ❌ **Thay thế GPU nội địa** — "Dùng được là được" của thẻ A nội địa cho phép các ông lớn Trung Quốc vẫn có khả năng suy luận sau khi H100 / H200 bị cấm
 - ❌ **Lợi thế tuân thủ dữ liệu** — Khách hàng lớn nội địa (Tài chính / Chính phủ & Doanh nghiệp / Doanh nghiệp nhà nước) tự nhiên chọn đám mây nội địa
@@ -273,7 +273,7 @@ Biến thể của Đám mây video đầu ngành A (mạnh mẽ hơn):
 ### Chiến thuật 1: Nuôi cá trong kịch bản → Thu hoạch Token
 
 **Lộ trình của Đám mây video đầu ngành A**:
-1. Kinh doanh video ngắn Douyin thành công → Xác minh năng lực Mô hình Giáp
+1. Kinh doanh video ngắn C3-V thành công → Xác minh năng lực Mô hình Giáp
 2. Mô hình Giáp thâm nhập 95% ngành video ngắn
 3. Giá trị sản lượng hàng năm ngành video ngắn 220-300 tỷ → Công ty này chiếm 58% = **127-174 tỷ**
 4. Mô hình Giáp mở cửa đối ngoại (Danh sách trắng + Khung năm) → ARR ngoài ngành 30-50 tỷ
@@ -283,7 +283,7 @@ Biến thể của Đám mây video đầu ngành A (mạnh mẽ hơn):
 1. Kịch bản CSKH người bán Taobao / 1688 → Xác minh năng lực Mô hình Ất
 2. Mô hình Ất mã nguồn mở → Nhà phát triển trong và ngoài nước tự động áp dụng
 3. Mô hình Ất trên OpenRouter giành 19% thị phần → Lượng gọi nước ngoài quay vòng
-4. Nền tảng MaaS Alibaba Cloud bán cho doanh nghiệp → ARR doanh nghiệp nội địa
+4. Nền tảng MaaS C1-Cloud bán cho doanh nghiệp → ARR doanh nghiệp nội địa
 5. **Doanh thu hàng quý mảng MaaS ~30 tỷ** (ước tính theo doanh thu AI hàng quý × 30%)
 
 ### Chiến thuật 2: Bánh đà mã nguồn mở → Lượng gọi toàn cầu pha loãng chi phí nội địa

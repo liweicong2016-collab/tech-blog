@@ -23,16 +23,16 @@ ShowToc: true
 </div>
 
 <div class="bis-alert">
-  <strong>This is a counterintuitive case</strong>. Released on February 10, 2026, and within 4 months, monthly sales exceeded 1 billion yuan; it is not a "consumer-grade App" (creators on Xiaohongshu/Douyin/Video Account cannot even use the API), but <strong>a pure B2B API</strong>, with customers <strong>almost entirely AI short drama companies</strong>. This article dissects how it monetizes, who is paying, why competitors cannot catch up, and its end-game significance for China's MaaS battlefield.
+  <strong>This is a counterintuitive case</strong>. Released on February 10, 2026, and within 4 months, monthly sales exceeded 1 billion yuan; it is not a "consumer-grade App" (creators on Xiaohongshu/C3-V/Video Account cannot even use the API), but <strong>a pure B2B API</strong>, with customers <strong>almost entirely AI short drama companies</strong>. This article dissects how it monetizes, who is paying, why competitors cannot catch up, and its end-game significance for China's MaaS battlefield.
 </div>
 
 <div class="bis-signal">
 <h3>💡 Key Takeaways</h3>
 <ul>
   <li><strong>B2B API is the correct path for video model monetization</strong> — C-end creators use Jiemeng/Xiaoyunque (subscription/free), while B-end short drama companies use API (token billing); the two markets do not overlap, and the 1 billion monthly sales come entirely from the latter.</li>
-  <li><strong>The revenue scale of video models has surpassed all general LLM models</strong> — Model A's conservative ARR estimate of 15 billion is 100% of ByteDance MaaS' 2026 target of 15 billion, exceeding any single LLM company's revenue.</li>
+  <li><strong>The revenue scale of video models has surpassed all general LLM models</strong> — Model A's conservative ARR estimate of 15 billion is 100% of C3 MaaS' 2026 target of 15 billion, exceeding any single LLM company's revenue.</li>
   <li><strong>58% of AI short drama output value flows to the generation process</strong> — Short drama companies can afford it because user ARPU is 10-50 yuan, repurchase rate is high, and streaming ROI is positive; even after AI replaces live-action shooting costs, overall ROI remains positive.</li>
-  <li><strong>A 4.4x gap means users are not even trying Kling</strong> — Kling ARR 3.4 billion vs Model A 15 billion; switching costs (3-6 months of workflow rework, tens of millions in capacity loss) make it impossible for short drama companies to migrate.</li>
+  <li><strong>A 4.4x gap means users are not even trying C8-K</strong> — C8-K ARR 3.4 billion vs Model A 15 billion; switching costs (3-6 months of workflow rework, tens of millions in capacity loss) make it impossible for short drama companies to migrate.</li>
   <li><strong>The single-point war in the video generation track is over</strong> — Model A has de facto monopoly in a leading video cloud channel; other cloud vendors should shift to multimodal combinations, industry solutions, and agent platforms.</li>
 </ul>
 </div>
@@ -52,7 +52,7 @@ ShowToc: true
   </div>
   <div class="bis-card green">
     <span class="val">3.4<span style="font-size:14px"> billion</span></span>
-    <span class="lab">Kling ARR (cross comparison)</span>
+    <span class="lab">C8-K ARR (cross comparison)</span>
   </div>
   <div class="bis-card purple">
     <span class="val">~58%</span>
@@ -68,7 +68,7 @@ ShowToc: true
   </div>
 </div>
 
-<p><strong>Core signal</strong>: For the first time, a video large model (not LLM, not image model) has become a MaaS business with <strong>single-point revenue exceeding 10 billion yuan</strong>. This scale <strong>already</strong> exceeds the revenue of any single company from general LLM models, and <strong>is 100% of ByteDance MaaS' 2026 target of 15 billion yuan</strong>.</p>
+<p><strong>Core signal</strong>: For the first time, a video large model (not LLM, not image model) has become a MaaS business with <strong>single-point revenue exceeding 10 billion yuan</strong>. This scale <strong>already</strong> exceeds the revenue of any single company from general LLM models, and <strong>is 100% of C3 MaaS' 2026 target of 15 billion yuan</strong>.</p>
 </div>
 
 <!-- ============ MOD-02 Data Sources and Calculation Methods ============ -->
@@ -101,10 +101,10 @@ ShowToc: true
       <td>Simple annualization</td>
     </tr>
     <tr>
-      <td>Kling (Kuaishou) latest ARR</td>
+      <td>C8-K (C8) latest ARR</td>
       <td>3.4 billion yuan</td>
       <td>2026 year-to-date</td>
-      <td>Public Kuaishou financial report</td>
+      <td>Public C8 financial report</td>
     </tr>
     <tr>
       <td>China AI short drama annual output value</td>
@@ -225,7 +225,7 @@ ShowToc: true
       <td><strong>~95%</strong></td>
     </tr>
     <tr>
-      <td>Xiaohongshu/Douyin/Video Account creators (C-end)</td>
+      <td>Xiaohongshu/C3-V/Video Account creators (C-end)</td>
       <td>Use "good enough model" apps like Jiemeng, Xiaoyunque</td>
       <td>Subscription / free</td>
       <td>Nearly 0</td>
@@ -256,7 +256,7 @@ ShowToc: true
 
 <ul>
   <li>Model A <strong>is not a "consumer App"</strong>, it is a <strong>pure B2B MaaS</strong></li>
-  <li>Xiaohongshu/Douyin/Video Account creators <strong>have never been its paying users</strong></li>
+  <li>Xiaohongshu/C3-V/Video Account creators <strong>have never been its paying users</strong></li>
   <li>So "creators using Jiemeng" and "Model A monthly sales of 1 billion" are <strong>two completely non-conflicting things</strong></li>
   <li>This explains a key question: <strong>why a B2B-facing API can achieve 1 billion per month without being impacted by some viral event like a consumer app</strong> — its customers <strong>are commercial companies</strong>, not "users".</li>
 </ul>
@@ -320,7 +320,7 @@ ShowToc: true
   <li><strong>58%</strong> of the output value goes directly to the generation stage (mostly Model A)</li>
   <li>Short drama companies’ profit margins are <strong>severely squeezed</strong>, yet the model still works, <strong>which implies</strong>:<br>
     ① Strong user willingness to pay (short drama unit price 1–10 yuan, ARPU 10–50 yuan, high repurchase rate)<br>
-    ② Ad traffic ROI is still positive (content distribution on Douyin / Hongguo App)<br>
+    ② Ad traffic ROI is still positive (content distribution on C3-V / Hongguo App)<br>
     ③ <strong>Efficiency gains</strong> in generation reduce overall costs (AI replaces real-person shooting costs)</li>
   <li>If Model A does <strong>not</strong> reach 1 billion in monthly sales, AI short drama companies <strong>cannot afford</strong> the costs of other segments (creative, ad traffic)</li>
   <li><strong>This is a closed loop</strong>: Model A’s low price → explosion in short drama output → traffic recoupment → Model A usage continues to rise</li>
@@ -334,18 +334,18 @@ Large video model: <strong>unit price drop = total revenue rise</strong> (the sa
 </div>
 </div>
 
-<!-- ============ MOD-06 Why Kling Can't Catch Up ============ -->
+<!-- ============ MOD-06 Why C8-K Can't Catch Up ============ -->
 <div class="bis-section">
-<h2><span class="num">6</span> Why Kling Can’t Catch Up — The Moat of a 4.4× Gap</h2>
+<h2><span class="num">6</span> Why C8-K Can’t Catch Up — The Moat of a 4.4× Gap</h2>
 
-<p>Kling ARR 3.4 billion vs Model A ARR 15 billion = <strong>4.4× gap</strong>. This is <strong>not</strong> a trivial 4.4%, <strong>4.4×</strong> means <strong>users aren’t even trying Kling</strong>.</p>
+<p>C8-K ARR 3.4 billion vs Model A ARR 15 billion = <strong>4.4× gap</strong>. This is <strong>not</strong> a trivial 4.4%, <strong>4.4×</strong> means <strong>users aren’t even trying C8-K</strong>.</p>
 
-<p><strong>4 reasons short drama companies don’t switch to Kling</strong>:</p>
+<p><strong>4 reasons short drama companies don’t switch to C8-K</strong>:</p>
 
 <ol>
   <li><strong>Prompt engineering / storyboard / character consistency workflows are all built around Model A’s API</strong> — switching models = rewriting the entire workflow, 3–6 months migration cost</li>
   <li><strong>Team prompt knowledge assets are accumulated on Model A</strong> — switching = months of experimentation, <strong>directly losing tens of millions</strong> in production capacity</li>
-  <li><strong>Downstream distribution channels (Hongguo, Dianzhong, Jiuzhou) recognize the “texture” of Model A’s output</strong> — switching to Kling could affect listing review</li>
+  <li><strong>Downstream distribution channels (Hongguo, Dianzhong, Jiuzhou) recognize the “texture” of Model A’s output</strong> — switching to C8-K could affect listing review</li>
   <li><strong>Whitelist + annual framework + full-featured version customer lock-in</strong> — already signed annual contracts <strong>cannot be terminated mid-term</strong>, cash flow locked</li>
 </ol>
 
@@ -367,7 +367,7 @@ Large video model: <strong>unit price drop = total revenue rise</strong> (the sa
       <td>~95%</td>
     </tr>
     <tr>
-      <td>Kling (Kuaishou)</td>
+      <td>C8-K (C8)</td>
       <td>3.4 billion</td>
       <td>0.22×</td>
       <td>~3%</td>
@@ -382,7 +382,7 @@ Large video model: <strong>unit price drop = total revenue rise</strong> (the sa
 </table>
 </div>
 
-<p><strong>The right play for Kling</strong> (cannot fight head-on):</p>
+<p><strong>The right play for C8-K</strong> (cannot fight head-on):</p>
 
 <ul>
   <li>❌ <strong>Cannot</strong> grab users via price war (15 billion vs 3.4 billion, <strong>price war = suicide</strong>)</li>
@@ -485,7 +485,7 @@ Large video model: <strong>unit price drop = total revenue rise</strong> (the sa
     </tr>
     <tr>
       <td>Clients doing <strong>3D / industrial vision / digital twins</strong></td>
-      <td>Model A is <strong>not suitable</strong> (it focuses on people + plot). Go the 3D route (<strong>Tencent Hunyuan 3D / Alibaba Tora</strong>) or the industrial route (Ascend + Sora-lite)</td>
+      <td>Model A is <strong>not suitable</strong> (it focuses on people + plot). Go the 3D route (<strong>C2 C2-M 3D / C1 Tora</strong>) or the industrial route (ASC + Sora-lite)</td>
     </tr>
     <tr>
       <td>Clients doing <strong>AI marketing / ad placement</strong></td>
@@ -493,7 +493,7 @@ Large video model: <strong>unit price drop = total revenue rise</strong> (the sa
     </tr>
     <tr>
       <td>Clients targeting <strong>overseas markets (US / Europe / India)</strong></td>
-      <td><strong>Whether they dare</strong> to use a Chinese cloud’s video API = <strong>the biggest question for China’s AI going global in 2026</strong>. Need a <strong>white-box solution</strong> (Ascend + domestic models + third-party hosting)</td>
+      <td><strong>Whether they dare</strong> to use a Chinese cloud’s video API = <strong>the biggest question for China’s AI going global in 2026</strong>. Need a <strong>white-box solution</strong> (ASC + domestic models + third-party hosting)</td>
     </tr>
   </tbody>
 </table>
@@ -505,7 +505,7 @@ Large video model: <strong>unit price drop = total revenue rise</strong> (the sa
   <li>❌ <strong>Do not</strong> build your own video model (ROI is unfavorable, <strong>the 15 billion ARR is Model A’s moat</strong>, not the client’s)</li>
   <li>❌ <strong>Do not</strong> just buy cloud services (per-token billing <strong>will get more expensive with scale</strong>, lock in annual frameworks)</li>
   <li>✅ <strong>Should</strong> lock in annual framework + full-featured version + whitelist priority (refer to Model A’s “whitelist + annual framework + full-featured” commercialization)</li>
-  <li>✅ <strong>Should</strong> consider a <strong>third-party plan</strong> in European/American markets (white-box / open-source / Ascend adaptation) <strong>as a backup</strong></li>
+  <li>✅ <strong>Should</strong> consider a <strong>third-party plan</strong> in European/American markets (white-box / open-source / ASC adaptation) <strong>as a backup</strong></li>
 </ul>
 </div>
 
@@ -516,10 +516,10 @@ Large video model: <strong>unit price drop = total revenue rise</strong> (the sa
 <div class="bis-signal">
 <h3>📊 Data Limitations (must read)</h3>
 <ul>
-  <li>All figures in this article come from the 2026/6/3 public industry discussion and Kuaishou financial reports</li>
+  <li>All figures in this article come from the 2026/6/3 public industry discussion and C8 financial reports</li>
   <li>“1 billion monthly sales”, “~95% penetration”, “~15 billion ARR” are all media reports, <strong>unaudited</strong></li>
   <li>Aliases such as a leading video cloud, Model A, a leading comprehensive cloud are anonymized per public blog sanitization rules</li>
-  <li>Kling ARR 3.4 billion is <strong>disclosed in Kuaishou’s financial report</strong>, higher credibility</li>
+  <li>C8-K ARR 3.4 billion is <strong>disclosed in C8’s financial report</strong>, higher credibility</li>
   <li>AI short drama annual output value of 22–30 billion yuan is an estimate by Kasi Data / Jiliang Engine</li>
   <li>Decision-making references require further verification; it is recommended to consult each company’s financial reports and industry white papers</li>
 </ul>
@@ -529,12 +529,12 @@ Large video model: <strong>unit price drop = total revenue rise</strong> (the sa
 
 <ul>
   <li>📄 <a href="/tech-blog/posts/domestic-maas-token-wars-2026/"><strong>《Domestic MaaS War 2026: Two Fronts of the Token Economy》</strong></a> — Macro industry analysis; this case is its detailed video front</li>
-  <li>📄 <a href="/tech-blog/posts/domestic-ai-accelerator-ecosystem-2026/"><strong>《Ascend NPU Model Ecosystem Adaptation Analysis (2026/6)》</strong></a> — A guide to domestic AI compute selection for overseas clients</li>
+  <li>📄 <a href="/tech-blog/posts/domestic-ai-accelerator-ecosystem-2026/"><strong>《ASC NPU Model Ecosystem Adaptation Analysis (2026/6)》</strong></a> — A guide to domestic AI compute selection for overseas clients</li>
   <li>📄 <a href="/tech-blog/posts/bis-china-ai-chip-2026/"><em>(Hidden)</em></a></li>
 </ul>
 
 <div class="bis-foot">
-<p>Data sources: 2026/6/3 public industry discussion + Kuaishou financial report + Kasi Data + Jiliang Engine estimates · Written by: Tech Observer</p>
+<p>Data sources: 2026/6/3 public industry discussion + C8 financial report + Kasi Data + Jiliang Engine estimates · Written by: Tech Observer</p>
 </div>
 </div>
 

@@ -5,8 +5,8 @@ cover:
 title: "DeepInfer 开源：降本军备赛进到引擎层，线上全家桶还没交出来"
 date: 2026-10-21T00:00:00+08:00
 draft: false
-tags: ["DeepSeek", "DeepInfer", "昇腾", "Blackwell", "开源", "推理", "API"]
-description: "DeepSeek 开源离线推理核 DeepInfer（Apache-2.0）与协议层 deepseek-recipe（MIT）。README 写明 KV cache、Prefill/Decode 分离、多副本负载均衡未开源；硬件白名单仅 NVIDIA SM100 与昇腾 950。$0.15 / $0.60 是闲时 cache miss 价。"
+tags: ["DeepSeek", "DeepInfer", "ASC", "Blackwell", "开源", "推理", "API"]
+description: "DeepSeek 开源离线推理核 DeepInfer（Apache-2.0）与协议层 deepseek-recipe（MIT）。README 写明 KV cache、Prefill/Decode 分离、多副本负载均衡未开源；硬件白名单仅 NVIDIA SM100 与ASC 950。$0.15 / $0.60 是闲时 cache miss 价。"
 slug: "deepinfer-opensource-2026"
 summary: "降本军备赛进入开源引擎阶段；缺的三块基建才是完整线上形态。"
 ShowToc: true
@@ -17,7 +17,7 @@ TocOpen: false
 
 ## 结论
 
-DeepSeek 把支撑 V4.1-Flash 线上服务的**离线推理核** DeepInfer（Apache-2.0）和协议层 deepseek-recipe（MIT）开源了出来——对私有化最值钱的是「和官方 API 同款的编解码对齐」。但 README 写得很实在：KV cache 系统、Prefill/Decode 分离、多副本负载均衡**没放**；硬件白名单只有 **NVIDIA SM100** 与 **华为昇腾 950**。$0.15 / $0.6 是**闲时 cache miss** 价，不是全日统一价；真正杀招是 cache hit。一句话：**降本军备赛进入开源引擎阶段；缺的三块基建才是完整线上形态。**
+DeepSeek 把支撑 V4.1-Flash 线上服务的**离线推理核** DeepInfer（Apache-2.0）和协议层 deepseek-recipe（MIT）开源了出来——对私有化最值钱的是「和官方 API 同款的编解码对齐」。但 README 写得很实在：KV cache 系统、Prefill/Decode 分离、多副本负载均衡**没放**；硬件白名单只有 **NVIDIA SM100** 与 **HASC 950**。$0.15 / $0.6 是**闲时 cache miss** 价，不是全日统一价；真正杀招是 cache hit。一句话：**降本军备赛进入开源引擎阶段；缺的三块基建才是完整线上形态。**
 
 ---
 
@@ -58,9 +58,9 @@ DeepSeek 把支撑 V4.1-Flash 线上服务的**离线推理核** DeepInfer（Apa
 2. Prefill / Decode **分离部署**
 3. DP 多副本负载均衡
 
-![DeepInfer 开源边界：离线推理核与协议层已交付，KV cache 系统、Prefill/Decode 分离部署、多副本负载均衡未开源；硬件白名单仅 NVIDIA SM100 与昇腾 950](/tech-blog/images/deepinfer/fig-deepinfer-missing-pieces.jpg)
+![DeepInfer 开源边界：离线推理核与协议层已交付，KV cache 系统、Prefill/Decode 分离部署、多副本负载均衡未开源；硬件白名单仅 NVIDIA SM100 与ASC 950](/tech-blog/images/deepinfer/fig-deepinfer-missing-pieces.jpg)
 
-**硬门槛：** 仅认 NVIDIA **Blackwell SM100** 与华为 **Ascend 950**（CUDA 13 / CANN 9.2）；模型仅限 **DeepSeek-V4.1-Flash**。消费级卡免谈。
+**硬门槛：** 仅认 NVIDIA **Blackwell SM100** 与H **ASC 950**（CUDA 13 / CANN 9.2）；模型仅限 **DeepSeek-V4.1-Flash**。消费级卡免谈。
 
 对私有化团队：recipe 抹平「本地服务 vs 官方 API」的格式与工具调用温差——这比再吹一遍开源口号更值钱。对单卡开发者：继续调几毛钱 API，比自己搭集群划算。
 
@@ -68,9 +68,9 @@ DeepSeek 把支撑 V4.1-Flash 线上服务的**离线推理核** DeepInfer（Apa
 
 ## 4. 产业信号：推理先于预训练，再一次被写进白名单
 
-硬件白名单把 **SM100 与昇腾 950** 并列进第一梯队生产路径，和此前野村专家纪要、Bloomberg 等公开口径同向：国产加速器在**推理 / Serving** 渗透快于大规模预训练；大训仍偏 Nvidia 的叙事未被推翻，但适配订单应跟 **Serving、算子、recipe**，别写「已替代预训练」。
+硬件白名单把 **SM100 与ASC 950** 并列进第一梯队生产路径，和此前野村专家纪要、Bloomberg 等公开口径同向：国产加速器在**推理 / Serving** 渗透快于大规模预训练；大训仍偏 Nvidia 的叙事未被推翻，但适配订单应跟 **Serving、算子、recipe**，别写「已替代预训练」。
 
-这与 2026-09-30 DeepSeek 开源昇腾六大基础组件（TileLang / DeepGEMM-Ascend 等）是同一条「亲写底层」曲线：模型厂向下定义算力软件栈，芯片厂跟着工程现实走。
+这与 2026-09-30 DeepSeek 开源ASC六大基础组件（TileLang / DeepGEMM-ASC 等）是同一条「亲写底层」曲线：模型厂向下定义算力软件栈，芯片厂跟着工程现实走。
 
 ---
 

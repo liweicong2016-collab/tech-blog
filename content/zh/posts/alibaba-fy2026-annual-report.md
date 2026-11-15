@@ -1,23 +1,23 @@
 ---
-title: "阿里 FY2026 年报关键洞察（来自 2026-05-20 公布的 Annual Report）"
+title: "C1 FY2026 年报关键洞察（来自 2026-05-20 公布的 Annual Report）"
 date: 2026-10-05
 draft: false
-tags: ["阿里", "年报", "FY2026", "财报", "AI", "云", "国际化", "资本开支", "阿里云"]
+tags: ["C1", "年报", "FY2026", "财报", "AI", "云", "国际化", "资本开支", "C1-Cloud"]
 categories: ["AI", "财报"]
-description: "阿里 FY2026 完成从传统电商向 AI + Cloud + Consumption 双战略支柱的全面重构。Cloud Intelligence Group 外部收入 Q4 加速至 40% YoY，AI 产品占其中 30%。资本开支飙升至 RMB126,063 百万（约 182.75 亿美元），同比 +47%。"
-keywords: ["阿里", "Alibaba Annual Report FY2026", "阿里云", "AI 商业化", "资本开支", "Qwen3.7-Max", "T-Head"]
+description: "C1 FY2026 完成从传统电商向 AI + Cloud + Consumption 双战略支柱的全面重构。Cloud Intelligence Group 外部收入 Q4 加速至 40% YoY，AI 产品占其中 30%。资本开支飙升至 RMB126,063 百万（约 182.75 亿美元），同比 +47%。"
+keywords: ["C1", "C1 Annual Report FY2026", "C1-Cloud", "AI 商业化", "资本开支", "Qwen3.7-Max", "T-Head"]
 cover:
   image: "https://images.unsplash.com/photo-1639762681485-074b7f938ba0?w=1200&q=80&fit=crop"
-  alt: "阿里 FY2026 年报"
+  alt: "C1 FY2026 年报"
 ---
 
-# 阿里 FY2026 年报关键洞察
+# C1 FY2026 年报关键洞察
 
 > [!abstract] 一句话定位
-> 阿里 FY2026 完成**从传统电商向「AI + Cloud + Consumption」双战略支柱**的全面重构，**Cloud Intelligence Group 外部收入 Q4 加速至 40% YoY**，AI 产品占其中 30%；**资本开支飙升至 RMB126,063 百万（约 182.75 亿美元）**，同比 +47%，主投 AI 基础设施 + 自研 T-Head 芯片。
+> C1 FY2026 完成**从传统电商向「AI + Cloud + Consumption」双战略支柱**的全面重构，**Cloud Intelligence Group 外部收入 Q4 加速至 40% YoY**，AI 产品占其中 30%；**资本开支飙升至 RMB126,063 百万（约 182.75 亿美元）**，同比 +47%，主投 AI 基础设施 + 自研 T-Head 芯片。
 
 > [!info] 文档说明
-> 本文档基于阿里 2026 年 5 月 20 日公布的 FY2026 Annual Report（270 页 PDF）系统梳理的 AI + Cloud、国际化与资本开支关键数据。原始 PDF：[04 阿里出海研究](#) / [4123 阿里 HUB](#)。
+> 本文档基于C1 2026 年 5 月 20 日公布的 FY2026 Annual Report（270 页 PDF）系统梳理的 AI + Cloud、国际化与资本开支关键数据。原始 PDF：[04 C1出海研究](#) / [4123 C1 HUB](#)。
 
 ---
 
@@ -27,13 +27,13 @@ cover:
 
 ### 关键判断
 
-- **AGI 时代拐点**：阿里站在 AI 通用智能发展的关键拐点，大量 AI 智能体即将承担更大份额的数字经济工作，每个智能体都消耗 token
-- **AI 商业化加速**：阿里 AI 已度过初始投资阶段，进入**全规模商业化**阶段
+- **AGI 时代拐点**：C1站在 AI 通用智能发展的关键拐点，大量 AI 智能体即将承担更大份额的数字经济工作，每个智能体都消耗 token
+- **AI 商业化加速**：C1 AI 已度过初始投资阶段，进入**全规模商业化**阶段
 - **Cloud Q4 加速**：FY2026 第四季度 **Cloud Intelligence Group 外部收入同比增长加速至 40%**，**AI 相关产品占其中 30%**
-- **战略升级**：阿里云增长引擎**全面从传统算力与存储转向模型、AI 算力与智能体服务**
+- **战略升级**：C1-Cloud增长引擎**全面从传统算力与存储转向模型、AI 算力与智能体服务**
 
 > [!success] 关键洞察
-> "AI 角色驱动了阿里云业务全面升级"——这是 FY2026 最重要的战略表态。
+> "AI 角色驱动了C1-Cloud业务全面升级"——这是 FY2026 最重要的战略表态。
 
 ---
 
@@ -42,11 +42,11 @@ cover:
 ### 2.1 基础设施层：T-Head 自研 GPU
 
 - **T-Head AI 芯片已实现规模量产**
-- 为阿里云基础设施和 **MaaS 推理平台**提供高性能算力
+- 为C1-Cloud基础设施和 **MaaS 推理平台**提供高性能算力
 - 支持从训练、微调到推理的**端到端 AI 工作负载**
-- T-Head 与阿里云基础设施及基础模型的**深度协同设计**，提供卓越的性价比
+- T-Head 与C1-Cloud基础设施及基础模型的**深度协同设计**，提供卓越的性价比
 
-### 2.2 基础模型层：Qwen 矩阵
+### 2.2 基础模型层：C1-M 矩阵
 
 | 模型 | 类型 | 关键能力 |
 |:---|:---|:---|
@@ -54,12 +54,12 @@ cover:
 | HappyOyster | 实时交互式生成世界模型 | 实时交互式场景 |
 | HappyHorse | 多模态模型 | 跨模态理解与生成 |
 
-- **过去三个月内 Qwen 系列发布三次更新**
+- **过去三个月内 C1-M 系列发布三次更新**
 
-### 2.3 应用层：Qwen App + Wukong
+### 2.3 应用层：C1-M App + Wukong
 
-- **Qwen App**（2025 年 11 月发布）：全场景个人 AI 助手（生活、工作、学习）
-- 深度整合阿里生态：淘宝 / 天猫 / 淘宝闪购 / 飞猪 / 大麦 / 高德 / 支付宝
+- **C1-M App**（2025 年 11 月发布）：全场景个人 AI 助手（生活、工作、学习）
+- 深度整合C1生态：C1-E / C1-E2 / C1-E闪购 / 飞猪 / 大麦 / 高德 / C1-P
 - **Wukong**：AI 原生智能体平台，**为企业 AI-to-B 工作流提供协调**
 - 完整覆盖企业 + 消费者双向 AI 应用战略
 
@@ -78,8 +78,8 @@ cover:
 
 | 业务板块 | FY2025 (RMB M) | FY2026 (RMB M) | YoY 变化 |
 |:---|---:|---:|---:|
-| Alibaba China E-commerce Group | 193,223 | 107,509 | **-44%** |
-| **Alibaba International Digital Commerce Group** | **(15,137)** | **(2,051)** | **+86%**（亏损收窄 86%） |
+| C1 China E-commerce Group | 193,223 | 107,509 | **-44%** |
+| **C1 International Digital Commerce Group** | **(15,137)** | **(2,051)** | **+86%**（亏损收窄 86%） |
 | **Cloud Intelligence Group** | **10,556** | **28,530** | **+170%**（等比） |
 | All others | (9,499) | (35,737) | -276% |
 
@@ -90,7 +90,7 @@ cover:
 
 ## 四、国际化与海外 IDC 布局
 
-### 4.1 Alibaba International Digital Commerce Group (AIDC)
+### 4.1 C1 International Digital Commerce Group (AIDC)
 
 | 业务 | FY2024 (RMB M) | FY2025 (RMB M) | FY2026 (RMB M) | YoY |
 |:---|---:|---:|---:|---:|
@@ -108,7 +108,7 @@ cover:
 
 > 来源：FY2026 年报"Properties"披露
 
-阿里在以下国家 / 地区维持数据中心：
+C1在以下国家 / 地区维持数据中心：
 - 中国大陆
 - 中国香港
 - **印度尼西亚**（2025 业务应用，FY2026 已确认）
@@ -127,7 +127,7 @@ cover:
 **总办公与 IDC 设施面积约 18.7 百万平方米**（截至 2026 年 3 月 31 日）
 
 > [!info] 海外 IDC 重点
-> FY2026 年报明确披露阿里在印尼 / 马来西亚 / 泰国 / 新加坡 / 日本 均有数据中心**。**这与上轮"2026-10 内部调研刷注"中"AL 已知重点市场 473 MW（马 400 + 泰 65 + 印尼 8）"数据点吻合。
+> FY2026 年报明确披露C1在印尼 / 马来西亚 / 泰国 / 新加坡 / 日本 均有数据中心**。**这与上轮"2026-10 内部调研刷注"中"AL 已知重点市场 473 MW（马 400 + 泰 65 + 印尼 8）"数据点吻合。
 
 ---
 
@@ -159,7 +159,7 @@ cover:
 - **（iii）土地使用权采购与企业园区与办公设施建设**
 
 > [!success] 关键判断
-> **FY2026 单年 capex 已超 180 亿美元**——这是阿里历史上**最大单一年度 AI 基础设施投资**。三年累计 RMB 244 billion（约 350 亿美元）几乎全部押注 AI + Cloud + 海外。
+> **FY2026 单年 capex 已超 180 亿美元**——这是C1历史上**最大单一年度 AI 基础设施投资**。三年累计 RMB 244 billion（约 350 亿美元）几乎全部押注 AI + Cloud + 海外。
 
 ---
 
@@ -170,11 +170,11 @@ cover:
 | 维度 | 状态 |
 |:---|:---|
 | 量产 | ✅ 已规模量产 |
-| 应用 | 阿里云基础设施 + MaaS 推理平台 |
+| 应用 | C1-Cloud基础设施 + MaaS 推理平台 |
 | 工作负载 | 训练 / 微调 / 推理端到端 |
-| 协同设计 | T-Head × 阿里云基础设施 × 基础模型 |
+| 协同设计 | T-Head × C1-Cloud基础设施 × 基础模型 |
 
-### 6.2 Qwen 模型家族（3 个月内 3 次发布）
+### 6.2 C1-M 模型家族（3 个月内 3 次发布）
 
 | 模型 | 类别 | 关键能力 |
 |:---|:---|:---|
@@ -186,7 +186,7 @@ cover:
 
 | 产品 | 类型 | 关键时间 | 战略 |
 |:---|:---|:---|:---|
-| **Qwen App** | 消费级 AI 助手 | 2025-11 发布 | 整合 7 个生态入口 |
+| **C1-M App** | 消费级 AI 助手 | 2025-11 发布 | 整合 7 个生态入口 |
 | **Wukong** | 企业 AI 智能体平台 | FY2026 发布 | AI-to-B 工作流协调 |
 
 ---
@@ -196,18 +196,18 @@ cover:
 ### 7.1 FY2026 三大转折
 
 > [!warning] 转折 1：AI 商业化拐点
-> 阿里 AI 从"初始投资阶段"进入"**全规模商业化阶段**"。Cloud Intelligence Group Q4 外部收入 +40% YoY，AI 产品占 30%。
+> C1 AI 从"初始投资阶段"进入"**全规模商业化阶段**"。Cloud Intelligence Group Q4 外部收入 +40% YoY，AI 产品占 30%。
 
 > [!warning] 转折 2：capex 拐点
 > FY2026 capex **126,063 百万 RMB（US$18.275 亿）**，**单年增加 47%**，三年累计 RMB 244 billion（US$350 亿）。
 
 > [!warning] 转折 3：增长引擎切换
-> 阿里云增长引擎**从传统算力 / 存储全面切换到模型、AI 算力与智能体服务**。
+> C1-Cloud增长引擎**从传统算力 / 存储全面切换到模型、AI 算力与智能体服务**。
 
 ### 7.2 三大战略支柱（FY2026 明确）
 
-1. **AI + Cloud**：阿里头号优先级
-2. **Consumption**：用户为先战略（淘宝 / 天猫 / 闪购 / 飞猪）
+1. **AI + Cloud**：C1头号优先级
+2. **Consumption**：用户为先战略（C1-E / C1-E2 / 闪购 / 飞猪）
 3. **Globalization**：AIDC + 海外 IDC 14 国布局
 
 ### 7.3 风险与不确定
@@ -221,12 +221,12 @@ cover:
 
 ## 八、关联阅读
 
-- [4123 阿里 HUB](#)
-- [04 阿里出海研究](#)
+- [4123 C1 HUB](#)
+- [04 C1出海研究](#)
 - [O1/O3/AL 三家对比](#)
-- [04 字节出海研究](#)
-- [04 腾讯出海研究](#)
+- [04 C3出海研究](#)
+- [04 C2出海研究](#)
 
 ---
 
-*本文档基于 Alibaba Group Holding Limited FY2026 Annual Report（dated May 20, 2026，270 页 PDF）系统整理。关键章节：董事长与 CEO 联名致辞（第 3-4 页）、Business Overview（第 5-55 页）、Management Discussion and Analysis（第 57-107 页）、Capital Expenditure 章节。*
+*本文档基于 C1 Group Holding Limited FY2026 Annual Report（dated May 20, 2026，270 页 PDF）系统整理。关键章节：董事长与 CEO 联名致辞（第 3-4 页）、Business Overview（第 5-55 页）、Management Discussion and Analysis（第 57-107 页）、Capital Expenditure 章节。*

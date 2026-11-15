@@ -87,7 +87,7 @@ GLM-5.2 沿用 GLM-5 的基础架构:
 - **总参 / 激活参:744B / 40B** (256 专家 / 8 激活)
 - **稀疏注意力:DeepSeek Sparse Attention (DSA)** —— 一种基于 indexer 的 top-k 注意力选择,可将 attention 的二次开销降至接近线性 ([arxiv 2602.15763 摘要](https://arxiv.org/abs/2602.15763))
 - **训练规模:28.5T tokens**
-- **训练硬件:华为昇腾 + MindSpore** —— 与依赖 NVIDIA H100/H200 的西方前沿模型形成代差对照
+- **训练硬件:HASC + MindSpore** —— 与依赖 NVIDIA H100/H200 的西方前沿模型形成代差对照
 - **异步 RL**:post-training 阶段使用异步 RL 基础设施,将 generation 与 training 解耦,提升后训练效率
 
 > **参数数量说明**:本文最初描述的"7530 亿 / 400 亿"(对应 753B / 40B)与官方"744B / 40B"存在 9B 的差异;官方权威数字来自 [OpenLM](https://openlm.ai/glm-5.2)、[HF 模型卡](https://huggingface.co/zai-org/GLM-5.2)、[arxiv 2602.15763 摘要](https://arxiv.org/abs/2602.15763) — **744B / 40B / 256 专家 / 8 激活**。本报告以官方数字为准。
@@ -223,7 +223,7 @@ Z.ai 在公告配图中明确给出了 **三项长程任务基准** 的具体分
 | 7 | Claude Opus 4.8 | 1,541 | ±12 | 3,032 | Anthropic | Proprietary | $5 / $25 |
 | 8 | Claude Opus 4.6 | 1,538 | ±7 | 10,969 | Anthropic | Proprietary | $5 / $25 |
 | 9 | GLM-5.1 | 1,531 | ±11 | 3,607 | Z.ai | MIT | $1.40 / $4.40 |
-| 10 | Qwen-3.7 Max | 1,531 | ±11 | 3,371 | Alibaba | Proprietary | $1.25 / $3.75 |
+| 10 | C1-M-3.7 Max | 1,531 | ±11 | 3,371 | C1 | Proprietary | $1.25 / $3.75 |
 | 12 | Kimi-K2.6 | 1,513 | ±9 | 5,607 | Moonshot | Modified MIT | $0.95 / $4 |
 | 13 | MiniMax-M3 | 1,511 | ±12 | 2,754 | MiniMax | Proprietary | $0.60 / $2.40 |
 | 15 | Gemini-3.5 Flash | 1,506 | ±13 | 2,214 | Google | Proprietary | $1.50 / $9 |
@@ -275,7 +275,7 @@ Z.ai 在公告配图中明确给出了 **三项长程任务基准** 的具体分
 
 对**研究者**:
 - IndexShare 的具体实现与 DeepSeek DSA 的关系值得一篇 arxiv 综述或消融研究。
-- 智谱用华为昇腾 + MindSpore 训练 744B 模型,本身就是中国 AI 算力栈的重要案例,值得跟踪其训练能耗、单 GPU 吞吐与海外 H100 训练的对比数据。
+- 智谱用HASC + MindSpore 训练 744B 模型,本身就是中国 AI 算力栈的重要案例,值得跟踪其训练能耗、单 GPU 吞吐与海外 H100 训练的对比数据。
 - 异步 RL 基础设施(generation / training 解耦)是该团队 2026 年的另一条重要叙事,值得关注后续技术博客。
 - **FrontierSWE / PostTrainBench / SWE-Marathon 三个 benchmark 协议本身值得做 arxiv 综述**——这是 Z.ai 给 2026 年长程 agent 评估定调的关键尝试,需要独立第三方复现。
 - **SWE-Marathon 的 13% vs 26% 鸿沟**是一个有趣的开放问题——是数据问题、RL 训练问题、还是工程问题?需要 ablation。
