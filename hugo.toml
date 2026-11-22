@@ -2,6 +2,13 @@ baseURL = "https://liweicong2016-collab.github.io/tech-blog/"
 defaultContentLanguage = "zh"
 defaultContentLanguageInSubdir = false
 
+title = "Livius's Tech Pulse"
+enableRobotsTXT = true
+enableGitInfo = false
+hasCJKLanguage = true
+pygmentsUseClasses = true
+theme = ["PaperMod"]
+
 [languages]
   [languages.zh]
     contentDir = "content/zh"
@@ -46,15 +53,6 @@ defaultContentLanguageInSubdir = false
     title = "Livius's Tech Pulse"
     [languages.ja.params]
       description = "AI · コンピューティング · 半導体 · 東南アジア市場"
-
-title = "Livius's Tech Pulse"
-name = "Livius's Tech Pulse"
-enableRobotsTXT = true
-enableGitInfo = false
-hasCJKLanguage = true
-pygmentsUseClasses = true
-
-theme = ["PaperMod"]
 
 [markup]
   [markup.goldmark]
